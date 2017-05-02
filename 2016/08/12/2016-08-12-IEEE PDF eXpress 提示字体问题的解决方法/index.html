@@ -19,13 +19,13 @@
 <meta property="og:url" content="http://dataminer.me/2016/08/12/2016-08-12-IEEE PDF eXpress 提示字体问题的解决方法/index.html">
 <meta property="og:site_name" content="QI-Jianpeng">
 <meta property="og:description" content="昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：发现缺少了内嵌的几种字体。 回想起之前生成图片的过程，查阅了一些相关资料才明白，Matlab在生成图片的过程中是默认使用Helv">
-<meta property="og:image" content="http://dataminer.me/images/20160812/ieee_pdf_express_error.png">
-<meta property="og:image" content="http://dataminer.me/images/20160812/ieee_pdf_express_error_details.png">
-<meta property="og:updated_time" content="2017-05-02T01:52:17.000Z">
+<meta property="og:image" content="http://dataminer.me/assets/pages/img/posts/ieee_pdf_express_error.png">
+<meta property="og:image" content="http://dataminer.me/assets/pages/img/posts/ieee_pdf_express_error_details.png">
+<meta property="og:updated_time" content="2017-05-02T10:27:07.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IEEE PDF eXpress 提示字体为嵌入的解决方法">
 <meta name="twitter:description" content="昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：发现缺少了内嵌的几种字体。 回想起之前生成图片的过程，查阅了一些相关资料才明白，Matlab在生成图片的过程中是默认使用Helv">
-<meta name="twitter:image" content="http://dataminer.me/images/20160812/ieee_pdf_express_error.png">
+<meta name="twitter:image" content="http://dataminer.me/assets/pages/img/posts/ieee_pdf_express_error.png">
   
     <link rel="alternative" href="/atom.xml" title="QI-Jianpeng" type="application/atom+xml">
   
@@ -200,7 +200,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：<br><img src="/images/20160812/ieee_pdf_express_error.png" alt="ieee pdf express font error" title="ieee pdf express font error"><br>看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：<br><img src="/images/20160812/ieee_pdf_express_error_details.png" alt="ieee pdf express font error details" title="ieee pdf express font error details"><br>发现缺少了内嵌的几种字体。</p>
+        <p>昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：<br><img src="/assets/pages/img/posts/ieee_pdf_express_error.png" alt="ieee pdf express font error" title="ieee pdf express font error"><br>看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：<br><img src="/assets/pages/img/posts/ieee_pdf_express_error_details.png" alt="ieee pdf express font error details" title="ieee pdf express font error details"><br>发现缺少了内嵌的几种字体。</p>
 <p>回想起之前生成图片的过程，查阅了一些相关资料才明白，Matlab在生成图片的过程中是默认使用Helvetica字体，而IEEE论文格式检测系统恰好不支持这种字体。<br>网上查看了好几种解决方法，大致有三种。</p>
 <p>有一种是使用命令行，这种方法在我们的论文生成的过程中得到的pdf文件竟然比以前的版本多出了几行，就是这几行导致页数超标了，换方法。</p>
 <p>第二种是借助Adobe Acrobat，将原先的pdf打印成另一个pdf文件，在打印的过程中对属性进行设置，将字体嵌入。我不知道他们是怎么成功的，但是在我的机器上这种方法是没有奏效的，难不成是因为没有购买该软件？</p>
@@ -248,11 +248,11 @@
     <ul class="nav sidebar-categories margin-bottom-40">
       
 	<li>
-	  <a href="/categories/productivity/">productivity (1)</a>
+	  <a href="/categories/Hexo/">Hexo (1)</a>
 	</li>
       
 	<li>
-	  <a href="/categories/Hexo/">Hexo (1)</a>
+	  <a href="/categories/productivity/">productivity (1)</a>
 	</li>
       
 	<li>
@@ -287,8 +287,6 @@
 <div class="recent-news margin-bottom-10">
   
     
-  
-    
       <div class="row margin-bottom-10">
 	<div class="col-md-4">
 	  <img src="https://s3.amazonaws.com/ptsteadman-images/helloworld.jpg" class="img-responsive ">
@@ -297,6 +295,8 @@
 	  <h3><a href="http://dataminer.me/2014/02/23/2014-02-23-hello-world/">Welcome To Hexo</a></h3>
 	</div>                        
       </div>
+    
+  
     
   
     
