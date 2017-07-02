@@ -7,17 +7,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: Storm | QI-Jianpeng</title>
+  <title>Spout读取HDFS数据 | QI-Jianpeng</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="QI-Jianpeng">
-<meta property="og:url" content="http://dataminer.me/tags/Storm/index.html">
+  <meta name="description" content="Storm Spout与HDFS的结合在Storm HDFS Integration上会看到这么一句话”Storm components for interacting with HDFS file systems”也就是说, Storm提供了用于与HDFS进行交互的组件.因此, 这里不需要对其进行额外的配置, 至于要利用其组件, 就可以实现Storm与HDFS的交互. 虽然Storm在针对已经存">
+<meta name="keywords" content="Storm,Java,[object Object]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spout读取HDFS数据">
+<meta property="og:url" content="http://dataminer.me/2017/07/02/Spout读取HDFS数据/index.html">
 <meta property="og:site_name" content="QI-Jianpeng">
+<meta property="og:description" content="Storm Spout与HDFS的结合在Storm HDFS Integration上会看到这么一句话”Storm components for interacting with HDFS file systems”也就是说, Storm提供了用于与HDFS进行交互的组件.因此, 这里不需要对其进行额外的配置, 至于要利用其组件, 就可以实现Storm与HDFS的交互. 虽然Storm在针对已经存">
+<meta property="og:updated_time" content="2017-07-02T02:14:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QI-Jianpeng">
+<meta name="twitter:title" content="Spout读取HDFS数据">
+<meta name="twitter:description" content="Storm Spout与HDFS的结合在Storm HDFS Integration上会看到这么一句话”Storm components for interacting with HDFS file systems”也就是说, Storm提供了用于与HDFS进行交互的组件.因此, 这里不需要对其进行额外的配置, 至于要利用其组件, 就可以实现Storm与HDFS的交互. 虽然Storm在针对已经存">
   
     <link rel="alternative" href="/atom.xml" title="QI-Jianpeng" type="application/atom+xml">
   
@@ -137,112 +142,34 @@
   <div class="container">
   <ul class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li class="active">Tagged: Storm</li>
+    <li><a href="/archives/">Blog</a></li>
+    <li class="active">Post</li>
   </ul>
-<section id="main">
-  <h1>Tagged: Storm</h1>
-  <div class="row">
-
-<div class="col-xs-12 blog-posts">
-
-
-  <section class="archives-wrap">
-    <div class="archives">
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
+  <section id="main">
     
     <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/02/Spout读取数据/">Spout读取数据</a>
+      <a class="article-title" href="/2017/07/02/Spout读取HDFS数据/">Spout读取HDFS数据</a>
     </h2>
 
 
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-07-02T02:15:00.000Z" itemprop="datePublished">2017/07/02</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Storm/" title="Storm">Storm</a>,
-  
-    <a href="/tags/Java/" title="Java">Java</a>,
-  
-    <a href="/tags/object-Object/" title="[object Object]">[object Object]</a>,
-  
-    <a href="/tags/Spout/" title="Spout">Spout</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="Spout作用"><a href="#Spout作用" class="headerlink" title="Spout作用"></a>Spout作用</h1><p><code>Spout</code>: A <code>spout</code> is a source of streams in a topology. Generally spouts will read tuples from an external source and <code>emit</code> them into the topology (e.g. a Kestrel queue or the Twitter API). Spouts can either be reliable or unreliable. A reliable spout is capable of replaying a tuple if it failed to be processed by Storm, whereas an unreliable spout forgets about the tuple as soon as it is emitted.</p>
-<p>Spouts can emit more than one stream. To do so, declare multiple streams using the <code>declareStream</code> method of <a href="http://storm.apache.org/releases/1.1.0/javadocs/org/apache/storm/topology/OutputFieldsDeclarer.html" target="_blank" rel="external"> OutputFieldsDeclarer(<em>Interface</em>)</a> and specify the stream to emit to when using the emit method on <a href="http://storm.apache.org/releases/1.1.0/javadocs/org/apache/storm/spout/SpoutOutputCollector.html" target="_blank" rel="external">SpoutOutputCollector(<em>Class</em>)</a>.</p>
-<p>The main method on spouts is <code>nextTuple</code>. <code>nextTuple</code> either emits a new tuple into the topology or simply returns if there are no new tuples to emit. It is imperative(必要的) that <code>nextTuple</code> does not block for any <code>spout</code> implementation, because Storm calls all the spout methods <strong>on the same thread</strong>.</p>
-<p>The other main methods on spouts are <code>ack</code> and <code>fail</code>. These are called when Storm detects that a tuple emitted from the spout either successfully completed through the topology or failed to be completed. ack and fail are only called for reliable spouts. See the <a href="http://storm.apache.org/releases/1.1.0/Concepts.html" target="_blank" rel="external">here</a> for more information.</p>
-<p>因此, <code>Spout</code>中不能存在阻塞方法, 因为<code>Spout</code>是单线程.另外, <code>Spout</code>中重要的是<code>ack()</code>与<code>fail()</code>方法.</p>
-<h1 id="Spout处理数据的流程"><a href="#Spout处理数据的流程" class="headerlink" title="Spout处理数据的流程"></a>Spout处理数据的流程</h1><p>在上文中提到, 若想使用<code>Spout</code>发送数据, 在使用<code>SpoutOutputCollector</code>中的<code>emit()</code>方法时要对<code>OutputFieldsDeclarer</code>对数据流进行声明, 即<code>declareStream()</code>. 因此发送数据的过程大致可分为：</p>
-<ol>
-<li>实现<code>OutputFieldsDeclarer.declareStream()</code>.</li>
-<li>调用<code>emit()</code>方法.<br>那么, 如何读取数据呢？可以猜出, 读取数据在第1步<code>declareStream()</code>实现. 由于<code>OutputFieldsDeclarer</code>属于<code>Interface</code>, 应该哪个类进行<code>implements</code>呢？</li>
-</ol>
-<p>我们这时情不自禁想起了Storm提供的Storm-Starter的例子. 里面有一个叫<code>RandomSentenceSpout</code>的类, 看一看这个类的声明为: <code>public class RandomSentenceSpout extends BaseRichSpout</code>, 这里并没有想看到的<code>OutputFieldsDeclarer</code>接口, 但是却Overwrite了<code>declareOutputFields</code>方法:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">declareOutputFields</span><span class="params">(OutputFieldsDeclarer declarer)</span> </span>&#123;</div><div class="line">  declarer.declare(<span class="keyword">new</span> Fields(<span class="string">"word"</span>));</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>到这里你可能比较疑惑, 为什么在<code>OutputFieldsDeclarer</code>中明明调用的是<code>declareOutputFields</code>方法,这里却变成了<code>declareStream</code>? 其实<a href="http://storm.apache.org/releases/1.1.0/javadocs/org/apache/storm/topology/OutputFieldsDeclarer.html#declare-boolean-org.apache.storm.tuple.Fields-" target="_blank" rel="external"><code>declare</code></a>方法中调用了’declareStream’方法, 并传入了默认<code>stream id</code>.</p>
-<p>这一定是<code>BaseRichSpout</code>继承得到的方法. 再查看<code>BaseRichSpout(_abstract class_)</code>的源代码, 发现其<code>extends BaseComponent implements IRichSpout</code>并且声明了4个函数:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">close(); activate(); deactivate(); ack(Object msgId); fail(Object msgId);</div></pre></td></tr></table></figure></p>
-<p>并没有<code>declareOutputFields</code>, 那一定是来自于<code>BaseComponent</code>了. 最终在<code>org.apache.storm.topology.IComponent</code>找到了该方法.<br>可以看出<code>IComponent</code>的继承/实现过程为<code>RandomSentenceSpout</code>&lt;–<code>BaseRichSpout</code>&lt;–<code>BaseComponent</code>&lt;–<code>IComponent</code>.</p>
-<p><code>declareOutputFields</code>的API解释如下:</p>
-<blockquote>
-<p>Declare the output schema for all the streams of this topology. <code>declarer</code> is used to declare output stream ids, output fields, and whether or not each output stream is a direct stream.<br>因此, 它是用来定义当前topology的输出流属性的.</p>
-</blockquote>
-<p>那么, 这个方法是如何工作的呢?<br>在<code>main</code>方法里我们可以看到:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">TopologyBuilder builder = <span class="keyword">new</span> TopologyBuilder();</div><div class="line">builder.setSpout(<span class="string">"spout"</span>, <span class="keyword">new</span> RandomSentenceSpout(), <span class="number">5</span>);</div></pre></td></tr></table></figure></p>
-<p>其中调用了<code>setSpout</code>方法, 这个方法, 就将<code>Spout</code>传递给了Topology.<br><code>RandomSentenceSpout</code> 调用<code>nextTuple</code>方法不断地产生数据流. 当产生数据流后要向topology发送, 要发送数据, 如何进行识别呢? 上文讲到了, 在emit时还要实现<code>OutputFieldsDeclarer</code>的<code>declareStream()</code>方法. 这个方法的调用过程是这样的:<br><code>TopologyBuilder.createTopology()</code> –&gt; <code>componentCommon.getComponentCommon()</code> –&gt; <code>component.declareOutputFields(outputFieldsGetter)</code> –&gt; ‘OutputFieldsDeclarer.declareOutputFields()’.</p>
-<p>现在就对上号了, Spout通过多重继承/implements <code>IComponent</code> 实现<code>declareOutputFields</code>方法, 然后在该方法中调用<code>OutputFieldsDeclarer</code>中的<code>declare</code>或<code>declareStream</code>方法, 之后由<code>topology</code>创建流的映射关系, 再由<code>emit</code>方法, 将数据发送到整个<code>topology</code>中去. 因此, <code>declare</code>方法是必须要实现的方法. <code>Topology</code>中的<code>fieldsGrouping</code>至关重要, 它建立了与<code>declare</code>方法中传入的<code>Field</code>对应. 而<code>emit</code>又与<code>declarer</code>对应, 这就形成了一个铰链.  <code>nextTuple</code>中调用<code>emit</code>方法, 实现了数据到<code>topology</code>中的映射. 最后交由<code>Bolt</code>的<code>execute</code>方法对接收到的每个<code>tuple</code>进行处理.</p>
-<p>Some useful links: <a href="http://storm.apache.org/releases/1.1.0/Lifecycle-of-a-topology.html" target="_blank" rel="external">Lifecycle of a topology</a></p>
-<h1 id="Spout读取数据的方式"><a href="#Spout读取数据的方式" class="headerlink" title="Spout读取数据的方式"></a>Spout读取数据的方式</h1><p>Storm读取数据可以与很多平台进行整合. 比如<a href="https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/HdfsUserGuide.html" target="_blank" rel="external">HDFS</a>. 后续将结合HDFS进行数据的读取.</p>
-
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/07/02/Spout读取数据/" class="more">Read more <i class="icon-angle-right"></i></a>
+    <div class="row">
+<div class="col-md-9 col-sm-9 blog-posts">
+<article id="default-Spout读取HDFS数据" class="article article-type-default blog-item" itemscope itemprop="blogPost">
+  <div class="article-meta">
   </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
+  <div class="article-inner">
     
-  </div>
-  
-    <div class="col-xs-12">
-  
     
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/02/Spout读取HDFS数据/">Spout读取HDFS数据</a>
-    </h2>
+    <header class="article-header">
+      <ul class="blog-info">
+	<li><i class="fa fa-user"></i> QI-Jianpeng</li>
+	<li><i class="fa fa-calendar"></i>
+	  <time datetime="2017-07-02T02:14:00.000Z" itemprop="datePublished">2017/07/02</time>
 
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-07-02T02:14:00.000Z" itemprop="datePublished">2017/07/02</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
+	</li>
+  
+  <li class="hidden-xs"><i class="fa fa-tags"></i> 
+    
   
     <a href="/tags/Storm/" title="Storm">Storm</a>,
   
@@ -252,11 +179,29 @@
   
 
 
-      </li>
-    </ul>
-    <div class="blog-item">
+  </li>
+
+  <li class="hidden-xs">
+          <div  class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="fa fa-qq" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="fa fa-linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="fa fa-print" data-cmd="print" title="分享到打印"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"3","bdSize":"12"},"share":{},"image":{"viewList":["tsina","qzone","linkedin","print"],"viewText":"分享到：","viewSize":"12"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","qzone","linkedin","print"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+  </li>
+      </ul>
       
-	<h1 id="Storm-Spout与HDFS的结合"><a href="#Storm-Spout与HDFS的结合" class="headerlink" title="Storm Spout与HDFS的结合"></a>Storm Spout与HDFS的结合</h1><p>在<a href="http://storm.apache.org/releases/1.1.0/storm-hdfs.html" target="_blank" rel="external">Storm HDFS Integration</a><br>上会看到这么一句话”Storm components for interacting with HDFS file systems”<br>也就是说, Storm提供了用于与HDFS进行交互的组件.<br>因此, 这里不需要对其进行额外的配置, 至于要利用其组件, 就可以实现Storm与HDFS的交互.</p>
+  <div class="article-category">
+    
+    Category: 
+    
+    Categories:
+    <a class="article-category-link" href="/categories/blog/">blog</a>
+  </div>
+  <br>
+
+
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Storm-Spout与HDFS的结合"><a href="#Storm-Spout与HDFS的结合" class="headerlink" title="Storm Spout与HDFS的结合"></a>Storm Spout与HDFS的结合</h1><p>在<a href="http://storm.apache.org/releases/1.1.0/storm-hdfs.html" target="_blank" rel="external">Storm HDFS Integration</a><br>上会看到这么一句话”Storm components for interacting with HDFS file systems”<br>也就是说, Storm提供了用于与HDFS进行交互的组件.<br>因此, 这里不需要对其进行额外的配置, 至于要利用其组件, 就可以实现Storm与HDFS的交互.</p>
 <p>虽然Storm在针对已经存在的大量数据处理上不太适合(比较适合实时数据流), 但总会有这样的需求,<br>比如做实验需要一些带label的数据, 而这些数据都是人为处理好的.</p>
 <h2 id="读数据"><a href="#读数据" class="headerlink" title="读数据"></a>读数据</h2><p>由于是在平时学习工作中进行的任务, 为了方便, 存储在HDFS上的文件路径统一为<code>/storm/data/</code><br><a href="http://hadoop.apache.org/docs/current/" target="_blank" rel="external">安装Hadoop参考</a>.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sbin/start-dfs.sh <span class="comment">#启动hdfs</span></div><div class="line">bin/hdfs dfs -mkdir -p /storm/data <span class="comment">#创建/storm/data目录</span></div><div class="line">bin/hdfs dfs -ls -R / <span class="comment">#查看目录是否创建成功</span></div><div class="line">bin/hdfs dfs -put ~/Downloads/10g_50obj_50t_sorted.txt /storm/data <span class="comment">#上传文件到hdfs</span></div></pre></td></tr></table></figure></p>
 <p>这里得到了路径<code>hdfs://localhost/storm/data</code><br><strong>这里额外多说一句</strong>, 在<code>core-site.xml</code>文件中一定要把<code>fs.defaultFS</code>路径配置正确,<br>因为<code>&lt;value&gt;hdfs://localhost:9000/&lt;/value&gt;</code>最后面的一个<code>/</code>忘记填了, 找了好长时间才找到错误.</p>
@@ -277,264 +222,164 @@
 
       
     </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/07/02/Spout读取HDFS数据/" class="more">Read more <i class="icon-angle-right"></i></a>
+
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/07/02/Spout读取数据/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Spout读取数据
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/07/02/Lifecycle of a Storm Topology/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Lifecycle of a Storm Topology</div>
+    </a>
+  
+</nav>
+
+  
+  <br>
+</article>
+
+
+
+
 </div>
-<hr class="blog-post-sep">
+<div class="col-md-3 col-sm-3 blog-sidebar">
+  <!-- CATEGORIES START -->
+<h2 class="no-top-space">Categories</h2>
 
+<div class="widget-wrap">
+  <div class="widget">
+    <ul class="nav sidebar-categories margin-bottom-40">
       
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/02/Lifecycle of a Storm Topology/">Lifecycle of a Storm Topology</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-07-02T02:12:00.000Z" itemprop="datePublished">2017/07/02</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Storm/" title="Storm">Storm</a>,
-  
-    <a href="/tags/Java/" title="Java">Java</a>,
-  
-    <a href="/tags/object-Object/" title="[object Object]">[object Object]</a>
-  
-
-
-      </li>
+	<li>
+	  <a href="/categories/Hexo/">Hexo (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/blog/">blog (7)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/productivity/">productivity (1)</a>
+	</li>
+      
     </ul>
-    <div class="blog-item">
-      
-	<h1 id="Lifecycle-of-a-Storm-Topology"><a href="#Lifecycle-of-a-Storm-Topology" class="headerlink" title="Lifecycle of a Storm Topology"></a>Lifecycle of a Storm Topology</h1><p>source from <a href="http://storm.apache.org/releases/1.1.0/Lifecycle-of-a-topology.html" target="_blank" rel="external">Lifecycle of a Storm Topology</a></p>
-<blockquote>
-<ol>
-<li>The actual topology that runs is different than the topology the user specifies. The actual topology has implicit streams and an implicit “acker” bolt added to manage the acking framework (used to guarantee data processing). The implicit topology is created via the <code>system-topology!</code> function.</li>
-</ol>
-</blockquote>
-<p>实际运行的<code>topology</code>与用户自定义的<code>topology</code>是有所不同的. 为了保证数据被处理, <code>storm</code>会额外增加相应的<code>acker</code> bolt 来实现<em>acking framework</em>.</p>
-<h1 id="Starting-a-topology"><a href="#Starting-a-topology" class="headerlink" title="Starting a topology"></a>Starting a topology</h1><ul>
-<li>“storm jar” command executes your class with the specified arguments. <code>StormSubmitter.submit...</code></li>
-<li><p><code>StormSubmitter.submitTopology</code></p>
-<ul>
-<li><code>StormSubmitter</code> uploads the jar if it hasn’t been uploaded before.</li>
-<li>Jar uploading is done via Nimbus’s Thrift interface.</li>
-<li><p>15 kilobytes are uploaded at a time through uploadChunk</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"> String uploadLocation = client.getClient().beginFileUpload();</div><div class="line"> client.getClient().uploadChunk(uploadLocation, ByteBuffer.wrap(toSubmit));</div><div class="line"><span class="comment">//这在`StormSubmitter.submitJar`中可以找到.</span></div><div class="line"><span class="comment">//该方法return the remote location of the submitted jar. (version 1.1.0)</span></div><div class="line"></div><div class="line">client.getClient().finishFileUpload(uploadLocation);</div></pre></td></tr></table></figure>
-</li>
-<li><p><code>beginFileUpload</code> returns a path in Nimbus’s inbox.</p>
-</li>
-<li>Second, <code>StormSubmitter</code> calls <code>submitTopology</code>.</li>
-<li>The topology config is serialized using JSON (JSON is used so that writing DSL’s in any language is as easy as possible)</li>
-<li>Notice that the Thrift <code>submitTopology</code> call takes in the Nimbus inbox path where the jar was uploaded</li>
-</ul>
-</li>
-<li>Nimbus receives the topology submission.</li>
-<li>Nimbus normalizes the topology configuration. The main purpose of normalization is to ensure that every single task will have the same serialization registrations, which is critical for getting serialization working correctly.</li>
-<li>Nimbus sets up the static state for the topology.<ul>
-<li>Jars and configs are kept on local filesystem because they’re too big for Zookeeper. The jar and configs are copied into the path <code>{nimbus local dir}/stormdist/{topology id}</code></li>
-<li>setup-storm-static writes task -&gt; component mapping into ZK</li>
-<li>setup-heartbeats creates a ZK “directory” in which tasks can heartbeat</li>
-</ul>
-</li>
-<li>Nimbus calls mk-assignment to assign tasks to machines<ul>
-<li><code>master-code-dir</code>: used by supervisors to download the correct jars/configs for the topology from Nimbus</li>
-<li><code>task-&gt;node+port</code>: Map from a task id to the worker that task should be running on. (A worker is identified by a node/port pair)</li>
-<li><code>node-&gt;host</code>: A map from node id to hostname. This is used so workers know which machines to connect to to communicate with other workers. Node ids are used to identify supervisors so that multiple supervisors can be run on one machine. One place this is done is with Mesos integration.</li>
-<li><code>task-&gt;start-time-secs</code>: Contains a map from task id to the timestamp at which Nimbus launched that task. This is used by Nimbus when monitoring topologies, as tasks are given a longer timeout to heartbeat when they’re first launched (the launch timeout is configured by “nimbus.task.launch.secs” config).</li>
-</ul>
-</li>
-<li>Once topologies are assigned, they’re initially in a deactivated mode. start-storm writes data into Zookeeper so that the cluster knows the topology is active and can start emitting tuples from spouts.</li>
-<li>TODO cluster state diagram (show all nodes and what’s kept everywhere).</li>
-<li>Supervisor runs two functions in the background:<ul>
-<li><code>synchronize-supervisor</code>: This is called whenever assignments in Zookeeper change and also every 10 seconds.<ul>
-<li>Downloads code from Nimbus for topologies assigned to this machine for which it doesn’t have the code yet.</li>
-<li>Writes into local filesystem what this node is supposed to be running. It writes a map from port -&gt; LocalAssignment. LocalAssignment contains a topology id as well as the list of task ids for that worker.</li>
-</ul>
-</li>
-<li><code>sync-processes</code>: Reads from the LFS what synchronize-supervisor wrote and compares that to what’s actually running on the machine. It then starts/stops worker processes as necessary to synchronize.</li>
-</ul>
-</li>
-<li>Worker processes start up through the mk-worker function<ul>
-<li>Worker connects to other workers and starts a thread to monitor for changes. So if a worker gets reassigned, the worker will automatically reconnect to the other worker’s new location.</li>
-<li>Monitors whether a topology is active or not and stores that state in the storm-active-atom variable. This variable is used by tasks to determine whether or not to call nextTuple on the spouts.</li>
-</ul>
-</li>
-<li>The worker launches the actual tasks as threads within it<ul>
-<li>Tasks are set up through the<code>mk-task</code> function</li>
-<li>Tasks set up routing function which takes in a stream and an output tuple and returns a list of task ids to send the tuple to code (there’s also a 3-arity version used for direct streams)</li>
-<li>Tasks set up the spout-specific or bolt-specific code with code</li>
-</ul>
-</li>
-</ul>
-
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/07/02/Lifecycle of a Storm Topology/" class="more">Read more <i class="icon-angle-right"></i></a>
   </div>
 </div>
-<hr class="blog-post-sep">
 
+
+<!-- CATEGORIES END -->
+
+<!-- BEGIN BLOG TAGS -->
+<div class="blog-tags margin-bottom-20">
+  <h2>Tags</h2>
+  
+  <div class="widget-wrap">
+    <div class="widget">
       
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/02/DRPC(Distributed Remote Procedure Call)分布式远程调用/">DRPC(Distributed Remote Procedure Call)分布式远程调用</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-07-02T02:11:00.000Z" itemprop="datePublished">2017/07/02</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Storm/" title="Storm">Storm</a>,
-  
-    <a href="/tags/Java/" title="Java">Java</a>,
-  
-    <a href="/tags/DRPC/" title="DRPC">DRPC</a>,
-  
-    <a href="/tags/object-Object/" title="[object Object]">[object Object]</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="DRPC-Distributed-Remote-Procedure-Call-分布式远程调用"><a href="#DRPC-Distributed-Remote-Procedure-Call-分布式远程调用" class="headerlink" title="DRPC(Distributed Remote Procedure Call)分布式远程调用"></a>DRPC(Distributed Remote Procedure Call)分布式远程调用</h1><p><img src="./figures/drpc-workflow.png" alt="DRPC Workflow"></p>
-<p>A client sends the DRPC server the name of the <strong>function</strong> to execute and the <strong>arguments</strong> to that function. The topology implementing that function uses a <code>DRPCSpout</code> to receive a function invocation stream from the DRPC server. <strong>Each function invocation is tagged with a unique id  </strong>by the DRPC server. The topology then computes the result and at the end of the topology a bolt called <code>ReturnResults</code> connects to the DRPC server and gives it the result for the function invocation id. The DRPC server then uses the id to match up that result with which client is waiting, unblocks the waiting client, and sends it the result.</p>
-<h2 id="DRPC-topologies-type"><a href="#DRPC-topologies-type" class="headerlink" title="DRPC topologies type"></a>DRPC topologies type</h2><ul>
-<li>Linear DRPC topologies:<br><code>LinearDRPCTopologyBuilder</code> at <a href="https://github.com/apache/storm/tree/v1.1.0/storm-core/src/jvm/org/apache/storm/drpc" target="_blank" rel="external">org.apache.storm.drpc</a></li>
-<li>Non-linear DRPC topologies:<br><code>CoordinatedBolt</code> at <a href="https://github.com/apache/storm/tree/v1.1.0/storm-core/src/jvm/org/apache/storm/coordination" target="_blank" rel="external">org.apache.storm.coordination</a></li>
-</ul>
-<h2 id="DRPC-usage"><a href="#DRPC-usage" class="headerlink" title="DRPC usage"></a>DRPC usage</h2><ol>
-<li><p>Launching a DRPC server can be done with the storm script and is just like launching Nimbus or the UI:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bin/storm drpc</div></pre></td></tr></table></figure>
-</li>
-<li><p>Configuring this through the <code>storm.yaml</code>:</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="string">drpc.servers:</span></div><div class="line"><span class="bullet">  -</span> <span class="string">"drpc1.foo.com"</span></div><div class="line"><span class="bullet">  -</span> <span class="string">"drpc2.foo.com"</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>Launching DRPC topologies using StormSubmitter:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">StormSubmitter.submitTopology(<span class="string">"exclamation-drpc"</span>, conf,</div><div class="line">                                builder.createRemoteTopology());</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>See more in <a href="http://storm.apache.org/releases/1.1.0/Distributed-RPC.html" target="_blank" rel="external">Apache Storm DRPC</a></p>
-
-      
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DRPC/"><i class='fa fa-tags'></i>DRPC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/How-To/"><i class='fa fa-tags'></i>How-To</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/"><i class='fa fa-tags'></i>Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spout/"><i class='fa fa-tags'></i>Spout</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Storm/"><i class='fa fa-tags'></i>Storm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Welcome/"><i class='fa fa-tags'></i>Welcome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Window/"><i class='fa fa-tags'></i>Window</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/object-Object/"><i class='fa fa-tags'></i>[object Object]</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/productivity/"><i class='fa fa-tags'></i>productivity</a></li></ul>
     </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/07/02/DRPC(Distributed Remote Procedure Call)分布式远程调用/" class="more">Read more <i class="icon-angle-right"></i></a>
   </div>
+
+
 </div>
-<hr class="blog-post-sep">
+<!-- END BLOG TAGS -->
 
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
+
+<!-- BEGIN FEATURED POSTS -->                            
+<h2>Featured Posts</h2>
+<div class="recent-news margin-bottom-10">
   
     
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/02/Storm TumblingWindow 解释/">Storm TumblingWindow 解释</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-07-02T02:03:00.000Z" itemprop="datePublished">2017/07/02</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Storm/" title="Storm">Storm</a>,
-  
-    <a href="/tags/Java/" title="Java">Java</a>,
-  
-    <a href="/tags/object-Object/" title="[object Object]">[object Object]</a>,
-  
-    <a href="/tags/Window/" title="Window">Window</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="TumblingWindow-的使用"><a href="#TumblingWindow-的使用" class="headerlink" title="TumblingWindow 的使用"></a>TumblingWindow 的使用</h1><p>在数据流处理中不可避免的会涉及到<code>Window</code>的概念.<br>Storm中提供了两种类型的<code>Window</code>, 分别为<code>SlidingWindow</code>与<code>TumblingWindow</code>.<br>前者是窗口一个一个<code>Slide</code>的往前滑动, 而后者是一个一个<code>Window</code>的往前滑动.<br>这里主要讲述<code>TumblingWindow</code>. 如下图:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">| e1 e2 | e3 e4 e5 e6 | e7 e8 e9 |...</div><div class="line">0       5             10         15    -&gt; time</div><div class="line">   w1         w2            w3</div></pre></td></tr></table></figure></p>
-<p>在<code>TumblingWindow</code>中, <code>w1</code>滑动将会变为<code>w2</code>, 可以看出<code>w1</code>与<code>w2</code>之间是没有交叉重叠的. 并且这个例子中是每隔<code>5s</code>滑动一次.</p>
-<p>那么如何使用呢? Storm中默认的是使用以下方法对<code>TumblingWindow</code>进行定义.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">withTumblingWindow(BaseWindowedBolt.Count count)</div><div class="line">Count based tumbling window that tumbles after the specified count of tuples.</div><div class="line"></div><div class="line">withTumblingWindow(BaseWindowedBolt.Duration duration)</div><div class="line">Time duration based tumbling window that tumbles after the specified time duration.</div></pre></td></tr></table></figure></p>
-<p>我们可以看出有两种方式, 分别为<code>count-based</code>与<code>time-based</code>.<br>当我们使用<code>time-based</code>, Storm默认情况下所使用<code>timestamp</code>是<code>Bolt</code>处理当前<code>tuple</code>时所获得的<code>timestamp</code>.<br>在实际应用中可能会用自定义的<code>time</code>来使用<code>time-based</code>的窗口(比如使用历史数据进行测试, 历史数据中存在一个<code>timestamp</code>的字段). 这种情况下该如何做呢?</p>
-<h2 id="自定义timestamp的使用"><a href="#自定义timestamp的使用" class="headerlink" title="自定义timestamp的使用"></a>自定义<code>timestamp</code>的使用</h2><p>Storm提供了自定义<code>timestamp</code>的方法.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line">* Specify a field in the tuple that represents the timestamp as a long value. If</div><div class="line">* this field is not present in the incoming tuple, an</div><div class="line">*&#123;<span class="doctag">@link</span> IllegalArgumentException&#125; will be thrown.</div><div class="line">*</div><div class="line">* <span class="doctag">@param</span> fieldName the name of the field that contains the timestamp</div><div class="line">*/</div><div class="line"><span class="function"><span class="keyword">public</span> BaseWindowedBolt <span class="title">withTimestampField</span><span class="params">(String fieldName)</span></span></div></pre></td></tr></table></figure>
-<p>在流过来的<code>tuple</code>中会寻找<code>fieldName</code>这个字段. 由于是在<code>tuple</code>中查找, 所以这就追溯到上游发送数据流的节点.<br>在<code>emit tuple</code>时我们记得要实现<code>declareOutputFields</code>方法, 所以, 在这个地方我们要使用自定义的<code>timestamp</code>必须要在上游组件中的<code>declareOutputFields</code>方法里添加一个<code>&quot;timestamp&quot;</code>(或者其他有意义的名字)来指明这个字段, 然后在<code>withTimestampField(String fieldName)</code>传入<code>&quot;timestamp&quot;</code>.</p>
-<p>还需要注意的是, <code>&quot;timestamp&quot;</code>所指向的字段的类型必须是<code>long</code>型的.</p>
-<p>当<code>bolt</code>接收到数据后如何进行处理呢?</p>
-<h2 id="Bolt对接收到的窗口数据进行处理"><a href="#Bolt对接收到的窗口数据进行处理" class="headerlink" title="Bolt对接收到的窗口数据进行处理"></a><code>Bolt</code>对接收到的窗口数据进行处理</h2><p>在继承<code>BaseWindowedBolt</code>类后会<code>Override</code> <code>execute(TupleWindow inputWindow)</code>方法:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">execute</span><span class="params">(TupleWindow inputWindow)</span> </span>&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>在这个方法中要传入<code>TupleWindow</code>类型的参数. <code>TupleWindow</code>提供了三种方法用于对窗口数据进行操作:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">get();<span class="comment">//Gets the list of events in the window.</span></div><div class="line">getExpired();<span class="comment">//Get the list of events expired from the window since the last time the window was generated.</span></div><div class="line">getNew();<span class="comment">//Get the list of newly added events in the window since the last time the window was generated.</span></div></pre></td></tr></table></figure></p>
-<p>所以, 要想获取整个窗口内的数据, 调用<code>get()</code>方法. <code>getExpired()</code>用于获取刚过期的数据. <code>getNew</code>用于获取新到达的数据.</p>
-<p>但是, 针对<code>TumblingWindow</code>, 什么才是Expired, 什么才是New呢? <code>SlidingWindow</code>很好理解, New就是最新的Slide, Expire就是刚过期的Slide. 但是<code>TumblingWindow</code>是整个窗口啊, 又对应什么呢?<br>在<code>BaseWindowedBolt</code>中有这么一段代码:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * A time duration based tumbling window.</div><div class="line"> *</div><div class="line"> * <span class="doctag">@param</span> duration the time duration after which the window tumbles</div><div class="line"> */</div><div class="line"><span class="function"><span class="keyword">public</span> BaseWindowedBolt <span class="title">withTumblingWindow</span><span class="params">(Duration duration)</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> withWindowLength(duration).withSlidingInterval(duration);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><code>.withSlidingInterval(duration)</code>这里就看出来了, 其实<code>TumblingWindow</code>的Slide Interval 就是窗口长度自身. 也就是说, 在<code>TumblingWindow</code>中<code>getNew</code>以及<code>getExpired</code>是没什么意义的. 如果调用<code>getExpired</code>, 那么返回的将是上一个<code>TumblingWindow</code>的数据. 如果<code>getNew</code>, 那就是新来的窗口的数据.</p>
-
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/07/02/Storm TumblingWindow 解释/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-    </div>
-    
-      <div id="page-nav" class="pagination">
-	<span class="page-number current">1</span>
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://s3.amazonaws.com/ptsteadman-images/helloworld.jpg" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2014/02/23/2014-02-23-hello-world/">Welcome To Hexo</a></h3>
+	</div>                        
       </div>
     
+  
+    
+  
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/02/DRPC(Distributed Remote Procedure Call)分布式远程调用/">DRPC(Distributed Remote Procedure Call)分布式远程调用</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/02/Spout读取数据/">Spout读取数据</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/02/Lifecycle of a Storm Topology/">Lifecycle of a Storm Topology</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/02/Spout读取HDFS数据/">Spout读取HDFS数据</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/02/Storm TumblingWindow 解释/">Storm TumblingWindow 解释</a></h3>
+	</div>                        
+      </div>
+    
+  
+</div>
+<!-- END FEATURED POSTS -->                            
+
+</div>
+</div>
+
   </section>
-
 </div>
-
-</div>
-
-</section>
-</div>
-
 
     <!-- BEGIN PRE-FOOTER -->
     <div class="pre-footer">
