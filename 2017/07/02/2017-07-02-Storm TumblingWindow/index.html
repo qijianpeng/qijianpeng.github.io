@@ -7,25 +7,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>IEEE PDF eXpress 提示字体为嵌入的解决方法 | QI-Jianpeng</title>
+  <title>Storm TumblingWindow 解释 | QI-Jianpeng</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="description" content="昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：发现缺少了内嵌的几种字体。 回想起之前生成图片的过程，查阅了一些相关资料才明白，Matlab在生成图片的过程中是默认使用Helv">
-<meta name="keywords" content="productivity">
+  <meta name="description" content="TumblingWindow 的使用在数据流处理中不可避免的会涉及到Window的概念.Storm中提供了两种类型的Window, 分别为SlidingWindow与TumblingWindow.前者是窗口一个一个Slide的往前滑动, 而后者是一个一个Window的往前滑动.这里主要讲述TumblingWindow. 如下图:123| e1 e2 | e3 e4 e5 e6 | e7 e8 e9">
+<meta name="keywords" content="Storm,Java,Window">
 <meta property="og:type" content="article">
-<meta property="og:title" content="IEEE PDF eXpress 提示字体为嵌入的解决方法">
-<meta property="og:url" content="http://dataminer.me/2016/08/12/2016-08-12-IEEE PDF eXpress 提示字体问题的解决方法/index.html">
+<meta property="og:title" content="Storm TumblingWindow 解释">
+<meta property="og:url" content="http://dataminer.me/2017/07/02/2017-07-02-Storm TumblingWindow/index.html">
 <meta property="og:site_name" content="QI-Jianpeng">
-<meta property="og:description" content="昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：发现缺少了内嵌的几种字体。 回想起之前生成图片的过程，查阅了一些相关资料才明白，Matlab在生成图片的过程中是默认使用Helv">
-<meta property="og:image" content="http://dataminer.me/assets/pages/img/posts/ieee_pdf_express_error.png">
-<meta property="og:image" content="http://dataminer.me/assets/pages/img/posts/ieee_pdf_express_error_details.png">
-<meta property="og:updated_time" content="2017-05-02T10:27:07.000Z">
+<meta property="og:description" content="TumblingWindow 的使用在数据流处理中不可避免的会涉及到Window的概念.Storm中提供了两种类型的Window, 分别为SlidingWindow与TumblingWindow.前者是窗口一个一个Slide的往前滑动, 而后者是一个一个Window的往前滑动.这里主要讲述TumblingWindow. 如下图:123| e1 e2 | e3 e4 e5 e6 | e7 e8 e9">
+<meta property="og:updated_time" content="2017-07-02T01:58:08.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IEEE PDF eXpress 提示字体为嵌入的解决方法">
-<meta name="twitter:description" content="昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：发现缺少了内嵌的几种字体。 回想起之前生成图片的过程，查阅了一些相关资料才明白，Matlab在生成图片的过程中是默认使用Helv">
-<meta name="twitter:image" content="http://dataminer.me/assets/pages/img/posts/ieee_pdf_express_error.png">
+<meta name="twitter:title" content="Storm TumblingWindow 解释">
+<meta name="twitter:description" content="TumblingWindow 的使用在数据流处理中不可避免的会涉及到Window的概念.Storm中提供了两种类型的Window, 分别为SlidingWindow与TumblingWindow.前者是窗口一个一个Slide的往前滑动, 而后者是一个一个Window的往前滑动.这里主要讲述TumblingWindow. 如下图:123| e1 e2 | e3 e4 e5 e6 | e7 e8 e9">
   
     <link rel="alternative" href="/atom.xml" title="QI-Jianpeng" type="application/atom+xml">
   
@@ -151,13 +148,13 @@
   <section id="main">
     
     <h2 itemprop="name">
-      <a class="article-title" href="/2016/08/12/2016-08-12-IEEE PDF eXpress 提示字体问题的解决方法/">IEEE PDF eXpress 提示字体为嵌入的解决方法</a>
+      <a class="article-title" href="/2017/07/02/2017-07-02-Storm TumblingWindow/">Storm TumblingWindow 解释</a>
     </h2>
 
 
     <div class="row">
 <div class="col-md-9 col-sm-9 blog-posts">
-<article id="post-2016-08-12-IEEE PDF eXpress 提示字体问题的解决方法" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+<article id="post-2017-07-02-Storm TumblingWindow" class="article article-type-post blog-item" itemscope itemprop="blogPost">
   <div class="article-meta">
   </div>
   <div class="article-inner">
@@ -165,16 +162,20 @@
     
     <header class="article-header">
       <ul class="blog-info">
-	<li><i class="fa fa-user"></i> 齐建鹏</li>
+	<li><i class="fa fa-user"></i> QI-Jianpeng</li>
 	<li><i class="fa fa-calendar"></i>
-	  <time datetime="2016-08-12T00:13:36.000Z" itemprop="datePublished">2016/08/12</time>
+	  <time datetime="2017-07-01T16:00:00.000Z" itemprop="datePublished">2017/07/02</time>
 
 	</li>
   
   <li class="hidden-xs"><i class="fa fa-tags"></i> 
     
   
-    <a href="/tags/productivity/" title="productivity">productivity</a>
+    <a href="/tags/Storm/" title="Storm">Storm</a>,
+  
+    <a href="/tags/Java/" title="Java">Java</a>,
+  
+    <a href="/tags/Window/" title="Window">Window</a>
   
 
 
@@ -191,7 +192,7 @@
     Category: 
     
     Categories:
-    <a class="article-category-link" href="/categories/productivity/">productivity</a>
+    <a class="article-category-link" href="/categories/blog/">blog</a>
   </div>
   <br>
 
@@ -200,12 +201,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：<br><img src="/assets/pages/img/posts/ieee_pdf_express_error.png" alt="ieee pdf express font error" title="ieee pdf express font error"><br>看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：<br><img src="/assets/pages/img/posts/ieee_pdf_express_error_details.png" alt="ieee pdf express font error details" title="ieee pdf express font error details"><br>发现缺少了内嵌的几种字体。</p>
-<p>回想起之前生成图片的过程，查阅了一些相关资料才明白，Matlab在生成图片的过程中是默认使用Helvetica字体，而IEEE论文格式检测系统恰好不支持这种字体。<br>网上查看了好几种解决方法，大致有三种。</p>
-<p>有一种是使用命令行，这种方法在我们的论文生成的过程中得到的pdf文件竟然比以前的版本多出了几行，就是这几行导致页数超标了，换方法。</p>
-<p>第二种是借助Adobe Acrobat，将原先的pdf打印成另一个pdf文件，在打印的过程中对属性进行设置，将字体嵌入。我不知道他们是怎么成功的，但是在我的机器上这种方法是没有奏效的，难不成是因为没有购买该软件？</p>
-<p>第三种，也是在根源上解决的一种，最为有效的解决方法，就是<strong>使用文本编辑器，把存在问题的eps图片打开，然后全局替换，将<code>Heveltica</code>替换为<code>NimbusSanL-Regu</code>字体</strong>。有些人可能会困惑，<code>NimbusSanL-Regu</code>字体就会通过检测了吗？我们可以通过返回的错误细节pdf文件发现，<code>Nimbus</code>字体通过了检测，因此，用该类字体替换完全没有问题。不管哪种字体，针对相应的格式，只要出错，那就用<code>Nimbus</code>这一类的字体替换。<strong>注意：替换的时候要遵循最长匹配原则,**之间是替换后的字体 </strong>。那么针对图片中的不同样式的字体，下面给出具体的转换关系</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">Nimbus Sans L Regular Helvetica <span class="strong">**NimbusSanL-Regu**</span></div><div class="line">Nimbus Sans L Regular Italic Helvetica <span class="strong">**NimbusSanL-ReguItal**</span></div><div class="line">Nimbus Sans L Bold Helvetica <span class="strong">**NimbusSanL-Bold**</span></div><div class="line">Nimbus Sans L Bold Italic Helvetica <span class="strong">**NimbusSanL-BoldItal**</span></div><div class="line">Nimbus Sans L Regular Condensed Helvetica <span class="strong">**Narrow NimbusSanL-ReguCond**</span></div><div class="line">Nimbus Sans L Regular Condensed Italic Helvetica <span class="strong">**Narrow NimbusSanL-ReguCondItal**</span></div><div class="line">Nimbus Sans L Bold Condensed Helvetica <span class="strong">**Narrow NimbusSanL-BoldCond**</span></div><div class="line">Nimbus Sans L Bold Condensed Italic Helvetica <span class="strong">**Narrow NimbusSanL-  BoldCondItal**</span></div><div class="line">Nimbus Roman No9 L Regular Times <span class="strong">**NimbusRomNo9L-Regu**</span></div><div class="line">Nimbus Roman No9 L Regular Italic Times <span class="strong">**NimbusRomNo9L-ReguItal**</span></div><div class="line">Nimbus Roman No9 L Medium Times <span class="strong">**NimbusRomNo9L-Medi**</span></div><div class="line">Nimbus Roman No9 L Medium Italic Times <span class="strong">**NimbusRomNo9L-MediItal**</span></div></pre></td></tr></table></figure>
+        <h1 id="TumblingWindow-的使用"><a href="#TumblingWindow-的使用" class="headerlink" title="TumblingWindow 的使用"></a>TumblingWindow 的使用</h1><p>在数据流处理中不可避免的会涉及到<code>Window</code>的概念.<br>Storm中提供了两种类型的<code>Window</code>, 分别为<code>SlidingWindow</code>与<code>TumblingWindow</code>.<br>前者是窗口一个一个<code>Slide</code>的往前滑动, 而后者是一个一个<code>Window</code>的往前滑动.<br>这里主要讲述<code>TumblingWindow</code>. 如下图:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">| e1 e2 | e3 e4 e5 e6 | e7 e8 e9 |...</div><div class="line">0       5             10         15    -&gt; time</div><div class="line">   w1         w2            w3</div></pre></td></tr></table></figure></p>
+<p>在<code>TumblingWindow</code>中, <code>w1</code>滑动将会变为<code>w2</code>, 可以看出<code>w1</code>与<code>w2</code>之间是没有交叉重叠的. 并且这个例子中是每隔<code>5s</code>滑动一次.</p>
+<p>那么如何使用呢? Storm中默认的是使用以下方法对<code>TumblingWindow</code>进行定义.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">withTumblingWindow(BaseWindowedBolt.Count count)</div><div class="line">Count based tumbling window that tumbles after the specified count of tuples.</div><div class="line"></div><div class="line">withTumblingWindow(BaseWindowedBolt.Duration duration)</div><div class="line">Time duration based tumbling window that tumbles after the specified time duration.</div></pre></td></tr></table></figure></p>
+<p>我们可以看出有两种方式, 分别为<code>count-based</code>与<code>time-based</code>.<br>当我们使用<code>time-based</code>, Storm默认情况下所使用<code>timestamp</code>是<code>Bolt</code>处理当前<code>tuple</code>时所获得的<code>timestamp</code>.<br>在实际应用中可能会用自定义的<code>time</code>来使用<code>time-based</code>的窗口(比如使用历史数据进行测试, 历史数据中存在一个<code>timestamp</code>的字段). 这种情况下该如何做呢?</p>
+<h2 id="自定义timestamp的使用"><a href="#自定义timestamp的使用" class="headerlink" title="自定义timestamp的使用"></a>自定义<code>timestamp</code>的使用</h2><p>Storm提供了自定义<code>timestamp</code>的方法.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line">* Specify a field in the tuple that represents the timestamp as a long value. If</div><div class="line">* this field is not present in the incoming tuple, an</div><div class="line">*&#123;<span class="doctag">@link</span> IllegalArgumentException&#125; will be thrown.</div><div class="line">*</div><div class="line">* <span class="doctag">@param</span> fieldName the name of the field that contains the timestamp</div><div class="line">*/</div><div class="line"><span class="function"><span class="keyword">public</span> BaseWindowedBolt <span class="title">withTimestampField</span><span class="params">(String fieldName)</span></span></div></pre></td></tr></table></figure>
+<p>在流过来的<code>tuple</code>中会寻找<code>fieldName</code>这个字段. 由于是在<code>tuple</code>中查找, 所以这就追溯到上游发送数据流的节点.<br>在<code>emit tuple</code>时我们记得要实现<code>declareOutputFields</code>方法, 所以, 在这个地方我们要使用自定义的<code>timestamp</code>必须要在上游组件中的<code>declareOutputFields</code>方法里添加一个<code>&quot;timestamp&quot;</code>(或者其他有意义的名字)来指明这个字段, 然后在<code>withTimestampField(String fieldName)</code>传入<code>&quot;timestamp&quot;</code>.</p>
+<p>还需要注意的是, <code>&quot;timestamp&quot;</code>所指向的字段的类型必须是<code>long</code>型的.</p>
+<p>当<code>bolt</code>接收到数据后如何进行处理呢?</p>
+<h2 id="Bolt对接收到的窗口数据进行处理"><a href="#Bolt对接收到的窗口数据进行处理" class="headerlink" title="Bolt对接收到的窗口数据进行处理"></a><code>Bolt</code>对接收到的窗口数据进行处理</h2><p>在继承<code>BaseWindowedBolt</code>类后会<code>Override</code> <code>execute(TupleWindow inputWindow)</code>方法:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Override</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">execute</span><span class="params">(TupleWindow inputWindow)</span> </span>&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>在这个方法中要传入<code>TupleWindow</code>类型的参数. <code>TupleWindow</code>提供了三种方法用于对窗口数据进行操作:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">get();<span class="comment">//Gets the list of events in the window.</span></div><div class="line">getExpired();<span class="comment">//Get the list of events expired from the window since the last time the window was generated.</span></div><div class="line">getNew();<span class="comment">//Get the list of newly added events in the window since the last time the window was generated.</span></div></pre></td></tr></table></figure></p>
+<p>所以, 要想获取整个窗口内的数据, 调用<code>get()</code>方法. <code>getExpired()</code>用于获取刚过期的数据. <code>getNew</code>用于获取新到达的数据.</p>
+<p>但是, 针对<code>TumblingWindow</code>, 什么才是Expired, 什么才是New呢? <code>SlidingWindow</code>很好理解, New就是最新的Slide, Expire就是刚过期的Slide. 但是<code>TumblingWindow</code>是整个窗口啊, 又对应什么呢?<br>在<code>BaseWindowedBolt</code>中有这么一段代码:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * A time duration based tumbling window.</div><div class="line"> *</div><div class="line"> * <span class="doctag">@param</span> duration the time duration after which the window tumbles</div><div class="line"> */</div><div class="line"><span class="function"><span class="keyword">public</span> BaseWindowedBolt <span class="title">withTumblingWindow</span><span class="params">(Duration duration)</span> </span>&#123;</div><div class="line">    <span class="keyword">return</span> withWindowLength(duration).withSlidingInterval(duration);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><code>.withSlidingInterval(duration)</code>这里就看出来了, 其实<code>TumblingWindow</code>的Slide Interval 就是窗口长度自身. 也就是说, 在<code>TumblingWindow</code>中<code>getNew</code>以及<code>getExpired</code>是没什么意义的. 如果调用<code>getExpired</code>, 那么返回的将是上一个<code>TumblingWindow</code>的数据. 如果<code>getNew</code>, 那就是新来的窗口的数据.</p>
+
       
     </div>
 
@@ -214,19 +224,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/16/2016-08-16-利用PRTree形成正方形区域粗略提取内切圆的数据/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          利用PRTree形成正方形区域粗略提取内切圆的数据
-        
-      </div>
-    </a>
   
-  
-    <a href="/2014/02/23/2014-02-23-hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/09/08/2016-09-08-Outlier Introduce/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Welcome To Hexo</div>
+      <div class="article-nav-title">Outlier Introduction</div>
     </a>
   
 </nav>
