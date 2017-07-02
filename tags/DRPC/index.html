@@ -177,9 +177,7 @@
   
     <a href="/tags/Java/" title="Java">Java</a>,
   
-    <a href="/tags/DRPC/" title="DRPC">DRPC</a>,
-  
-    <a href="/tags/object-Object/" title="[object Object]">[object Object]</a>
+    <a href="/tags/DRPC/" title="DRPC">DRPC</a>
   
 
 
@@ -187,25 +185,7 @@
     </ul>
     <div class="blog-item">
       
-	<h1 id="DRPC-Distributed-Remote-Procedure-Call-分布式远程调用"><a href="#DRPC-Distributed-Remote-Procedure-Call-分布式远程调用" class="headerlink" title="DRPC(Distributed Remote Procedure Call)分布式远程调用"></a>DRPC(Distributed Remote Procedure Call)分布式远程调用</h1><p><img src="./figures/drpc-workflow.png" alt="DRPC Workflow"></p>
-<p>A client sends the DRPC server the name of the <strong>function</strong> to execute and the <strong>arguments</strong> to that function. The topology implementing that function uses a <code>DRPCSpout</code> to receive a function invocation stream from the DRPC server. <strong>Each function invocation is tagged with a unique id  </strong>by the DRPC server. The topology then computes the result and at the end of the topology a bolt called <code>ReturnResults</code> connects to the DRPC server and gives it the result for the function invocation id. The DRPC server then uses the id to match up that result with which client is waiting, unblocks the waiting client, and sends it the result.</p>
-<h2 id="DRPC-topologies-type"><a href="#DRPC-topologies-type" class="headerlink" title="DRPC topologies type"></a>DRPC topologies type</h2><ul>
-<li>Linear DRPC topologies:<br><code>LinearDRPCTopologyBuilder</code> at <a href="https://github.com/apache/storm/tree/v1.1.0/storm-core/src/jvm/org/apache/storm/drpc" target="_blank" rel="external">org.apache.storm.drpc</a></li>
-<li>Non-linear DRPC topologies:<br><code>CoordinatedBolt</code> at <a href="https://github.com/apache/storm/tree/v1.1.0/storm-core/src/jvm/org/apache/storm/coordination" target="_blank" rel="external">org.apache.storm.coordination</a></li>
-</ul>
-<h2 id="DRPC-usage"><a href="#DRPC-usage" class="headerlink" title="DRPC usage"></a>DRPC usage</h2><ol>
-<li><p>Launching a DRPC server can be done with the storm script and is just like launching Nimbus or the UI:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bin/storm drpc</div></pre></td></tr></table></figure>
-</li>
-<li><p>Configuring this through the <code>storm.yaml</code>:</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="string">drpc.servers:</span></div><div class="line"><span class="bullet">  -</span> <span class="string">"drpc1.foo.com"</span></div><div class="line"><span class="bullet">  -</span> <span class="string">"drpc2.foo.com"</span></div></pre></td></tr></table></figure>
-</li>
-<li><p>Launching DRPC topologies using StormSubmitter:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">StormSubmitter.submitTopology(<span class="string">"exclamation-drpc"</span>, conf,</div><div class="line">                                builder.createRemoteTopology());</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>See more in <a href="http://storm.apache.org/releases/1.1.0/Distributed-RPC.html" target="_blank" rel="external">Apache Storm DRPC</a></p>
-
+	介绍DRPC(Distributed Remote Procedure Call)分布式远程调用
       
     </div>
     <br>
