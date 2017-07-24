@@ -7,17 +7,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2014/2 | QI-Jianpeng</title>
+  <title>count-based window wit time sliding interval | QI-Jianpeng</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="QI-Jianpeng">
-<meta property="og:url" content="http://dataminer.me/archives/2014/02/index.html">
+  <meta name="description" content="Window, Lag, WaterMark http://storm.apache.org/releases/1.1.0/Windowing.html 12withWindow(Count count, Duration timeInterval)Tuple count based sliding window that slides after `slidingInterval` time d">
+<meta name="keywords" content="Storm,Java,Window">
+<meta property="og:type" content="article">
+<meta property="og:title" content="count-based window wit time sliding interval">
+<meta property="og:url" content="http://dataminer.me/2017/07/24/count-based window wit time sliding interval/index.html">
 <meta property="og:site_name" content="QI-Jianpeng">
+<meta property="og:description" content="Window, Lag, WaterMark http://storm.apache.org/releases/1.1.0/Windowing.html 12withWindow(Count count, Duration timeInterval)Tuple count based sliding window that slides after `slidingInterval` time d">
+<meta property="og:updated_time" content="2017-07-24T02:10:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QI-Jianpeng">
+<meta name="twitter:title" content="count-based window wit time sliding interval">
+<meta name="twitter:description" content="Window, Lag, WaterMark http://storm.apache.org/releases/1.1.0/Windowing.html 12withWindow(Count count, Duration timeInterval)Tuple count based sliding window that slides after `slidingInterval` time d">
   
     <link rel="alternative" href="/atom.xml" title="QI-Jianpeng" type="application/atom+xml">
   
@@ -137,74 +142,101 @@
   <div class="container">
   <ul class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li class="active">Blog</li>
+    <li><a href="/archives/">Blog</a></li>
+    <li class="active">Post</li>
   </ul>
-<div id="main">
-  <h1>Blog</h1>
-  <div class="row">
-
-<div class="col-md-9 col-sm-9 blog-posts">
-
-
-  <section class="archives-wrap">
-    <div class="archives">
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-      <img src="https://s3.amazonaws.com/ptsteadman-images/helloworld.jpg" class="img-responsive">
-    
-  </div>
-  
-    <div class="col-md-8 col-sm-8">
-  
+  <section id="main">
     
     <h2 itemprop="name">
-      <a class="archive-article-title" href="/2014/02/23/2014-02-23-hello-world/">Welcome To Hexo</a>
+      <a class="article-title" href="/2017/07/24/count-based window wit time sliding interval/">count-based window wit time sliding interval</a>
     </h2>
 
 
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2014-02-22T16:00:00.000Z" itemprop="datePublished">2014/02/23</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Welcome/" title="Welcome">Welcome</a>,
-  
-    <a href="/tags/How-To/" title="How-To">How-To</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on github.
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2014/02/23/2014-02-23-hello-world/" class="more">Read more <i class="icon-angle-right"></i></a>
+    <div class="row">
+<div class="col-md-9 col-sm-9 blog-posts">
+<article id="post-count-based window wit time sliding interval" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+  <div class="article-meta">
   </div>
-</div>
-<hr class="blog-post-sep">
+  <div class="article-inner">
+    
+    
+    <header class="article-header">
+      <ul class="blog-info">
+	<li><i class="fa fa-user"></i> QI-Jianpeng</li>
+	<li><i class="fa fa-calendar"></i>
+	  <time datetime="2017-07-23T16:00:00.000Z" itemprop="datePublished">2017/07/24</time>
+
+	</li>
+  
+  <li class="hidden-xs"><i class="fa fa-tags"></i> 
+    
+  
+    <a href="/tags/Storm/" title="Storm">Storm</a>,
+  
+    <a href="/tags/Java/" title="Java">Java</a>,
+  
+    <a href="/tags/Window/" title="Window">Window</a>
+  
+
+
+  </li>
+
+  <li class="hidden-xs">
+          <div  class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="fa fa-qq" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="fa fa-linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="fa fa-print" data-cmd="print" title="分享到打印"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"3","bdSize":"12"},"share":{},"image":{"viewList":["tsina","qzone","linkedin","print"],"viewText":"分享到：","viewSize":"12"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","qzone","linkedin","print"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+  </li>
+      </ul>
+      
+  <div class="article-category">
+    
+    Category: 
+    
+    Categories:
+    <a class="article-category-link" href="/categories/blog/">blog</a>
+  </div>
+  <br>
+
+
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Window, Lag, WaterMark</p>
+<p><a href="http://storm.apache.org/releases/1.1.0/Windowing.html" target="_blank" rel="external">http://storm.apache.org/releases/1.1.0/Windowing.html</a></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">withWindow(Count count, Duration timeInterval)</div><div class="line">Tuple count based sliding window that slides after `slidingInterval` time duration.</div></pre></td></tr></table></figure>
+<p>这种方法count-based的窗口, 将窗口长度设置为count大小, 根据给定的时间戳, 每当划过timeInterval时间的时候, 对窗口中不是当前时间戳下的数据过期一部分, 为什么是一部分? 因为这是count-based, 要保证窗口内有count个tuple.</p>
+<p>比如有<code>e1(t1), e2(t1), e3(t2), e4(t2), e5(t3)</code>, 将count设置为3, timeInterval=1. 根据到达的数据:<br>窗口中的数据变化可能如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">W1: e1, e2, e3</div><div class="line">W2(W1+1): e2, e3, e4</div><div class="line">W3(W2+1): e3, e4, e5</div></pre></td></tr></table></figure>
+<p>比如有种需求是每个时间戳下会有3个确定的tuple产生, 可能会考虑使用这种窗口, 你可能将count设置为3, 将timeInterval设置为1, 但单纯使用这种窗口是不能保障每个时间戳下的3个tuple被确切的接收到的. 因为有个能窗口内的3个tuple是由两个不同的时间戳下的数据组成的.</p>
+<p>你可能会想到使用Lag方法来设置延迟, 然而这也没有用, 这是针对窗口数据的错乱程度. 根据他们的解释, lag代表的是窗口中接收到最新时间戳t的tuple后, 晚于<code>t - lag</code>的都会被当做迟到的数据, 默认不进行处理. 所以lag从某种程度上代表的是跟最近时间戳有关的指标.</p>
+<p>你还可能说采用WaterMark怎么样, <code>watermark = t - lag</code>. watermark相当于告诉系统现在时间是t了了, 要处理我给你定的时间(也就是watermark)之前的数据了, 我之后(watermark+)的暂时先不要考虑处理.</p>
+<p>两者结合呢? 如果说我lag设置为0(不接受任何混乱的数据), watermark时间间隔设置为1呢? 这代表了什么呢? 代表了当前窗口内当有最新时间t的数据到来时, 我不在接收<code>t - lag</code>之前的数据, 也不处理t之后的数据. 但是对于固定的tuple数量来说, 这里还是不能保证.</p>
+<p>因此, Storm提供的Window相关的方法, 在这一方面是没有保证的, 需要我们自己实现相应的方法.<br>比如采用缓存机制, 对到达的数据暂存, 当该时间戳下的数据满足给定的数量后, 在进行后续的处理.</p>
 
       
     </div>
+
+  </div>
+  
     
-      <div id="page-nav" class="pagination">
-	<span class="page-number current">1</span>
-      </div>
-    
-  </section>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/07/02/Storm TumblingWindow 解释/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Storm TumblingWindow 解释</div>
+    </a>
+  
+</nav>
+
+  
+  <br>
+</article>
+
+
+
 
 </div>
-
 <div class="col-md-3 col-sm-3 blog-sidebar">
   <!-- CATEGORIES START -->
 <h2 class="no-top-space">Categories</h2>
@@ -330,10 +362,9 @@
 <!-- END FEATURED POSTS -->                            
 
 </div>
-
 </div>
 
-</div>
+  </section>
 </div>
 
     <!-- BEGIN PRE-FOOTER -->
