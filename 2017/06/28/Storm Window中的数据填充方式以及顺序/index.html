@@ -7,25 +7,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>IEEE PDF eXpress 提示字体为嵌入的解决方法 | QI-Jianpeng</title>
+  <title>Storm Window中的数据填充方式以及顺序 | QI-Jianpeng</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="description" content="昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：发现缺少了内嵌的几种字体。 回想起之前生成图片的过程，查阅了一些相关资料才明白，Matlab在生成图片的过程中是默认使用Helv">
-<meta name="keywords" content="productivity">
+  <meta name="description" content="Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的. 而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据. Tupl">
+<meta name="keywords" content="Storm,Window">
 <meta property="og:type" content="article">
-<meta property="og:title" content="IEEE PDF eXpress 提示字体为嵌入的解决方法">
-<meta property="og:url" content="http://dataminer.me/2016/08/12/2016-08-12-IEEE PDF eXpress 提示字体问题的解决方法/index.html">
+<meta property="og:title" content="Storm Window中的数据填充方式以及顺序">
+<meta property="og:url" content="http://dataminer.me/2017/06/28/Storm Window中的数据填充方式以及顺序/index.html">
 <meta property="og:site_name" content="QI-Jianpeng">
-<meta property="og:description" content="昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：发现缺少了内嵌的几种字体。 回想起之前生成图片的过程，查阅了一些相关资料才明白，Matlab在生成图片的过程中是默认使用Helv">
-<meta property="og:image" content="http://dataminer.me/assets/pages/img/posts/ieee_pdf_express_error.png">
-<meta property="og:image" content="http://dataminer.me/assets/pages/img/posts/ieee_pdf_express_error_details.png">
-<meta property="og:updated_time" content="2017-07-02T02:25:48.000Z">
+<meta property="og:description" content="Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的. 而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据. Tupl">
+<meta property="og:updated_time" content="2017-07-28T07:56:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IEEE PDF eXpress 提示字体为嵌入的解决方法">
-<meta name="twitter:description" content="昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：发现缺少了内嵌的几种字体。 回想起之前生成图片的过程，查阅了一些相关资料才明白，Matlab在生成图片的过程中是默认使用Helv">
-<meta name="twitter:image" content="http://dataminer.me/assets/pages/img/posts/ieee_pdf_express_error.png">
+<meta name="twitter:title" content="Storm Window中的数据填充方式以及顺序">
+<meta name="twitter:description" content="Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的. 而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据. Tupl">
   
     <link rel="alternative" href="/atom.xml" title="QI-Jianpeng" type="application/atom+xml">
   
@@ -151,13 +148,13 @@
   <section id="main">
     
     <h2 itemprop="name">
-      <a class="article-title" href="/2016/08/12/2016-08-12-IEEE PDF eXpress 提示字体问题的解决方法/">IEEE PDF eXpress 提示字体为嵌入的解决方法</a>
+      <a class="article-title" href="/2017/06/28/Storm Window中的数据填充方式以及顺序/">Storm Window中的数据填充方式以及顺序</a>
     </h2>
 
 
     <div class="row">
 <div class="col-md-9 col-sm-9 blog-posts">
-<article id="post-2016-08-12-IEEE PDF eXpress 提示字体问题的解决方法" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+<article id="post-Storm Window中的数据填充方式以及顺序" class="article article-type-post blog-item" itemscope itemprop="blogPost">
   <div class="article-meta">
   </div>
   <div class="article-inner">
@@ -165,16 +162,18 @@
     
     <header class="article-header">
       <ul class="blog-info">
-	<li><i class="fa fa-user"></i> DataMiner</li>
+	<li><i class="fa fa-user"></i> QI-Jianpeng</li>
 	<li><i class="fa fa-calendar"></i>
-	  <time datetime="2016-08-12T00:13:36.000Z" itemprop="datePublished">2016/08/12</time>
+	  <time datetime="2017-06-27T16:00:00.000Z" itemprop="datePublished">2017/06/28</time>
 
 	</li>
   
   <li class="hidden-xs"><i class="fa fa-tags"></i> 
     
   
-    <a href="/tags/productivity/" title="productivity">productivity</a>
+    <a href="/tags/Storm/" title="Storm">Storm</a>,
+  
+    <a href="/tags/Window/" title="Window">Window</a>
   
 
 
@@ -191,7 +190,7 @@
     Category: 
     
     Categories:
-    <a class="article-category-link" href="/categories/productivity/">productivity</a>
+    <a class="article-category-link" href="/categories/blog/">blog</a>
   </div>
   <br>
 
@@ -200,12 +199,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>昨天在IEEE PDF eXpress上验证使用LaTeX生成的pdf文档，结果反回了一下错误：<br><img src="/assets/pages/img/posts/ieee_pdf_express_error.png" alt="ieee pdf express font error" title="ieee pdf express font error"><br>看了看提示的页面，发现pdf内容的错误可行性不大，应该是论文中存在的eps图片的问题。eps图片是一种矢量图，因此在存储的时候存储的是一些脚本语言。针对返回文档提出的具体错误：<br><img src="/assets/pages/img/posts/ieee_pdf_express_error_details.png" alt="ieee pdf express font error details" title="ieee pdf express font error details"><br>发现缺少了内嵌的几种字体。</p>
-<p>回想起之前生成图片的过程，查阅了一些相关资料才明白，Matlab在生成图片的过程中是默认使用Helvetica字体，而IEEE论文格式检测系统恰好不支持这种字体。<br>网上查看了好几种解决方法，大致有三种。</p>
-<p>有一种是使用命令行，这种方法在我们的论文生成的过程中得到的pdf文件竟然比以前的版本多出了几行，就是这几行导致页数超标了，换方法。</p>
-<p>第二种是借助Adobe Acrobat，将原先的pdf打印成另一个pdf文件，在打印的过程中对属性进行设置，将字体嵌入。我不知道他们是怎么成功的，但是在我的机器上这种方法是没有奏效的，难不成是因为没有购买该软件？</p>
-<p>第三种，也是在根源上解决的一种，最为有效的解决方法，就是<strong>使用文本编辑器，把存在问题的eps图片打开，然后全局替换，将<code>Heveltica</code>替换为<code>NimbusSanL-Regu</code>字体</strong>。有些人可能会困惑，<code>NimbusSanL-Regu</code>字体就会通过检测了吗？我们可以通过返回的错误细节pdf文件发现，<code>Nimbus</code>字体通过了检测，因此，用该类字体替换完全没有问题。不管哪种字体，针对相应的格式，只要出错，那就用<code>Nimbus</code>这一类的字体替换。<strong>注意：替换的时候要遵循最长匹配原则,**之间是替换后的字体 </strong>。那么针对图片中的不同样式的字体，下面给出具体的转换关系</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">Nimbus Sans L Regular Helvetica <span class="strong">**NimbusSanL-Regu**</span></div><div class="line">Nimbus Sans L Regular Italic Helvetica <span class="strong">**NimbusSanL-ReguItal**</span></div><div class="line">Nimbus Sans L Bold Helvetica <span class="strong">**NimbusSanL-Bold**</span></div><div class="line">Nimbus Sans L Bold Italic Helvetica <span class="strong">**NimbusSanL-BoldItal**</span></div><div class="line">Nimbus Sans L Regular Condensed Helvetica <span class="strong">**Narrow NimbusSanL-ReguCond**</span></div><div class="line">Nimbus Sans L Regular Condensed Italic Helvetica <span class="strong">**Narrow NimbusSanL-ReguCondItal**</span></div><div class="line">Nimbus Sans L Bold Condensed Helvetica <span class="strong">**Narrow NimbusSanL-BoldCond**</span></div><div class="line">Nimbus Sans L Bold Condensed Italic Helvetica <span class="strong">**Narrow NimbusSanL-  BoldCondItal**</span></div><div class="line">Nimbus Roman No9 L Regular Times <span class="strong">**NimbusRomNo9L-Regu**</span></div><div class="line">Nimbus Roman No9 L Regular Italic Times <span class="strong">**NimbusRomNo9L-ReguItal**</span></div><div class="line">Nimbus Roman No9 L Medium Times <span class="strong">**NimbusRomNo9L-Medi**</span></div><div class="line">Nimbus Roman No9 L Medium Italic Times <span class="strong">**NimbusRomNo9L-MediItal**</span></div></pre></td></tr></table></figure>
+        <p>Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的.</p>
+<p>而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据.</p>
+<p>TupleWindow中会提供三种方法, 分别为<code>get()</code>, <code>getNew()</code>, <code>getExpired()</code>. <code>get()</code>方法用来获取当前的一个窗口内的所有数据, 这个窗口里的数据排列方式是按照接收到event的顺序进行排序的, 因此对于一个tuple属于哪一个Slide, 这是需要额外的计算的(比如通过<code>time/slideInterval</code>计算).<br>而对于<code>getNew()</code>与<code>getExpired()</code>方法来说, 这是严格的按照接收到的指定的时间戳顺序来计算的.</p>
+<h2 id="在tuplewindow中的数据可能是乱序的"><a href="#在tuplewindow中的数据可能是乱序的" class="headerlink" title="在tuplewindow中的数据可能是乱序的"></a>在tuplewindow中的数据可能是乱序的</h2><p>这里有一个例子, 比如设置<code>windowLength = 6</code>,  <code>interval = 2</code>, <code>lag = 6</code>; 我在<code>spout</code>中除了发送流水时间的tuple外, 还同时发送在这个tuple的时间戳基础上<code>+3</code>的tuple,  可能就会得到以下数据, 其中[a, b, c] 中a代表生成的随机整数, b代表时间戳(由msgId而来), c代表msgId同时也代表真实的时间戳信息, 下面这个例子演示了TupleWindow填充数据, 以及过期数据的过程:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">news tuple: [265, 1, 1]</div><div class="line">tuple in window[265, 1, 1]</div><div class="line"></div><div class="line">news tuple: [7, 4, 2]</div><div class="line">news tuple: [298, 3, 3]</div><div class="line">tuple in window[265, 1, 1]</div><div class="line">tuple in window[7, 4, 2] # 注意这里人造时间戳是4, 真实的时间戳是2</div><div class="line">tuple in window[298, 3, 3]</div><div class="line"></div><div class="line">news tuple: [952, 6, 4]</div><div class="line">news tuple: [862, 5, 5]</div><div class="line">tuple in window[265, 1, 1]</div><div class="line">tuple in window[7, 4, 2] # 在这个地方, 它的顺序仍然没有发生变化.</div><div class="line">tuple in window[298, 3, 3]</div><div class="line">tuple in window[952, 6, 4]</div><div class="line">tuple in window[862, 5, 5]</div><div class="line"></div><div class="line">news tuple: [334, 8, 6]</div><div class="line">news tuple: [160, 7, 7]</div><div class="line">tuple in window[7, 4, 2]</div><div class="line">tuple in window[298, 3, 3]</div><div class="line">tuple in window[952, 6, 4]</div><div class="line">tuple in window[862, 5, 5]</div><div class="line">tuple in window[334, 8, 6]</div><div class="line">tuple in window[160, 7, 7]</div><div class="line">expired tuple: [265, 1, 1]</div></pre></td></tr></table></figure>
+<p>这个例子可以说明, 当Spout数量不唯一时, 由于网络环境的不一致, 可能就会造成接受tuple乱序.  同时在tuplewindow里的数据顺序没有发生变化, 这说明存储数据的其实是一个普通的静态结构, 也就是说, 插入数据时它不会引起按照时间戳的顺序进行排序这一操作. (顺便提一下, 这个地方Storm是否可以进行一下改善? 既然我指定了时间戳信息, 那么到达数据的的排序应该是按照设定的时间顺序进行排序, 而不是按照接收到数据的添加时间进行排序.)<br>这是需要注意的地方.</p>
+<p>当然, 对于TumblingWindow来说, 它是不单单是滚动窗口, 还是汇总窗口 <code>getNew()</code>与<code>getExpired()</code>是无效的.</p>
 
       
     </div>
@@ -215,19 +215,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2016/08/16/2016-08-16-利用PRTree形成正方形区域粗略提取内切圆的数据/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/07/02/DRPC(Distributed Remote Procedure Call)分布式远程调用/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          利用PRTree形成正方形区域粗略提取内切圆的数据
+          DRPC(Distributed Remote Procedure Call)分布式远程调用
         
       </div>
     </a>
   
   
-    <a href="/2014/02/23/2014-02-23-hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/09/08/2016-09-08-Outlier Introduce/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Welcome To Hexo</div>
+      <div class="article-nav-title">Outlier Introduction</div>
     </a>
   
 </nav>
