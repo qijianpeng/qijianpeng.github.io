@@ -19,7 +19,7 @@
 <meta property="og:url" content="http://dataminer.me/2017/07/28/Storm Window中的数据填充方式以及顺序/index.html">
 <meta property="og:site_name" content="QI-Jianpeng">
 <meta property="og:description" content="Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的. 而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据. Tupl">
-<meta property="og:updated_time" content="2017-07-28T08:18:26.000Z">
+<meta property="og:updated_time" content="2017-07-28T09:34:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Storm Window中的数据填充方式以及顺序">
 <meta name="twitter:description" content="Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的. 而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据. Tupl">
@@ -201,10 +201,11 @@
       
         <p>Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的.</p>
 <p>而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据.</p>
-<p>TupleWindow中会提供三种方法, 分别为<code>get()</code>, <code>getNew()</code>, <code>getExpired()</code>. <code>get()</code>方法用来获取当前的一个窗口内的所有数据, 这个窗口里的数据排列方式是按照接收到event的顺序进行排序的, 因此对于一个tuple属于哪一个Slide, 这是需要额外的计算的(比如通过<code>time/slideInterval</code>计算).<br>而对于<code>getNew()</code>与<code>getExpired()</code>方法来说, 这是严格的按照接收到的指定的时间戳顺序来计算的.</p>
-<h2 id="在tuplewindow中的数据可能是乱序的"><a href="#在tuplewindow中的数据可能是乱序的" class="headerlink" title="在tuplewindow中的数据可能是乱序的"></a>在tuplewindow中的数据可能是乱序的</h2><p>这里有一个例子, 比如设置<code>windowLength = 6</code>,  <code>interval = 2</code>, <code>lag = 6</code>; 我在<code>spout</code>中除了发送流水时间的tuple外, 还同时发送在这个tuple的时间戳基础上<code>+3</code>的tuple,  可能就会得到以下数据, 其中[a, b, c] 中a代表生成的随机整数, b代表时间戳(由msgId而来), c代表msgId同时也代表真实的时间戳信息, 下面这个例子演示了TupleWindow填充数据, 以及过期数据的过程:</p>
+<p>TupleWindow中会提供三种方法, 分别为<code>get()</code>, <code>getNew()</code>, <code>getExpired()</code>. <code>get()</code>方法用来获取当前的一个窗口内的所有数据, 这个窗口里的数据排列方式是按照接收到event的顺序进行排序的, 因此对于一个tuple属于哪一个Slide, 这是需要额外的计算的(比如通过<code>time/slideInterval</code>计算).<br>而对于<code>getNew()</code>与<code>getExpired()</code>方法来说, 这是严格的按照接收到的时间戳顺序来计算的.</p>
+<h1 id="在tuplewindow中的数据可能是乱序的"><a href="#在tuplewindow中的数据可能是乱序的" class="headerlink" title="在tuplewindow中的数据可能是乱序的"></a>在tuplewindow中的数据可能是乱序的</h1><p>这里有一个例子, 比如设置<code>windowLength = 6</code>,  <code>interval = 2</code>, <code>lag = 6</code>; 我在<code>spout</code>中除了发送流水时间的tuple外, 还同时发送在这个tuple的时间戳基础上<code>+3</code>的tuple,  可能就会得到以下数据, 其中[a, b, c] 中a代表生成的随机整数, b代表时间戳(由msgId而来), c代表msgId同时也代表真实的时间戳信息, 下面这个例子演示了TupleWindow填充数据, 以及过期数据的过程:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">news tuple: [265, 1, 1]</div><div class="line">tuple in window[265, 1, 1]</div><div class="line"></div><div class="line">news tuple: [7, 4, 2]</div><div class="line">news tuple: [298, 3, 3]</div><div class="line">tuple in window[265, 1, 1]</div><div class="line">tuple in window[7, 4, 2] # 注意这里人造时间戳是4, 真实的时间戳是2</div><div class="line">tuple in window[298, 3, 3]</div><div class="line"></div><div class="line">news tuple: [952, 6, 4]</div><div class="line">news tuple: [862, 5, 5]</div><div class="line">tuple in window[265, 1, 1]</div><div class="line">tuple in window[7, 4, 2] # 在这个地方, 它的顺序仍然没有发生变化.</div><div class="line">tuple in window[298, 3, 3]</div><div class="line">tuple in window[952, 6, 4]</div><div class="line">tuple in window[862, 5, 5]</div><div class="line"></div><div class="line">news tuple: [334, 8, 6]</div><div class="line">news tuple: [160, 7, 7]</div><div class="line">tuple in window[7, 4, 2]</div><div class="line">tuple in window[298, 3, 3]</div><div class="line">tuple in window[952, 6, 4]</div><div class="line">tuple in window[862, 5, 5]</div><div class="line">tuple in window[334, 8, 6]</div><div class="line">tuple in window[160, 7, 7]</div><div class="line">expired tuple: [265, 1, 1]</div></pre></td></tr></table></figure>
-<p>这个例子可以说明, 当Spout数量不唯一时, 由于网络环境的不一致, 可能就会造成接受tuple乱序.  同时在tuplewindow里的数据顺序没有发生变化, 这说明存储数据的其实是一个普通的静态结构, 也就是说, 插入数据时它不会引起按照时间戳的顺序进行排序这一操作. (顺便提一下, 这个地方Storm是否可以进行一下改善? 既然我指定了时间戳信息, 那么到达数据的的排序应该是按照设定的时间顺序进行排序, 而不是按照接收到数据的添加时间进行排序.)<br>这是需要注意的地方.</p>
+<p>这个例子可以说明, 当Spout数量不唯一时, 由于网络环境的不一致, 可能就会造成接受tuple乱序.  同时在tuplewindow里的数据顺序没有发生变化, 这说明存储数据的其实是一个普通的静态结构, 也就是说, 插入数据时它不会引起按照时间戳的顺序进行排序这一操作.  事实上,Storm使用的是<code>ConcurrentLinkedQueue</code> 来存储的. 而对于<code>getExpired()</code>这种方法, Storm采取的方式是通过扫描这个window queue来获取过期的数据. 所以不管你窗口内的数据乱不乱序, 反正我过滤一下, 都会把你过期的数据提取出来. 这是需要注意的地方.<br>(顺便提一下, 这个地方Storm是否可以进行一下改善? 既然我指定了时间戳信息, 那么到达数据的的排序应该是按照设定的时间顺序进行排序, 而不是按照接收到数据的添加时间进行排序.)</p>
+<p>这个追溯源码的话也可以看一下WindowManager这个类, 在apache.storm.windowing包下.</p>
 <p>当然, 对于TumblingWindow来说, 它是不单单是滚动窗口, 还是汇总窗口 <code>getNew()</code>与<code>getExpired()</code>是无效的.</p>
 
       
@@ -244,11 +245,11 @@
 	</li>
       
 	<li>
-	  <a href="/categories/productivity/">productivity (1)</a>
+	  <a href="/categories/blog/">blog (9)</a>
 	</li>
       
 	<li>
-	  <a href="/categories/blog/">blog (9)</a>
+	  <a href="/categories/productivity/">productivity (1)</a>
 	</li>
       
     </ul>
@@ -294,25 +295,14 @@
     
   
     
+  
+    
       <div class="row margin-bottom-10">
 	<div class="col-md-4">
 	  <img src="/" class="img-responsive ">
 	</div>
 	<div class="col-md-8">
 	  <h3><a href="http://dataminer.me/2017/07/02/DRPC(Distributed Remote Procedure Call)分布式远程调用/">DRPC(Distributed Remote Procedure Call)分布式远程调用</a></h3>
-	</div>                        
-      </div>
-    
-  
-    
-  
-    
-      <div class="row margin-bottom-10">
-	<div class="col-md-4">
-	  <img src="/" class="img-responsive ">
-	</div>
-	<div class="col-md-8">
-	  <h3><a href="http://dataminer.me/2017/07/02/Lifecycle of a Storm Topology/">Lifecycle of a Storm Topology</a></h3>
 	</div>                        
       </div>
     
@@ -334,7 +324,7 @@
 	  <img src="/" class="img-responsive ">
 	</div>
 	<div class="col-md-8">
-	  <h3><a href="http://dataminer.me/2017/07/02/Spout读取数据/">Spout读取数据</a></h3>
+	  <h3><a href="http://dataminer.me/2017/07/02/Lifecycle of a Storm Topology/">Lifecycle of a Storm Topology</a></h3>
 	</div>                        
       </div>
     
@@ -347,7 +337,7 @@
 	  <img src="/" class="img-responsive ">
 	</div>
 	<div class="col-md-8">
-	  <h3><a href="http://dataminer.me/2017/07/24/count-based window wit time sliding interval/">count-based window wit time sliding interval</a></h3>
+	  <h3><a href="http://dataminer.me/2017/07/02/Spout读取数据/">Spout读取数据</a></h3>
 	</div>                        
       </div>
     
@@ -359,6 +349,17 @@
 	</div>
 	<div class="col-md-8">
 	  <h3><a href="http://dataminer.me/2017/07/28/Storm Window中的数据填充方式以及顺序/">Storm Window中的数据填充方式以及顺序</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/24/count-based window wit time sliding interval/">count-based window wit time sliding interval</a></h3>
 	</div>                        
       </div>
     
