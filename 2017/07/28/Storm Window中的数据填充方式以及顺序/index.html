@@ -19,7 +19,7 @@
 <meta property="og:url" content="http://dataminer.me/2017/07/28/Storm Window中的数据填充方式以及顺序/index.html">
 <meta property="og:site_name" content="QI-Jianpeng">
 <meta property="og:description" content="Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的. 而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据. Tupl">
-<meta property="og:updated_time" content="2017-07-28T09:34:35.000Z">
+<meta property="og:updated_time" content="2017-07-29T01:37:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Storm Window中的数据填充方式以及顺序">
 <meta name="twitter:description" content="Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的. 而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据. Tupl">
@@ -207,6 +207,11 @@
 <p>这个例子可以说明, 当Spout数量不唯一时, 由于网络环境的不一致, 可能就会造成接受tuple乱序.  同时在tuplewindow里的数据顺序没有发生变化, 这说明存储数据的其实是一个普通的静态结构, 也就是说, 插入数据时它不会引起按照时间戳的顺序进行排序这一操作.  事实上,Storm使用的是<code>ConcurrentLinkedQueue</code> 来存储的. 而对于<code>getExpired()</code>这种方法, Storm采取的方式是通过扫描这个window queue来获取过期的数据. 所以不管你窗口内的数据乱不乱序, 反正我过滤一下, 都会把你过期的数据提取出来. 这是需要注意的地方.<br>(顺便提一下, 这个地方Storm是否可以进行一下改善? 既然我指定了时间戳信息, 那么到达数据的的排序应该是按照设定的时间顺序进行排序, 而不是按照接收到数据的添加时间进行排序.)</p>
 <p>这个追溯源码的话也可以看一下WindowManager这个类, 在apache.storm.windowing包下.</p>
 <p>当然, 对于TumblingWindow来说, 它是不单单是滚动窗口, 还是汇总窗口 <code>getNew()</code>与<code>getExpired()</code>是无效的.</p>
+<p>这里补充一点关于Guarantees的描述:</p>
+<blockquote>
+<p>Note that the configuration <code>topology.message.timeout.secs</code> should be sufficiently more than <code>windowLength + slidingInterval</code> for time based windows; otherwise the tuples will timeout and get replayed and can result in duplicate evaluations. For count based windows, the configuration should be adjusted such that <code>windowLength + slidingInterval</code> tuples can be received within the timeout period.</p>
+</blockquote>
+<p>简单点就是 <code>topology.message.timeout.secs &gt;&gt; windowLength + slidingInterval</code>,  不然可能会造成一个窗口期内接收到重复的tuples.</p>
 
       
     </div>
@@ -313,6 +318,17 @@
 	  <img src="/" class="img-responsive ">
 	</div>
 	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/02/Lifecycle of a Storm Topology/">Lifecycle of a Storm Topology</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
 	  <h3><a href="http://dataminer.me/2017/07/02/Spout读取HDFS数据/">Spout读取HDFS数据</a></h3>
 	</div>                        
       </div>
@@ -324,22 +340,11 @@
 	  <img src="/" class="img-responsive ">
 	</div>
 	<div class="col-md-8">
-	  <h3><a href="http://dataminer.me/2017/07/02/Lifecycle of a Storm Topology/">Lifecycle of a Storm Topology</a></h3>
-	</div>                        
-      </div>
-    
-  
-    
-  
-    
-      <div class="row margin-bottom-10">
-	<div class="col-md-4">
-	  <img src="/" class="img-responsive ">
-	</div>
-	<div class="col-md-8">
 	  <h3><a href="http://dataminer.me/2017/07/02/Spout读取数据/">Spout读取数据</a></h3>
 	</div>                        
       </div>
+    
+  
     
   
     
