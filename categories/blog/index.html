@@ -475,6 +475,50 @@
   
     
     <h2 itemprop="name">
+      <a class="archive-article-title" href="/2017/03/01/2016-08-16-利用PRTree形成正方形区域粗略提取内切圆的数据/">利用PRTree形成正方形区域粗略提取内切圆的数据</a>
+    </h2>
+
+
+    <ul class="blog-info">
+      <li>
+      	<i class="fa fa-calendar"></i> 
+        <time datetime="2017-02-28T16:00:00.000Z" itemprop="datePublished">2017/03/01</time>
+
+      </li>
+      <li>
+	<i class="fa fa-tags"></i>
+	
+  
+    <a href="/tags/Java/" title="Java">Java</a>,
+  
+    <a href="/tags/DataStructures/" title="DataStructures">DataStructures</a>
+  
+
+
+      </li>
+    </ul>
+    <div class="blog-item">
+      
+	利用PRTree建立区域索引, 提高访问速度, 本文讲述PRTree的一个变形使用, 并给出例子
+      
+    </div>
+    <br>
+    <br>
+    <a href="http://dataminer.me/2017/03/01/2016-08-16-利用PRTree形成正方形区域粗略提取内切圆的数据/" class="more">Read more <i class="icon-angle-right"></i></a>
+  </div>
+</div>
+<hr class="blog-post-sep">
+
+      
+	<div class="row">
+  <div class="col-md-4 col-sm-4">
+    
+  </div>
+  
+    <div class="col-xs-12">
+  
+    
+    <h2 itemprop="name">
       <a class="archive-article-title" href="/2016/09/08/2016-09-08-Outlier Introduce/">Outlier Introduction</a>
     </h2>
 
@@ -539,109 +583,6 @@
     <br>
     <br>
     <a href="http://dataminer.me/2016/09/08/2016-09-08-Outlier Introduce/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/16/2016-08-16-利用PRTree形成正方形区域粗略提取内切圆的数据/">利用PRTree形成正方形区域粗略提取内切圆的数据</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2016-08-16T08:51:47.000Z" itemprop="datePublished">2016/08/16</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	<h1 id="相关介绍"><a href="#相关介绍" class="headerlink" title="相关介绍"></a>相关介绍</h1><blockquote>
-<p>PRTree is an implementation of a priority R-Tree, a spatial index. The code is written in java and the jar file is very small, this package does not come with anything extra.<br>This implementation tries to be memory efficient, one of the things it does it that it does not force you to create an Box or MBR for each object you have in the tree. You provide a class that can provide the bounds of each object when it is needed. This means that you can control how caching of bounds is done.</p>
-</blockquote>
-<p>以上内容引自：<a href="http://www.khelekore.org/prtree/" target="_blank" rel="external">PRTree, a Priority R-Tree, a spatial index for java code</a></p>
-<h1 id="使用正方形区域进行数据提取的思路及方法"><a href="#使用正方形区域进行数据提取的思路及方法" class="headerlink" title="使用正方形区域进行数据提取的思路及方法"></a>使用正方形区域进行数据提取的思路及方法</h1><p>在PRTree中并没有提供给定一个点，给定一个半径来过滤所形成的圆形区域数据的方法，但是我们可以采用一个替代的形成正方形的方法来实现，大体的思路如图：</p>
-<p><img src="/assets/pages/img/posts/demo.png" alt="思路示例图" title="思路示例图"></p>
-<p><strong>假设我们给的点是<code>center</code> , 而我们想要以center为中心 <code>radius</code> 为半径的圆形区域的数据。</strong><br>这是很难实现的，本思路采用以<code>bl</code>与<code>ur</code>两个边界点所围成的正方形区域的方法来进行过滤。<br>根据所提供的半径<code>radius</code>以及<code>center</code>,我们可以很方便的计算出两个边界点的位置，即：<code>bl(centerX-radius,centerY-radius)</code>,<code>up(centerX+radius,centerY+radius)</code>.<br>再根据PRTree提供的方法<code>find()</code>函数，可以得到最终的结果。</p>
-<p>以下给出关键的测试代码：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Test</span></div><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testRectangle</span><span class="params">()</span></span>&#123;</div><div class="line">    PRTree&lt;Point&gt; tree =</div><div class="line">            <span class="keyword">new</span> PRTree&lt;&gt; (<span class="keyword">this</span>.converter, <span class="number">30</span>);</div><div class="line">    List&lt;Point&gt; list = <span class="keyword">new</span> ArrayList&lt;Point&gt;();</div><div class="line">    list.add( <span class="keyword">new</span> Point(<span class="number">1</span>,<span class="number">1.0</span>,<span class="number">1.0</span>));</div><div class="line">    list.add( <span class="keyword">new</span> Point(<span class="number">2</span>,<span class="number">2.0</span>,<span class="number">2.0</span>));</div><div class="line">    list.add( <span class="keyword">new</span> Point(<span class="number">3</span>,<span class="number">3.0</span>,<span class="number">3.0</span>));</div><div class="line">    list.add( <span class="keyword">new</span> Point(<span class="number">4</span>,<span class="number">4.0</span>,<span class="number">4.0</span>));</div><div class="line">    list.add( <span class="keyword">new</span> Point(<span class="number">5</span>,<span class="number">2.0</span>,<span class="number">3.0</span>));</div><div class="line">    list.add( <span class="keyword">new</span> Point(<span class="number">6</span>,<span class="number">2.0</span>,<span class="number">4.0</span>));</div><div class="line">    list.add( <span class="keyword">new</span> Point(<span class="number">7</span>,<span class="number">1.0</span>,<span class="number">3.0</span>));</div><div class="line">    <span class="comment">//loading data</span></div><div class="line">    tree.load (list);</div><div class="line">    <span class="comment">/**</span></div><div class="line">     * Iterable&lt;T&gt;  find(double xmin, double ymin, double xmax, double ymax)</div><div class="line">     *  Find all objects that intersect the given rectangle.</div><div class="line">     */</div><div class="line">    <span class="keyword">double</span> centerX = <span class="number">1.0</span>;</div><div class="line">    <span class="keyword">double</span> centerY = <span class="number">1.0</span>;</div><div class="line">    <span class="keyword">double</span> radius = <span class="number">1.0</span>;</div><div class="line">    Point bottomLeft = calcBLBound(centerX, centerY, radius);</div><div class="line">    Point upperRight = calcURBound(centerX, centerY, radius);</div><div class="line">    Iterator&lt;Point&gt; pointsIter = tree.find(bottomLeft.getX(), bottomLeft.getY(), upperRight.getX(), upperRight.getY()).iterator();</div><div class="line">    <span class="keyword">while</span>(pointsIter.hasNext())&#123;</div><div class="line">        Point point = pointsIter.next();</div><div class="line">        System.out.println(point.getPid()+<span class="string">"\t"</span>+<span class="string">"("</span>+point.getX()+<span class="string">" , "</span>+point.getY()+<span class="string">")"</span>);</div><div class="line">    &#125;</div><div class="line">    <span class="comment">/**</span></div><div class="line">     * void find(double xmin, double ymin, double xmax, double ymax, List&lt;T&gt; resultNodes)</div><div class="line">     * Finds all objects that intersect the given rectangle and stores the found node in the given list.</div><div class="line">     */</div><div class="line">    System.out.println(<span class="string">"-------"</span>);</div><div class="line">    List&lt;Point&gt; resultNodes = <span class="keyword">new</span> ArrayList&lt;Point&gt;();</div><div class="line">    tree.find(bottomLeft.getX(), bottomLeft.getY(), upperRight.getX(), upperRight.getY(), resultNodes);</div><div class="line">    <span class="keyword">for</span>(Point p: resultNodes)&#123;</div><div class="line">        System.out.println(p.getPid()+<span class="string">"\t"</span>+<span class="string">"("</span>+p.getX()+<span class="string">" , "</span>+p.getY()+<span class="string">")"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">/**</span></div><div class="line"> * 计算左下角的点位置</div><div class="line"> * <span class="doctag">@param</span> centerX</div><div class="line"> * <span class="doctag">@param</span> centerY</div><div class="line"> * <span class="doctag">@param</span> radius</div><div class="line"> * <span class="doctag">@return</span></div><div class="line"> */</div><div class="line"><span class="function"><span class="keyword">private</span> Point <span class="title">calcBLBound</span><span class="params">(<span class="keyword">double</span> centerX, <span class="keyword">double</span> centerY, <span class="keyword">double</span> radius)</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Point(-<span class="number">1</span>,centerX-radius,centerY-radius);</div><div class="line">&#125;</div><div class="line"><span class="comment">/**</span></div><div class="line"> * 计算右上角点的位置</div><div class="line"> * <span class="doctag">@param</span> centerX</div><div class="line"> * <span class="doctag">@param</span> centerY</div><div class="line"> * <span class="doctag">@param</span> radius</div><div class="line"> * <span class="doctag">@return</span></div><div class="line"> */</div><div class="line"><span class="function"><span class="keyword">private</span> Point <span class="title">calcURBound</span><span class="params">(<span class="keyword">double</span> centerX, <span class="keyword">double</span> centerY, <span class="keyword">double</span> radius)</span></span>&#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">new</span> Point(-<span class="number">1</span>,centerX+radius,centerY+radius);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h1 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h1><ul>
-<li>center: (1.0,1.0)</li>
-<li>radius: 1.0</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>id</th>
-<th>x</th>
-<th>y</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>1.0</td>
-<td>1.0</td>
-</tr>
-<tr>
-<td>2</td>
-<td>2.0</td>
-<td>2.0</td>
-</tr>
-<tr>
-<td>3</td>
-<td>3.0</td>
-<td>3.0</td>
-</tr>
-<tr>
-<td>4</td>
-<td>4.0</td>
-<td>4.0</td>
-</tr>
-<tr>
-<td>5</td>
-<td>2.0</td>
-<td>3.0</td>
-</tr>
-<tr>
-<td>6</td>
-<td>2.0</td>
-<td>4.0</td>
-</tr>
-<tr>
-<td>7</td>
-<td>1.0</td>
-<td>3.0</td>
-</tr>
-</tbody>
-</table>
-<h1 id="测试结果"><a href="#测试结果" class="headerlink" title="测试结果"></a>测试结果</h1><p><code>Iterable&lt;T&gt;  find(double xmin, double ymin, double xmax, double ymax)</code></p>
-<p>2   (2.0 , 2.0)</p>
-<p>1   (1.0 , 1.0)</p>
-<p><code>void find(double xmin, double ymin, double xmax, double ymax, List&lt;T&gt; resultNodes)</code></p>
-<p>1   (1.0 , 1.0)</p>
-<p>2   (2.0 , 2.0)</p>
-
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2016/08/16/2016-08-16-利用PRTree形成正方形区域粗略提取内切圆的数据/" class="more">Read more <i class="icon-angle-right"></i></a>
   </div>
 </div>
 <hr class="blog-post-sep">
