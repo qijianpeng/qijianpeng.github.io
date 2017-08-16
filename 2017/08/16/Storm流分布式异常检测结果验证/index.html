@@ -7,22 +7,22 @@
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
-  <title>Storm Window中的数据填充方式以及顺序 | QI-Jianpeng</title>
+  <title>Storm流分布式异常检测结果验证 | QI-Jianpeng</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="description" content="Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的. 而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据. Tupl">
-<meta name="keywords" content="Storm,Window">
+  <meta name="description" content="在面向流数据异常检测的时候必要的一步就是对算法进行正确性验证. 从数据来看可以分为两类, 带标签的数据以及不带标签的数据. 带标签的数据可以使用算法结果与其进行比较, 计算Recall, Precision 或者Accuracy等. 但面对不带标签的数据, 在正确性评估上可能只能与现有的成熟的算法进行比较, 这里就会存在一个ground truth的问题, 所以尽量使用带标签的数据对算法进行验证.">
+<meta name="keywords" content="Storm,Outlier">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Storm Window中的数据填充方式以及顺序">
-<meta property="og:url" content="http://dataminer.me/2017/07/28/Storm Window中的数据填充方式以及顺序/index.html">
+<meta property="og:title" content="Storm流分布式异常检测结果验证">
+<meta property="og:url" content="http://dataminer.me/2017/08/16/Storm流分布式异常检测结果验证/index.html">
 <meta property="og:site_name" content="QI-Jianpeng">
-<meta property="og:description" content="Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的. 而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据. Tupl">
-<meta property="og:updated_time" content="2017-07-29T01:37:23.000Z">
+<meta property="og:description" content="在面向流数据异常检测的时候必要的一步就是对算法进行正确性验证. 从数据来看可以分为两类, 带标签的数据以及不带标签的数据. 带标签的数据可以使用算法结果与其进行比较, 计算Recall, Precision 或者Accuracy等. 但面对不带标签的数据, 在正确性评估上可能只能与现有的成熟的算法进行比较, 这里就会存在一个ground truth的问题, 所以尽量使用带标签的数据对算法进行验证.">
+<meta property="og:updated_time" content="2017-08-16T03:21:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Storm Window中的数据填充方式以及顺序">
-<meta name="twitter:description" content="Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的. 而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据. Tupl">
+<meta name="twitter:title" content="Storm流分布式异常检测结果验证">
+<meta name="twitter:description" content="在面向流数据异常检测的时候必要的一步就是对算法进行正确性验证. 从数据来看可以分为两类, 带标签的数据以及不带标签的数据. 带标签的数据可以使用算法结果与其进行比较, 计算Recall, Precision 或者Accuracy等. 但面对不带标签的数据, 在正确性评估上可能只能与现有的成熟的算法进行比较, 这里就会存在一个ground truth的问题, 所以尽量使用带标签的数据对算法进行验证.">
   
     <link rel="alternative" href="/atom.xml" title="QI-Jianpeng" type="application/atom+xml">
   
@@ -148,13 +148,13 @@
   <section id="main">
     
     <h2 itemprop="name">
-      <a class="article-title" href="/2017/07/28/Storm Window中的数据填充方式以及顺序/">Storm Window中的数据填充方式以及顺序</a>
+      <a class="article-title" href="/2017/08/16/Storm流分布式异常检测结果验证/">Storm流分布式异常检测结果验证</a>
     </h2>
 
 
     <div class="row">
 <div class="col-md-9 col-sm-9 blog-posts">
-<article id="post-Storm Window中的数据填充方式以及顺序" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+<article id="post-Storm流分布式异常检测结果验证" class="article article-type-post blog-item" itemscope itemprop="blogPost">
   <div class="article-meta">
   </div>
   <div class="article-inner">
@@ -164,7 +164,7 @@
       <ul class="blog-info">
 	<li><i class="fa fa-user"></i> QI-Jianpeng</li>
 	<li><i class="fa fa-calendar"></i>
-	  <time datetime="2017-07-27T16:00:00.000Z" itemprop="datePublished">2017/07/28</time>
+	  <time datetime="2017-08-15T16:00:00.000Z" itemprop="datePublished">2017/08/16</time>
 
 	</li>
 
@@ -173,7 +173,7 @@
   
     <a href="/tags/Storm/" title="Storm">Storm</a>,
   
-    <a href="/tags/Window/" title="Window">Window</a>
+    <a href="/tags/Outlier/" title="Outlier">Outlier</a>
   
 
 
@@ -199,19 +199,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Apache Storm 一个没有解释透彻的问题就是Sliding Window中的TupleWindow在面对数据流到达时是慢慢填充满整个窗口的, 不是一次性填充满然后进行相应处理的.</p>
-<p>而Tumbling Window是对当前窗口汇总完后在处理. 也就是不存在窗口初始化的问题, 一直是一个被填充满窗口. 需要注意的是, 这种窗口是汇总来自于同一个component的不同task的数据.</p>
-<p>TupleWindow中会提供三种方法, 分别为<code>get()</code>, <code>getNew()</code>, <code>getExpired()</code>. <code>get()</code>方法用来获取当前的一个窗口内的所有数据, 这个窗口里的数据排列方式是按照接收到event的顺序进行排序的, 因此对于一个tuple属于哪一个Slide, 这是需要额外的计算的(比如通过<code>time/slideInterval</code>计算).<br>而对于<code>getNew()</code>与<code>getExpired()</code>方法来说, 这是严格的按照接收到的时间戳顺序来计算的.</p>
-<h1 id="在tuplewindow中的数据可能是乱序的"><a href="#在tuplewindow中的数据可能是乱序的" class="headerlink" title="在tuplewindow中的数据可能是乱序的"></a>在tuplewindow中的数据可能是乱序的</h1><p>这里有一个例子, 比如设置<code>windowLength = 6</code>,  <code>interval = 2</code>, <code>lag = 6</code>; 我在<code>spout</code>中除了发送流水时间的tuple外, 还同时发送在这个tuple的时间戳基础上<code>+3</code>的tuple,  可能就会得到以下数据, 其中[a, b, c] 中a代表生成的随机整数, b代表时间戳(由msgId而来), c代表msgId同时也代表真实的时间戳信息, 下面这个例子演示了TupleWindow填充数据, 以及过期数据的过程:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">news tuple: [265, 1, 1]</div><div class="line">tuple in window[265, 1, 1]</div><div class="line"></div><div class="line">news tuple: [7, 4, 2]</div><div class="line">news tuple: [298, 3, 3]</div><div class="line">tuple in window[265, 1, 1]</div><div class="line">tuple in window[7, 4, 2] # 注意这里人造时间戳是4, 真实的时间戳是2</div><div class="line">tuple in window[298, 3, 3]</div><div class="line"></div><div class="line">news tuple: [952, 6, 4]</div><div class="line">news tuple: [862, 5, 5]</div><div class="line">tuple in window[265, 1, 1]</div><div class="line">tuple in window[7, 4, 2] # 在这个地方, 它的顺序仍然没有发生变化.</div><div class="line">tuple in window[298, 3, 3]</div><div class="line">tuple in window[952, 6, 4]</div><div class="line">tuple in window[862, 5, 5]</div><div class="line"></div><div class="line">news tuple: [334, 8, 6]</div><div class="line">news tuple: [160, 7, 7]</div><div class="line">tuple in window[7, 4, 2]</div><div class="line">tuple in window[298, 3, 3]</div><div class="line">tuple in window[952, 6, 4]</div><div class="line">tuple in window[862, 5, 5]</div><div class="line">tuple in window[334, 8, 6]</div><div class="line">tuple in window[160, 7, 7]</div><div class="line">expired tuple: [265, 1, 1]</div></pre></td></tr></table></figure>
-<p>这个例子可以说明, 当Spout数量不唯一时, 由于网络环境的不一致, 可能就会造成接受tuple乱序.  同时在tuplewindow里的数据顺序没有发生变化, 这说明存储数据的其实是一个普通的静态结构, 也就是说, 插入数据时它不会引起按照时间戳的顺序进行排序这一操作.  事实上,Storm使用的是<code>ConcurrentLinkedQueue</code> 来存储的. 而对于<code>getExpired()</code>这种方法, Storm采取的方式是通过扫描这个window queue来获取过期的数据. 所以不管你窗口内的数据乱不乱序, 反正我过滤一下, 都会把你过期的数据提取出来. 这是需要注意的地方.<br>(顺便提一下, 这个地方Storm是否可以进行一下改善? 既然我指定了时间戳信息, 那么到达数据的的排序应该是按照设定的时间顺序进行排序, 而不是按照接收到数据的添加时间进行排序.)</p>
-<p>这个追溯源码的话也可以看一下WindowManager这个类, 在apache.storm.windowing包下.</p>
-<p>当然, 对于TumblingWindow来说, 它是不单单是滚动窗口, 还是汇总窗口 <code>getNew()</code>与<code>getExpired()</code>是无效的.</p>
-<p>这里补充一点关于Guarantees的描述:</p>
-<blockquote>
-<p>Note that the configuration <code>topology.message.timeout.secs</code> should be sufficiently more than <code>windowLength + slidingInterval</code> for time based windows; otherwise the tuples will timeout and get replayed and can result in duplicate evaluations. For count based windows, the configuration should be adjusted such that <code>windowLength + slidingInterval</code> tuples can be received within the timeout period.</p>
-</blockquote>
-<p>简单点就是 <code>topology.message.timeout.secs &gt;&gt; windowLength + slidingInterval</code>,  不然可能会造成一个窗口期内接收到重复的tuples.</p>
+        <p>在面向流数据异常检测的时候必要的一步就是对算法进行正确性验证. 从数据来看可以分为两类, 带标签的数<br>据以及不带标签的数据. 带标签的数据可以使用算法结果与其进行比较, 计算Recall, Precision 或者<br>Accuracy等. 但面对不带标签的数据, 在正确性评估上可能只能与现有的成熟的算法进行比较, 这里就会存在<br>一个ground truth的问题, 所以尽量使用带标签的数据对算法进行验证.</p>
+<p>本文基于距离的异常检测, 对算法结果与已有的算法进行评估.</p>
+<p>在流式数据下进行异常检测会引入窗口(Sliding Window)的概念, 这里指的是time-based. 在一个窗口往前<br>滑动的过程中会有新的数据加入以及旧数据过期, 这也就意味着针对一个点$p$来说, 当窗口长度为$w$时,$p$<br>可能有$w$个状态. 为什么说可能有呢? 因为在一个窗口$W$内可能存在一些时间戳是不存在数据的, 当不存在数据<br>的时间戳进入或者离开时间窗口时, $p$的状态是不受任何影响的.<br>当把一个数据文件的异常检测结果保存下来的时候你可能会发现明明保存的是每个点的id, 为什么异常结果文件会比源文件<br>还要大? 如果异常点很多的时候, 每个异常点对应的可能是$w$个状态, 那就对应着$w$条记录. 所以异常结果文件变大.</p>
+<p>在分布式环境下可能会遇到异常检测的结果重复的问题, 因为基于距离的异常检测除了在负载均衡打破了空间连续性外,<br>在边界点的处理上也会遇到一些问题. 这里的处理具有一定的技巧性, 不做赘述.</p>
+<p>到这里, 我们开始异常检测的验证. 为了能够方便的验证结果, 我们需要输出的信息会包含有4个字段.<br><code>window_start, window_end, id, timestamp</code>. 其中<code>window_start, window_end</code>分别为当前时间窗口<br>的开始结束时间, 当然, <code>window</code>刚开始还未填充满的那几个时刻不做过多研究. <code>id</code>为异常点<code>id</code>,<br><code>timestamp</code>为异常点本身自带的时间戳(Storm下采用Window计算时, <code>withTimestamp()</code>方法指定的时间戳).<br>对于一条记录: <code>2, 6, 100, 3</code>, 表示的是当时间窗口是从<code>2 ~ 6</code>时, 在时间戳为3时出现的<code>id = 100</code>的数据点为异常点.<br>因此这里额外隐含了一条信息, $timestamp \in [window{_start}, window_end]$. 当然, 这个<code>timestamp</code>可有可无.<br>这里是考虑如果是一个点在连续的运动的话, 那就含有了意义.</p>
 
       
     </div>
@@ -221,19 +213,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/08/06/Maven依赖范围/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Maven依赖范围
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/07/24/count-based window wit time sliding interval/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/08/09/Storm Worker内部消息处理/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">count-based window wit time sliding interval</div>
+      <div class="article-nav-title">Storm Worker内部消息处理</div>
     </a>
   
 </nav>
@@ -526,7 +509,24 @@
 
 
 
-<!-- END INTEGRATIONS --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<!-- END INTEGRATIONS --><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 </body>
 </html>
