@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+  
+  <title>异常检测数据观察 | QI-Jianpeng</title>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta name="keywords" content="Outlier,Data">
+<meta property="og:type" content="article">
+<meta property="og:title" content="异常检测数据观察">
+<meta property="og:url" content="http://dataminer.me/2017/08/29/最大根堆的java实现/index.html">
+<meta property="og:site_name" content="QI-Jianpeng">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:updated_time" content="2017-09-16T09:52:40.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="异常检测数据观察">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+  
+    <link rel="alternative" href="/atom.xml" title="QI-Jianpeng" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+    
+  <meta content="{{ title }}" name="description">
+  <meta content="{{ title }}" name="keywords">
+  <meta content="{{ title }}" name="author">
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|PT+Sans+Narrow|Source+Sans+Pro:200,300,400,600,700,900&amp;subset=all" rel="stylesheet" type="text/css">
+
+  <!-- Global styles START -->   
+  <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Global styles END --> 
+   
+  <!-- Page level plugin styles START -->
+  <link rel="stylesheet" href="/assets/pages/css/animate.css">
+  <link rel="stylesheet" href="/assets/plugins/owl.carousel/assets/owl.carousel.css">
+  <!-- Page level plugin styles END -->
+
+  <!-- Theme styles START -->
+  <link rel="stylesheet" href="/assets/pages/css/components.css">
+  <link rel="stylesheet" href="/assets/pages/css/slider.css">
+  <link rel="stylesheet" href="/assets/corporate/css/style.css">
+  <link rel="stylesheet" href="/assets/pages/css/portfolio.css">
+  <link rel="stylesheet" href="/assets/corporate/css/style-responsive.css">
+  <link rel="stylesheet" href="/assets/corporate/css/themes/orange.css">
+  <link rel="stylesheet" href="/css/theme-styles.css">
+  <!-- Theme styles END --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</head>
+
+<body class="corporate">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><!-- BEGIN TOP BAR -->
+<div class="pre-header">
+  <div class="container">
+    <div class="row">
+      <!-- BEGIN TOP BAR LEFT PART -->
+      <div class="col-md-6 col-sm-6 col-xs-9 additional-shop-info">
+	<ul class="list-unstyled list-inline">
+	  <li><i class="fa fa-phone"></i><span>+86-156-1535-0639</span></li>
+	  <li><i class="fa fa-envelope-o"></i><span>jianpengqi@126.com</span></li>
+	</ul>
+      </div>
+      <!-- END TOP BAR LEFT PART -->
+      <!-- BEGIN TOP BAR MENU -->
+      <div class="col-md-6 col-sm-6 col-xs-3 additional-nav">
+	<ul class="list-unstyled list-inline pull-right">
+	  <li><a href="#">One person’s noise is another person’s signal.</a></li>
+	</ul>
+      </div>
+      <!-- END TOP BAR MENU -->
+    </div>
+  </div>        
+</div>
+<!-- END TOP BAR -->
+<!-- BEGIN HEADER -->
+<div class="header">
+  <div class="container">
+    <!--<a class="site-logo" href="/" id="logo">QI-Jianpeng</a>-->
+
+    <a class="site-logo" href="/">
+      <img src="/assets/corporate/img/logos/logo-corp-orange.png" alt="QI Jianpeng">
+    </a>
+
+    <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
+
+    <!-- BEGIN NAVIGATION -->
+    <div class="header-navigation pull-right font-transform-inherit">
+      <ul>
+	
+	<li class="">
+	  <a  href="/">Home</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/projects/">Projects</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/archives/">Blog</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/contact/">Contact</a>
+	</li>
+	
+	<li class="">
+	  <a  href="/about/">About</a>
+	</li>
+	
+	<!-- BEGIN TOP SEARCH -->
+	<li class="menu-search">
+	  <span class="sep"></span>
+	  <i class="fa fa-search search-btn"></i>
+	  <div class="search-box">
+	    <form action="#">
+	      <div class="input-group">
+		<input type="text" placeholder="Search" class="form-control st-default-search-input">
+		<span class="input-group-btn">
+		  <button class="btn btn-primary" type="submit">Search</button>
+		</span>
+	      </div>
+	    </form>
+	  </div> 
+	</li>
+	<!-- END TOP SEARCH -->
+      </ul>
+    </div>
+    <!-- END NAVIGATION -->
+  </div>
+</div>
+<!-- Header END -->
+
+  <div class="container">
+  <ul class="breadcrumb">
+    <li><a href="/">Home</a></li>
+    <li><a href="/archives/">Blog</a></li>
+    <li class="active">Post</li>
+  </ul>
+  <section id="main">
+    
+    <h2 itemprop="name">
+      <a class="article-title" href="/2017/08/29/最大根堆的java实现/">异常检测数据观察</a>
+    </h2>
+
+
+    <div class="row">
+<div class="col-md-9 col-sm-9 blog-posts">
+<article id="post-最大根堆的java实现" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+  <div class="article-meta">
+  </div>
+  <div class="article-inner">
+    
+    
+    <header class="article-header">
+      <ul class="blog-info">
+	<li><i class="fa fa-user"></i> QI-Jianpeng</li>
+	<li><i class="fa fa-calendar"></i>
+	  <time datetime="2017-08-29T08:46:00.000Z" itemprop="datePublished">2017/08/29</time>
+
+	</li>
+
+  <li class="hidden-xs"><i class="fa fa-tags"></i>
+    
+  
+    <a href="/tags/Outlier/" title="Outlier">Outlier</a>,
+  
+    <a href="/tags/Data/" title="Data">Data</a>
+  
+
+
+  </li>
+
+  <li class="hidden-xs">
+          <div  class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="fa fa-qq" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="fa fa-linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="fa fa-print" data-cmd="print" title="分享到打印"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"3","bdSize":"12"},"share":{},"image":{"viewList":["tsina","qzone","linkedin","print"],"viewText":"分享到：","viewSize":"12"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+  </li>
+      </ul>
+      
+  <div class="article-category">
+    
+    Category: 
+    
+    Categories:
+    <a class="article-category-link" href="/categories/blog/">blog</a>
+  </div>
+  <br>
+
+
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.io.Serializable;</div><div class="line"><span class="keyword">import</span> java.util.Arrays;</div><div class="line"><span class="comment">/**</span></div><div class="line"> * Created by qijianpeng on 16/09/2017.</div><div class="line"> * mail: jianpengqi@126.com</div><div class="line"> * 最大根堆实现</div><div class="line"> */</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MaxHeap</span>&lt;<span class="title">E</span> <span class="keyword">extends</span> <span class="title">Comparable</span>&gt; <span class="keyword">implements</span>  <span class="title">PriorityQueue</span>&lt;<span class="title">E</span>&gt;, <span class="title">Serializable</span> </span>&#123;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">long</span> serialVersionUID = <span class="number">1L</span>;</div><div class="line">    <span class="keyword">private</span> Object[] elements = <span class="keyword">null</span>;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">int</span> size = <span class="number">0</span>;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">int</span> maxCapacity = <span class="number">10</span>;</div><div class="line">    <span class="keyword">private</span> <span class="keyword">boolean</span> extendable = <span class="keyword">true</span>;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MaxHeap</span><span class="params">(<span class="keyword">int</span> maxCapacity, <span class="keyword">boolean</span> extendable)</span></span>&#123;</div><div class="line">        <span class="keyword">this</span>.elements = <span class="keyword">new</span> Object[maxCapacity + <span class="number">1</span>];<span class="comment">//为了操作方便, 第0个元素不存数据</span></div><div class="line">        <span class="keyword">this</span>.maxCapacity = maxCapacity ;</div><div class="line">        <span class="keyword">this</span>.extendable = extendable;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MaxHeap</span><span class="params">(<span class="keyword">int</span> maxCapacity)</span></span>&#123;</div><div class="line">        <span class="keyword">this</span>.elements = <span class="keyword">new</span> Object[maxCapacity + <span class="number">1</span>];<span class="comment">//为了操作方便, 第0个元素不存数据</span></div><div class="line">        <span class="keyword">this</span>.maxCapacity = maxCapacity;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MaxHeap</span><span class="params">()</span></span>&#123;&#125;</div><div class="line"></div><div class="line"></div><div class="line">    <span class="function">E <span class="title">element</span><span class="params">(<span class="keyword">int</span> i)</span></span>&#123;</div><div class="line">        <span class="keyword">return</span> (E)elements[i];</div><div class="line">    &#125;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">(E e)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (size &gt;= maxCapacity &amp;&amp; !extendable)&#123;</div><div class="line">            <span class="comment">//达到最大容量且不可扩展, 删除堆顶元素</span></div><div class="line">            <span class="comment">/*elements[size] = e;</span></div><div class="line">            rise(size);*/</div><div class="line">            elements[<span class="number">1</span>] = e;</div><div class="line">            sink(<span class="number">1</span>);</div><div class="line">            <span class="keyword">return</span>;</div><div class="line">        &#125;<span class="keyword">else</span> <span class="keyword">if</span> (size &gt;= maxCapacity &amp;&amp; extendable)&#123;</div><div class="line">            <span class="comment">//达到最大容量, 但是可扩展, 扩展堆容量</span></div><div class="line">            maxCapacity = maxCapacity + (maxCapacity &gt;&gt; <span class="number">1</span>);</div><div class="line">            elements = Arrays.copyOf(elements, maxCapacity + <span class="number">1</span>);</div><div class="line">        &#125;</div><div class="line">        elements[++size] = e;</div><div class="line">        rise(size);</div><div class="line">    &#125;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">top</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (size &gt; <span class="number">0</span>)<span class="keyword">return</span> element(<span class="number">1</span>);</div><div class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> E <span class="title">delTop</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span> (isEmpty())<span class="keyword">return</span> <span class="keyword">null</span>;</div><div class="line">        E top = top();</div><div class="line">        swap(<span class="number">1</span>, size);<span class="comment">//与最后一个节点交换</span></div><div class="line">        elements[size] = <span class="keyword">null</span>;</div><div class="line">        size--;</div><div class="line">        <span class="keyword">if</span> (size &gt; <span class="number">1</span>) sink(<span class="number">1</span>);</div><div class="line">        <span class="keyword">return</span> top;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> size == <span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">size</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> size;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 返回  array[i] &lt; array[j]</div><div class="line">     * <span class="doctag">@param</span> i</div><div class="line">     * <span class="doctag">@param</span> j</div><div class="line">     * <span class="doctag">@return</span></div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">less</span><span class="params">(<span class="keyword">int</span> i, <span class="keyword">int</span> j)</span></span>&#123;</div><div class="line">         <span class="keyword">return</span> element(i).compareTo(element(j)) &lt; <span class="number">0</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">swap</span><span class="params">(<span class="keyword">int</span> i, <span class="keyword">int</span> j)</span></span>&#123;</div><div class="line">        E tmp = element(i);</div><div class="line">        elements[i] = elements[j];</div><div class="line">        elements[j] = tmp;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 第&#123;<span class="doctag">@code</span> k&#125;个元素上浮</div><div class="line">     * <span class="doctag">@param</span> k</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">rise</span><span class="params">(<span class="keyword">int</span> k)</span></span>&#123;</div><div class="line">        <span class="keyword">while</span> (k &gt; <span class="number">1</span> &amp;&amp; less(k/<span class="number">2</span>, k))&#123;</div><div class="line">            swap(k/<span class="number">2</span>, k);</div><div class="line">            k = k/<span class="number">2</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">/**</span></div><div class="line">     * 下沉第k个元素</div><div class="line">     * <span class="doctag">@param</span> k</div><div class="line">     */</div><div class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">sink</span><span class="params">(<span class="keyword">int</span> k)</span></span>&#123;</div><div class="line">        <span class="keyword">while</span> (<span class="number">2</span> * k &lt;= size)&#123;</div><div class="line">            <span class="keyword">int</span> j = <span class="number">2</span> *k;</div><div class="line">            <span class="keyword">if</span> (j &lt; size &amp;&amp; less(j, j+ <span class="number">1</span>))j ++;<span class="comment">//第j + 1个元素比第j个元素大</span></div><div class="line">            <span class="keyword">if</span> (!less(k, j))<span class="keyword">break</span>;<span class="comment">//当前节点已经比子节点大</span></div><div class="line">            swap(k, j);</div><div class="line">            k = j;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123;</div><div class="line">        StringBuilder sb = <span class="keyword">new</span> StringBuilder();</div><div class="line">        <span class="keyword">int</span> i;</div><div class="line">        <span class="keyword">for</span> (i = <span class="number">1</span>; i &lt; size; i++)&#123;</div><div class="line">            sb.append(element(i).toString() + <span class="string">", "</span>);</div><div class="line">        &#125;</div><div class="line">        sb.append(element(i).toString());</div><div class="line">       <span class="keyword">return</span> sb.toString();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] a)</span></span>&#123;</div><div class="line">        MaxHeap&lt;Integer&gt; maxHeap = <span class="keyword">new</span> MaxHeap&lt;Integer&gt;(<span class="number">3</span>, <span class="keyword">false</span>);</div><div class="line">        maxHeap.insert(<span class="number">3</span>);</div><div class="line">        maxHeap.insert(<span class="number">5</span>);</div><div class="line">        maxHeap.insert(<span class="number">9</span>);</div><div class="line">        System.out.println(maxHeap.toString() + <span class="string">"\t size: "</span>+ maxHeap.size() + <span class="string">" top:"</span> + maxHeap.top());</div><div class="line">        maxHeap.insert(<span class="number">19</span>);</div><div class="line">        System.out.println(maxHeap.toString() + <span class="string">"\t size: "</span>+ maxHeap.size() + <span class="string">" top:"</span> + maxHeap.top());</div><div class="line">        maxHeap.insert(<span class="number">1</span>);</div><div class="line">     <span class="comment">//   maxHeap.delTop();</span></div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">interface</span> <span class="title">PriorityQueue</span>&lt;<span class="title">E</span>&gt; </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(E e)</span></span>;</div><div class="line">    <span class="function">E <span class="title">top</span><span class="params">()</span></span>;</div><div class="line">    <span class="function">E <span class="title">delTop</span><span class="params">()</span></span>;</div><div class="line">    <span class="function"><span class="keyword">boolean</span> <span class="title">isEmpty</span><span class="params">()</span></span>;</div><div class="line">    <span class="function"><span class="keyword">int</span> <span class="title">size</span><span class="params">()</span></span>;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/29/异常检测数据观察/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">异常检测数据观察</div>
+    </a>
+  
+</nav>
+
+  
+  <br>
+</article>
+
+
+
+
+</div>
+<div class="col-md-3 col-sm-3 blog-sidebar">
+  <!-- CATEGORIES START -->
+<h2 class="no-top-space">Categories</h2>
+
+<div class="widget-wrap">
+  <div class="widget">
+    <ul class="nav sidebar-categories margin-bottom-40">
+      
+	<li>
+	  <a href="/categories/Hexo/">Hexo (1)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/blog/">blog (13)</a>
+	</li>
+      
+	<li>
+	  <a href="/categories/productivity/">productivity (1)</a>
+	</li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<!-- CATEGORIES END -->
+
+<!-- BEGIN BLOG TAGS -->
+<div class="blog-tags margin-bottom-20">
+  <h2>Tags</h2>
+  
+  <div class="widget-wrap">
+    <div class="widget">
+      
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/DRPC/"><i class='fa fa-tags'></i>DRPC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data/"><i class='fa fa-tags'></i>Data</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/DataStructures/"><i class='fa fa-tags'></i>DataStructures</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/How-To/"><i class='fa fa-tags'></i>How-To</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/"><i class='fa fa-tags'></i>Java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Maven/"><i class='fa fa-tags'></i>Maven</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Outlier/"><i class='fa fa-tags'></i>Outlier</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spout/"><i class='fa fa-tags'></i>Spout</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Storm/"><i class='fa fa-tags'></i>Storm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Welcome/"><i class='fa fa-tags'></i>Welcome</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Window/"><i class='fa fa-tags'></i>Window</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/productivity/"><i class='fa fa-tags'></i>productivity</a></li></ul>
+    </div>
+  </div>
+
+
+</div>
+<!-- END BLOG TAGS -->
+
+
+<!-- BEGIN FEATURED POSTS -->                            
+<h2>Featured Posts</h2>
+<div class="recent-news margin-bottom-10">
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://s3.amazonaws.com/ptsteadman-images/helloworld.jpg" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2014/02/23/2014-02-23-hello-world/">Welcome To Hexo</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/02/DRPC(Distributed Remote Procedure Call)分布式远程调用/">DRPC(Distributed Remote Procedure Call)分布式远程调用</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/08/06/Maven依赖范围/">Maven依赖范围</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/02/Spout读取HDFS数据/">Spout读取HDFS数据</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/02/Spout读取数据/">Spout读取数据</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/02/Lifecycle of a Storm Topology/">Lifecycle of a Storm Topology</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/08/16/Storm流分布式异常检测结果验证/">Storm流分布式异常检测结果验证</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/28/Storm Window中的数据填充方式以及顺序/">Storm Window中的数据填充方式以及顺序</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://github.com/qijianpeng/assets/raw/master/images/anomaly.png" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/08/29/异常检测数据观察/">异常检测数据观察</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="http://www.michael-noll.com/blog/uploads/storm-internal-message-queues.png" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/08/09/Storm Worker内部消息处理/">Storm Worker内部消息处理</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="https://github.com/qijianpeng/assets/raw/master/images/anomaly.png" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/08/29/最大根堆的java实现/">异常检测数据观察</a></h3>
+	</div>                        
+      </div>
+    
+  
+    
+      <div class="row margin-bottom-10">
+	<div class="col-md-4">
+	  <img src="/" class="img-responsive ">
+	</div>
+	<div class="col-md-8">
+	  <h3><a href="http://dataminer.me/2017/07/24/count-based window wit time sliding interval/">count-based window wit time sliding interval</a></h3>
+	</div>                        
+      </div>
+    
+  
+</div>
+<!-- END FEATURED POSTS -->                            
+
+</div>
+</div>
+
+  </section>
+</div>
+
+    <!-- BEGIN PRE-FOOTER -->
+    <div class="pre-footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN BOTTOM ABOUT BLOCK -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>About Me</h2>
+            <p>Interest in Big Data, Spatio-Temporal Data, Data Mining, Apache Storm & Hadoop, etc.</p>
+          </div>
+          <!-- END BOTTOM ABOUT BLOCK -->
+
+          <!-- BEGIN BOTTOM CONTACTS -->
+          <div class="col-md-4 col-sm-6 pre-footer-col">
+            <h2>Contact</h2>
+            <address class="margin-bottom-40">
+              Yantai University<br>
+              School of Computer and Control Engineering<br>
+              Shandong, China<br>
+              Phone: +86-156-1535-0639<br>
+              Email: <a href="mailto:jianpengqi@126.com">jianpengqi@126.com</a><br>
+            </address>
+          </div>
+          <!-- END BOTTOM CONTACTS -->
+
+	
+        </div>
+      </div>
+    </div>
+    <!-- END PRE-FOOTER -->
+
+    <!-- BEGIN FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- BEGIN COPYRIGHT -->
+          <div class="col-md-6 col-sm-6 padding-top-10">
+                  &copy; 2017 QI-Jianpeng<br>
+ <a href="javascript:;">Privacy Policy</a> | <a href="javascript:;">Terms of Service</a>
+          </div>
+          <!-- END COPYRIGHT -->
+	  <!-- BEGIN SOCIAL -->
+<div class="col-md-6 col-sm-6">
+  <ul class="social-footer list-unstyled list-inline pull-right">
+    
+      <li><a href="https://github.com/qijianpeng"><i class="fa fa-github"></i></a></li>
+    
+      <li><a href="https://twitter.com/qijianpeng666"><i class="fa fa-twitter"></i></a></li>
+    
+      <li><a href="https://www.facebook.com/jianpengqi"><i class="fa fa-facebook"></i></a></li>
+    
+      <li><a href="/atom.xml"><i class="fa fa-rss"></i></a></li>
+    
+      <li><a href="https://linkedin.com/in/qijianpeng"><i class="fa fa-linkedin"></i></a></li>
+    
+  </ul>  
+</div>
+<!-- END SOCIAL -->
+
+        </div>
+      </div>
+    </div>
+    <!-- END FOOTER -->
+
+  <!-- BEGIN CORE PLUGINS (REQUIRED FOR ALL PAGES) -->
+<!--[if lt IE 9]>
+<script src="/assets/plugins/respond.min.js"></script>
+<![endif]--> 
+<script src="/assets/plugins/jquery.min.js"></script>
+<script src="/assets/plugins/jquery-migrate.min.js"></script>
+<script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/assets/corporate/scripts/back-to-top.js"></script>
+<script src="/assets/plugins/owl.carousel/owl.carousel.min.js"></script>
+<script src="/assets/corporate/scripts/layout.js"></script>
+<script src="/js/wow.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        Layout.init();    
+        Layout.initOWL();
+        Layout.initTwitter();
+        Layout.initFixHeaderWithPreHeader(); /* Switch On Header Fixing (only if you have pre-header) */
+        Layout.initNavScrolling(); 
+	new WOW().init();
+    });
+</script>
+<!-- END CORE PLUGINS -->
+
+<!-- BEGIN PAGE-SPECIFIC PLUGINS --> 
+
+
+
+
+
+
+
+<!-- END PAGE-SPECIFIC PLUGINS --> 
+
+<!-- BEGIN INTEGRATIONS -->
+
+
+
+
+
+<!-- END INTEGRATIONS --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+</body>
+</html>
