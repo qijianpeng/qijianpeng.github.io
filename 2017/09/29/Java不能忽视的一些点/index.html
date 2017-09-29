@@ -7,17 +7,22 @@
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
-  <title>Archives: 2016/8 | QI-Jianpeng</title>
+  <title>Java不能忽视的一些点 | QI-Jianpeng</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="QI-Jianpeng">
-<meta property="og:url" content="http://dataminer.me/archives/2016/08/index.html">
+  <meta name="description" content="JVM相关内存 The Introduction of Java Memory Leaks 讲述内存泄露的原因以及解决方法.">
+<meta name="keywords" content="Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java不能忽视的一些点">
+<meta property="og:url" content="http://dataminer.me/2017/09/29/Java不能忽视的一些点/index.html">
 <meta property="og:site_name" content="QI-Jianpeng">
+<meta property="og:description" content="JVM相关内存 The Introduction of Java Memory Leaks 讲述内存泄露的原因以及解决方法.">
+<meta property="og:updated_time" content="2017-09-29T00:13:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QI-Jianpeng">
+<meta name="twitter:title" content="Java不能忽视的一些点">
+<meta name="twitter:description" content="JVM相关内存 The Introduction of Java Memory Leaks 讲述内存泄露的原因以及解决方法.">
   
     <link rel="alternative" href="/atom.xml" title="QI-Jianpeng" type="application/atom+xml">
   
@@ -137,70 +142,89 @@
   <div class="container">
   <ul class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li class="active">Blog</li>
+    <li><a href="/archives/">Blog</a></li>
+    <li class="active">Post</li>
   </ul>
-<div id="main">
-  <h1>Blog</h1>
-  <div class="row">
-
-<div class="col-md-9 col-sm-9 blog-posts">
-
-
-  <section class="archives-wrap">
-    <div class="archives">
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
+  <section id="main">
     
     <h2 itemprop="name">
-      <a class="archive-article-title" href="/2016/08/12/2016-08-12-IEEE PDF eXpress 提示字体问题的解决方法/">IEEE PDF eXpress 提示字体为嵌入的解决方法</a>
+      <a class="article-title" href="/2017/09/29/Java不能忽视的一些点/">Java不能忽视的一些点</a>
     </h2>
 
 
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2016-08-12T00:13:36.000Z" itemprop="datePublished">2016/08/12</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/productivity/" title="productivity">productivity</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	IEEE提交PDF论文时,对提示嵌入字体的解决方法.
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2016/08/12/2016-08-12-IEEE PDF eXpress 提示字体问题的解决方法/" class="more">Read more <i class="icon-angle-right"></i></a>
+    <div class="row">
+<div class="col-md-9 col-sm-9 blog-posts">
+<article id="default-Java不能忽视的一些点" class="article article-type-default blog-item" itemscope itemprop="blogPost">
+  <div class="article-meta">
   </div>
-</div>
-<hr class="blog-post-sep">
+  <div class="article-inner">
+    
+    
+    <header class="article-header">
+      <ul class="blog-info">
+	<li><i class="fa fa-user"></i> QI-Jianpeng</li>
+	<li><i class="fa fa-calendar"></i>
+	  <time datetime="2017-09-28T16:00:00.000Z" itemprop="datePublished">2017/09/29</time>
+
+	</li>
+
+  <li class="hidden-xs"><i class="fa fa-tags"></i>
+    
+  
+    <a href="/tags/Java/" title="Java">Java</a>
+  
+
+
+  </li>
+
+  <li class="hidden-xs">
+          <div  class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="fa fa-qq" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="fa fa-linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="fa fa-print" data-cmd="print" title="分享到打印"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"3","bdSize":"12"},"share":{},"image":{"viewList":["tsina","qzone","linkedin","print"],"viewText":"分享到：","viewSize":"12"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+  </li>
+      </ul>
+      
+  <div class="article-category">
+    
+    Category: 
+    
+    Categories:
+    <a class="article-category-link" href="/categories/blog/">blog</a>
+  </div>
+  <br>
+
+
+    </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="JVM相关"><a href="#JVM相关" class="headerlink" title="JVM相关"></a>JVM相关</h1><h2 id="内存"><a href="#内存" class="headerlink" title="内存"></a>内存</h2><ul>
+<li><a href="https://www.programcreek.com/2013/10/the-introduction-of-memory-leak-what-why-and-how/" target="_blank" rel="external">The Introduction of Java Memory Leaks</a> 讲述内存泄露的原因以及解决方法.</li>
+</ul>
 
       
     </div>
+
+  </div>
+  
     
-      <div id="page-nav" class="pagination">
-	<span class="page-number current">1</span>
-      </div>
-    
-  </section>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/09/17/最大根堆的java实现/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">最大根堆java实现</div>
+    </a>
+  
+</nav>
+
+  
+  <br>
+</article>
+
+
+
 
 </div>
-
 <div class="col-md-3 col-sm-3 blog-sidebar">
   <!-- CATEGORIES START -->
 <h2 class="no-top-space">Categories</h2>
@@ -401,10 +425,9 @@
 <!-- END FEATURED POSTS -->                            
 
 </div>
-
 </div>
 
-</div>
+  </section>
 </div>
 
     <!-- BEGIN PRE-FOOTER -->
