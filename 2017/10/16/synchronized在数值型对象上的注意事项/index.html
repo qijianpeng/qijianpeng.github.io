@@ -7,17 +7,22 @@
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
-  <title>Archives | QI-Jianpeng</title>
+  <title>synchronized在数值型对象上的注意事项 | QI-Jianpeng</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="QI-Jianpeng">
-<meta property="og:url" content="http://dataminer.me/archives/index.html">
+  <meta name="description" content="在对锁相关的知识进行整理时发现了一个很奇怪的现象, 都说Lock跟synchronized关键字所能达到的效果是一致的, 但是当我对一个数进行修改时,却发现两种方式所得到的结果并不一致. 追究其原因, 原来是java的自动封箱解箱机制在作祟, 当对一个数值(比如Integer类型)进行synchronized加锁时, 如果对这个数值进行修改, 虽然说我们在初始化时是分配的高级类型的对象, 但是在修">
+<meta name="keywords" content="Java,Concurrent">
+<meta property="og:type" content="article">
+<meta property="og:title" content="synchronized在数值型对象上的注意事项">
+<meta property="og:url" content="http://dataminer.me/2017/10/16/synchronized在数值型对象上的注意事项/index.html">
 <meta property="og:site_name" content="QI-Jianpeng">
+<meta property="og:description" content="在对锁相关的知识进行整理时发现了一个很奇怪的现象, 都说Lock跟synchronized关键字所能达到的效果是一致的, 但是当我对一个数进行修改时,却发现两种方式所得到的结果并不一致. 追究其原因, 原来是java的自动封箱解箱机制在作祟, 当对一个数值(比如Integer类型)进行synchronized加锁时, 如果对这个数值进行修改, 虽然说我们在初始化时是分配的高级类型的对象, 但是在修">
+<meta property="og:updated_time" content="2017-10-16T03:48:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QI-Jianpeng">
+<meta name="twitter:title" content="synchronized在数值型对象上的注意事项">
+<meta name="twitter:description" content="在对锁相关的知识进行整理时发现了一个很奇怪的现象, 都说Lock跟synchronized关键字所能达到的效果是一致的, 但是当我对一个数进行修改时,却发现两种方式所得到的结果并不一致. 追究其原因, 原来是java的自动封箱解箱机制在作祟, 当对一个数值(比如Integer类型)进行synchronized加锁时, 如果对这个数值进行修改, 虽然说我们在初始化时是分配的高级类型的对象, 但是在修">
   
     <link rel="alternative" href="/atom.xml" title="QI-Jianpeng" type="application/atom+xml">
   
@@ -99,7 +104,7 @@
 	  <a  href="/projects/">Projects</a>
 	</li>
 	
-	<li class="active">
+	<li class="">
 	  <a  href="/archives/">Blog</a>
 	</li>
 	
@@ -137,42 +142,34 @@
   <div class="container">
   <ul class="breadcrumb">
     <li><a href="/">Home</a></li>
-    <li class="active">Blog</li>
+    <li><a href="/archives/">Blog</a></li>
+    <li class="active">Post</li>
   </ul>
-<div id="main">
-  <h1>Blog</h1>
-  <div class="row">
-
-<div class="col-md-9 col-sm-9 blog-posts">
-
-
-  <section class="archives-wrap">
-    <div class="archives">
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-      <img src="https://github.com/qijianpeng/assets/raw/master/images/java.jpg" class="img-responsive">
-    
-  </div>
-  
-    <div class="col-md-8 col-sm-8">
-  
+  <section id="main">
     
     <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/16/synchronized在数值型对象上的注意事项/">synchronized在数值型对象上的注意事项</a>
+      <a class="article-title" href="/2017/10/16/synchronized在数值型对象上的注意事项/">synchronized在数值型对象上的注意事项</a>
     </h2>
 
 
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-10-15T16:00:00.000Z" itemprop="datePublished">2017/10/16</time>
+    <div class="row">
+<div class="col-md-9 col-sm-9 blog-posts">
+<article id="post-synchronized在数值型对象上的注意事项" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+  <div class="article-meta">
+  </div>
+  <div class="article-inner">
+    
+    
+    <header class="article-header">
+      <ul class="blog-info">
+	<li><i class="fa fa-user"></i> QI-Jianpeng</li>
+	<li><i class="fa fa-calendar"></i>
+	  <time datetime="2017-10-15T16:00:00.000Z" itemprop="datePublished">2017/10/16</time>
 
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
+	</li>
+
+  <li class="hidden-xs"><i class="fa fa-tags"></i>
+    
   
     <a href="/tags/Java/" title="Java">Java</a>,
   
@@ -180,437 +177,54 @@
   
 
 
-      </li>
-    </ul>
-    <div class="blog-item">
+  </li>
+
+  <li class="hidden-xs">
+          <div  class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="fa fa-qq" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="fa fa-linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="fa fa-print" data-cmd="print" title="分享到打印"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"3","bdSize":"12"},"share":{},"image":{"viewList":["tsina","qzone","linkedin","print"],"viewText":"分享到：","viewSize":"12"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+  </li>
+      </ul>
       
-	数值型对象发生变化时上不可以加synchronized锁.
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/10/16/synchronized在数值型对象上的注意事项/" class="more">Read more <i class="icon-angle-right"></i></a>
+  <div class="article-category">
+    
+    Category: 
+    
+    Categories:
+    <a class="article-category-link" href="/categories/blog/">blog</a>
   </div>
-</div>
-<hr class="blog-post-sep">
+  <br>
 
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
+
+    </header>
     
-      <img src="https://github.com/qijianpeng/assets/raw/master/images/java.jpg" class="img-responsive">
-    
-  </div>
-  
-    <div class="col-md-8 col-sm-8">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/29/Java不能忽视的一些点/">Java不能忽视的一些点</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-09-28T16:00:00.000Z" itemprop="datePublished">2017/09/29</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Java/" title="Java">Java</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
+    <div class="article-entry" itemprop="articleBody">
       
-	本文收集一些java中遇到的问题以及疑难点
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/09/29/Java不能忽视的一些点/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-      <img src="https://github.com/qijianpeng/assets/raw/master/images/max_heap.jpeg" class="img-responsive">
-    
-  </div>
-  
-    <div class="col-md-8 col-sm-8">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/17/最大根堆的java实现/">最大根堆java实现</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-09-16T16:00:00.000Z" itemprop="datePublished">2017/09/17</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/DataStructures/" title="DataStructures">DataStructures</a>,
-  
-    <a href="/tags/Java/" title="Java">Java</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	对最大根堆利用数组进行实现.
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/09/17/最大根堆的java实现/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-      <img src="https://github.com/qijianpeng/assets/raw/master/images/anomaly.png" class="img-responsive">
-    
-  </div>
-  
-    <div class="col-md-8 col-sm-8">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/29/异常检测数据观察/">异常检测数据观察</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-08-29T08:46:00.000Z" itemprop="datePublished">2017/08/29</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Outlier/" title="Outlier">Outlier</a>,
-  
-    <a href="/tags/Data/" title="Data">Data</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	几个异常检测相关的低维数据集观察.
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/08/29/异常检测数据观察/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/16/Storm流分布式异常检测结果验证/">Storm流分布式异常检测结果验证</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-08-15T16:00:00.000Z" itemprop="datePublished">2017/08/16</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Storm/" title="Storm">Storm</a>,
-  
-    <a href="/tags/Outlier/" title="Outlier">Outlier</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	流式数据异常检测对不代标签的数据验证方法.
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/08/16/Storm流分布式异常检测结果验证/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-      <img src="http://www.michael-noll.com/blog/uploads/storm-internal-message-queues.png" class="img-responsive">
-    
-  </div>
-  
-    <div class="col-md-8 col-sm-8">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/09/Storm Worker内部消息处理/">Storm Worker内部消息处理</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-08-08T16:00:00.000Z" itemprop="datePublished">2017/08/09</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Java/" title="Java">Java</a>,
-  
-    <a href="/tags/Storm/" title="Storm">Storm</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	对于Storm worker内部消息传输的笔记
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/08/09/Storm Worker内部消息处理/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/06/Maven依赖范围/">Maven依赖范围</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-08-05T16:00:00.000Z" itemprop="datePublished">2017/08/06</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Java/" title="Java">Java</a>,
-  
-    <a href="/tags/Maven/" title="Maven">Maven</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	Maven中的依赖范围(compile, test, provided, runtime, system)
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/08/06/Maven依赖范围/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/28/Storm Window中的数据填充方式以及顺序/">Storm Window中的数据填充方式以及顺序</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-07-27T16:00:00.000Z" itemprop="datePublished">2017/07/28</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Storm/" title="Storm">Storm</a>,
-  
-    <a href="/tags/Window/" title="Window">Window</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	介绍Storm Sliding Widnow 以及Tumbling Window的数据处理方式, 以及其中的数据顺序问题
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/07/28/Storm Window中的数据填充方式以及顺序/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/24/count-based window wit time sliding interval/">count-based window wit time sliding interval</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-07-23T16:00:00.000Z" itemprop="datePublished">2017/07/24</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Java/" title="Java">Java</a>,
-  
-    <a href="/tags/Storm/" title="Storm">Storm</a>,
-  
-    <a href="/tags/Window/" title="Window">Window</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	withWindow(Count windowLength, Duration slidingInterval) 相关
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/07/24/count-based window wit time sliding interval/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
-
-      
-	<div class="row">
-  <div class="col-md-4 col-sm-4">
-    
-  </div>
-  
-    <div class="col-xs-12">
-  
-    
-    <h2 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/02/Storm TumblingWindow 解释/">Storm TumblingWindow 解释</a>
-    </h2>
-
-
-    <ul class="blog-info">
-      <li>
-      	<i class="fa fa-calendar"></i> 
-        <time datetime="2017-07-02T02:27:00.000Z" itemprop="datePublished">2017/07/02</time>
-
-      </li>
-      <li>
-	<i class="fa fa-tags"></i>
-	
-  
-    <a href="/tags/Java/" title="Java">Java</a>,
-  
-    <a href="/tags/Storm/" title="Storm">Storm</a>,
-  
-    <a href="/tags/Window/" title="Window">Window</a>
-  
-
-
-      </li>
-    </ul>
-    <div class="blog-item">
-      
-	本文介绍Storm中TumblingWindow的用法.
-      
-    </div>
-    <br>
-    <br>
-    <a href="http://dataminer.me/2017/07/02/Storm TumblingWindow 解释/" class="more">Read more <i class="icon-angle-right"></i></a>
-  </div>
-</div>
-<hr class="blog-post-sep">
+        <p>在对锁相关的知识进行整理时发现了一个很奇怪的现象, 都说Lock跟synchronized关键字所能达到的效果是一致的, 但是当我对一个数进行修改时,<br>却发现两种方式所得到的结果并不一致. 追究其原因, 原来是java的自动封箱解箱机制在作祟, 当对一个数值(比如Integer类型)进行synchronized加锁时, 如果对这个数值进行修改, 虽然说我们在初始化时是分配的高级类型的对象, 但是在修改时, java会解箱, 解箱修改后会重新生成新的数字, 如果对其加锁, 那么每次都是对新的对象进行锁操作, 因此会得到不确定的结果.<br>以下是代码以及解释.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.concurrent.locks.Lock;</div><div class="line"><span class="keyword">import</span> java.util.concurrent.locks.ReentrantLock;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</div><div class="line">    <span class="keyword">static</span> Lock lock = <span class="keyword">new</span> ReentrantLock();</div><div class="line">    <span class="keyword">static</span> Object obj = <span class="keyword">new</span> Object();</div><div class="line">    <span class="keyword">static</span> Long a = <span class="keyword">new</span> Long(<span class="number">0</span>);</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Long <span class="title">getA</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> a;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</div><div class="line">        Main m1 = <span class="keyword">new</span> Main();     Main m2 = <span class="keyword">new</span> Main();    Main m3 = <span class="keyword">new</span> Main();</div><div class="line"></div><div class="line">        Thread t1 = <span class="keyword">new</span> Thread(m1);    Thread t2 = <span class="keyword">new</span> Thread(m2);    Thread t3 = <span class="keyword">new</span> Thread(m3);</div><div class="line">        t1.start();  t2.start();    t3.start();</div><div class="line">        t1.join();   t2.join();     t3.join();</div><div class="line">        System.out.println(Main.a);</div><div class="line">    &#125;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="comment">//1. ReentrantLock 方法</span></div><div class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10000</span>; i++)&#123;</div><div class="line">             lock.lock();</div><div class="line">             a++;</div><div class="line">             lock.unlock();</div><div class="line">       &#125;<span class="comment">// 最终输出结果: 30000</span></div><div class="line">        <span class="comment">//2. synchronized 关键字</span></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10000</span>; i++)&#123;</div><div class="line">            <span class="keyword">synchronized</span> (obj)&#123;<span class="comment">//由于java的自动封箱与解箱, 如果锁a的话, 每次操作后, a都会发生变化, 不是原来的对象了.</span></div><div class="line">                a++;</div><div class="line">            &#125;</div><div class="line">        &#125;<span class="comment">// 最终输出结果不确定</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
+
+  </div>
+  
     
-      <div id="page-nav" class="pagination">
-	<span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">Next</a>
-      </div>
-    
-  </section>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/09/29/Java不能忽视的一些点/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Java不能忽视的一些点</div>
+    </a>
+  
+</nav>
+
+  
+  <br>
+</article>
+
+
+
 
 </div>
-
 <div class="col-md-3 col-sm-3 blog-sidebar">
   <!-- CATEGORIES START -->
 <h2 class="no-top-space">Categories</h2>
@@ -822,10 +436,9 @@
 <!-- END FEATURED POSTS -->                            
 
 </div>
-
 </div>
 
-</div>
+  </section>
 </div>
 
     <!-- BEGIN PRE-FOOTER -->
