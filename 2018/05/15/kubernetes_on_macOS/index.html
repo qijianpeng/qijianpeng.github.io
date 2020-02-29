@@ -7,22 +7,21 @@
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
   
-  <title>synchronized在数值型对象上的注意事项 | QI-Jianpeng</title>
+  <title>QI-Jianpeng</title>
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="description" content="在对锁相关的知识进行整理时发现了一个很奇怪的现象, 都说Lock跟synchronized关键字所能达到的效果是一致的, 但是当我对一个数进行修改时,却发现两种方式所得到的结果并不一致. 追究其原因, 原来是java的自动封箱解箱机制在作祟, 当对一个数值(比如Integer类型)进行synchronized加锁时, 如果对这个数值进行修改, 虽然说我们在初始化时是分配的高级类型的对象, 但是在修">
-<meta name="keywords" content="Java,Concurrent">
+  <meta name="description" content="local-machine 部署方法Install12345678# 安装kubectlbrew install kubectl# 查看版本信息kubectl version# 添加可执行权限chmod +x ./kubectl# 添加到bin目录sudo mv ./kubectl /usr/local/bin/kubectl ref: https://kubernetes.io/docs/tas">
 <meta property="og:type" content="article">
-<meta property="og:title" content="synchronized在数值型对象上的注意事项">
-<meta property="og:url" content="http://dataminer.me/2017/10/16/synchronized在数值型对象上的注意事项/index.html">
+<meta property="og:title" content="QI-Jianpeng">
+<meta property="og:url" content="http://dataminer.me/2018/05/15/kubernetes_on_macOS/index.html">
 <meta property="og:site_name" content="QI-Jianpeng">
-<meta property="og:description" content="在对锁相关的知识进行整理时发现了一个很奇怪的现象, 都说Lock跟synchronized关键字所能达到的效果是一致的, 但是当我对一个数进行修改时,却发现两种方式所得到的结果并不一致. 追究其原因, 原来是java的自动封箱解箱机制在作祟, 当对一个数值(比如Integer类型)进行synchronized加锁时, 如果对这个数值进行修改, 虽然说我们在初始化时是分配的高级类型的对象, 但是在修">
-<meta property="og:updated_time" content="2017-10-16T03:48:28.000Z">
+<meta property="og:description" content="local-machine 部署方法Install12345678# 安装kubectlbrew install kubectl# 查看版本信息kubectl version# 添加可执行权限chmod +x ./kubectl# 添加到bin目录sudo mv ./kubectl /usr/local/bin/kubectl ref: https://kubernetes.io/docs/tas">
+<meta property="og:updated_time" content="2018-05-23T01:01:26.044Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="synchronized在数值型对象上的注意事项">
-<meta name="twitter:description" content="在对锁相关的知识进行整理时发现了一个很奇怪的现象, 都说Lock跟synchronized关键字所能达到的效果是一致的, 但是当我对一个数进行修改时,却发现两种方式所得到的结果并不一致. 追究其原因, 原来是java的自动封箱解箱机制在作祟, 当对一个数值(比如Integer类型)进行synchronized加锁时, 如果对这个数值进行修改, 虽然说我们在初始化时是分配的高级类型的对象, 但是在修">
+<meta name="twitter:title" content="QI-Jianpeng">
+<meta name="twitter:description" content="local-machine 部署方法Install12345678# 安装kubectlbrew install kubectl# 查看版本信息kubectl version# 添加可执行权限chmod +x ./kubectl# 添加到bin目录sudo mv ./kubectl /usr/local/bin/kubectl ref: https://kubernetes.io/docs/tas">
   
     <link rel="alternative" href="/atom.xml" title="QI-Jianpeng" type="application/atom+xml">
   
@@ -147,60 +146,20 @@
   </ul>
   <section id="main">
     
-    <h2 itemprop="name">
-      <a class="article-title" href="/2017/10/16/synchronized在数值型对象上的注意事项/">synchronized在数值型对象上的注意事项</a>
-    </h2>
-
 
     <div class="row">
 <div class="col-md-9 col-sm-9 blog-posts">
-<article id="post-synchronized在数值型对象上的注意事项" class="article article-type-post blog-item" itemscope itemprop="blogPost">
+<article id="post-kubernetes_on_macOS" class="article article-type-post blog-item" itemscope itemprop="blogPost">
   <div class="article-meta">
   </div>
   <div class="article-inner">
     
     
-    <header class="article-header">
-      <ul class="blog-info">
-	<li><i class="fa fa-user"></i> QI-Jianpeng</li>
-	<li><i class="fa fa-calendar"></i>
-	  <time datetime="2017-10-15T16:00:00.000Z" itemprop="datePublished">2017/10/16</time>
-
-	</li>
-
-  <li class="hidden-xs"><i class="fa fa-tags"></i>
-    
-  
-    <a href="/tags/Java/" title="Java">Java</a>,
-  
-    <a href="/tags/Concurrent/" title="Concurrent">Concurrent</a>
-  
-
-
-  </li>
-
-  <li class="hidden-xs">
-          <div  class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="fa fa-qq" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="fa fa-linkedin" data-cmd="linkedin" title="分享到linkedin"></a><a href="#" class="fa fa-print" data-cmd="print" title="分享到打印"></a></div>
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"3","bdSize":"12"},"share":{},"image":{"viewList":["tsina","qzone","linkedin","print"],"viewText":"分享到：","viewSize":"12"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-  </li>
-      </ul>
-      
-  <div class="article-category">
-    
-    Category: 
-    
-    Categories:
-    <a class="article-category-link" href="/categories/blog/">blog</a>
-  </div>
-  <br>
-
-
-    </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在对锁相关的知识进行整理时发现了一个很奇怪的现象, 都说Lock跟synchronized关键字所能达到的效果是一致的, 但是当我对一个数进行修改时,<br>却发现两种方式所得到的结果并不一致. 追究其原因, 原来是java的自动封箱解箱机制在作祟, 当对一个数值(比如Integer类型)进行synchronized加锁时, 如果对这个数值进行修改, 虽然说我们在初始化时是分配的高级类型的对象, 但是在修改时, java会解箱, 解箱修改后会重新生成新的数字, 如果对其加锁, 那么每次都是对新的对象进行锁操作, 因此会得到不确定的结果.<br>以下是代码以及解释.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.concurrent.locks.Lock;</div><div class="line"><span class="keyword">import</span> java.util.concurrent.locks.ReentrantLock;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> <span class="keyword">implements</span> <span class="title">Runnable</span></span>&#123;</div><div class="line">    <span class="keyword">static</span> Lock lock = <span class="keyword">new</span> ReentrantLock();</div><div class="line">    <span class="keyword">static</span> Object obj = <span class="keyword">new</span> Object();</div><div class="line">    <span class="keyword">static</span> Long a = <span class="keyword">new</span> Long(<span class="number">0</span>);</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Long <span class="title">getA</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> a;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</div><div class="line">        Main m1 = <span class="keyword">new</span> Main();     Main m2 = <span class="keyword">new</span> Main();    Main m3 = <span class="keyword">new</span> Main();</div><div class="line"></div><div class="line">        Thread t1 = <span class="keyword">new</span> Thread(m1);    Thread t2 = <span class="keyword">new</span> Thread(m2);    Thread t3 = <span class="keyword">new</span> Thread(m3);</div><div class="line">        t1.start();  t2.start();    t3.start();</div><div class="line">        t1.join();   t2.join();     t3.join();</div><div class="line">        System.out.println(Main.a);</div><div class="line">    &#125;</div><div class="line">    <span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="comment">//1. ReentrantLock 方法</span></div><div class="line">       <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10000</span>; i++)&#123;</div><div class="line">             lock.lock();</div><div class="line">             a++;</div><div class="line">             lock.unlock();</div><div class="line">       &#125;<span class="comment">// 最终输出结果: 30000</span></div><div class="line">        <span class="comment">//2. synchronized 关键字</span></div><div class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10000</span>; i++)&#123;</div><div class="line">            <span class="keyword">synchronized</span> (obj)&#123;<span class="comment">//由于java的自动封箱与解箱, 如果锁a的话, 每次操作后, a都会发生变化, 不是原来的对象了.</span></div><div class="line">                a++;</div><div class="line">            &#125;</div><div class="line">        &#125;<span class="comment">// 最终输出结果不确定</span></div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-
+        <h1 id="local-machine-部署方法"><a href="#local-machine-部署方法" class="headerlink" title="local-machine 部署方法"></a>local-machine 部署方法</h1><h1 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 安装kubectl</span></div><div class="line">brew install kubectl</div><div class="line"><span class="comment"># 查看版本信息</span></div><div class="line">kubectl version</div><div class="line"><span class="comment"># 添加可执行权限</span></div><div class="line">chmod +x ./kubectl</div><div class="line"><span class="comment"># 添加到bin目录</span></div><div class="line">sudo mv ./kubectl /usr/<span class="built_in">local</span>/bin/kubectl</div></pre></td></tr></table></figure>
+<p>ref: <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/" target="_blank" rel="external">https://kubernetes.io/docs/tasks/tools/install-kubectl/</a></p>
+<h1 id="Hello-world"><a href="#Hello-world" class="headerlink" title="Hello world"></a>Hello world</h1>
       
     </div>
 
@@ -209,19 +168,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2017/10/20/最小生成树聚类/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          最小生成树聚类
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/09/29/Java不能忽视的一些点/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/10/20/最小生成树聚类/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Java不能忽视的一些点</div>
+      <div class="article-nav-title">最小生成树聚类</div>
     </a>
   
 </nav>
