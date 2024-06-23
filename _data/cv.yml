@@ -13,7 +13,7 @@
   contents:
     - title: 博士
       institution: 北京科技大学
-      year: 2019 - 2023
+      year: 2019.09 - 2023.06
       description:
         - 计算机科学与技术
         - title: Description 3.
@@ -22,12 +22,12 @@
             - Sub-description 2.
     - title: 硕士
       institution: 烟台大学
-      year: 2015 - 2018
+      year: 2015.09 - 2018.06
       description:
         - 计算机软件与理论
     - title: 学士
       institution: 烟台大学
-      year: 2011 - 2015
+      year: 2011.09 - 2015.06
       description:
         - 软件工程
 
