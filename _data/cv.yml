@@ -4,29 +4,32 @@
     - name: Full Name
       value: 齐建鹏
     - name: Date of Birth
-      value: 14th March 1879
+      value: 1992
     - name: Languages
-      value: English, German
+      value: Chinese, English
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: 博士
+      institution: 北京科技大学
+      year: 2023
       description:
-        - Description 1.
-        - Description 2.
+        - 计算机科学与技术
         - title: Description 3.
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+    - title: 硕士
+      institution: 烟台大学
+      year: 2018
       description:
-        - Description 1.
-        - Description 2.
+        - 计算机软件与理论
+    - title: 学士
+      institution: 烟台大学
+      year: 2015
+      description:
+        - 软件工程
 
 - title: Experience
   type: time_table
