@@ -2,7 +2,7 @@
 layout: about
 title: 关于
 permalink: /
-subtitle: <a href='https://it.ouc.edu.cn/main.htm'>Affiliations</a>. 中国海洋大学 信息科学与工程学部 计算机科学与技术学院
+subtitle: <a href='https://it.ouc.edu.cn/main.htm'>中国海洋大学 信息科学与工程学部 计算机科学与技术学院</a>
 
 profile:
   align: right
