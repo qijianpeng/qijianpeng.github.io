@@ -29,7 +29,7 @@
       "url": "http://it.ouc.edu.cn",
       "startDate": "2023-07",
       "endDate": "Now",
-      "summary": "边缘计算、分布式计算、新型网络"
+      "summary": "边缘计算、信息中心网络、边缘智能、算力网络"
     },
 
     {
@@ -38,7 +38,7 @@
       "url": "https://www.transwarp.cn/",
       "startDate": "2018.06",
       "endDate": "2019.07",
-      "summary": "分布式数据库研发."
+      "summary": "分布式数据库研发"
     }
   ],
   "education": [
@@ -46,12 +46,11 @@
       "institution": "北京科技大学",
       "location": "北京，中国",
       "url": "https://www.uzh.ch/",
-      "area": "Edge Computing, Networking",
+      "area": "边缘计算、信息中心网络、边缘智能、算力网络",
       "studyType": "PhD",
       "startDate": "2019-09-05",
       "endDate": "2023-06-13",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "score": "10"
     }
   ],
   "awards": [
