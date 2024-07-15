@@ -3,6 +3,169 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{easiei2024iotj,
+   title = {EasiEI: A simulator to flexibly modeling complex edge computing environments},
+   type = {Journal Article}
+
+
+  abbr={easiei},
+  title={EasiEI: A simulator to flexibly modeling complex edge computing environments},
+  author = {Su#, Xiao and Qi#, Jianpeng and Wang, Jiahao and Wang*, Rui},
+  abstract={In edge computing scenarios, there is a need for modeling dedicated features and heterogeneous devices functions, as well as integrating multiple complex scenarios with diverse objectives and frequent interactions. However, existing platforms modeling for the whole device ignores the independence between functional components resulting in limited scenario support. We propose an open-source simulator named EasiEI. EasiEI addresses the need for higher level feature replaceability and independence in modeling complex edge scenarios through independent functional component-level modeling and microkernel architecture. This approach enables users to assemble independent functional components in a plug-and-play manner for heterogeneous devices or different application requirements. EasiEI is fully compatible with all the existing built-in modules in NS3 (a powerful network discrete event simulator). To verify the flexibility and extensibility of EasiEI, we implement several centralized and decentralized computing paradigms cases in a step-by-step way. These cases restore and simulate the performance state of various real devices in real time, meeting the requirements for verifying the edge computing ideas such as task scheduling in a distributed manner. Results show that the simulations have well reflected the characteristics of the real world and can construct complex environment flexibly.},
+  journal = {IEEE Internet of Things Journal},
+   volume = {11},
+   pages = {1558-1571},
+   number = {1},
+   year = {2024},
+  month={June},
+  publisher={IEEE},
+   DOI = {10.1109/JIOT.2023.3289870},
+
+  url={https://ieeexplore.ieee.org/document/10164279},
+  html={https://ieeexplore.ieee.org/document/10164279},
+  pdf={easiei2024iotj.pdf},
+
+  google_scholar_id={mVmsd5A6BfQC},
+  additional_info={. *More Information* can be [found here](https://ieeexplore.ieee.org/document/10164279)},
+  annotation={* Corresponce<br># Co-first author},
+  selected={true}
+}
+@article{smartbuoy2024tnet,
+   author = {Qi, Jianpeng and Su, Xiao and Wang*, Rui},
+   title = {Towards distributively build time-sensitive-service coverage in compute first networking},
+   journal = {IEEE/ACM Transactions on Networking},
+   volume = {32},
+  publisher={IEEE},
+  abstract = {Despite placing services and computing resources at the edge of the network for ultra-low latency, we still face the challenge of centralized scheduling costs, including delays from additional request forwarding and resource selection. To address this challenge, we propose SmartBuoy, a new computing paradigm. Our approach starts with a service coverage concept that assumes users within the coverage have high access availability. To enable users to perceive service status, we design a distributed metric table that synchronizes service status periodically and distributively. We propose coverage indicator updating principles to make the updating process more effective. We then implement two distributed methods, SmartBuoy-Time and SmartBuoy-Reliability, that enable users to perceive service capability directly and immediately. To determine the metric table update window size, we provide an analysis method based on user access patterns and offer a theoretical upper bound in a dynamic environment, making SmartBuoy easy to use. Finally, we implement the proposed methods distributively on an open-source edge computing simulator. Experiments on a real-world network topology dataset demonstrate the efficiency of SmartBuoy in reducing delays and improving the success rate.},
+   number = {1},
+   pages = {582-597},
+   DOI = {10.1109/TNET.2023.3289830},
+   year = {2024},  
+   pdf={smartbuoy2024tnet.pdf},
+   url={https://ieeexplore.ieee.org/document/10172050/},
+  html={https://ieeexplore.ieee.org/document/10172050/},
+  google_scholar_id={hC7cP41nSMkC},
+  additional_info={. *More Information* can be [found here](https://ieeexplore.ieee.org/document/10172050)},
+  annotation={* Corresponce},
+  selected={true}
+}
+
+@article{r22023tnet,
+   author = {Qi, Jianpeng and Wang*, Rui},
+   title = {R2: A distributed remote function execution mechanism with built-in metadata},
+   journal = {IEEE/ACM Transactions on Networking},
+  publisher={IEEE},
+   volume = {31},
+   year = {2023},  
+   number = {24},
+   pages = {710-723},
+   pdf={r22023tnet.pdf},
+   abstract = {Named data networking (NDN) constructs a network by names, providing a flexible and decentralized way to manage resources within the edge computing continuum. This paper aims to solve the question, “Given a function with its parameters and metadata, how to select the executor in a distributed manner and obtain the result in NDN?” To answer it, we design R2 that involves the following stages. First, we design a name structure including data, function names, and other function parameters. Second, we develop a 2-phase mechanism, where in the first phase, the function request from a client-first reaches the data source and retrieves the metadata. Then the best node is selected while the metadata responds to the client. In the second phase, the chosen node directly retrieves the data, executes the function, and provides the result to the client. Furthermore, we propose a stop condition to intelligently reduce the processing time of the first phase and provide a simple proof and range analysis. Simulations confirm that R2 outperforms the current solutions in terms of resource allocation, especially when the data volume and the function complexity are high. In the experiments, when the data size is 100 KiB and the function complexity is O(n2) , the speedup ratio is 4.61. To further evaluate R2, we also implement a general intermediate data processing logic named “Bolt” implemented on an app-level in ndnSIM. We believe that R2 shall help the researchers and developers to verify their ideas smoothly.},
+   DOI = {10.1109/TNET.2022.3198467},
+   url = {https://doi.org/10.1109/TNET.2022.3198467},
+   html={https://doi.org/10.1109/TNET.2022.3198467},
+   year = {2023},
+  google_scholar_id={aqlVkmm33-oC},
+  additional_info={. *More Information* can be [found here](https://doi.org/10.1109/TNET.2022.3198467)},
+  annotation={* Corresponce},
+  selected={true}
+}
+
+@article{remr2022iotj,
+   author = {Chen#, Liang and Qi#, Jianpeng and Su, Xiao and Wang*, Rui},
+   title = {REMR: A reliability evaluation method for dynamic edge computing network under time constraints},
+   journal = {IEEE Internet of Things Journal},
+   volume = {10},
+   abstract = {Computation and/or communication-intensive collaborative services accompanied by several distributed tasks/components, such as the services in Internet of Things, can be anywhere nowadays. These services are usually used by users at the Internet edge, making cloud computing struggles with the high end-to-end latency. Thanks to edge computing which pushes resources to the edge, the goals with lower latency can be well satisfied. However, in actual scenarios especially under dynamic edge computing networks, changes exist in resources, including computing, bandwidth, and nodes. Meanwhile, data packets (or flow) among collaborative tasks/components of a service can also not be conserved. These characteristics lead the service reliability hard to be guaranteed and make existing reliability evaluation methods no longer accurate. To study the effect of distributed and collaborative service deployment strategies under such background, we propose a reliability evaluation method (REMR). We first look for the solution set which can meet the time constraints. Then, we calculate the reliability of service supported by the solution set based on the principle of inclusion–exclusion with distributions of available transmission bandwidth and computing resources. Finally, we provide an illustrative example with several real-world data sets to make REMR easy to follow. To make REMR more reliable, we also propose and implement a Monte Carlo simulation method. Experiments prove that the reliability calculated by REMR is nearly the same as the simulation results and both the latencies and the jitters are also at a lower level.},
+   number = {5},
+   pdf={remr2022iotj.pdf},
+   pages = {4281-4291},
+  publisher={IEEE},
+   month           = {March},
+   url = {https://ieeexplore.ieee.org/document/10172050},
+
+   DOI = {10.1109/JIOT.2022.3216056},
+  google_scholar_id={mVmsd5A6BfQC},
+   year = {2023},
+  annotation={* Corresponce<br># Co-first author},
+  selected={true}
+}
+
+@misc{RN86,
+   author = {Qi, Jianpeng},
+   title = {Awesome edge computing},
+   volume = {2023},
+   number = {2023-03-13},
+   url = {https://github.com/qijianpeng/awesome-edge-computing},
+   year = {2022},
+   type = {Web Page}
+}
+
+@misc{RN113,
+   author = {Yang, Tao and Chen, Liang and Wang, Jigang and Cui, Zenghao and Qi, Jianpeng},
+   title = {Anomaly Detection of Dust Removal System Through Gradient Boosting Decision Tree Algorithm},
+   pages = {685-688},
+   month = {14-16 May 2021},
+   abstract = {In the process of modern industrial production, the breakdown of industrial equipment will bring serious economic loss, making the diagnosis of equipment a research hotspot. Among numerous equipment, the dust removal system contains many sub-equipment and parameters, which make its fault diagnosis a challenging problem. This paper introduces a solution to the anomaly detection problem of dust removal fans based on the improved K-means combined with the gradient boosting decision tree (GBDT) model. This study uses K-means to divide the obtained original data into different classes, then utilizes the model to complete the classification and prediction tasks for anomaly detection. It was found that the model used is more suitable for the fault diagnosis of the dust removal fan.},
+   DOI = {10.1109/CISCE52179.2021.9445934},
+   url = {https://ieeexplore.ieee.org/document/9445934/},
+   year = {2021},
+   type = {Conference Paper}
+}
+
+@inproceedings{RN110,
+   author = {Yang, Tao and Wang, Jigang and Chen, Liang and Cui, Zenghao and Qi, Jianpeng and Wang, Rui},
+   title = {Machinery Health Prognostics of Dust Removal Fan Data Through Deep Neural Networks},
+   booktitle = {Cyberspace Data and Intelligence, and Cyber-Living, Syndrome, and Health},
+   editor = {Ning, Huansheng and Shi, Feifei},
+   publisher = {Springer Singapore},
+   pages = {27-37},
+   abstract = {In industrial production, the health of the machine is a very important issue. The health of the dust removal fan is a challenging issue in the field of ma-chine health. In this paper, the deep learning network Variational Auto-Encoder (VAE) and Long Short-Term Memory (LSTM) network are combined to solve the health problem of the dust removal fan. The deep learning network VAE can map the features of the data to hidden variables, and the LSTM network can extract the time dependence between the data. Experiments show that the VAE-LSTM network is suitable for dust removal fans and has a good effect.},
+   ISBN = {978-981-33-4336-8},
+   type = {Conference Proceedings}
+}
+
+@article{RN112,
+   author = {Qi, Jianpeng and Yu, Yanwei and Wang, Lihong and Liu, Jinglei and Wang, Yingjie},
+   title = {An effective and efficient hierarchical K -means clustering algorithm},
+   journal = {International Journal of Distributed Sensor Networks},
+   volume = {13},
+   number = {8},
+   pages = {155014771772862-155014771772862},
+   note = {1550-1477},
+   abstract = {\textcopyright 2017, \textcopyright The Author(s) 2017. K-means plays an important role in different fields of data mining. However, k-means often becomes sensitive due to its random seeds selecting. Motivated by this, this article proposes an optimized k-means clustering method, named k*-means, along with three optimization principles. First, we propose a hierarchical optimization principle initialized by k* seeds (K*>K) to reduce the risk of random seeds selecting, and then use the proposed “top-n nearest clusters merging” to merge the nearest clusters in each round until the number of clusters reaches at K. Second, we propose an “optimized update principle” that leverages moved points updating incrementally instead of recalculating mean and SSE of cluster in k-means iteration to minimize computation cost. Third, we propose a strategy named “cluster pruning strategy” to improve efficiency of k-means. This strategy omits the farther clusters to shrink the adjustable space in each iteration. Experiments performed on real UCI and synthetic datasets verify the efficiency and effectiveness of our proposed algorithm.},
+   keywords = {Data mining
+cluster pruning
+clustering
+k-means
+top-n merging},
+   url = {http://journals.sagepub.com/doi/10.1177/1550147717728627},
+   year = {2017},
+   type = {Journal Article}
+}
+
+@inproceedings{RN109,
+   author = {Yu, Yanwei and Qi, Jianpeng and Lu, Yunhui and Zhang, Yonggang and Liu, Zhaowei},
+   title = {MR-Swarm: Mining swarms from big spatio-temporal trajectories using mapreduce},
+   booktitle = {2016 Intelligent Data Engineering and Automated Learning (IDEAL)},
+   editor = {Yin, Hujun and Gao, Yang and Li, Bin and Zhang, Daoqiang and Yang, Ming and Li, Yun and Klawonn, Frank and Tallón-Ballesteros, Antonio J.},
+   address = {Berlin},
+   publisher = {Springer},
+   pages = {568-575},
+   ISBN = {978-3-319-46257-8},
+   year = {2016},
+   type = {Conference Proceedings}
+}
+
+@inproceedings{RN111,
+   author = {QI, Jianpeng and Yu, Yanwei and Wang, Lihong and Liu, Jinglei},
+   title = {K*-Means: An Effective and Efficient K-Means Clustering Algorithm},
+   booktitle = {2016 IEEE International Conferences on Big Data and Cloud Computing (BDCloud), Social Computing and Networking (SocialCom), Sustainable Computing and Communications (SustainCom) (BDCloud-SocialCom-SustainCom)},
+   pages = {242-249},
+   DOI = {10.1109/BDCloud-SocialCom-SustainCom.2016.46},
+   type = {Conference Proceedings}
+}
+
 
 
 
@@ -59,8 +222,7 @@
   google_scholar_id={qyhmnyLat1gC},
   video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
   additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true}
+  annotation={* Example use of superscripts<br>† Albert Einstein}
 }
 
 @article{einstein1905molekularkinetischen,
