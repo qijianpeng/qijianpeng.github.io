@@ -9,9 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>山东省青岛市西海岸新区三沙路1299号</p>
-    <p>中国海洋大学，计算机与科学技术学院</p>
-    <p>信息南楼A431</p>
+    <p>山东省青岛市黄岛区三沙路1299号</p>
+    <p>中国海洋大学，信息南楼A431</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
