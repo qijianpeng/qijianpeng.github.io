@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "齐建鹏",
-    "label": "CS",
+    "label": "计算机科学与技术",
     "image": "",
     "email": "qijianpng@ouc.edu.cn",
     "phone": "",
@@ -45,11 +45,22 @@
     {
       "institution": "北京科技大学",
       "location": "北京，中国",
-      "url": "https://www.uzh.ch/",
+      "url": "https://www.ustb.edu.cn/",
       "area": "边缘计算、信息中心网络、边缘智能、算力网络",
-      "studyType": "PhD",
+      "studyType": "博士",
       "startDate": "2019-09-05",
       "endDate": "2023-06-13",
+      "score": "10"
+    },
+
+    {
+      "institution": "烟台大学",
+      "location": "烟台，中国",
+      "url": "https://www.ytu.edu.cn/",
+      "area": "并行计算、模式挖掘",
+      "studyType": "硕士",
+      "startDate": "2015-09-01",
+      "endDate": "2018-06-19",
       "score": "10"
     }
   ],
