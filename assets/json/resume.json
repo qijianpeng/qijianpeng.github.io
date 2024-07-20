@@ -1,27 +1,27 @@
 {
-  "basics": {
-    "name": "齐建鹏",
-    "label": "计算机科学与技术",
-    "image": "",
-    "email": "qijianpeng@ouc.edu.cn",
-    "phone": "",
-    "url": "https://qijianpeng.github.io",
-    "summary": "边缘计算、分布式计算、新型网络",
-    "location": {
-      "address": "三沙路1299号 中国海洋大学",
-      "postalCode": "266404",
-      "city": "青岛",
-      "countryCode": "CN",
-      "region": "中国"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "-",
-        "url": "--"
-      }
-    ]
-  },
+  // "basics": {
+  //   "name": "齐建鹏",
+  //   "label": "计算机科学与技术",
+  //   "image": "",
+  //   "email": "qijianpeng@ouc.edu.cn",
+  //   "phone": "",
+  //   "url": "https://qijianpeng.github.io",
+  //   "summary": "边缘计算、分布式计算、新型网络",
+  //   "location": {
+  //     "address": "三沙路1299号 中国海洋大学",
+  //     "postalCode": "266404",
+  //     "city": "青岛",
+  //     "countryCode": "CN",
+  //     "region": "中国"
+  //   },
+  //   "profiles": [
+  //     {
+  //       "network": "Twitter",
+  //       "username": "-",
+  //       "url": "--"
+  //     }
+  //   ]
+  // },
   "work": [
     {
       "name": "中国海洋大学，信息科学与工程学部, 计算机科学与技术学院",
