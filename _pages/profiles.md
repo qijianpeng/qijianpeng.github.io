@@ -2,7 +2,6 @@
 layout: profiles
 permalink: /people/
 title: 人员
-description: 团队
 nav: true
 nav_order: 7
 
@@ -14,12 +13,12 @@ profiles:
     content: about_yu.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>中国海洋大学西海岸校区信息楼南楼A329</p>
+      https://yuyanwei.github.io/
   - align: left
     image: prof_pic.jpg
     content: about_qi.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      <p>中国海洋大学西海岸校区信息楼南楼A329</p>
+      https://qijianpeng.github.io/
 
 ---
