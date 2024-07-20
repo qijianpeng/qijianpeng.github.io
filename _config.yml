@@ -156,10 +156,10 @@ giscus:
   input_position: bottom # whether to display input form below (bottom) or above (top) the comments
   theme: preferred_color_scheme # name of the color scheme (preferred works well with al-folio light/dark mode)
   emit_metadata: 0
-  lang: cn
+  lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: Jianpeng # put your disqus shortname
+disqus_shortname: jianpeng # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
