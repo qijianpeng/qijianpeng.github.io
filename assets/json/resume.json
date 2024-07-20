@@ -36,7 +36,7 @@
       "name": "星环科技，基础架构部门",
       "position": "研发工程师",
       "url": "https://www.transwarp.cn/",
-      "startDate": "2018.06",
+      "startDate": "2018.01",
       "endDate": "2019.07",
       "summary": "分布式数据库研发"
     }
@@ -66,29 +66,42 @@
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "title": "国家奖学金",
+      "date": "2017-11-20",
+      "awarder": "中华人民共和国教育部"
     },
+
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "title": "山东省优秀学校",
+      "date": "2018-04-01",
+      "awarder": "山东省教育厅",
+      "url": "#",
+      "summary": ".'"
+    },
+
+    {
+      "title": "山东省优秀毕业生",
+      "date": "2018-06-08",
+      "awarder": "山东省人力资源和社会保障厅",
+      "summary": ".'"
     }
   ],
+  // "certificates": [
+  //   {
+  //     "name": "Machine Learning",
+  //     "date": "2018-01-01",
+  //     "issuer": "Stanford University",
+  //     "url": "https://example.com",
+  //     "icon": "fa-solid fa-location-dot"
+  //   },
+  //   {
+  //     "name": "Quantum Computing",
+  //     "date": "2018-01-01",
+  //     "issuer": "Stanford University",
+  //     "url": "https://example.com",
+  //     "icon": "fa-solid fa-tag"
+  //   }
+  // ],
   // "publications": [
   //   {
   //     "name": "Zur Elektrody/namik bewegter Körper",
