@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: 教学
-description: Materials for courses you taught. Replace this text with your description.
+description: 目前暂无教学任务。
 nav: true
 nav_order: 6
 ---
