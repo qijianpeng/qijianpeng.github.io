@@ -13,12 +13,12 @@ profiles:
     content: about_yu.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      https://yuyanwei.github.io/
+       <a href="https://yuyanwei.github.io/">https://yuyanwei.github.io/</a>
   - align: left
     image: prof_pic.jpg
     content: about_qi.md
     image_circular: false # crops the image to make it circular
     more_info: >
-      https://qijianpeng.github.io/
-
+       <a href="https://qijianpeng.github.io/">https://qijianpeng.github.io/</a>
+      
 ---
