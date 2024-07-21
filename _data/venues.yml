@@ -1,22 +1,16 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
-
 "IoTJ":
   url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907
   color: "#009f36"
 
 "ToN":
   url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=90
+  color: "#B84554"
 
 "CIKM24":
   url: https://cikm2024.org/
 
 "IJCAI24":
   url: https://ijcai24.org/
+
+"Patent":
+  color: "#99C071"
