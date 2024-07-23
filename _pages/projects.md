@@ -5,7 +5,7 @@ permalink: /projects/
 description: 主持、参与项目。
 nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [PI, participant]
 horizontal: false
 ---
 
