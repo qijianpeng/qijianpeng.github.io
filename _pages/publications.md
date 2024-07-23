@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: 成果
-description:   # 共一、* 通讯
+description:   <div># 共一、* 通讯</div>
 nav: true
 nav_order: 2
 ---
