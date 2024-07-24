@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: 教学
 description: 目前暂无教学任务。
-nav: true
+nav: false
 nav_order: 6
 ---
 

@@ -2,7 +2,7 @@
 layout: profiles
 permalink: /people/
 title: 人员
-nav: true
+nav: false
 nav_order: 7
 
 profiles:
