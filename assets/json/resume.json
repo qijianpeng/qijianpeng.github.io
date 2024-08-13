@@ -96,7 +96,7 @@
       "awarder": "山东省人力资源和社会保障厅",
       "summary": "."
     }
-  ]
+  ],
   // "certificates": [
   //   {
   //     "name": "Machine Learning",
@@ -189,14 +189,22 @@
   //     "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
   //   }
   // ],
-  // "projects": [
-  //   {
-  //     "name": "Quantum Computing",
-  //     "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-  //     "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-  //     "startDate": "2018-01-01",
-  //     "endDate": "2018-01-01",
-  //     "url": "https://example.com"
-  //   }
-  // ]
+  "projects": [
+    {
+      "name": "第17批特别资助",
+      "summary": "中国博士后科学基金会，第17批特别资助，2024年7月至2025年8月, 主持, 2024T170868，18万",
+      // "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "startDate": "2024-07-09",
+      "endDate": "2025-08-01",
+      "url": "https://www.chinapostdoctor.org.cn/article?inid=bb564ba5-11b9-478f-92d7-22ed7f6e4fa1&catname=%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A&catid=8c892b1c-4ade-4a5f-9a87-5e736cb5e9f9"
+    },
+    {
+      "name": "第74批面上资助",
+      "summary": "中国博士后科学基金会，第74批面上资助，2023年11月至2025年8月，主持, 2023M743328，8 万",
+      // "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "startDate": "2024-11-27",
+      "endDate": "2025-08-01",
+      "url": "https://www.chinapostdoctor.org.cn/article?inid=3545b51f-305f-4f77-949b-ac8f55d57490&catname=%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A&catid=8c892b1c-4ade-4a5f-9a87-5e736cb5e9f9"
+    }
+  ]
 }
