@@ -2,7 +2,7 @@
 layout: about
 title: 关于
 permalink: /
-subtitle: <a href='https://it.ouc.edu.cn/main.htm'>中国海洋大学 信息科学与工程学部 计算机科学与技术学院</a>
+subtitle: <a href='https://www.ouc.edu.cn/'>中国海洋大学</a>/<a href='https://it.ouc.edu.cn/main.htm'>信息科学与工程学部</a>/<a href='https://it.ouc.edu.cn/cs/main.htm'>计算机科学与技术学院</a>
 
 profile:
   align: right
