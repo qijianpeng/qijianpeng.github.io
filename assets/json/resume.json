@@ -208,5 +208,31 @@
       "endDate": "2025-08-01",
       "url": "https://www.chinapostdoctor.org.cn/article?inid=3545b51f-305f-4f77-949b-ac8f55d57490&catname=%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A&catid=8c892b1c-4ade-4a5f-9a87-5e736cb5e9f9"
     }
+  ],
+  "services":
+  [
+    {
+      "name": "学术组织",
+      "icon": "fa-solid fa-tag",
+      "lists": [
+        "中国计算机学会服务计算专委会执行委员",
+      ]
+    },
+    {
+      "name": "期刊审稿人",
+      "icon": "fa-solid fa-tag",
+      "lists": [
+        "IEEE Internet of Things Journal",
+        "The Journal of Supercomputing",
+        "Cluster Computing"
+      ]
+    },
+    {
+      "name": "会议审稿人",
+      "icon": "fa-solid fa-tag",
+      "lists": [
+        "CCF ICSS 2024"
+      ]
+    }
   ]
 }

@@ -106,6 +106,9 @@ layout: default
                 {% when 'references' %}
                   {% include resume/references.liquid %}
                 {% else %}
+                {% when 'services' %}
+                  {% include resume/services.liquid %}
+                {% else %}
 
               {% endcase %}
             </div>
