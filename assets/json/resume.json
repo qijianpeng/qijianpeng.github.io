@@ -212,14 +212,14 @@
     {
       "name": "学术组织",
       "icon": "fa-solid fa-tag",
-      "lists": [
-        "中国计算机学会服务计算专委会执行委员",
+      "details": [
+        "中国计算机学会服务计算专委会执行委员"
       ]
     },
     {
       "name": "期刊审稿人",
       "icon": "fa-solid fa-tag",
-      "lists": [
+      "details": [
         "IEEE Internet of Things Journal",
         "The Journal of Supercomputing",
         "Cluster Computing"
@@ -228,7 +228,7 @@
     {
       "name": "会议审稿人",
       "icon": "fa-solid fa-tag",
-      "lists": [
+      "details": [
         "CCF ICSS 2024"
       ]
     }
