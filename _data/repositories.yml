@@ -5,3 +5,4 @@ github_repos:
   - qijianpeng/awesome-edge-computing
   - qijianpeng/time-requirement-for-services
   - qijianpeng/ndnSIM
+  - qijianpeng/ns3-gym-dockerfile
