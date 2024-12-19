@@ -5,6 +5,7 @@ title: macOS环境下基于Docker的ns-3、ns3-gym 一站式开发环境！
 inline: false
 related_posts: false
 ---
+
 本项目可指导用户基于 Docker 搭建一个支持 ns-3 及 ns3-gym 开发的环境，并通过 CLion 和 PyCharm 等集成开发工具实现高效开发流程，方便快速移植。通过这种方式，用户可以将本地代码同步到远程节点，利用 Docker 提供的纯编译和运行环境，在不同远程设备上完成代码编译和执行，特别适用于网络仿真与 ns3-gym集成开发场景，且适合使用 Python 绑定（Python binding）进行进一步开发和测试。当前版本安装了 Gymnasium、stable-baselines3、pytorch环境，因此可探索AI for Networking。
 
 
