@@ -4,25 +4,45 @@
 @string{aps = {American Physical Society,}}
 
 
-@INPROCEEDINGS{vldbj2025mc,
-    abbr={IJCAI24},
-    author={Zhihao Zhang# and Jianpeng Qi#* and Lei Cao and Junyu Dong and Yanwei Yu*},
-    booktitle={the 33rd International Joint Conference on Artificial  Intelligence (IJCAI)}, 
-    title = {Efficiently Counting Four-Node Motifs in Large-Scale Temporal Graphs},
+  
+@article{vldbj2025mc,
+  abbr={VLDBJ},    
+  title = {Efficiently Counting Four-Node Motifs in Large-Scale Temporal Graphs},
+  author={Zhihao Zhang# and Jianpeng Qi#* and Lei Cao and Junyu Dong and Yanwei Yu*},
+  abstract={Temporal motifs are compact subgraph patterns that recur frequently within a sequence of timestamps. They reveal implicit insights in the graph data and guide informed decision-making. However, current methods for exactly counting temporal motifs face challenges of high time complexity and inapplicability when motifs involve four nodes and struggle to scale to larger temporal graphs. In this paper, we propose a novel and exact counting framework tailored to 4-node, 3-edge, and 4-edge single-interaction temporal motifs whose time window size is constrained in a fixed interval. To speed up the counting process, we begin by categorizing all 4-node temporal motifs based on their structural characteristics. Subsequently, we present three rapid and precise sub-algorithms, each dedicated to counting motifs within its category. To expedite the counting process, we implement a series of straightforward and highly effective counters. Our algorithm cleverly uses these counters to identify and record all temporal motif instances based on the information and interrelationships of edges, significantly enhancing counting efficiency, especially for large-scale temporal graphs. Our extensive experiments on 14 large-scale real-world temporal graphs demonstrate the superiority of our work in terms of efficiency. Results show that our work significantly outperforms all state-of-the-art baselines and achieves a remarkable speedup of up to 25,816-fold.},
+  journal = {The VLDB Jounral},
+  volume={34},
+  number={44},
+  pages={1-27},
+  year = {2025},
+  month={May},
+  publisher={Springer},
+  DOI = {10.1007/s00778-025-00926-8},
+  url={https://link.springer.com/article/10.1007/s00778-025-00926-8},
+  html={https://link.springer.com/article/10.1007/s00778-025-00926-8},
+  additional_info={. *More Information* can be [found here](https://link.springer.com/article/10.1007/s00778-025-00926-8)},
+  bibtex_show={true},
+  annotation={# Co-first author},
+  selected={true},
+  award = {中国计算机学会推荐国际学术会议-数据库/数据挖掘/内容检索A类},
+  award_name = {CCF A}
+}
+
+
+@INPROCEEDINGS{icde2025,
+    abbr={ICDE25},
+    author={Xiang Li, Jianpeng Qi, Zhongying Zhao, Guanjie Zheng, Lei Cao, Junyu Dong, Yanwei Yu*},
+    booktitle={the 41th IEEE International Conference on Data Engineering}, 
+    title={UMGAD: Unsupervised Multiplex Graph Anomaly Detection}, 
     year={2025},
-    volume={34},
-    number={44},
-    pages={1-27},
-    publisher={Springer},
-    DOI = {10.1007/s00778-025-00926-8},
-    url={https://link.springer.com/article/10.1007/s00778-025-00926-8},
-    html={https://link.springer.com/article/10.1007/s00778-025-00926-8},
-    annotation={# Co-first author},
+    volume={},
+    number={},
+    pages={},
     bibtex_show={true},
     award = {中国计算机学会推荐国际学术会议-数据库/数据挖掘/内容检索A类},
     award_name = {CCF A}
   }
-
+  
 @INPROCEEDINGS{motto2024cikm,
     abbr={CIKM24},
     author={Jiantao Li# and Jianpeng Qi# and Yueling Huang and Lei Cao and Yanwei Yu and Junyu Dong},
