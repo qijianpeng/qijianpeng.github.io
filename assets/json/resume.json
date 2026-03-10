@@ -3,13 +3,13 @@
     "name": "齐建鹏",
     // "label": "计算机科学与技术",
     "image": "",
-    "email": "qijianpeng@ouc.edu.cn",
+    "email": "jianpengqi@126.com",
     "phone": "",
     "url": "https://qijianpeng.github.io",
     "summary": "边缘计算、分布式计算、新型网络",
     "location": {
-      "address": "三沙路1299号 中国海洋大学 信息南楼A431",
-      "postalCode": "266404",
+      "address": "山东省青岛市崂山区松岭路99号 青岛科技大学 数据科学学院",
+      "postalCode": "266061",
       "city": "青岛",
       "countryCode": "CN",
       "region": "中国"
@@ -24,12 +24,21 @@
   },
   "work": [
     {
+      "name": "青岛科技大学，数据科学学院",
+      "position": "特聘副教授",
+      "location": "青岛，中国",
+      "url": "https://sjkx.qust.edu.cn/",
+      "startDate": "2026-03",
+      "endDate": "Now",
+      "summary": "边缘计算、信息中心网络、边缘智能、算力网络"
+    },
+    {
       "name": "中国海洋大学，信息科学与工程学部, 计算机科学与技术学院",
       "position": "博士后",
       "location": "青岛，中国",
       "url": "http://it.ouc.edu.cn",
       "startDate": "2023-07",
-      "endDate": "Now",
+      "endDate": "2026-01",
       "summary": "边缘计算、信息中心网络、边缘智能、算力网络"
     },
 
