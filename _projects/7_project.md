@@ -2,7 +2,7 @@
 layout: page
 title: 国家自然科学基金委员会-重大研究计划
 importance: 7
-category: participat
+category: participant
 ---
 
 国家自然科学基金委员会, 重大研究计划, 92582115, 面向人机物融合智能化软件的可信、可控行为机理研究, 2026-01-01 至 2028-12-31, 60万元, 在研, 参与
