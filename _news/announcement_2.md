@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<a href="https://ieeexplore.ieee.org/abstract/document/11396674">关于联合AoI与VoI的算网状态感知工作被IEEE Internet of Things Journal录用！
-</a>
+<a href="https://ieeexplore.ieee.org/abstract/document/11396674">关于联合AoI与VoI的算网状态感知工作被IEEE Internet of Things Journal录用！</a>

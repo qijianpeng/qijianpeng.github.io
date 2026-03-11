@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-<a href="https://ieeexplore.ieee.org/document/11424561/">关于多边缘节点下的状态更新工作被IEEE Internet of Things Journal录用！
-</a>
+<a href="https://ieeexplore.ieee.org/document/11424561">关于多边缘节点下的状态更新工作被IEEE Internet of Things Journal 录用！</a>
