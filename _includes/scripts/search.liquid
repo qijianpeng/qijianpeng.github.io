@@ -30,7 +30,7 @@
         {%- if page.permalink == '/' -%}{%- assign about_title = page.title -%}{%- endif -%}
       {%- endfor -%}
       {
-        id: "nav-{{ about_title | slugify }}",
+        id: "nav-{{ about_title | slugify | default: 'home' }}",
         title: "{{ about_title }}",
         section: "Navigation",
         handler: () => {
@@ -46,7 +46,7 @@
                 {
                   {%- assign title = child.title | escape -%}
                   {%- if child.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = child.url -%}{%- endif -%}
-                  id: "dropdown-{{ title | slugify }}",
+                  id: "dropdown-{{ title | slugify | default: forloop.index }}",
                   title: "{{ title }}",
                   description: "{{ child.description | strip_html | strip_newlines | escape }}",
                   section: "Dropdown",
@@ -61,7 +61,7 @@
             {
               {%- assign title = p.title | escape -%}
               {%- if p.permalink contains "/blog/" -%}{%- assign url = "/blog/" -%} {%- else -%}{%- assign url = p.url -%}{%- endif -%}
-              id: "nav-{{ title | slugify }}",
+              id: "nav-{{ title | slugify | default: forloop.index }}",
               title: "{{ title }}",
               description: "{{ p.description | strip_html | strip_newlines | escape }}",
               section: "Navigation",
@@ -75,7 +75,7 @@
       {%- for post in site.posts -%}
         {
           {%- assign title = post.title | escape -%}
-          id: "post-{{ title | slugify }}",
+          id: "post-{{ title | slugify | default: forloop.index }}",
           {% if post.redirect == blank %}
             title: "{{ title }}",
           {% elsif post.redirect contains '://' %}
@@ -105,7 +105,7 @@
           {%- else -%}
             {%- assign title = item.title | escape -%}
           {%- endif -%}
-          id: "news-{{ title | slugify }}",
+          id: "news-{{ title | slugify | default: forloop.index }}",
           title: '{{ title | emojify }}',
           description: "{{ item.description | strip_html | strip_newlines | escape }}",
           section: "News",
@@ -125,7 +125,7 @@
               {%- else -%}
                 {%- assign title = item.title | escape -%}
               {%- endif -%}
-              id: "{{ collection.label }}-{{ title | slugify }}",
+              id: "{{ collection.label }}-{{ title | slugify | default: forloop.index }}",
               title: '{{ title | emojify }}',
               description: "{{ item.description | strip_html | strip_newlines | escape }}",
               section: "{{ collection.label | capitalize }}",
