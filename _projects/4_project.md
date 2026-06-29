@@ -1,13 +1,11 @@
 ---
 layout: page
-title: 山东省博士后创新项目
+title: 2023年度国家资助博士后研究人员计划-C档
 importance: 4
 category: PI
 ---
 
-山东省人力资源和社会保障厅，山东省博士后创新项目，2024年7月至2025年8月，主持，SDCX-ZG-202400317，3万
-
+中国博士后科学基金会，2023年度国家资助博士后研究人员计划-C档，2023年12月至2025年12月，主持, GZC20232500，12万/年
 
 来源：
-<a href="http://hrss.shandong.gov.cn/articles/ch00450/202408/dee43c50-cbd6-47c4-8d25-434d7b3bd347.shtml">山东省人力资源和社会保障厅 山东省科学技术厅关于公布2024年度山东省博士后创新项目获资助人员名单的通知
-</a>
+<a href="https://www.chinapostdoctor.org.cn/article?inid=1959937b-8a4f-48df-952c-8eeca8fc4b6f&catname=%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A&catid=8c892b1c-4ade-4a5f-9a87-5e736cb5e9f9">全国博士后管委会办公室 中国博士后科学基金会关于印发2023年度国家资助博士后研究人员计划 （B档、C档）获选结果的通知</a>

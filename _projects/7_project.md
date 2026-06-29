@@ -1,8 +1,12 @@
 ---
 layout: page
-title: 国家自然科学基金委员会-重大研究计划
+title: 2025年度博士后科研业绩评估考核资助
 importance: 7
-category: participant
+category: PI
 ---
 
-国家自然科学基金委员会, 重大研究计划, 92582115, 面向人机物融合智能化软件的可信、可控行为机理研究, 2026-01-01 至 2028-12-31, 60万元, 在研, 参与
+中国博士后基金会，2025年博士后科研业绩评估考核资助（三档），YJC20250484，2025年11月26日 
+
+来源：
+<a href="https://www.chinapostdoctor.org.cn/article?inid=f80a6aec-a426-48da-a8f4-9a3c1ad47354&catid=8c892b1c-4ade-4a5f-9a87-5e736cb5e9f9">全国博士后管委会办公室 中国博士后科学基金会关于印发2025年度博士后科研业绩评估考核资助结果的通知
+</a>
