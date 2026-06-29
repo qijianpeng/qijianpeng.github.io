@@ -2,6 +2,7 @@
 layout: profiles
 permalink: /people/
 title: 人员
+published: false
 nav: false
 nav_order: 7
 
