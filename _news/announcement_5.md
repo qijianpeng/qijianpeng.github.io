@@ -6,4 +6,4 @@ inline: false
 related_posts: false
 ---
 
-<a href="http://kjt.shandong.gov.cn/art/2026/6/25/art_13360_10325858.html">[关于公布2024年度中国博士后科学基金第17批特别资助获资助人员名单的通知](http://kjt.shandong.gov.cn/art/2026/6/25/art_13360_10325858.html)</a>
+<a href="http://kjt.shandong.gov.cn/art/2026/6/25/art_13360_10325858.html">[关于公示2026年度山东省自然科学基金集中申报项目拟立项结果的通知](http://kjt.shandong.gov.cn/art/2026/6/25/art_13360_10325858.html)</a>
