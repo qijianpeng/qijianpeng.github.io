@@ -122,6 +122,41 @@ blockquote {
   }
 }
 
+// Homepage recruitment
+
+.recruitment {
+  clear: both;
+  margin: 2rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--global-divider-color);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 0.25rem;
+  background: var(--global-card-bg-color);
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    padding-left: 1.25rem;
+  }
+
+  li + li {
+    margin-top: 0.5rem;
+  }
+
+  a {
+    overflow-wrap: anywhere;
+  }
+
+  .recruitment-note {
+    margin-bottom: 0;
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+  }
+}
+
 // Checklist
 
 ul.task-list {
