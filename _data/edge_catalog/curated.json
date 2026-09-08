@@ -14,14 +14,16 @@
       "CloudSim, Plus",
       "CloudSim, CloudSim Plus",
       "CloudSim (Plus)"
-    ]
+    ],
+    "claims": []
   },
   "cloudsim-express": {
     "paperNames": [
       "CloudSim Express",
       "CloudSim Express, Plus Automation",
       "CloudSim Express, CloudSim Plus Automation"
-    ]
+    ],
+    "claims": []
   },
   "cloudsim-plus": {
     "paperNames": [
@@ -73,7 +75,8 @@
   "cooja": {
     "paperNames": [
       "Contiki Cooja"
-    ]
+    ],
+    "claims": []
   },
   "core": {
     "features": {
@@ -85,27 +88,17 @@
           "zh": "来源明确描述运行真实应用代码；仍需满足安装与模型条件。"
         }
       }
-    }
+    },
+    "claims": []
   },
   "echoes": {
-    "claims": [
-      {
-        "facet": "type",
-        "value": "application",
-        "source": "readme"
-      }
-    ]
+    "claims": []
   },
   "edgeaisim": {
     "claims": [
       {
         "facet": "language",
         "value": "Python",
-        "source": "readme"
-      },
-      {
-        "facet": "type",
-        "value": "application",
         "source": "readme"
       },
       {
@@ -116,13 +109,7 @@
     ]
   },
   "edgesim": {
-    "claims": [
-      {
-        "facet": "type",
-        "value": "application",
-        "source": "readme"
-      }
-    ],
+    "claims": [],
     "paperNames": [
       "SimEdgeIntel"
     ],
@@ -130,15 +117,16 @@
     "aliases": [
       "EdgeSim",
       "SimEdgeIntel"
+    ],
+    "notes": [
+      {
+        "en": "The linked project identifies itself as SimEdgeIntel. EdgeSim remains an alias for the original catalog entry.",
+        "zh": "链接项目自称 SimEdgeIntel；EdgeSim 保留为原目录条目的别名。"
+      }
     ]
   },
   "edgesimpy": {
     "claims": [
-      {
-        "facet": "type",
-        "value": "application",
-        "source": "official:EdgeSimPy/EdgeSimPy"
-      },
       {
         "facet": "language",
         "value": "Python",
@@ -182,11 +170,6 @@
   "emu5gnet": {
     "claims": [
       {
-        "facet": "type",
-        "value": "emulator",
-        "source": "readme"
-      },
-      {
         "facet": "engine",
         "value": "Docker",
         "source": "readme"
@@ -204,21 +187,10 @@
     ]
   },
   "emuedge": {
-    "claims": [
-      {
-        "facet": "type",
-        "value": "emulator",
-        "source": "readme"
-      }
-    ]
+    "claims": []
   },
   "fogbed": {
     "claims": [
-      {
-        "facet": "type",
-        "value": "emulator",
-        "source": "readme"
-      },
       {
         "facet": "engine",
         "value": "Mininet",
@@ -233,11 +205,6 @@
   },
   "fognetsimpp": {
     "claims": [
-      {
-        "facet": "type",
-        "value": "packet",
-        "source": "readme"
-      },
       {
         "facet": "engine",
         "value": "OMNeT++",
@@ -263,8 +230,8 @@
     ],
     "notes": [
       {
-        "en": "The survey describes iFogSim2. The current repository also cites iFogSim2 and retains the iFogSim project name.",
-        "zh": "论文描述 iFogSim2；当前项目仍使用 iFogSim 名称，并列出 iFogSim2 文献。"
+        "en": "The repository uses the iFogSim project name and documents the iFogSim2 implementation.",
+        "zh": "仓库使用 iFogSim 项目名称，并说明 iFogSim2 实现。"
       }
     ],
     "claims": [
@@ -292,11 +259,6 @@
   "kathar": {
     "claims": [
       {
-        "facet": "type",
-        "value": "emulator",
-        "source": "readme"
-      },
-      {
         "facet": "engine",
         "value": "Docker",
         "source": "readme"
@@ -312,8 +274,8 @@
     ],
     "notes": [
       {
-        "en": "The list links to leaf-java. The survey combines Java and Python LEAF information and links to the Python implementation. Only explicitly verified Java attributes are used as filters; survey fields are retained as historical context.",
-        "zh": "清单指向 leaf-java；论文同时列出 Java 与 Python 信息并链接到 Python 实现。筛选仅使用已明确核实的 Java 属性，论文记录作为历史参考保留。"
+        "en": "This entry is leaf-java. Capabilities of the separate Python implementation are not transferred to it.",
+        "zh": "本条目对应 leaf-java，不合并独立 Python 实现的能力。"
       }
     ],
     "claims": [
@@ -325,11 +287,6 @@
       {
         "facet": "engine",
         "value": "CloudSim Plus",
-        "source": "official:dos-group/leaf-java"
-      },
-      {
-        "facet": "type",
-        "value": "application",
         "source": "official:dos-group/leaf-java"
       },
       {
@@ -352,6 +309,13 @@
   "lightmano": {
     "purpose": [
       "deployment"
+    ],
+    "claims": [],
+    "notes": [
+      {
+        "en": "Public project documentation has not been recovered; implementation capabilities remain unverified.",
+        "zh": "尚未找到可核对的公开项目文档，实现能力暂保留待核实。"
+      }
     ]
   },
   "marssx86": {
@@ -365,11 +329,6 @@
   },
   "mec-simulator": {
     "claims": [
-      {
-        "facet": "type",
-        "value": "packet",
-        "source": "readme"
-      },
       {
         "facet": "engine",
         "value": "ns-3",
@@ -397,8 +356,8 @@
     ],
     "notes": [
       {
-        "en": "The survey combines Mininet and Mininet-WiFi in one row. These historical fields should be checked against the specific project and version.",
-        "zh": "论文将 Mininet 与 Mininet-WiFi 合并在一行；这些历史字段需结合具体项目和版本核对。"
+        "en": "Mininet and Mininet-WiFi are reviewed separately; check the version and dependencies of each project.",
+        "zh": "Mininet 与 Mininet-WiFi 分别核查，请查看各项目的版本与依赖。"
       }
     ],
     "name": "Mininet",
@@ -415,7 +374,8 @@
           "zh": "来源明确描述运行真实应用代码；仍需满足安装与模型条件。"
         }
       }
-    }
+    },
+    "claims": []
   },
   "mininet-wifi": {
     "paperNames": [
@@ -423,43 +383,20 @@
     ],
     "notes": [
       {
-        "en": "The survey combines Mininet and Mininet-WiFi in one row. These historical fields should be checked against the specific project and version.",
-        "zh": "论文将 Mininet 与 Mininet-WiFi 合并在一行；这些历史字段需结合具体项目和版本核对。"
+        "en": "Mininet-WiFi is a separate extension; base-Mininet capabilities require evidence in this project or its documented dependencies.",
+        "zh": "Mininet-WiFi 是独立扩展，基础 Mininet 的能力需由本项目或其明确依赖资料确认。"
       }
     ],
-    "claims": [
-      {
-        "facet": "type",
-        "value": "emulator",
-        "source": "readme"
-      }
-    ]
+    "claims": []
   },
   "mintedge": {
-    "claims": [
-      {
-        "facet": "type",
-        "value": "application",
-        "source": "readme"
-      }
-    ]
+    "claims": []
   },
   "mobemu": {
-    "claims": [
-      {
-        "facet": "type",
-        "value": "emulator",
-        "source": "readme"
-      }
-    ]
+    "claims": []
   },
   "ndn4ivc": {
     "claims": [
-      {
-        "facet": "type",
-        "value": "packet",
-        "source": "readme"
-      },
       {
         "facet": "engine",
         "value": "ns-3",
@@ -495,16 +432,11 @@
     "paperNames": [
       "OMNeT++",
       "OMNeT++ and INET"
-    ]
+    ],
+    "claims": []
   },
   "open-simulator": {
-    "claims": [
-      {
-        "facet": "type",
-        "value": "application",
-        "source": "readme"
-      }
-    ]
+    "claims": []
   },
   "packet-tracer": {
     "features": {
@@ -516,7 +448,8 @@
           "zh": "仓库简介明确列出图形编辑器或可视化构建器。"
         }
       }
-    }
+    },
+    "claims": []
   },
   "peersim": {
     "claims": [
@@ -528,13 +461,7 @@
     ]
   },
   "pfogsim": {
-    "claims": [
-      {
-        "facet": "type",
-        "value": "application",
-        "source": "readme"
-      }
-    ]
+    "claims": []
   },
   "shadow": {
     "claims": [
@@ -574,22 +501,10 @@
     ]
   },
   "simulte": {
-    "claims": [
-      {
-        "facet": "type",
-        "value": "packet",
-        "source": "readme"
-      }
-    ]
+    "claims": []
   },
   "sleipnir": {
-    "claims": [
-      {
-        "facet": "type",
-        "value": "application",
-        "source": "readme"
-      }
-    ]
+    "claims": []
   },
   "svl-simulator": {
     "claims": [
@@ -602,11 +517,6 @@
   },
   "veins-its": {
     "claims": [
-      {
-        "facet": "type",
-        "value": "packet",
-        "source": "readme"
-      },
       {
         "facet": "engine",
         "value": "SUMO",
@@ -678,11 +588,6 @@
         "source": "readme"
       },
       {
-        "facet": "type",
-        "value": "emulator",
-        "source": "readme"
-      },
-      {
         "facet": "scenario",
         "value": "IoT",
         "source": "readme"
@@ -739,7 +644,8 @@
     "name": "EdgeGallery",
     "aliases": [
       "EdgeGallery (Chinese documentation)"
-    ]
+    ],
+    "claims": []
   },
   "foresthub-edge-agents": {
     "claims": [
@@ -766,7 +672,8 @@
     }
   },
   "k3s": {
-    "summaryEn": "A lightweight Kubernetes distribution for edge and resource-constrained environments."
+    "summaryEn": "A lightweight Kubernetes distribution for edge and resource-constrained environments.",
+    "claims": []
   },
   "krustlet": {
     "claims": [
@@ -813,37 +720,44 @@
   "phonesploit-pro": {
     "purpose": [
       "networking"
-    ]
+    ],
+    "claims": []
   },
   "webassembly-curated-list-of-awesome-things-regarding-webassembly-wasm-ecosystem": {
     "name": "Awesome WebAssembly",
-    "summaryEn": "A curated list of resources for the WebAssembly ecosystem."
+    "summaryEn": "A curated list of resources for the WebAssembly ecosystem.",
+    "claims": []
   },
   "webassembly-micro-runtime": {
     "purpose": [
       "runtime"
-    ]
+    ],
+    "claims": []
   },
   "wasmcloud": {
     "purpose": [
       "runtime"
-    ]
+    ],
+    "claims": []
   },
   "wasmedge-runtime": {
     "purpose": [
       "runtime"
     ],
-    "summaryEn": "A WebAssembly runtime for cloud-native, edge, and decentralized applications."
+    "summaryEn": "A WebAssembly runtime for cloud-native, edge, and decentralized applications.",
+    "claims": []
   },
   "wasmer": {
     "purpose": [
       "runtime"
-    ]
+    ],
+    "claims": []
   },
   "wasmtime": {
     "purpose": [
       "runtime"
-    ]
+    ],
+    "claims": []
   },
   "wso2-iot-server": {
     "claims": [
@@ -857,7 +771,8 @@
   "xybrid": {
     "purpose": [
       "runtime"
-    ]
+    ],
+    "claims": []
   },
   "komondor": {
     "claims": [
@@ -959,30 +874,35 @@
   "abeacon-data": {
     "purpose": [
       "dataset"
-    ]
+    ],
+    "claims": []
   },
   "clusterdata": {
     "purpose": [
       "dataset"
-    ]
+    ],
+    "claims": []
   },
   "eua-datasets": {
     "purpose": [
       "dataset"
     ],
-    "url": "https://github.com/swinedge/eua-dataset"
+    "url": "https://github.com/swinedge/eua-dataset",
+    "claims": []
   },
   "gt-itm-georgia-tech-internetwork-topology-models": {
     "name": "GT-ITM",
     "aliases": [
       "Georgia Tech Internetwork Topology Models"
-    ]
+    ],
+    "claims": []
   },
   "huawei-dataset-for-network-ai-scheduling-technology-research-in-chinese": {
     "name": "Huawei Network AI Scheduling Dataset",
     "purpose": [
       "dataset"
-    ]
+    ],
+    "claims": []
   },
   "networkx": {
     "claims": [
@@ -999,55 +919,65 @@
   "network-modeling-datasets": {
     "purpose": [
       "dataset"
-    ]
+    ],
+    "claims": []
   },
   "rocketfuel": {
     "purpose": [
       "dataset"
-    ]
+    ],
+    "claims": []
   },
   "the-caida-anonymized-internet-traces-2015-dataset": {
     "name": "CAIDA Anonymized Internet Traces 2015",
     "purpose": [
       "dataset"
-    ]
+    ],
+    "claims": []
   },
   "tinymlperf-deep-learning-benchmarks-for-embedded-devices": {
     "name": "TinyMLPerf",
     "aliases": [
       "MLPerf Tiny"
-    ]
+    ],
+    "claims": []
   },
   "vivo-dataset-for-wireless-resource-scheduling-in-cell-free-scenarios-in-chinese": {
     "name": "vivo Cell-Free Scheduling Dataset",
     "purpose": [
       "dataset"
-    ]
+    ],
+    "claims": []
   },
   "geolite2": {
     "purpose": [
       "dataset"
-    ]
+    ],
+    "claims": []
   },
   "adlik": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "ai-model-efficiency-toolkit-aimet": {
     "purpose": [
       "compression"
-    ]
+    ],
+    "claims": []
   },
   "apache-tvm": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "autodice": {
     "purpose": [
       "distributed"
-    ]
+    ],
+    "claims": []
   },
   "berrynet": {
     "claims": [
@@ -1064,22 +994,26 @@
   "bi-real-net": {
     "purpose": [
       "compression"
-    ]
+    ],
+    "claims": []
   },
   "bmxnet": {
     "purpose": [
       "training"
-    ]
+    ],
+    "claims": []
   },
   "branchynet": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "caffe2": {
     "purpose": [
       "training"
-    ]
+    ],
+    "claims": []
   },
   "cmsis-nn": {
     "claims": [
@@ -1096,7 +1030,8 @@
   "communication-aware-dnn-pruning-cap": {
     "purpose": [
       "distributed"
-    ]
+    ],
+    "claims": []
   },
   "compute-library": {
     "claims": [
@@ -1113,7 +1048,8 @@
   "condensa": {
     "purpose": [
       "compression"
-    ]
+    ],
+    "claims": []
   },
   "core-ml": {
     "claims": [
@@ -1142,22 +1078,26 @@
   "ddnn": {
     "purpose": [
       "distributed"
-    ]
+    ],
+    "claims": []
   },
   "deepiot": {
     "purpose": [
       "compression"
-    ]
+    ],
+    "claims": []
   },
   "deepstack": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "deepthings": {
     "purpose": [
       "distributed"
-    ]
+    ],
+    "claims": []
   },
   "distiller": {
     "claims": [
@@ -1199,22 +1139,26 @@
     "purpose": [
       "inference"
     ],
-    "summaryEn": "A CPU-oriented neural-network project for edge deployment; performance depends on the stated workload and hardware."
+    "summaryEn": "A CPU-oriented neural-network project for edge deployment; performance depends on the stated workload and hardware.",
+    "claims": []
   },
   "gnn-rl-pipleline": {
     "purpose": [
       "ai-integration"
-    ]
+    ],
+    "claims": []
   },
   "ianvs": {
     "purpose": [
       "benchmark"
-    ]
+    ],
+    "claims": []
   },
   "kitnet": {
     "purpose": [
       "monitoring"
-    ]
+    ],
+    "claims": []
   },
   "mace": {
     "claims": [
@@ -1231,12 +1175,14 @@
   "megengine": {
     "purpose": [
       "training"
-    ]
+    ],
+    "claims": []
   },
   "mindspore-lite": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "ml-kit": {
     "claims": [
@@ -1253,24 +1199,28 @@
   "mlc-llm": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "mnn": {
     "purpose": [
       "inference",
       "training"
     ],
-    "summaryEn": "A lightweight framework for model inference and training on devices."
+    "summaryEn": "A lightweight framework for model inference and training on devices.",
+    "claims": []
   },
   "model-compression-toolkit-mct": {
     "purpose": [
       "compression"
-    ]
+    ],
+    "claims": []
   },
   "mqbench": {
     "purpose": [
       "compression"
-    ]
+    ],
+    "claims": []
   },
   "ncnn": {
     "claims": [
@@ -1288,17 +1238,20 @@
   "neurosurgeon": {
     "purpose": [
       "distributed"
-    ]
+    ],
+    "claims": []
   },
   "nn-meter": {
     "purpose": [
       "monitoring"
-    ]
+    ],
+    "claims": []
   },
   "nndeploy": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "ns3-ai": {
     "claims": [
@@ -1362,12 +1315,14 @@
   "nvidia-tensorrt": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "once-for-all": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "onnx-runtime": {
     "claims": [
@@ -1454,7 +1409,8 @@
   "pocket": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "pytorch-mobile": {
     "claims": [
@@ -1471,17 +1427,20 @@
   "sparseml": {
     "purpose": [
       "compression"
-    ]
+    ],
+    "claims": []
   },
   "shimmy": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "sparsezoo": {
     "purpose": [
       "reference"
-    ]
+    ],
+    "claims": []
   },
   "snpe": {
     "claims": [
@@ -1498,7 +1457,8 @@
   "tengine": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "tensorflow-lite": {
     "claims": [
@@ -1515,12 +1475,14 @@
   "tnn": {
     "purpose": [
       "inference"
-    ]
+    ],
+    "claims": []
   },
   "torch-pruning-tp": {
     "purpose": [
       "compression"
-    ]
+    ],
+    "claims": []
   },
   "utensor": {
     "claims": [
@@ -1538,7 +1500,8 @@
     "name": "CLOUDS Laboratory",
     "aliases": [
       "Cloud Computing and Distributed Systems Laboratory"
-    ]
+    ],
+    "claims": []
   },
   "distributed-strom": {
     "name": "Distributed Storm",
@@ -1561,16 +1524,35 @@
   "boinc": {
     "purpose": [
       "runtime"
-    ]
+    ],
+    "claims": []
   },
   "folding-home": {
     "purpose": [
       "runtime"
-    ]
+    ],
+    "claims": []
   },
   "edgemesh": {
     "purpose": [
       "networking"
+    ],
+    "claims": []
+  },
+  "dfaas": {
+    "notes": [
+      {
+        "en": "The reviewed version deploys Go agents and OpenFaaS CE on Kubernetes. Capabilities of older Containernet setups are not assumed.",
+        "zh": "核查版本在 Kubernetes 上部署 Go agent 与 OpenFaaS CE，不假定具备旧 Containernet 配置的能力。"
+      }
+    ]
+  },
+  "rasim": {
+    "notes": [
+      {
+        "en": "The original download site was unavailable; direct implementation documentation remains unverified.",
+        "zh": "原下载网站无法访问，尚未核实直接实现文档。"
+      }
     ]
   }
 }

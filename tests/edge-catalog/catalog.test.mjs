@@ -112,11 +112,10 @@ test('Catalog exactly covers the pinned README and retains a source for every fi
     for (const claim of [...t.claims, ...Object.values(t.features)]) {
       if (['supported', 'unsupported'].includes(claim.status) || claim.facet) assert.ok(claim.source === 'readme' || data.sources[claim.source], `${t.id}: ${JSON.stringify(claim)}`);
     }
-    if (t.paper.length) assert.deepEqual(t.paper.map(r => r.table), [1, 2, 3, 4, 5], t.id);
+    assert.equal(t.paper, undefined, 'Historical survey rows must not enter the public capability catalog');
   }
   const leaf = data.tools.find(t => t.id === 'leaf');
   assert.deepEqual(leaf.facets.language, ['Java']);
-  assert.ok(leaf.paper[4].fields.find(f => f.name === 'PL').value.includes('python'));
   const cloudsim = data.tools.find(t => t.id === 'cloudsim');
   assert.equal(cloudsim.features.visualization.status, 'unknown');
   assert.ok(data.tools.find(t => t.id === 'openvino').url.includes('openvinotoolkit'));
@@ -145,12 +144,32 @@ test('Every resource has five review slots, bilingual source-backed evidence, an
   assert.equal(data.meta.reviewedCount, data.tools.length);
   const get = id => data.tools.find(t => t.id === id);
   assert.equal(get('edgesim').name, 'SimEdgeIntel (EdgeSim)');
-  assert.equal(get('edgesim').paper.length, 5);
   assert.ok(!get('dfaas').facets.engine.includes('Containernet'));
   assert.ok(get('dfaas').facets.engine.includes('Kubernetes'));
   assert.equal(get('clawbox').features['real-code'].status, 'unknown');
   assert.equal(get('faas-sim').features['custom-metrics'].status, 'supported');
   assert.match(get('faas-sim').features.logging.note.en, /NullLogger/);
+});
+test('Project evidence drives capabilities, with explicit external-tool and configuration conditions', async () => {
+  const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
+  assert.equal(data.meta.evidencePolicy, 'project-documentation');
+  for (const tool of data.tools) {
+    for (const claim of [...tool.claims, ...Object.values(tool.features), ...tool.verification.dimensions.filter(Boolean)]) {
+      if (claim.source && claim.source !== 'readme') assert.equal(data.sources[claim.source].kind, 'official', `${tool.id} / ${claim.source}`);
+      assert.ok(!/Marked in Table|论文表.*列有标记/.test(JSON.stringify(claim)), tool.id);
+    }
+  }
+  const get = id => data.tools.find(t => t.id === id);
+  assert.match(get('ns-3').features.visualization.note.en, /NetAnim.*separate Qt/);
+  assert.match(get('ndnsim').features.visualization.note.en, /Python bindings/);
+  assert.match(get('omnetpp').features.logging.note.en, /record-eventlog = true/);
+  assert.match(get('yafs-yet-another-fog-simulator').features.visualization.note.en, /NetworkX\/Matplotlib/);
+  assert.equal(get('simfaas').features['custom-metrics'].status, 'unknown', 'Built-in measurements do not establish an arbitrary metric API');
+  assert.ok(!selectTools(data, { ...emptyState(), q: 'SimFaaS', required: ['custom-metrics'] }).some(r => r.tool.id === 'simfaas'));
+  assert.ok(selectTools(data, { ...emptyState(), q: 'SimFaaS', required: ['custom-metrics'], includeUnknown: true }).some(r => r.tool.id === 'simfaas' && r.tentative));
+  assert.deepEqual(get('simgrid').facets.type, ['application']);
+  assert.equal(get('dfaas').facets.type, undefined, 'Current Kubernetes deployment is not a confirmed emulator');
+  assert.ok(get('lightmano').verification.dimensions.every(x => x === null));
 });
 test('Bilingual dimension search finds documented API details without converting text into capability support', async () => {
   const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));

@@ -1,39 +1,53 @@
-# Edge Tool Evidence Audit — September 8, 2026
+# Edge Tool Project Evidence Audit — September 8, 2026
 
-## Scope and limits
+## Current evidence policy
 
-Reviewed all 218 inventory resources; 211 have additional source records. There are 1005 non-null bilingual dimension records and 171 resources with records across all five dimensions. A record may describe a boundary or a documented configuration; it does not establish every optional capability.
+Capabilities, comparison rows and detailed filters use direct project documentation, APIs, pinned code, and project technical deliverables. The survey tables are no longer imported by the builder or displayed on the page. Original research papers are retained only in manual archival records. The five dimensions organize the evidence without supplying capability assertions.
 
-Across the 210 comparable resources and six required capabilities, documented support increased from 109 to 372; unknown cells decreased from 1,151 to 888. No unknown cell was converted to unsupported merely because documentation omitted it. Reference resources remain outside capability comparison.
+All 218 inventory resources retain review records. The published catalog has 992 non-null bilingual dimension records; 169 resources have evidence in all five dimensions. There are 346 supported and 914 unverified required-capability cells across 210 comparable resources. These counts describe evidence coverage, not runtime tests.
 
-The audit reads official documentation, APIs, selected implementation files, and original papers. It does not install or benchmark all projects. GitHub sources point to fixed commits; web sources include access dates and available version information. Full third-party documents are not republished.
+The preceding release had 51 capability cells whose active source was a survey table. This revision replaces 28 with concrete project evidence and leaves 23 unverified with review notes. It does not infer unsupported status from silence.
 
-## Identity and version corrections
+## Examples of direct evidence
 
-- EdgeSim resolves to SimEdgeIntel; it now maps to all five survey tables.
-- DFaaS replaces obsolete Containernet engine facets with its documented Kubernetes/OpenFaaS stack.
-- Huawei archive inspected directly: Scoring code, task/resource CSV schemas and submission example are now documented; its SHA-256 identifies the reviewed archive.
-- EUA dataset URL corrected to the official `swinedge/eua-dataset` repository.
-- LEAF Java remains distinct from the survey’s combined Java/Python description.
-- LiteRT successor APIs, historical PyTorch Mobile support and archived projects retain explicit version notes.
+- ns-3: NetAnim requires compatible simulation traces and a separate Qt application.
+- ndnSIM: The documented visualizer requires its matching Python bindings and dependencies.
+- OMNeT++: Qtenv supplies graphical animation; event logging requires `record-eventlog = true`.
+- SimGrid: Paje traces are visualized externally. Default analytical networking is distinguished from the optional ns-3 integration.
+- YAFS: The tutorial draws topology with NetworkX/Matplotlib; current metrics code writes CSV, and `deploy_monitor` invokes custom observation callbacks.
+- SimFaaS: Plotly examples and debug transition output are verified; fixed built-in metrics do not establish an arbitrary metric interface.
+- DFaaS: Current Kubernetes deployment is no longer labeled as a confirmed emulator.
+- RECAP: The source is the project’s 2019 technical deliverable; current endpoints remain unavailable.
 
-## Access or identity issues
+## Former table-based capabilities still needing project evidence
 
-| Resource | Review outcome |
+| Resource | Capability |
 | --- | --- |
-| RECAP-DES | The Bitbucket endpoint returned only a JavaScript shell. The 2025 survey remains available; current source interfaces were not confirmed. |
-| RECAP Simulator Framework | The former project URL now redirects to unrelated WordPress content; it cannot verify the original simulator framework. |
-| ClawBox | The former product domain now hosts an unrelated AI resource hub; no current ClawBox specification was recovered. |
-| FogAtlas | The project URL redirects to a Google sign-in page; public technical details were not accessible. |
-| Neural Network Accelerator Comparison | The original comparison page returned HTTP 404; this remains a reference entry. |
-| vivo Cell-Free Scheduling Dataset | The sharing page exposed no readable dataset description or schema; contents were not verified. |
-| Eman's Edge Computing System For AI Applications | The original GitHub repository returned HTTP 404. Its implementation cannot be verified from that endpoint. |
-| CLOUDS Laboratory | The original page provides a redirect to the CLOUDS laboratory; it is an institutional reference, not a comparable tool. |
-| Explore Edge Computing | The original website failed TLS hostname validation; its current directory contents could not be verified. |
+| Artery | visualization |
+| Artery | scenario-scripts |
+| Artery | logging |
+| CFN | visualization |
+| CFN | scenario-scripts |
+| DFaaS | custom-scheduling |
+| EasiEI | visualization |
+| EasiEI | scenario-scripts |
+| EasiEI | logging |
+| EasiEI | custom-scheduling |
+| ECSNeT++ | visualization |
+| EmuFog | custom-scheduling |
+| IoTSim-Edge | visualization |
+| IoTSim-Osmosis | visualization |
+| MaxiNet | custom-scheduling |
+| NS-3 | custom-scheduling |
+| OMNeT++ | custom-scheduling |
+| RECAP-DES | custom-metrics |
+| SimFaaS | custom-metrics |
+| Simu5G | visualization |
+| StarryNet | custom-metrics |
+| Step-ONE | custom-scheduling |
+| VirtFogSim | logging |
 
 ## Dimensions needing further evidence
-
-The following slots remain null in the manual review. Where available, the page offers the original survey row separately. Blank/NaF values remain unknown.
 
 | Resource | Unresolved dimensions |
 | --- | --- |
@@ -46,14 +60,16 @@ The following slots remain null in the manual review. Where available, the page 
 | gem5 | Resource management |
 | iTETRIS | Performance metrics |
 | Kathará | Performance metrics |
+| lightMANO | Computing paradigms, Resource modeling, Performance metrics, Resource management, Usability |
 | MEC-simulator | Performance metrics |
 | Mininet-WiFi | Performance metrics |
 | NDN4IVC | Performance metrics |
+| NFaaS | Computing paradigms, Resource modeling, Performance metrics, Resource management, Usability |
 | PeerSim | Performance metrics |
+| RaSim | Computing paradigms, Resource modeling, Performance metrics, Resource management, Usability |
 | Shadow | Performance metrics, Resource management |
-| SimGrid | Resource modeling |
 | Simu5G | Resource management |
-| Step-ONE | Resource modeling, Performance metrics |
+| Step-ONE | Resource modeling |
 | SVL Simulator | Resource modeling, Performance metrics, Resource management |
 | Veins - ITS | Resource modeling, Performance metrics, Resource management |
 | Veins LTE - ITS | Performance metrics |
@@ -85,6 +101,23 @@ The following slots remain null in the manual review. Where available, the page 
 | CLOUDS Laboratory | Computing paradigms, Resource modeling, Performance metrics, Resource management, Usability |
 | Explore Edge Computing | Computing paradigms, Resource modeling, Performance metrics, Resource management, Usability |
 
+## Access or source limitations
+
+| Resource | Outcome |
+| --- | --- |
+| lightMANO | Direct project documentation has not yet been recovered. Historical research records are excluded from capability judgments. |
+| NFaaS | Direct project documentation has not yet been recovered. Historical research records are excluded from capability judgments. |
+| RaSim | Direct project documentation has not yet been recovered. Historical research records are excluded from capability judgments. |
+| RECAP-DES | The old project endpoint is unavailable. The retained descriptions come from the project’s 2019 D4.4 technical deliverable and do not verify a current release. |
+| RECAP Simulator Framework | The old project endpoint is unavailable. The retained descriptions come from the project’s 2019 D4.4 technical deliverable and do not verify a current release. |
+| ClawBox | The former product domain now hosts an unrelated AI resource hub; no current ClawBox specification was recovered. |
+| FogAtlas | The project URL redirects to a Google sign-in page; public technical details were not accessible. |
+| Neural Network Accelerator Comparison | The original comparison page returned HTTP 404; this remains a reference entry. |
+| vivo Cell-Free Scheduling Dataset | The sharing page exposed no readable dataset description or schema; contents were not verified. |
+| Eman's Edge Computing System For AI Applications | The original GitHub repository returned HTTP 404. Its implementation cannot be verified from that endpoint. |
+| CLOUDS Laboratory | The original page provides a redirect to the CLOUDS laboratory; it is an institutional reference, not a comparable tool. |
+| Explore Edge Computing | The original website failed TLS hostname validation; its current directory contents could not be verified. |
+
 ## Validation
 
-Catalog tests check complete README coverage, stable identities, bilingual dimension/source integrity, immutable manual annotations during sync, strict unknown handling, and search over API details. Validation passed: 12 catalog tests; Ruby 3.2.2 / Bundler 2.5.7 production Jekyll build; PurgeCSS output inspection; browser filtering, four-item limit, language switching, URL reload restoration and keyboard focus. Light/dark desktop views and the real page inside a 390 px iframe were inspected. The mobile check uses a browser viewport, not a physical phone. Local screenshots are stored under `_previews/edge-evidence/` and are not published as site assets.
+The 13 catalog tests cover full inventory coverage, source integrity, sync preservation, filtering, comparison limits, and direct-project evidence requirements. Ruby 3.2.2 / Bundler 2.5.7 production Jekyll build and PurgeCSS passed. Actual browser checks passed for strict versus unknown-inclusive filtering, preserved comparison selections, Chinese/English comparison, five-dimensional rows, and absence of survey table explanations. A rendered screenshot is retained locally at `_previews/edge-evidence/project-sources-comparison.png`. This audit reads documentation and selected code; it does not install or benchmark every project.

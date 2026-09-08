@@ -1429,7 +1429,7 @@
       "version": "Sensors 2021, 21, 2616"
     },
     "audit:simflex:overview": {
-      "kind": "primary",
+      "kind": "official",
       "title": "Flexus / Getting Started Guide",
       "url": "https://parsa.epfl.ch/simflex/software/Flexus-Getting-Started-4.0.0.pdf",
       "date": "2026-09-08",
@@ -1443,7 +1443,7 @@
       "version": "ICN 2017"
     },
     "audit:packet-tracer:overview": {
-      "kind": "primary",
+      "kind": "official",
       "title": "Cisco / Packet Tracer presentation",
       "url": "https://www.cisco.com/c/dam/global/hr_hr/assets/ciscoexpo2009/assets/Packet_Tracer_-_Darko_Paric.pdf",
       "date": "2026-09-08",
@@ -1457,7 +1457,7 @@
       "version": "Web documentation accessed 2026-09-08"
     },
     "audit:snpe:overview": {
-      "kind": "primary",
+      "kind": "official",
       "title": "Qualcomm / Install Neural Processing Engine SDK",
       "url": "https://docs.qualcomm.com/bundle/publicresource/topics/80-70015-15B/snpe-download.html",
       "date": "2026-09-08",
@@ -1765,14 +1765,14 @@
       "version": "abace2a35a9df7eeef9731032d408b6cc3558a06"
     },
     "audit:recap-des:overview": {
-      "kind": "primary",
+      "kind": "official",
       "title": "RECAP D4.4 / Sections 8.3.1–8.3.3",
       "url": "https://d-nb.info/1217328300/34#page=51",
       "date": "2026-09-08",
       "version": "Final public deliverable, December 27, 2019"
     },
     "audit:recap-simulator-framework:overview": {
-      "kind": "primary",
+      "kind": "official",
       "title": "RECAP D4.4 / Sections 8.3.1–8.3.3",
       "url": "https://d-nb.info/1217328300/34#page=51",
       "date": "2026-09-08",
@@ -1784,6 +1784,188 @@
       "url": "https://res-static.hc-cdn.cn/cloudbu-site/china/zh-cn/6gana/1681784385302642219.zip",
       "date": "2026-09-08",
       "version": "Archive last modified April 18, 2023; SHA-256 cce613928930cd1a4ff469c8d0a5dade647c0413732bbe074f55d035afd46920"
+    },
+    "audit:cloudsim:project-Log-java": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/Cloudslab/cloudsim/blob/703cf19e37c3e588e2991e58fed5b583f51b4b43/modules/cloudsim/src/main/java/org/cloudbus/cloudsim/Log.java",
+      "version": "703cf19e37c3e588e2991e58fed5b583f51b4b43",
+      "title": "cloudsim / modules/cloudsim/src/main/java/org/cloudbus/cloudsim/Log.java"
+    },
+    "audit:cloudsim-express:project-log4j2": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/Cloudslab/cloudsim-express/blob/04010594ffb2dcd33daa4ab43cd21b48ba2c27d4/core/src/main/resources/log4j2.properties",
+      "version": "04010594ffb2dcd33daa4ab43cd21b48ba2c27d4",
+      "title": "cloudsim-express / core/src/main/resources/log4j2.properties"
+    },
+    "audit:cloudsim-plus-automation:project-logback": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/cloudsimplus/cloudsimplus-automation/blob/3b48a4dc373b761667cd16edbced48ba8cb57ebc/src/main/resources/logback.xml",
+      "version": "3b48a4dc373b761667cd16edbced48ba8cb57ebc",
+      "title": "cloudsim-plus-automation / src/main/resources/logback.xml"
+    },
+    "audit:minnet:project-mininet_log": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/mininet/mininet/blob/6eb8973c0bfd13c25c244a3871130c5e36b5fbd7/mininet/log.py",
+      "version": "6eb8973c0bfd13c25c244a3871130c5e36b5fbd7",
+      "title": "minnet / mininet/log.py"
+    },
+    "audit:pureedgesim:project-SimLog-java": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/CharafeddineMechalikh/PureEdgeSim/blob/bcdd239fa301bd7164526dc47685058288c305ef/PureEdgeSim/com/mechalikh/pureedgesim/simulationmanager/SimLog.java",
+      "version": "bcdd239fa301bd7164526dc47685058288c305ef",
+      "title": "pureedgesim / PureEdgeSim/com/mechalikh/pureedgesim/simulationmanager/SimLog.java"
+    },
+    "audit:satedgesim:project-SimLog-java": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/wjy491156866/SatEdgeSim/blob/b8c7a4119506a48879b456903e10b1ec0c8c554e/SatEdgeSim/edu/weijunyong/satedgesim/SimulationManager/SimLog.java",
+      "version": "b8c7a4119506a48879b456903e10b1ec0c8c554e",
+      "title": "satedgesim / SatEdgeSim/edu/weijunyong/satedgesim/SimulationManager/SimLog.java"
+    },
+    "audit:omnetpp:project-ch-eventlog": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/omnetpp/omnetpp/blob/820d04e7bb0ef53acaf6a41858ee7ea29f2754ca/doc/src/manual/ch-eventlog.tex",
+      "version": "820d04e7bb0ef53acaf6a41858ee7ea29f2754ca",
+      "title": "omnetpp / doc/src/manual/ch-eventlog.tex"
+    },
+    "audit:simgrid:project-Outcomes": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/simgrid/simgrid/blob/12a63c78cdaa56b78836c95c6a18484f367dca38/docs/source/Outcomes.rst",
+      "version": "12a63c78cdaa56b78836c95c6a18484f367dca38",
+      "title": "simgrid / docs/source/Outcomes.rst"
+    },
+    "audit:step-one:project-FullBpmReport": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/jaks6/step-one/blob/25ce4c3d75de898daecf2b0251ad259a0eeb95a9/step-one-main/src/main/java/report/FullBpmReport.java",
+      "version": "25ce4c3d75de898daecf2b0251ad259a0eeb95a9",
+      "title": "step-one / step-one-main/src/main/java/report/FullBpmReport.java"
+    },
+    "audit:simfaas:project-ServerlessSimulator": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/pacslab/simfaas/blob/5dd1623ad873d005b457676c060232205de7f552/simfaas/ServerlessSimulator.py",
+      "version": "5dd1623ad873d005b457676c060232205de7f552",
+      "title": "simfaas / simfaas/ServerlessSimulator.py"
+    },
+    "audit:yafs-yet-another-fog-simulator:project-metrics-py": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/acsicuib/YAFS/blob/d98c0053626840d4deadafa4c8c8b6db78929117/src/yafs/metrics.py",
+      "version": "d98c0053626840d4deadafa4c8c8b6db78929117",
+      "title": "yafs-yet-another-fog-simulator / src/yafs/metrics.py"
+    },
+    "audit:cooja:project-Visualizer-java": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/contiki-ng/cooja/blob/2adeaed7991cd789957e4e23c32680837bb2b2b9/java/org/contikios/cooja/plugins/Visualizer.java",
+      "version": "2adeaed7991cd789957e4e23c32680837bb2b2b9",
+      "title": "cooja / java/org/contikios/cooja/plugins/Visualizer.java"
+    },
+    "audit:minnet:project-miniedit": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/mininet/mininet/blob/6eb8973c0bfd13c25c244a3871130c5e36b5fbd7/examples/miniedit.py",
+      "version": "6eb8973c0bfd13c25c244a3871130c5e36b5fbd7",
+      "title": "minnet / examples/miniedit.py"
+    },
+    "audit:ns-3:project-animation-rst": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/29f6a374c394efcabb19c528bf13502578840a56/src/netanim/doc/animation.rst",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56",
+      "title": "ns-3 / src/netanim/doc/animation.rst"
+    },
+    "audit:omnetpp:project-ch-graphics": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/omnetpp/omnetpp/blob/820d04e7bb0ef53acaf6a41858ee7ea29f2754ca/doc/src/manual/ch-graphics.tex",
+      "version": "820d04e7bb0ef53acaf6a41858ee7ea29f2754ca",
+      "title": "omnetpp / doc/src/manual/ch-graphics.tex"
+    },
+    "audit:satedgesim:project-SimulationVisualizer": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/wjy491156866/SatEdgeSim/blob/b8c7a4119506a48879b456903e10b1ec0c8c554e/SatEdgeSim/edu/weijunyong/satedgesim/SimulationManager/SimulationVisualizer.java",
+      "version": "b8c7a4119506a48879b456903e10b1ec0c8c554e",
+      "title": "satedgesim / SatEdgeSim/edu/weijunyong/satedgesim/SimulationManager/SimulationVisualizer.java"
+    },
+    "audit:simfaas:project-08-plotly": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/pacslab/simfaas/blob/5dd1623ad873d005b457676c060232205de7f552/examples/08-plotly-interactive-plots.ipynb",
+      "version": "5dd1623ad873d005b457676c060232205de7f552",
+      "title": "simfaas / examples/08-plotly-interactive-plots.ipynb"
+    },
+    "audit:ndnsim:project-getting-started": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "version": "ndnSIM 2.x getting-started guide; accessed 2026-09-08",
+      "title": "ndnSIM / Getting started",
+      "url": "https://ndnsim.net/current/getting-started.html"
+    },
+    "audit:simgrid:project-Deploying": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/simgrid/simgrid/blob/12a63c78cdaa56b78836c95c6a18484f367dca38/docs/source/Deploying_your_application.rst",
+      "version": "12a63c78cdaa56b78836c95c6a18484f367dca38",
+      "title": "simgrid / docs/source/Deploying_your_application.rst"
+    },
+    "audit:simu5g:project-omnetpp-ini": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/Unipisa/Simu5G/blob/abace2a35a9df7eeef9731032d408b6cc3558a06/simulations/nr/standalone/omnetpp.ini",
+      "version": "abace2a35a9df7eeef9731032d408b6cc3558a06",
+      "title": "simu5g / simulations/nr/standalone/omnetpp.ini"
+    },
+    "audit:step-one:project-Report-java": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/jaks6/step-one/blob/25ce4c3d75de898daecf2b0251ad259a0eeb95a9/step-one-main/src/main/java/report/FullBpmReport.java",
+      "version": "25ce4c3d75de898daecf2b0251ad259a0eeb95a9",
+      "title": "step-one / step-one-main/src/main/java/report/FullBpmReport.java"
+    },
+    "audit:mobfogsim:project-DecisionMigration": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/diogomg/MobFogSim/blob/30c949474eee5538207fb0900b11ddcf4ec13103/src/org/fog/vmmigration/DecisionMigration.java",
+      "version": "30c949474eee5538207fb0900b11ddcf4ec13103",
+      "title": "mobfogsim / src/org/fog/vmmigration/DecisionMigration.java"
+    },
+    "audit:yafs-yet-another-fog-simulator:project-core-py": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/acsicuib/YAFS/blob/d98c0053626840d4deadafa4c8c8b6db78929117/src/yafs/core.py",
+      "version": "d98c0053626840d4deadafa4c8c8b6db78929117",
+      "title": "yafs-yet-another-fog-simulator / src/yafs/core.py"
+    },
+    "audit:simgrid:project-Models": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/simgrid/simgrid/blob/12a63c78cdaa56b78836c95c6a18484f367dca38/docs/source/Models.rst",
+      "version": "12a63c78cdaa56b78836c95c6a18484f367dca38",
+      "title": "simgrid / docs/source/Models.rst"
+    },
+    "audit:mininet-wifi:project-simplewifitopology": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "version": "99ba09b269f8e5e08cd9698c24b8b7e2949016a9",
+      "title": "mininet-wifi / examples/simplewifitopology.py",
+      "url": "https://github.com/intrig-unicamp/mininet-wifi/blob/99ba09b269f8e5e08cd9698c24b8b7e2949016a9/examples/simplewifitopology.py"
+    },
+    "audit:yafs-yet-another-fog-simulator:project-tutorial_scenarios": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "version": "d98c0053626840d4deadafa4c8c8b6db78929117",
+      "title": "yafs-yet-another-fog-simulator / tutorial_scenarios/01_basicExample/main.py",
+      "url": "https://github.com/acsicuib/YAFS/blob/d98c0053626840d4deadafa4c8c8b6db78929117/tutorial_scenarios/01_basicExample/main.py"
     }
   },
   "tools": {
@@ -1828,7 +2010,8 @@
       ],
       "sources": [
         "audit:cloudsim:overview",
-        "audit:cloudsim:dimension-3"
+        "audit:cloudsim:dimension-3",
+        "audit:cloudsim:project-Log-java"
       ],
       "features": {
         "scenario-scripts": {
@@ -1845,6 +2028,14 @@
           "note": {
             "en": "Custom host-to-VM placement and resource provisioning policies are explicitly supported.",
             "zh": "明确支持自定义虚拟机放置与主机资源分配策略。"
+          }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:cloudsim:project-Log-java",
+          "note": {
+            "en": "Log.print/println write to a configurable OutputStream; logging can be disabled.",
+            "zh": "Log.print/println 写入可配置的 OutputStream；日志可关闭。"
           }
         }
       },
@@ -1893,6 +2084,15 @@
           "facet": "metric",
           "value": "Resource utilization",
           "source": "audit:cloudsim:dimension-3"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:cloudsim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -1995,6 +2195,15 @@
           "facet": "scheduling",
           "value": "User-defined",
           "source": "audit:cloudsimpy:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:cloudsimpy:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -2041,7 +2250,8 @@
       "sources": [
         "audit:cloudsim-express:overview",
         "audit:cloudsim-express:dimension-4",
-        "audit:cloudsim-express:dimension-3"
+        "audit:cloudsim-express:dimension-3",
+        "audit:cloudsim-express:project-log4j2"
       ],
       "features": {
         "scenario-scripts": {
@@ -2058,6 +2268,14 @@
           "note": {
             "en": "The custom-policy tutorial implements a VM allocation policy and loads it through the extension mechanism.",
             "zh": "自定义策略教程展示 VM 分配策略实现，并通过扩展机制加载。"
+          }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:cloudsim-express:project-log4j2",
+          "note": {
+            "en": "The bundled Log4j2 configuration writes timestamped, leveled messages to the console at INFO level.",
+            "zh": "随项目提供的 Log4j2 配置以 INFO 级别向控制台输出带时间和级别的消息。"
           }
         }
       },
@@ -2096,6 +2314,15 @@
           "facet": "scheduling",
           "value": "User-defined",
           "source": "audit:cloudsim-express:dimension-4"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:cloudsim-express:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -2221,6 +2448,15 @@
           "facet": "scheduling",
           "value": "User-defined",
           "source": "audit:cloudsim-plus:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:cloudsim-plus:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -2259,7 +2495,8 @@
         }
       ],
       "sources": [
-        "audit:cloudsim-plus-automation:overview"
+        "audit:cloudsim-plus-automation:overview",
+        "audit:cloudsim-plus-automation:project-logback"
       ],
       "features": {
         "scenario-scripts": {
@@ -2276,6 +2513,14 @@
           "note": {
             "en": "Scenario fields select VmAllocationPolicy, VmScheduler, and CloudletScheduler implementations; algorithms require compatible engine classes.",
             "zh": "场景字段选择虚拟机放置、虚拟机调度和 Cloudlet 调度实现；算法需对应兼容引擎类。"
+          }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:cloudsim-plus-automation:project-logback",
+          "note": {
+            "en": "The bundled Logback configuration enables DEBUG-level console output; persistent files require another appender.",
+            "zh": "随项目提供的 Logback 配置启用 DEBUG 级控制台输出；保存文件需另配 appender。"
           }
         }
       },
@@ -2314,6 +2559,15 @@
           "facet": "platform",
           "value": "Windows",
           "source": "audit:cloudsim-plus-automation:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:cloudsim-plus-automation:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -2541,6 +2795,15 @@
           "facet": "language",
           "value": "Java",
           "source": "audit:cloudsimsdn:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:cloudsimsdn:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -2687,14 +2950,18 @@
           "facet": "resource",
           "value": "Storage",
           "source": "audit:edgesim:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:edgesim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
-      "notes": [
-        {
-          "en": "The repository identifies itself as SimEdgeIntel; the corresponding survey row is now linked while the stable inventory ID is retained.",
-          "zh": "仓库自称 SimEdgeIntel，现关联对应论文行，同时保留原目录稳定 ID。"
-        }
-      ]
+      "notes": []
     },
     "core": {
       "date": "2026-09-08",
@@ -2770,14 +3037,18 @@
           "source": "audit:core:overview"
         },
         {
-          "facet": "type",
-          "value": "emulator",
-          "source": "audit:core:overview"
-        },
-        {
           "facet": "paradigm",
           "value": "Networking",
           "source": "audit:core:overview"
+        },
+        {
+          "facet": "type",
+          "value": "emulator",
+          "source": "audit:core:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -2848,6 +3119,14 @@
             "en": "Current DFaaS runs decentralized serverless functions on federated edge nodes, using Go agents and OpenFaaS CE.",
             "zh": "当前 DFaaS 通过 Go 代理和 OpenFaaS CE，在联邦边缘节点运行去中心化无服务器函数。"
           }
+        },
+        "custom-scheduling": {
+          "status": "unknown",
+          "source": "audit:dfaas:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
+          }
         }
       },
       "claims": [
@@ -2912,12 +3191,7 @@
           "source": "audit:dfaas:overview"
         }
       ],
-      "notes": [
-        {
-          "en": "Current deployment differs from the historical emulator in the survey. Use the cited historical commit if reproducing the Containernet setup.",
-          "zh": "当前部署方式与论文中的历史仿真运行环境不同；复现 Containernet 配置时应使用所引历史提交。"
-        }
-      ],
+      "notes": [],
       "clearFacets": [
         "engine"
       ]
@@ -3005,6 +3279,15 @@
           "facet": "metric",
           "value": "Latency",
           "source": "audit:echoes:dimension-3"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:echoes:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -3075,6 +3358,14 @@
             "en": "Round-robin CPU-core scheduling can be replaced through ICpuCoreScheduler; XML describes placement plans.",
             "zh": "轮询 CPU 核调度可通过 ICpuCoreScheduler 替换，XML 描述放置计划。"
           }
+        },
+        "visualization": {
+          "status": "unknown",
+          "source": "audit:ecsnetpp:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
+          }
         }
       },
       "claims": [
@@ -3132,6 +3423,15 @@
           "facet": "resource",
           "value": "Network",
           "source": "audit:ecsnetpp:overview"
+        },
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:ecsnetpp:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -3243,6 +3543,15 @@
           "facet": "scenario",
           "value": "Mobility",
           "source": "audit:edgeaisim:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:edgeaisim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -3358,6 +3667,15 @@
           "facet": "language",
           "value": "Python",
           "source": "audit:edgesimpy:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:edgesimpy:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -3494,6 +3812,15 @@
           "facet": "metric",
           "value": "Resource utilization",
           "source": "audit:faas-sim:dimension-3"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:faas-sim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -3592,7 +3919,11 @@
         {
           "facet": "type",
           "value": "emulator",
-          "source": "audit:fogbed:overview"
+          "source": "audit:fogbed:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": [
@@ -3710,6 +4041,15 @@
           "facet": "engine",
           "value": "Open vSwitch",
           "source": "audit:emuedge:overview"
+        },
+        {
+          "facet": "type",
+          "value": "emulator",
+          "source": "audit:emuedge:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": [
@@ -3818,7 +4158,11 @@
         {
           "facet": "type",
           "value": "emulator",
-          "source": "audit:emu5gnet:overview"
+          "source": "audit:emu5gnet:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -3881,6 +4225,14 @@
             "en": "Places fog nodes in imported topologies and runs Docker applications through MaxiNet.",
             "zh": "在导入拓扑中放置雾节点，并通过 MaxiNet 运行 Docker 应用。"
           }
+        },
+        "custom-scheduling": {
+          "status": "unknown",
+          "source": "audit:emufog:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
+          }
         }
       },
       "claims": [
@@ -3917,7 +4269,11 @@
         {
           "facet": "type",
           "value": "emulator",
-          "source": "audit:emufog:overview"
+          "source": "audit:emufog:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -4184,6 +4540,15 @@
           "facet": "paradigm",
           "value": "Fog",
           "source": "audit:fognetsimpp:overview"
+        },
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:fognetsimpp:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -4418,6 +4783,15 @@
           "facet": "metric",
           "value": "Cost",
           "source": "audit:ifogsim:dimension-3"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:ifogsim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -4474,6 +4848,14 @@
           "note": {
             "en": "Example 2 compares CoAP/XMPP latency and IoT energy consumption under packet-size/data-rate settings. Execution details and final results appear in the output pane.",
             "zh": "示例 2 在分组大小／数据率设置下比较 CoAP／XMPP 时延与 IoT 能耗；输出面板展示执行明细和最终结果。"
+          }
+        },
+        "visualization": {
+          "status": "unknown",
+          "source": "audit:iotsim-edge:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
           }
         }
       },
@@ -4532,6 +4914,15 @@
           "facet": "protocol",
           "value": "XMPP",
           "source": "audit:iotsim-edge:dimension-3"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:iotsim-edge:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -4596,6 +4987,14 @@
             "en": "Users select or propose VM/MEL placement, VM-CPU scheduling, routing and traffic-sharing policies. Examples include combined least-full-first placement, multi-CPU time sharing and fair-share traffic; this manual’s version keeps IoT locations fixed.",
             "zh": "用户可选择或提出 VM／MEL 放置、VM-CPU 调度、路由及流量共享策略；示例包含组合最少占用优先、多 CPU 时间共享及公平流量共享；此手册版本固定 IoT 位置。"
           }
+        },
+        "visualization": {
+          "status": "unknown",
+          "source": "audit:iotsim-osmosis:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
+          }
         }
       },
       "claims": [
@@ -4638,6 +5037,15 @@
           "facet": "scheduling",
           "value": "Shortest path",
           "source": "audit:iotsim-osmosis:dimension-4"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:iotsim-osmosis:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -4730,7 +5138,11 @@
         {
           "facet": "type",
           "value": "emulator",
-          "source": "audit:kathar:overview"
+          "source": "audit:kathar:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -4841,6 +5253,15 @@
           "facet": "scenario",
           "value": "Mobility",
           "source": "audit:leaf:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:leaf:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -4921,6 +5342,15 @@
           "facet": "resource",
           "value": "Network",
           "source": "audit:mec-simulator:overview"
+        },
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:mec-simulator:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -4965,7 +5395,8 @@
         }
       ],
       "sources": [
-        "audit:mobfogsim:overview"
+        "audit:mobfogsim:overview",
+        "audit:mobfogsim:project-DecisionMigration"
       ],
       "features": {
         "scenario-scripts": {
@@ -4982,6 +5413,14 @@
           "note": {
             "en": "Simulation results are collected and printed after execution; detailed metric definitions remain in the model and survey record.",
             "zh": "仿真结束后采集并打印结果，具体指标定义参照模型与论文记录。"
+          }
+        },
+        "custom-scheduling": {
+          "status": "supported",
+          "source": "audit:mobfogsim:project-DecisionMigration",
+          "note": {
+            "en": "DecisionMigration exposes shouldMigrate(MobileDevice) for a custom migration decision policy; this does not establish arbitrary CPU scheduling.",
+            "zh": "DecisionMigration 提供 shouldMigrate(MobileDevice) 接口以实现自定义迁移决策；不能据此推断任意 CPU 调度能力。"
           }
         }
       },
@@ -5015,6 +5454,15 @@
           "facet": "resource",
           "value": "Network",
           "source": "audit:mobfogsim:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:mobfogsim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -5053,7 +5501,8 @@
         }
       ],
       "sources": [
-        "audit:mininet-wifi:overview"
+        "audit:mininet-wifi:overview",
+        "audit:mininet-wifi:project-simplewifitopology"
       ],
       "features": {
         "visualization": {
@@ -5078,6 +5527,14 @@
           "note": {
             "en": "Extends Mininet with WiFi stations and access points and runs standard wireless tools.",
             "zh": "为 Mininet 增加 WiFi 站点与接入点，可运行标准无线网络工具。"
+          }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:mininet-wifi:project-simplewifitopology",
+          "note": {
+            "en": "The WiFi topology example imports mininet.log, enables INFO output and records node creation, association, startup and shutdown.",
+            "zh": "WiFi 拓扑示例调用 mininet.log，启用 INFO 输出并记录节点创建、关联、启动和关闭过程。"
           }
         }
       },
@@ -5105,7 +5562,11 @@
         {
           "facet": "type",
           "value": "emulator",
-          "source": "audit:mininet-wifi:overview"
+          "source": "audit:mininet-wifi:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -5233,6 +5694,15 @@
           "facet": "scheduling",
           "value": "User-defined",
           "source": "audit:mintedge:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:mintedge:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -5296,6 +5766,15 @@
           "facet": "metric",
           "value": "Latency",
           "source": "audit:mobemu:dimension-3"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:mobemu:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -5389,6 +5868,15 @@
           "facet": "platform",
           "value": "Linux",
           "source": "audit:ndn4ivc:overview"
+        },
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:ndn4ivc:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -5712,6 +6200,15 @@
           "facet": "language",
           "value": "Go",
           "source": "audit:open-simulator:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:open-simulator:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -5806,6 +6303,15 @@
           "facet": "scheduling",
           "value": "Hierarchical placement",
           "source": "audit:pfogsim:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:pfogsim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -5850,7 +6356,8 @@
         }
       ],
       "sources": [
-        "audit:pureedgesim:overview"
+        "audit:pureedgesim:overview",
+        "audit:pureedgesim:project-SimLog-java"
       ],
       "features": {
         "visualization": {
@@ -5876,9 +6383,36 @@
             "en": "Custom SimulationManager, task, topology, and orchestration implementations can extend the simulator.",
             "zh": "可以通过自定义 SimulationManager、任务、拓扑及编排实现扩展仿真器。"
           }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:pureedgesim:project-SimLog-java",
+          "note": {
+            "en": "SimLog aggregates task delays, resource/network use and energy statistics, and implements CSV result output.",
+            "zh": "SimLog 汇总任务时延、资源与网络使用及能耗统计，并实现 CSV 结果输出。"
+          }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:pureedgesim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        },
+        {
+          "facet": "language",
+          "value": "Java",
+          "source": "audit:pureedgesim:overview",
+          "note": {
+            "en": "Java examples, configuration files, Javadoc, and live environment visualization are provided.",
+            "zh": "提供 Java 示例、配置文件、Javadoc 和实时环境可视化。"
+          }
+        }
+      ],
       "notes": []
     },
     "satedgesim": {
@@ -5921,7 +6455,9 @@
         }
       ],
       "sources": [
-        "audit:satedgesim:overview"
+        "audit:satedgesim:overview",
+        "audit:satedgesim:project-SimLog-java",
+        "audit:satedgesim:project-SimulationVisualizer"
       ],
       "features": {
         "scenario-scripts": {
@@ -5939,9 +6475,44 @@
             "en": "TasksOrchestration supports user-defined deployment algorithms; visibility depends on relative satellite positions.",
             "zh": "TasksOrchestration 支持用户自定义部署算法；可见性取决于卫星相对位置。"
           }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:satedgesim:project-SimLog-java",
+          "note": {
+            "en": "SimLog.saveLog writes result CSV files; saving the additional text log is controlled by SAVE_LOG.",
+            "zh": "SimLog.saveLog 写出结果 CSV；额外文本日志的保存由 SAVE_LOG 控制。"
+          }
+        },
+        "visualization": {
+          "status": "supported",
+          "source": "audit:satedgesim:project-SimulationVisualizer",
+          "note": {
+            "en": "SimulationVisualizer uses Swing/XChart for CPU utilization, network utilization and task-success charts; enable the visualizer in the run configuration.",
+            "zh": "SimulationVisualizer 使用 Swing/XChart 绘制 CPU 利用率、网络利用率和任务成功率曲线，运行时需启用可视化。"
+          }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:satedgesim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        },
+        {
+          "facet": "language",
+          "value": "Java",
+          "source": "audit:satedgesim:overview",
+          "note": {
+            "en": "Java project with application descriptions and Poisson task generation; STK is an external preparation dependency.",
+            "zh": "Java 工程，提供应用描述和泊松任务生成；STK 是外部准备依赖。"
+          }
+        }
+      ],
       "notes": []
     },
     "shadow": {
@@ -6027,7 +6598,9 @@
         }
       ],
       "sources": [
-        "audit:simfaas:overview"
+        "audit:simfaas:overview",
+        "audit:simfaas:project-ServerlessSimulator",
+        "audit:simfaas:project-08-plotly"
       ],
       "features": {
         "scenario-scripts": {
@@ -6037,9 +6610,48 @@
             "en": "Python package with runnable examples, Jupyter notebooks, and Docker examples.",
             "zh": "Python 软件包，提供可运行示例、Jupyter 笔记本和 Docker 示例。"
           }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:simfaas:project-ServerlessSimulator",
+          "note": {
+            "en": "generate_trace(debug_print=True) prints state transitions; get_result_dict exposes built-in result values. File persistence is left to the caller.",
+            "zh": "generate_trace(debug_print=True) 输出状态转换；get_result_dict 提供内置结果值，文件保存由调用方完成。"
+          }
+        },
+        "visualization": {
+          "status": "supported",
+          "source": "audit:simfaas:project-08-plotly",
+          "note": {
+            "en": "The Plotly notebook generates interactive plots from simulation results; install its notebook/Plotly dependencies.",
+            "zh": "Plotly 笔记本可将仿真结果绘成交互图表，需安装笔记本及 Plotly 依赖。"
+          }
+        },
+        "custom-metrics": {
+          "status": "unknown",
+          "source": "audit:simfaas:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish an extensible metric interface for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的可扩展的指标接口能力，暂保留待核实。"
+          }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:simfaas:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        },
+        {
+          "facet": "language",
+          "value": "Python",
+          "source": "audit:simfaas:project-ServerlessSimulator"
+        }
+      ],
       "notes": []
     },
     "simgrid": {
@@ -6052,7 +6664,13 @@
           },
           "source": "audit:simgrid:overview"
         },
-        null,
+        {
+          "source": "audit:simgrid:project-Models",
+          "text": {
+            "en": "CPU/disk and default network models use analytical resource sharing. A separately configured ns-3 integration provides packet-level networking.",
+            "zh": "CPU、磁盘和默认网络采用解析资源共享模型；另行配置 ns-3 集成后才使用分组级网络。"
+          }
+        },
         {
           "text": {
             "en": "Predicts execution time and energy for modeled infrastructures; its MPI interface can profile real MPI applications. These predictions depend on the selected models.",
@@ -6077,9 +6695,37 @@
       ],
       "sources": [
         "audit:simgrid:overview",
-        "audit:simgrid:dimension-3"
+        "audit:simgrid:dimension-3",
+        "audit:simgrid:project-Outcomes",
+        "audit:simgrid:project-Deploying",
+        "audit:simgrid:project-Models"
       ],
-      "features": {},
+      "features": {
+        "logging": {
+          "status": "supported",
+          "source": "audit:simgrid:project-Outcomes",
+          "note": {
+            "en": "Logging supports severity/category filters and stderr, file, rolling-file and split-file appenders.",
+            "zh": "日志支持级别与类别过滤，可输出至 stderr、普通文件、循环覆盖文件或分卷文件。"
+          }
+        },
+        "visualization": {
+          "status": "supported",
+          "source": "audit:simgrid:project-Outcomes",
+          "note": {
+            "en": "Enabled tracing exports Paje traces for external visualization tools; SMPI traces can produce communication Gantt views. This is postprocessing.",
+            "zh": "启用跟踪后可导出 Paje 轨迹供外部工具可视化；SMPI 轨迹可呈现通信甘特图，属于运行后分析。"
+          }
+        },
+        "scenario-scripts": {
+          "status": "supported",
+          "source": "audit:simgrid:project-Deploying",
+          "note": {
+            "en": "Actor-to-host deployment can be specified in application code or an XML deployment file.",
+            "zh": "可通过应用代码或 XML 部署文件指定 actor 与主机的对应关系。"
+          }
+        }
+      },
       "claims": [
         {
           "facet": "metric",
@@ -6090,6 +6736,15 @@
           "facet": "metric",
           "value": "Energy consumption",
           "source": "audit:simgrid:dimension-3"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:simgrid:project-Models",
+          "note": {
+            "en": "Application/system simulation with an optional ns-3 packet-level network model.",
+            "zh": "以应用与系统仿真为主，可选 ns-3 分组级网络模型。"
+          }
         }
       ],
       "notes": []
@@ -6175,14 +6830,58 @@
       ],
       "sources": [
         "audit:simu5g:overview",
-        "audit:simu5g:dimension-3"
+        "audit:simu5g:dimension-3",
+        "audit:simu5g:project-omnetpp-ini"
       ],
-      "features": {},
+      "features": {
+        "scenario-scripts": {
+          "status": "supported",
+          "source": "audit:simu5g:project-omnetpp-ini",
+          "note": {
+            "en": "The standalone NR INI scenario configures cells, UE mobility, traffic and radio parameters.",
+            "zh": "独立 NR 场景的 INI 文件可配置小区、UE 移动、流量和无线参数。"
+          }
+        },
+        "visualization": {
+          "status": "unknown",
+          "source": "audit:simu5g:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
+          }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:simu5g:dimension-3",
+          "note": {
+            "en": "The MultihopD2D application’s statistics module records broadcast delivery ratio, delay (including a 95th-percentile measure), transmissions and duplicates via OMNeT++ signals. This requires the corresponding D2D application.",
+            "zh": "MultihopD2D 应用统计模块通过 OMNeT++ 信号记录广播交付率、时延（含第 95 百分位量）、发送次数与重复消息；需使用相应 D2D 应用。"
+          }
+        }
+      },
       "claims": [
         {
           "facet": "metric",
           "value": "Latency",
           "source": "audit:simu5g:dimension-3"
+        },
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:simu5g:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        },
+        {
+          "facet": "language",
+          "value": "C++",
+          "source": "audit:simu5g:overview",
+          "note": {
+            "en": "C++ simulation project with linked documentation and installation information.",
+            "zh": "C++ 仿真工程，链接文档和安装资料。"
+          }
         }
       ],
       "notes": []
@@ -6247,7 +6946,17 @@
           }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:sleipnir:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        }
+      ],
       "notes": []
     },
     "starrynet": {
@@ -6316,9 +7025,36 @@
             "en": "Container-based satellite network emulation using real Linux networking and routing processes.",
             "zh": "使用真实 Linux 网络及路由进程的容器化卫星网络仿真环境。"
           }
+        },
+        "custom-metrics": {
+          "status": "unknown",
+          "source": "audit:starrynet:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish an extensible metric interface for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的可扩展的指标接口能力，暂保留待核实。"
+          }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "type",
+          "value": "emulator",
+          "source": "audit:starrynet:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        },
+        {
+          "facet": "language",
+          "value": "Python",
+          "source": "audit:starrynet:overview",
+          "note": {
+            "en": "Python APIs, JSON configuration, and examples run with Docker on supported Linux systems.",
+            "zh": "Python API、JSON 配置和示例通过 Docker 在支持的 Linux 系统运行。"
+          }
+        }
+      ],
       "notes": []
     },
     "step-one": {
@@ -6332,7 +7068,13 @@
           "source": "audit:step-one:overview"
         },
         null,
-        null,
+        {
+          "source": "audit:step-one:project-FullBpmReport",
+          "text": {
+            "en": "Process reports include timestamps for start, completion and cancellation, elapsed time and final state.",
+            "zh": "流程报告包含开始、完成与取消时间、耗时和最终状态。"
+          }
+        },
         {
           "text": {
             "en": "BPMN models describe application processes; this is not evidence of a general compute-scheduler interface.",
@@ -6349,7 +7091,9 @@
         }
       ],
       "sources": [
-        "audit:step-one:overview"
+        "audit:step-one:overview",
+        "audit:step-one:project-FullBpmReport",
+        "audit:step-one:project-Report-java"
       ],
       "features": {
         "visualization": {
@@ -6367,9 +7111,48 @@
             "en": "Gradle runs configurable examples; a Docker Compose setup provides the Flowable web process modeler.",
             "zh": "Gradle 运行可配置示例；Docker Compose 提供 Flowable 网页流程建模器。"
           }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:step-one:project-FullBpmReport",
+          "note": {
+            "en": "FullBpmReport writes per-process start/end/cancel timestamps, total time and final status through the Report output system.",
+            "zh": "FullBpmReport 通过 Report 输出系统记录每个流程的开始、结束、取消时间、总耗时与最终状态。"
+          }
+        },
+        "custom-metrics": {
+          "status": "supported",
+          "source": "audit:step-one:project-Report-java",
+          "note": {
+            "en": "Extend the Report base class and event listeners to collect additional statistics; report output and intervals are configurable.",
+            "zh": "可扩展 Report 基类并接入事件监听以采集额外统计；报告输出与间隔可配置。"
+          }
+        },
+        "custom-scheduling": {
+          "status": "unknown",
+          "source": "audit:step-one:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
+          }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:step-one:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        },
+        {
+          "facet": "language",
+          "value": "Java",
+          "source": "audit:step-one:project-FullBpmReport"
+        }
+      ],
       "notes": []
     },
     "svl-simulator": {
@@ -6430,7 +7213,17 @@
         "audit:veins-its:overview"
       ],
       "features": {},
-      "claims": [],
+      "claims": [
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:veins-its:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        }
+      ],
       "notes": []
     },
     "vessim": {
@@ -6554,9 +7347,27 @@
             "en": "MATLAB scripts and a GUI produce plots in multiple formats; the documented release is version 4 from January 2019.",
             "zh": "MATLAB 脚本与 GUI 可输出多种格式图表；文档版本为 2019 年 1 月的第 4 版。"
           }
+        },
+        "logging": {
+          "status": "unknown",
+          "source": "audit:virtfogsim:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish logging output for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的日志输出能力，暂保留待核实。"
+          }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:virtfogsim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        }
+      ],
       "notes": []
     },
     "wotemu": {
@@ -6655,6 +7466,15 @@
           "facet": "protocol",
           "value": "MQTT",
           "source": "audit:wotemu:overview"
+        },
+        {
+          "facet": "type",
+          "value": "emulator",
+          "source": "audit:wotemu:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -6677,11 +7497,11 @@
           "source": "audit:yafs-yet-another-fog-simulator:overview"
         },
         {
+          "source": "audit:yafs-yet-another-fog-simulator:project-metrics-py",
           "text": {
-            "en": "Produces raw simulation results for subsequent analysis.",
-            "zh": "输出原始仿真结果以供后续分析。"
-          },
-          "source": "audit:yafs-yet-another-fog-simulator:overview"
+            "en": "CSV event records contain processing timestamps and node/module identifiers; a second CSV records per-hop link latency and message size.",
+            "zh": "CSV 事件记录包含处理时间戳及节点、模块标识；另一个 CSV 记录逐跳链路时延和消息大小。"
+          }
         },
         {
           "text": {
@@ -6699,7 +7519,10 @@
         }
       ],
       "sources": [
-        "audit:yafs-yet-another-fog-simulator:overview"
+        "audit:yafs-yet-another-fog-simulator:overview",
+        "audit:yafs-yet-another-fog-simulator:project-metrics-py",
+        "audit:yafs-yet-another-fog-simulator:project-core-py",
+        "audit:yafs-yet-another-fog-simulator:project-tutorial_scenarios"
       ],
       "features": {
         "scenario-scripts": {
@@ -6712,10 +7535,10 @@
         },
         "logging": {
           "status": "supported",
-          "source": "audit:yafs-yet-another-fog-simulator:overview",
+          "source": "audit:yafs-yet-another-fog-simulator:project-metrics-py",
           "note": {
-            "en": "Produces raw simulation results for subsequent analysis.",
-            "zh": "输出原始仿真结果以供后续分析。"
+            "en": "Metrics writes event and link records into two CSV files; this inspected version does not use the historical Redis output.",
+            "zh": "Metrics 将事件与链路记录写入两个 CSV 文件；核查版本不使用历史 Redis 输出。"
           }
         },
         "custom-scheduling": {
@@ -6725,9 +7548,35 @@
             "en": "User-defined placement and orchestration policies can operate during simulation.",
             "zh": "用户自定义放置与编排策略可在仿真运行中执行。"
           }
+        },
+        "custom-metrics": {
+          "status": "supported",
+          "source": "audit:yafs-yet-another-fog-simulator:project-core-py",
+          "note": {
+            "en": "deploy_monitor invokes a user callback on a supplied time distribution, allowing custom observations; collection and persistence must be implemented in that callback.",
+            "zh": "deploy_monitor 按指定时间分布调用用户回调，可加入自定义观测；采集与持久化需在回调中实现。"
+          }
+        },
+        "visualization": {
+          "status": "supported",
+          "source": "audit:yafs-yet-another-fog-simulator:project-tutorial_scenarios",
+          "note": {
+            "en": "The basic tutorial draws network topology with NetworkX/Matplotlib and exports GEXF for tools such as Gephi; this is example-based topology visualization.",
+            "zh": "基础教程使用 NetworkX/Matplotlib 绘制拓扑，并导出 GEXF 供 Gephi 等工具查看；属于示例提供的拓扑可视化。"
+          }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:yafs-yet-another-fog-simulator:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        }
+      ],
       "notes": []
     },
     "aimdb": {
@@ -11414,6 +12263,15 @@
           "facet": "language",
           "value": "Java",
           "source": "audit:edgecloudsim:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:edgecloudsim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": [
@@ -11776,7 +12634,32 @@
       "sources": [
         "audit:artery:overview"
       ],
-      "features": {},
+      "features": {
+        "visualization": {
+          "status": "unknown",
+          "source": "audit:artery:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
+          }
+        },
+        "scenario-scripts": {
+          "status": "unknown",
+          "source": "audit:artery:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish scenario scripts for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的场景脚本能力，暂保留待核实。"
+          }
+        },
+        "logging": {
+          "status": "unknown",
+          "source": "audit:artery:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish logging output for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的日志输出能力，暂保留待核实。"
+          }
+        }
+      },
       "claims": [
         {
           "facet": "protocol",
@@ -11797,6 +12680,15 @@
           "facet": "scenario",
           "value": "Vehicular",
           "source": "audit:artery:overview"
+        },
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:artery:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -11903,6 +12795,15 @@
           "facet": "metric",
           "value": "Resource utilization",
           "source": "audit:fogify:dimension-3"
+        },
+        {
+          "facet": "type",
+          "value": "emulator",
+          "source": "audit:fogify:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -11949,6 +12850,15 @@
           "facet": "language",
           "value": "Java",
           "source": "audit:peersim:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:peersim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -12031,6 +12941,15 @@
           "facet": "protocol",
           "value": "DTN",
           "source": "audit:the-one:overview"
+        },
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:the-one:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -13599,7 +14518,8 @@
       "sources": [
         "audit:cooja:overview",
         "audit:cooja:dimension-3",
-        "audit:cooja:dimension-5"
+        "audit:cooja:dimension-5",
+        "audit:cooja:project-Visualizer-java"
       ],
       "features": {
         "logging": {
@@ -13617,6 +14537,14 @@
             "en": "ScriptRunner provides an editor and scripting controls for automated simulation tests; scripts receive simulation events and report test outcomes.",
             "zh": "ScriptRunner 提供编辑器与脚本控件，用于自动化仿真测试；脚本接收仿真事件并报告测试结果。"
           }
+        },
+        "visualization": {
+          "status": "supported",
+          "source": "audit:cooja:project-Visualizer-java",
+          "note": {
+            "en": "The Visualizer plugin renders mote positions with selectable skins for traffic, radio links and node attributes.",
+            "zh": "Visualizer 插件显示节点位置，并可选择流量、无线链路和节点属性等显示层。"
+          }
         }
       },
       "claims": [
@@ -13624,6 +14552,15 @@
           "facet": "language",
           "value": "Java",
           "source": "audit:cooja:overview"
+        },
+        {
+          "facet": "type",
+          "value": "emulator",
+          "source": "audit:cooja:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -13704,6 +14641,15 @@
           "facet": "engine",
           "value": "Mininet",
           "source": "audit:mini-ndn:overview"
+        },
+        {
+          "facet": "type",
+          "value": "emulator",
+          "source": "audit:mini-ndn:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -13748,7 +14694,9 @@
         }
       ],
       "sources": [
-        "audit:minnet:overview"
+        "audit:minnet:overview",
+        "audit:minnet:project-mininet_log",
+        "audit:minnet:project-miniedit"
       ],
       "features": {
         "scenario-scripts": {
@@ -13765,6 +14713,22 @@
           "note": {
             "en": "Runs real Linux programs in a virtual host/link/switch network.",
             "zh": "在虚拟主机、链路及交换机网络中运行真实 Linux 程序。"
+          }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:minnet:project-mininet_log",
+          "note": {
+            "en": "mininet.log provides severity levels and console logging; configure output capture when persistent logs are needed.",
+            "zh": "mininet.log 提供分级控制台日志；需要持久化时应配置输出保存。"
+          }
+        },
+        "visualization": {
+          "status": "supported",
+          "source": "audit:minnet:project-miniedit",
+          "note": {
+            "en": "The bundled MiniEdit Python example provides a graphical network editor and can launch Mininet networks; it is a separate GUI example.",
+            "zh": "项目附带的 MiniEdit Python 示例可图形化编辑并启动 Mininet 网络，属于单独的 GUI 示例。"
           }
         }
       },
@@ -13788,6 +14752,15 @@
           "facet": "metric",
           "value": "Throughput",
           "source": "audit:minnet:overview"
+        },
+        {
+          "facet": "type",
+          "value": "emulator",
+          "source": "audit:minnet:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -13833,7 +14806,8 @@
       ],
       "sources": [
         "audit:ndnsim:overview",
-        "audit:ndnsim:dimension-3"
+        "audit:ndnsim:dimension-3",
+        "audit:ndnsim:project-getting-started"
       ],
       "features": {
         "real-code": {
@@ -13859,6 +14833,22 @@
             "en": "Trace sources and helpers export Interest/Data rates, timeouts and application delay as text tables; users can connect additional trace callbacks.",
             "zh": "跟踪源及辅助器将 Interest／Data 速率、超时和应用时延导出为文本表格；用户可连接额外跟踪回调。"
           }
+        },
+        "visualization": {
+          "status": "supported",
+          "source": "audit:ndnsim:project-getting-started",
+          "note": {
+            "en": "Example scenarios accept --vis when built with the matching ns-3 Python bindings and visualizer dependencies.",
+            "zh": "示例场景可使用 --vis，但需编译匹配的 ns-3 Python 绑定并安装可视化依赖。"
+          }
+        },
+        "scenario-scripts": {
+          "status": "supported",
+          "source": "audit:ndnsim:project-getting-started",
+          "note": {
+            "en": "The guide shows executable C++ scenarios and a separate scenario-template repository for experiments.",
+            "zh": "指南提供可执行的 C++ 场景及独立 scenario-template 仓库用于实验。"
+          }
         }
       },
       "claims": [
@@ -13881,6 +14871,24 @@
           "facet": "metric",
           "value": "Throughput",
           "source": "audit:ndnsim:dimension-3"
+        },
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:ndnsim:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        },
+        {
+          "facet": "language",
+          "value": "Python",
+          "source": "audit:ndnsim:project-getting-started",
+          "note": {
+            "en": "Optional Python bindings; the corresponding build dependencies are required.",
+            "zh": "可选 Python 绑定，需配置对应构建依赖。"
+          }
         }
       ],
       "notes": []
@@ -13926,7 +14934,8 @@
       ],
       "sources": [
         "audit:ns-3:overview",
-        "audit:ns-3:dimension-3"
+        "audit:ns-3:dimension-3",
+        "audit:ns-3:project-animation-rst"
       ],
       "features": {
         "scenario-scripts": {
@@ -13952,6 +14961,22 @@
             "en": "The statistics framework collects counters and min/max/mean/total observations, supports custom instrumentation, and exports text or SQLite data. Its Wi-Fi example measures sent/received packets, bytes and end-to-end delay.",
             "zh": "统计框架提供计数及最小／最大／均值／总量观测，支持自定义插桩，输出文本或 SQLite 数据；Wi-Fi 示例测量收发分组、字节和端到端时延。"
           }
+        },
+        "visualization": {
+          "status": "supported",
+          "source": "audit:ns-3:project-animation-rst",
+          "note": {
+            "en": "NetAnim is a separate Qt application that reads simulation trace files to animate topology and packet flow. Generate compatible traces first.",
+            "zh": "NetAnim 是独立 Qt 程序，通过读取仿真轨迹显示拓扑和分组流动；需先生成兼容轨迹。"
+          }
+        },
+        "custom-scheduling": {
+          "status": "unknown",
+          "source": "audit:ns-3:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
+          }
         }
       },
       "claims": [
@@ -13974,6 +14999,15 @@
           "facet": "metric",
           "value": "Throughput",
           "source": "audit:ns-3:dimension-3"
+        },
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:ns-3:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -14939,6 +15973,15 @@
           "facet": "scheduling",
           "value": "Proportional fair",
           "source": "audit:simulte:overview"
+        },
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:simulte:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -15376,7 +16419,40 @@
       "sources": [
         "audit:easiei-wiki:overview"
       ],
-      "features": {},
+      "features": {
+        "visualization": {
+          "status": "unknown",
+          "source": "audit:easiei-wiki:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
+          }
+        },
+        "scenario-scripts": {
+          "status": "unknown",
+          "source": "audit:easiei-wiki:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish scenario scripts for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的场景脚本能力，暂保留待核实。"
+          }
+        },
+        "logging": {
+          "status": "unknown",
+          "source": "audit:easiei-wiki:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish logging output for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的日志输出能力，暂保留待核实。"
+          }
+        },
+        "custom-scheduling": {
+          "status": "unknown",
+          "source": "audit:easiei-wiki:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
+          }
+        }
+      },
       "claims": [
         {
           "facet": "resource",
@@ -15392,6 +16468,15 @@
           "facet": "resource",
           "value": "Network",
           "source": "audit:easiei-wiki:overview"
+        },
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:easiei-wiki:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -16130,9 +17215,36 @@
             "en": "Distributed Mininet network emulation; the example runs real iperf processes on emulated hosts.",
             "zh": "分布式 Mininet 网络仿真；示例在仿真主机中运行真实 iperf 进程。"
           }
+        },
+        "custom-scheduling": {
+          "status": "unknown",
+          "source": "audit:maxinet:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
+          }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "type",
+          "value": "emulator",
+          "source": "audit:maxinet:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        },
+        {
+          "facet": "language",
+          "value": "Python",
+          "source": "audit:maxinet:overview",
+          "note": {
+            "en": "Python 2 monitoring example; maxinet_plot.py plots the collected files separately.",
+            "zh": "提供 Python 2 监控示例，通过独立的 maxinet_plot.py 绘制输出文件。"
+          }
+        }
+      ],
       "notes": []
     },
     "cfn": {
@@ -16185,6 +17297,22 @@
             "en": "NS_LOG_DEBUG and console messages expose Interest handling and function dispatch.",
             "zh": "NS_LOG_DEBUG 与控制台消息记录 Interest 处理和函数派发。"
           }
+        },
+        "visualization": {
+          "status": "unknown",
+          "source": "audit:cfn:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
+          }
+        },
+        "scenario-scripts": {
+          "status": "unknown",
+          "source": "audit:cfn:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish scenario scripts for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的场景脚本能力，暂保留待核实。"
+          }
         }
       },
       "claims": [
@@ -16197,6 +17325,15 @@
           "facet": "protocol",
           "value": "NDN",
           "source": "audit:cfn:overview"
+        },
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:cfn:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
         }
       ],
       "notes": []
@@ -16241,7 +17378,9 @@
         }
       ],
       "sources": [
-        "audit:omnetpp:overview"
+        "audit:omnetpp:overview",
+        "audit:omnetpp:project-ch-eventlog",
+        "audit:omnetpp:project-ch-graphics"
       ],
       "features": {
         "custom-metrics": {
@@ -16259,9 +17398,52 @@
             "en": "C++ simulation-library manual includes executable API examples; GUI and analysis documentation are separate.",
             "zh": "C++ 仿真库手册提供 API 示例；GUI 和分析工具另有文档。"
           }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:omnetpp:project-ch-eventlog",
+          "note": {
+            "en": "Set record-eventlog = true in the INI configuration to record events; the IDE provides sequence-chart and event-table views.",
+            "zh": "在 INI 中设置 record-eventlog = true 后记录事件；IDE 提供序列图与事件表视图。"
+          }
+        },
+        "visualization": {
+          "status": "supported",
+          "source": "audit:omnetpp:project-ch-graphics",
+          "note": {
+            "en": "Qtenv provides interactive model animation; display strings and canvas figures configure module and connection presentation.",
+            "zh": "Qtenv 提供交互式模型动画，可用显示字符串和画布图形配置模块及连接的呈现。"
+          }
+        },
+        "custom-scheduling": {
+          "status": "unknown",
+          "source": "audit:omnetpp:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
+          }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "type",
+          "value": "packet",
+          "source": "audit:omnetpp:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        },
+        {
+          "facet": "language",
+          "value": "C++",
+          "source": "audit:omnetpp:overview",
+          "note": {
+            "en": "C++ simulation-library manual includes executable API examples; GUI and analysis documentation are separate.",
+            "zh": "C++ 仿真库手册提供 API 示例；GUI 和分析工具另有文档。"
+          }
+        }
+      ],
       "notes": []
     },
     "marssx86": {
@@ -16932,12 +18114,7 @@
           "source": "audit:lightmano:overview"
         }
       ],
-      "notes": [
-        {
-          "en": "The paper describes a prototype; the architecture diagram alone does not verify completed SLA-enforcement algorithms.",
-          "zh": "论文描述原型；不能仅根据架构图确认 SLA 强制保障算法已实现。"
-        }
-      ]
+      "notes": []
     },
     "rasim": {
       "date": "2026-09-08",
@@ -17066,12 +18243,7 @@
           "source": "audit:rasim:overview"
         }
       ],
-      "notes": [
-        {
-          "en": "Capabilities describe the published 2021 implementation. The original download site was unavailable during review.",
-          "zh": "能力对应 2021 年论文实现；核查时原下载网站不可访问。"
-        }
-      ]
+      "notes": []
     },
     "simflex": {
       "date": "2026-09-08",
@@ -17428,12 +18600,39 @@
       "sources": [
         "audit:recap-des:overview"
       ],
-      "features": {},
-      "claims": [],
+      "features": {
+        "custom-metrics": {
+          "status": "unknown",
+          "source": "audit:recap-des:overview",
+          "note": {
+            "en": "The reviewed project material does not yet establish an extensible metric interface for this version. This remains unverified.",
+            "zh": "已查阅的项目资料尚未明确此版本的可扩展的指标接口能力，暂保留待核实。"
+          }
+        },
+        "logging": {
+          "status": "supported",
+          "source": "audit:recap-des:overview",
+          "note": {
+            "en": "Adapters export simulation results to InfluxDB or CSV.",
+            "zh": "适配器将仿真结果导出到 InfluxDB 或 CSV。"
+          }
+        }
+      },
+      "claims": [
+        {
+          "facet": "type",
+          "value": "application",
+          "source": "audit:recap-des:overview",
+          "note": {
+            "en": "Catalog classification based on the project’s stated simulation or execution model.",
+            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+          }
+        }
+      ],
       "notes": [],
       "accessNote": {
-        "en": "The Bitbucket endpoint returned only a JavaScript shell. The 2025 survey remains available; current source interfaces were not confirmed.",
-        "zh": "Bitbucket 入口只返回 JavaScript 外壳；保留 2025 年综述记录，尚未确认当前源码接口。"
+        "en": "The old project endpoint is unavailable. The retained descriptions come from the project’s 2019 D4.4 technical deliverable and do not verify a current release.",
+        "zh": "旧项目入口不可用；所保留的说明来自项目 2019 年 D4.4 技术交付文档，不代表当前版本已核实。"
       }
     },
     "recap-simulator-framework": {
@@ -17482,8 +18681,8 @@
       "claims": [],
       "notes": [],
       "accessNote": {
-        "en": "The former project URL now redirects to unrelated WordPress content; it cannot verify the original simulator framework.",
-        "zh": "原项目网址现在跳转到无关 WordPress 内容，不能用于核实原仿真框架。"
+        "en": "The old project endpoint is unavailable. The retained descriptions come from the project’s 2019 D4.4 technical deliverable and do not verify a current release.",
+        "zh": "旧项目入口不可用；所保留的说明来自项目 2019 年 D4.4 技术交付文档，不代表当前版本已核实。"
       }
     },
     "clawbox": {
