@@ -1,5 +1,9 @@
-import { emptyState, readState, writeState, selectTools, toggleCompare, relaxations, featureKeys } from './core.mjs';
-import { ui, groups, features, terms, dimensions, columns } from './labels.mjs';
+// Keep the module graph on the same published version as the entry point.
+const release = new URL(import.meta.url).search;
+const [{ emptyState, readState, writeState, selectTools, toggleCompare, relaxations, featureKeys }, { ui, groups, features, terms, dimensions, columns }] = await Promise.all([
+  import(new URL(`./core.mjs${release}`, import.meta.url).href),
+  import(new URL(`./labels.mjs${release}`, import.meta.url).href),
+]);
 
 const root = document.getElementById('edge-explorer');
 const $ = selector => root.querySelector(selector);
