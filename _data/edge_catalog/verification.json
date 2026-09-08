@@ -19076,11 +19076,11 @@
           "source": "review:nfaas:README.md"
         },
         {
+          "source": "review:nfaas:ns-3/src/ndnSIM/NFD/daemon/table/ks.cpp",
           "text": {
-            "en": "Kernel Store caches unikernel images, limits concurrent modeled functions through MAX_RUN_KERNELS, and optionally adapts cache size with SPECIALIZE. Cloud-node resource assumptions differ from ordinary nodes.",
-            "zh": "Kernel Store 缓存 unikernel 镜像，以 MAX_RUN_KERNELS 限制并发建模函数，并可通过 SPECIALIZE 自适应调整缓存大小；云节点采用不同于普通节点的资源假设。"
-          },
-          "source": "review:nfaas:README.md"
+            "en": "Kernel Store keeps per-function cache entries. MAX_RUN_KERNELS caps active modeled functions, QUEUE_SIZE bounds pending requests, and SPECILIZE (the source-code spelling) enables cache-size adaptation. Cloud-node assumptions differ from ordinary nodes.",
+            "zh": "Kernel Store 保存各函数的缓存条目。MAX_RUN_KERNELS 限制活动建模函数数，QUEUE_SIZE 限制等待请求数，SPECILIZE（源码中的拼写）启用缓存大小调整；云节点采用不同于普通节点的假设。"
+          }
         },
         {
           "text": {
@@ -19098,8 +19098,8 @@
         },
         {
           "text": {
-            "en": "The archived repository builds its bundled ns-3/ndnSIM with waf and provides the ndn-function example. run.sh sweeps parameters and captures logs; the pinned implementation dates to 2019.",
-            "zh": "归档仓库使用 waf 构建附带的 ns-3/ndnSIM，提供 ndn-function 示例；run.sh 扫描参数并保存日志，此处固定的实现提交来自 2019 年。"
+            "en": "The pinned source snapshot builds its bundled ns-3/ndnSIM with waf and provides the ndn-function example. run.sh sweeps parameters and captures logs; the pinned implementation dates to 2019.",
+            "zh": "固定版本源码使用 waf 构建附带的 ns-3/ndnSIM，提供 ndn-function 示例；run.sh 扫描参数并保存日志，此处固定的实现提交来自 2019 年。"
           },
           "source": "review:nfaas:README.md"
         }
