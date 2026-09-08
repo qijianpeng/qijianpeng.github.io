@@ -311,12 +311,7 @@
       "deployment"
     ],
     "claims": [],
-    "notes": [
-      {
-        "en": "Public project documentation has not been recovered; implementation capabilities remain unverified.",
-        "zh": "尚未找到可核对的公开项目文档，实现能力暂保留待核实。"
-      }
-    ]
+    "notes": []
   },
   "marssx86": {
     "claims": [
@@ -1548,11 +1543,6 @@
     ]
   },
   "rasim": {
-    "notes": [
-      {
-        "en": "The original download site was unavailable; direct implementation documentation remains unverified.",
-        "zh": "原下载网站无法访问，尚未核实直接实现文档。"
-      }
-    ]
+    "notes": []
   }
 }

@@ -14,7 +14,8 @@ export function normalizeState(input = {}, data) {
     }
   }
   state.required = unique((Array.isArray(input.required) ? input.required : []).filter(k => featureKeys.includes(k)));
-  state.includeUnknown = input.includeUnknown === true;
+  // Legacy links retain their filters and shortlist, with strict capability matching.
+  state.includeUnknown = false;
   state.compare = unique((Array.isArray(input.compare) ? input.compare : []).filter(v => typeof v === 'string' && (!data || data.tools.some(t => t.id === v && t.comparable)))).slice(0, 4);
   return state;
 }
@@ -42,7 +43,7 @@ export function matchTool(tool, state) {
     if (status === 'unsupported' || status === 'not-applicable') return null;
     if (status === 'unknown') unknown.push(feature);
   }
-  if (unknown.length && !state.includeUnknown) return null;
+  if (unknown.length) return null;
   return { tool, unknown, tentative: unknown.length > 0 };
 }
 export function selectTools(data, state) {

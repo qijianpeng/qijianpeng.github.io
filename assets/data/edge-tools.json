@@ -11,8 +11,8 @@
     "inventoryHash": "b152b9b3d4fda6ff64b7817a5840553783c4d98a0e7d47cba12f8ba898ebbaa6",
     "evidencePolicy": "project-documentation",
     "reviewedCount": 218,
-    "dimensionEvidenceCount": 992,
-    "accessIssueCount": 12
+    "dimensionEvidenceCount": 1045,
+    "accessIssueCount": 11
   },
   "categories": [
     "simulators",
@@ -2043,6 +2043,356 @@
       "version": "d98c0053626840d4deadafa4c8c8b6db78929117",
       "title": "yafs-yet-another-fog-simulator / tutorial_scenarios/01_basicExample/main.py",
       "url": "https://github.com/acsicuib/YAFS/blob/d98c0053626840d4deadafa4c8c8b6db78929117/tutorial_scenarios/01_basicExample/main.py"
+    },
+    "review:artery:src/artery/application/CaService.cc": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/riebl/artery/blob/master/src/artery/application/CaService.cc",
+      "title": "src/artery/application/CaService.cc",
+      "version": "master"
+    },
+    "review:cloudsim-plus-automation:src/main/java/org/cloudsimplus/automation/CloudSimulation.java": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/cloudsimplus/cloudsimplus-automation/blob/3b48a4dc373b761667cd16edbced48ba8cb57ebc/src/main/java/org/cloudsimplus/automation/CloudSimulation.java",
+      "title": "src/main/java/org/cloudsimplus/automation/CloudSimulation.java",
+      "version": "3b48a4dc373b761667cd16edbced48ba8cb57ebc"
+    },
+    "review:cooja:java/org/contikios/cooja/Simulation.java": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/contiki-ng/cooja/blob/2adeaed7991cd789957e4e23c32680837bb2b2b9/java/org/contikios/cooja/Simulation.java",
+      "title": "java/org/contikios/cooja/Simulation.java",
+      "version": "2adeaed7991cd789957e4e23c32680837bb2b2b9"
+    },
+    "review:core:docs/performance.md": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/coreemu/core/blob/a5cff7f99e02a2acf629e19c307926c62c818fd6/docs/performance.md",
+      "title": "docs/performance.md",
+      "version": "a5cff7f99e02a2acf629e19c307926c62c818fd6"
+    },
+    "review:kathar:src/Kathara/manager/docker/stats/DockerMachineStats.py": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/KatharaFramework/Kathara/blob/9fd24a5b94817c41bc1c84505131ed20dbd13db0/src/Kathara/manager/docker/stats/DockerMachineStats.py",
+      "title": "src/Kathara/manager/docker/stats/DockerMachineStats.py",
+      "version": "9fd24a5b94817c41bc1c84505131ed20dbd13db0"
+    },
+    "review:mec-simulator:contrib/mec-sim/model/client-app.cc": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/telematics-dev/MEC-simulator/blob/438301dd2da1c14a19dac6f142bf617192420cf3/contrib/mec-sim/model/client-app.cc",
+      "title": "contrib/mec-sim/model/client-app.cc",
+      "version": "438301dd2da1c14a19dac6f142bf617192420cf3"
+    },
+    "review:mininet-wifi:mn_wifi/telemetry.py": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/intrig-unicamp/mininet-wifi/blob/99ba09b269f8e5e08cd9698c24b8b7e2949016a9/mn_wifi/telemetry.py",
+      "title": "mn_wifi/telemetry.py",
+      "version": "99ba09b269f8e5e08cd9698c24b8b7e2949016a9"
+    },
+    "review:ndn4ivc:helper/mylog-helper.h": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/insert-lab/ndn4ivc/blob/5c57662a2485e51e25f65c9242ade6b0be37fe4d/helper/mylog-helper.h",
+      "title": "helper/mylog-helper.h",
+      "version": "5c57662a2485e51e25f65c9242ade6b0be37fe4d"
+    },
+    "review:peersim:observers": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://peersim.sourceforge.net/tutorial1/tutorial1.html",
+      "title": "PeerSim cycle-based tutorial",
+      "version": "Project documentation accessed 2026-09-08"
+    },
+    "review:gem5:configuration": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://www.gem5.org/documentation/learning_gem5/part1/cache_config/",
+      "title": "gem5 cache and system configuration",
+      "version": "Project documentation accessed 2026-09-08"
+    },
+    "review:shadow:docs/profiling.md": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/shadow/shadow/blob/49180a30800ecc3127f4aec0730bd11a9441a383/docs/profiling.md",
+      "title": "docs/profiling.md",
+      "version": "49180a30800ecc3127f4aec0730bd11a9441a383"
+    },
+    "review:shadow:docs/perf_config_options.md": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/shadow/shadow/blob/49180a30800ecc3127f4aec0730bd11a9441a383/docs/perf_config_options.md",
+      "title": "docs/perf_config_options.md",
+      "version": "49180a30800ecc3127f4aec0730bd11a9441a383"
+    },
+    "review:simu5g:src/simu5g/stack/mac/scheduling_modules/LteDrr.cc": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/Unipisa/Simu5G/blob/abace2a35a9df7eeef9731032d408b6cc3558a06/src/simu5g/stack/mac/scheduling_modules/LteDrr.cc",
+      "title": "src/simu5g/stack/mac/scheduling_modules/LteDrr.cc",
+      "version": "abace2a35a9df7eeef9731032d408b6cc3558a06"
+    },
+    "review:step-one:step-one-main/samples/tutorial5_compute/settings.txt": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/jaks6/step-one/blob/25ce4c3d75de898daecf2b0251ad259a0eeb95a9/step-one-main/samples/tutorial5_compute/settings.txt",
+      "title": "step-one-main/samples/tutorial5_compute/settings.txt",
+      "version": "25ce4c3d75de898daecf2b0251ad259a0eeb95a9"
+    },
+    "review:svl-simulator:Assets/Scripts/Api/Commands/AddAgent.cs": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/lgsvl/simulator/blob/4c342fd39c5eca6ce6538a144f51d5929812e417/Assets/Scripts/Api/Commands/AddAgent.cs",
+      "title": "Assets/Scripts/Api/Commands/AddAgent.cs",
+      "version": "4c342fd39c5eca6ce6538a144f51d5929812e417"
+    },
+    "review:svl-simulator:Assets/Scripts/Managers/AnalysisManager.cs": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/lgsvl/simulator/blob/4c342fd39c5eca6ce6538a144f51d5929812e417/Assets/Scripts/Managers/AnalysisManager.cs",
+      "title": "Assets/Scripts/Managers/AnalysisManager.cs",
+      "version": "4c342fd39c5eca6ce6538a144f51d5929812e417"
+    },
+    "review:svl-simulator:Assets/Scripts/Api/Commands/ControllableControlPolicySet.cs": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/lgsvl/simulator/blob/4c342fd39c5eca6ce6538a144f51d5929812e417/Assets/Scripts/Api/Commands/ControllableControlPolicySet.cs",
+      "title": "Assets/Scripts/Api/Commands/ControllableControlPolicySet.cs",
+      "version": "4c342fd39c5eca6ce6538a144f51d5929812e417"
+    },
+    "review:veins-its:src/veins/modules/mobility/traci/TraCIScenarioManager.ned": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/sommer/veins/blob/7fff7bffaec62eb1bf4007c9f2c3411f446a7ed6/src/veins/modules/mobility/traci/TraCIScenarioManager.ned",
+      "title": "src/veins/modules/mobility/traci/TraCIScenarioManager.ned",
+      "version": "7fff7bffaec62eb1bf4007c9f2c3411f446a7ed6"
+    },
+    "review:veins-its:src/veins/modules/mac/ieee80211p/Mac1609_4.cc": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/sommer/veins/blob/7fff7bffaec62eb1bf4007c9f2c3411f446a7ed6/src/veins/modules/mac/ieee80211p/Mac1609_4.cc",
+      "title": "src/veins/modules/mac/ieee80211p/Mac1609_4.cc",
+      "version": "7fff7bffaec62eb1bf4007c9f2c3411f446a7ed6"
+    },
+    "review:apache-openwhisk:metrics": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/apache/openwhisk/blob/master/docs/metrics.md",
+      "title": "OpenWhisk metrics guide",
+      "version": "Project documentation accessed 2026-09-08"
+    },
+    "review:bochs:debugger": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://bochs.sourceforge.io/doc/docbook/user/internal-debugger.html",
+      "title": "Bochs internal debugger guide",
+      "version": "Project documentation accessed 2026-09-08"
+    },
+    "review:boinc:client/cs_benchmark.cpp": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/BOINC/boinc/blob/019f539b92dd2b9f1c4301b511cf33c4cf7a4bd3/client/cs_benchmark.cpp",
+      "title": "client/cs_benchmark.cpp",
+      "version": "019f539b92dd2b9f1c4301b511cf33c4cf7a4bd3"
+    },
+    "review:chameleon:source/technical/power_monitoring/index.rst": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/ChameleonCloud/docs/blob/master/source/technical/power_monitoring/index.rst",
+      "title": "source/technical/power_monitoring/index.rst",
+      "version": "master"
+    },
+    "review:edgemesh:pkg/profile/profile.go": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/kubeedge/edgemesh/blob/cde4c95d68acfe35ad6db2887dce272d0f36c1bb/pkg/profile/profile.go",
+      "title": "pkg/profile/profile.go",
+      "version": "cde4c95d68acfe35ad6db2887dce272d0f36c1bb"
+    },
+    "review:edgex-foundry:service-metrics": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://docs.edgexfoundry.org/4.0.2/microservices/application/details/ServiceMetrics/",
+      "title": "EdgeX 4.0.2 application service metrics",
+      "version": "4.0.2"
+    },
+    "review:wasmer:examples/metering.rs": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/wasmerio/wasmer/blob/6a844cff9bd2eb391ab91b7e41fee94260f0ec46/examples/metering.rs",
+      "title": "examples/metering.rs",
+      "version": "6a844cff9bd2eb391ab91b7e41fee94260f0ec46"
+    },
+    "review:edgenet:config/prometheus/monitor.yaml": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/EdgeNet-project/edgenet/blob/a59d6e033c8f47aae18e85bdd94bc077ee95cb5a/config/prometheus/monitor.yaml",
+      "title": "config/prometheus/monitor.yaml",
+      "version": "a59d6e033c8f47aae18e85bdd94bc077ee95cb5a"
+    },
+    "review:mosquitto:sys": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://mosquitto.org/man/mosquitto-8.html",
+      "title": "Mosquitto broker manual",
+      "version": "Project documentation accessed 2026-09-08"
+    },
+    "review:vernemq:metrics": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://docs.vernemq.com/monitoring/introduction",
+      "title": "VerneMQ monitoring guide",
+      "version": "Project documentation accessed 2026-09-08"
+    },
+    "review:apache-tvm:vm-timing": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://tvm.apache.org/docs/reference/api/python/runtime/vm.html",
+      "title": "TVM virtual machine API",
+      "version": "Project documentation accessed 2026-09-08"
+    },
+    "review:deepiot:DeepIoT_DeepSense_HHAR.py": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/yscacaca/DeepIoT/blob/c668b54e9ee384fd0160f6b61d4cf31a183e1c74/DeepIoT_DeepSense_HHAR.py",
+      "title": "DeepIoT_DeepSense_HHAR.py",
+      "version": "c668b54e9ee384fd0160f6b61d4cf31a183e1c74"
+    },
+    "review:pytorch-mobile:binaries/speed_benchmark_torch.cc": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/pytorch/pytorch/blob/v2.2.0/binaries/speed_benchmark_torch.cc",
+      "title": "binaries/speed_benchmark_torch.cc",
+      "version": "v2.2.0"
+    },
+    "review:pytorch-mobile:torch/utils/mobile_optimizer.py": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/pytorch/pytorch/blob/v2.2.0/torch/utils/mobile_optimizer.py",
+      "title": "torch/utils/mobile_optimizer.py",
+      "version": "v2.2.0"
+    },
+    "review:sparsezoo:src/sparsezoo/evaluation/results.py": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/neuralmagic/sparsezoo/blob/fe098ce026764ab4537c7bc10321ce75ef3add1d/src/sparsezoo/evaluation/results.py",
+      "title": "src/sparsezoo/evaluation/results.py",
+      "version": "fe098ce026764ab4537c7bc10321ce75ef3add1d"
+    },
+    "review:tnn:benchmark/benchmark_android/README.md": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/Tencent/TNN/blob/f0cb08129a05c5b60f08e4ef66042a54a883a56a/benchmark/benchmark_android/README.md",
+      "title": "benchmark/benchmark_android/README.md",
+      "version": "f0cb08129a05c5b60f08e4ef66042a54a883a56a"
+    },
+    "review:fognetsimpp:mqtt-statistics": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/rtqayyum/fognetsimpp/blob/d2a91b3b986a1fcb8293ac5bf686c1ff8d6c53ed/mqttapp.zip",
+      "title": "mqttapp.zip: mqttapp/mqttApp2.ned",
+      "version": "d2a91b3b986a1fcb8293ac5bf686c1ff8d6c53ed"
+    },
+    "review:fognetsimpp:compute-queue": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/rtqayyum/fognetsimpp/blob/d2a91b3b986a1fcb8293ac5bf686c1ff8d6c53ed/mqttapp.zip",
+      "title": "mqttapp.zip: mqttapp/ComputeBrokerApp3.cc",
+      "version": "d2a91b3b986a1fcb8293ac5bf686c1ff8d6c53ed"
+    },
+    "review:krustlet:crates/kubelet/src/container/status.rs": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/krustlet/krustlet/blob/e654e5b680fc8168d4dd17d0a74206f626282617/crates/kubelet/src/container/status.rs",
+      "title": "crates/kubelet/src/container/status.rs",
+      "version": "e654e5b680fc8168d4dd17d0a74206f626282617"
+    },
+    "review:krustlet:demos/wasi/hello-world-rust/README.md": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/krustlet/krustlet/blob/e654e5b680fc8168d4dd17d0a74206f626282617/demos/wasi/hello-world-rust/README.md",
+      "title": "demos/wasi/hello-world-rust/README.md",
+      "version": "e654e5b680fc8168d4dd17d0a74206f626282617"
+    },
+    "review:vns:sources/vehicles/modules/travelstatsmodule.cpp": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/enriquefynn/libvns/blob/abf27bad43abbe572c2eeeca537de31f881ffc30/sources/vehicles/modules/travelstatsmodule.cpp",
+      "title": "sources/vehicles/modules/travelstatsmodule.cpp",
+      "version": "abf27bad43abbe572c2eeeca537de31f881ffc30"
+    },
+    "review:vns:sources/trafficlights/fixedtimetrafficlightcontroller.cpp": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/enriquefynn/libvns/blob/abf27bad43abbe572c2eeeca537de31f881ffc30/sources/trafficlights/fixedtimetrafficlightcontroller.cpp",
+      "title": "sources/trafficlights/fixedtimetrafficlightcontroller.cpp",
+      "version": "abf27bad43abbe572c2eeeca537de31f881ffc30"
+    },
+    "review:veins-lte-its:simulte/src/apps/voip/VoIPReceiver.ned": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/floxyz/veins-lte/blob/23c9aa10aa5e31c6c61a0d376b380566e594b38d/simulte/src/apps/voip/VoIPReceiver.ned",
+      "title": "simulte/src/apps/voip/VoIPReceiver.ned",
+      "version": "23c9aa10aa5e31c6c61a0d376b380566e594b38d"
+    },
+    "review:snpe:developer-guide": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://www.qualcomm.com/content/dam/qcomm-martech/dm-assets/documents/developers-guide-to-ai.pdf",
+      "title": "Qualcomm developer guide: NPE SDK, page 7",
+      "version": "2017 developer guide"
+    },
+    "review:k3os:README.md": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://github.com/rancher/k3os/blob/8cdfdf2675f1a4c06b2413fa8e3b669a8729a4a2/README.md",
+      "title": "README.md",
+      "version": "8cdfdf2675f1a4c06b2413fa8e3b669a8729a4a2"
+    },
+    "review:easiei:scratch/managertest.cc": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/scratch/managertest.cc",
+      "title": "scratch/managertest.cc",
+      "version": "e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "review:edgegallery-documents-maintained-in-chinese:release-1.5": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://gitee.com/edgegallery/docs/blob/master/Release%20Notes/EdgeGallery_RN_zh.md",
+      "title": "EdgeGallery release notes: Version 1.5.0",
+      "version": "1.5.0, January 2022"
+    },
+    "review:itetris:deliverables": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "http://www.ict-itetris.eu/simulator/deliverables.htm",
+      "title": "iTETRIS project results and deliverable access",
+      "version": "Historical project website, accessed 2026-09-08"
+    },
+    "review:nfaas:README.md": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://gitlab.com/mharnen/NFaaS/-/blob/a720c3154fe93db5d775112e59e2debe0074c523/README.md",
+      "title": "README.md",
+      "version": "a720c3154fe93db5d775112e59e2debe0074c523"
+    },
+    "review:nfaas:ns-3/src/ndnSIM/NFD/daemon/table/ks.cpp": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://gitlab.com/mharnen/NFaaS/-/blob/a720c3154fe93db5d775112e59e2debe0074c523/ns-3/src/ndnSIM/NFD/daemon/table/ks.cpp",
+      "title": "ns-3/src/ndnSIM/NFD/daemon/table/ks.cpp",
+      "version": "a720c3154fe93db5d775112e59e2debe0074c523"
+    },
+    "review:nfaas:ns-3/run.sh": {
+      "kind": "official",
+      "date": "2026-09-08",
+      "url": "https://gitlab.com/mharnen/NFaaS/-/blob/a720c3154fe93db5d775112e59e2debe0074c523/ns-3/run.sh",
+      "title": "ns-3/run.sh",
+      "version": "a720c3154fe93db5d775112e59e2debe0074c523"
     }
   },
   "tools": [
@@ -2119,31 +2469,16 @@
       ],
       "features": {
         "visualization": {
-          "status": "unknown",
-          "source": "audit:artery:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "custom-metrics": {
           "status": "unknown"
         },
         "scenario-scripts": {
-          "status": "unknown",
-          "source": "audit:artery:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish scenario scripts for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的场景脚本能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "logging": {
-          "status": "unknown",
-          "source": "audit:artery:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish logging output for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的日志输出能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "custom-scheduling": {
           "status": "unknown"
@@ -2176,7 +2511,13 @@
             },
             "source": "audit:artery:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "CaService emits CamSent and CamReceived OMNeT++ signals carrying CAM objects. Attach result listeners to analyze message activity in the configured ITS service.",
+              "zh": "CaService 发出携带 CAM 对象的 CamSent、CamReceived 信号，可为已配置的 ITS 服务接入结果监听器，分析消息收发。"
+            },
+            "source": "review:artery:src/artery/application/CaService.cc"
+          },
           {
             "text": {
               "en": "Middleware supports multiple ITS services per vehicle with shared Facilities.",
@@ -2193,7 +2534,8 @@
           }
         ],
         "sources": [
-          "audit:artery:overview"
+          "audit:artery:overview",
+          "review:artery:src/artery/application/CaService.cc"
         ],
         "accessNote": null
       }
@@ -3037,7 +3379,13 @@
             },
             "source": "audit:cloudsim-plus-automation:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "After each simulation, CloudletsTableBuilder prints completed cloudlets. Final output includes host wall-clock execution time and counts of configured data centers, hosts, VMs, and cloudlets.",
+              "zh": "每次仿真后通过 CloudletsTableBuilder 输出已完成任务表；最终输出包含宿主机墙钟执行时间以及数据中心、主机、虚拟机和任务数量。"
+            },
+            "source": "review:cloudsim-plus-automation:src/main/java/org/cloudsimplus/automation/CloudSimulation.java"
+          },
           {
             "text": {
               "en": "Scenario fields select VmAllocationPolicy, VmScheduler, and CloudletScheduler implementations; algorithms require compatible engine classes.",
@@ -3055,7 +3403,8 @@
         ],
         "sources": [
           "audit:cloudsim-plus-automation:overview",
-          "audit:cloudsim-plus-automation:project-logback"
+          "audit:cloudsim-plus-automation:project-logback",
+          "review:cloudsim-plus-automation:src/main/java/org/cloudsimplus/automation/CloudSimulation.java"
         ],
         "accessNote": null
       }
@@ -3663,23 +4012,13 @@
       ],
       "features": {
         "visualization": {
-          "status": "unknown",
-          "source": "audit:cfn:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "custom-metrics": {
           "status": "unknown"
         },
         "scenario-scripts": {
-          "status": "unknown",
-          "source": "audit:cfn:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish scenario scripts for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的场景脚本能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "logging": {
           "status": "supported",
@@ -3860,7 +4199,13 @@
             },
             "source": "audit:cooja:dimension-3"
           },
-          null,
+          {
+            "text": {
+              "en": "Simulation.scheduleEvent places TimeEvent objects in the simulation event queue. Running simulations require scheduling from the simulation thread; speed-limit controls pace execution. This manages simulation events.",
+              "zh": "Simulation.scheduleEvent 将 TimeEvent 放入仿真事件队列；运行期间需由仿真线程调度，可设置执行速度。这是仿真事件管理。"
+            },
+            "source": "review:cooja:java/org/contikios/cooja/Simulation.java"
+          },
           {
             "text": {
               "en": "ScriptRunner provides an editor and scripting controls for automated simulation tests; scripts receive simulation events and report test outcomes.",
@@ -3873,7 +4218,8 @@
           "audit:cooja:overview",
           "audit:cooja:dimension-3",
           "audit:cooja:dimension-5",
-          "audit:cooja:project-Visualizer-java"
+          "audit:cooja:project-Visualizer-java",
+          "review:cooja:java/org/contikios/cooja/Simulation.java"
         ],
         "accessNote": null
       }
@@ -3999,7 +4345,13 @@
             },
             "source": "audit:core:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The performance guide evaluates aggregate packet-processing rate and explains how CPU sharing, packet hops, and active processes affect throughput. Its historical example uses a single-CPU 3.0 GHz Xeon with 2 GB RAM; it is not a current capacity guarantee.",
+              "zh": "性能指南评估整机包处理速率，说明 CPU 共享、包经过的跳数和活动进程对吞吐量的影响。历史示例使用单 CPU 3.0 GHz Xeon、2 GB 内存，不代表当前容量保证。"
+            },
+            "source": "review:core:docs/performance.md"
+          },
           {
             "text": {
               "en": "The GUI and Python modules construct and control the emulated topology.",
@@ -4016,7 +4368,8 @@
           }
         ],
         "sources": [
-          "audit:core:overview"
+          "audit:core:overview",
+          "review:core:docs/performance.md"
         ],
         "accessNote": null
       }
@@ -4155,12 +4508,7 @@
           }
         },
         "custom-scheduling": {
-          "status": "unknown",
-          "source": "audit:dfaas:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "real-code": {
           "status": "supported",
@@ -4288,39 +4636,24 @@
       ],
       "features": {
         "visualization": {
-          "status": "unknown",
-          "source": "audit:easiei-wiki:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "custom-metrics": {
           "status": "unknown"
         },
         "scenario-scripts": {
-          "status": "unknown",
-          "source": "audit:easiei-wiki:overview",
+          "status": "supported",
+          "source": "review:easiei:scratch/managertest.cc",
           "note": {
-            "en": "The reviewed project material does not yet establish scenario scripts for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的场景脚本能力，暂保留待核实。"
+            "en": "The C++ manager example loads tasks from CSV, configures resources, and runs the simulation; adapt its hard-coded input path.",
+            "zh": "C++ 管理器示例从 CSV 加载任务、配置资源并运行仿真，需修改硬编码输入路径。"
           }
         },
         "logging": {
-          "status": "unknown",
-          "source": "audit:easiei-wiki:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish logging output for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的日志输出能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "custom-scheduling": {
-          "status": "unknown",
-          "source": "audit:easiei-wiki:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "real-code": {
           "status": "unknown"
@@ -4350,7 +4683,13 @@
             },
             "source": "audit:easiei-wiki:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The manager example connects DoubleProbe to RemainingCpu and RemainingMemory and writes time/value pairs to formatted cpu2 and mem2 output files. Its workload CSV path is hard-coded and must be adapted locally.",
+              "zh": "管理器示例将 DoubleProbe 连接到 RemainingCpu 与 RemainingMemory，向 cpu2、mem2 文件写入时间与资源值；工作负载 CSV 路径为硬编码，需按本机修改。"
+            },
+            "source": "review:easiei:scratch/managertest.cc"
+          },
           {
             "text": {
               "en": "Supports distributed task offloading and scheduling.",
@@ -4367,7 +4706,8 @@
           }
         ],
         "sources": [
-          "audit:easiei-wiki:overview"
+          "audit:easiei-wiki:overview",
+          "review:easiei:scratch/managertest.cc"
         ],
         "accessNote": null
       }
@@ -4650,12 +4990,7 @@
       ],
       "features": {
         "visualization": {
-          "status": "unknown",
-          "source": "audit:ecsnetpp:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "custom-metrics": {
           "status": "unknown"
@@ -5933,12 +6268,7 @@
           "status": "unknown"
         },
         "custom-scheduling": {
-          "status": "unknown",
-          "source": "audit:emufog:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "real-code": {
           "status": "supported",
@@ -6983,8 +7313,20 @@
             },
             "source": "audit:fognetsimpp:overview"
           },
-          null,
-          null,
+          {
+            "text": {
+              "en": "The packaged MQTT module defines OMNeT++ statistics for packet counts/bytes, packet lifetime, latency, and task time; ComputeBrokerApp3 additionally defines queue-time statistics. Use the corresponding modules in the archived OMNeT++/INET environment.",
+              "zh": "打包的 MQTT 模块定义包数与字节数、包存活时间、时延和任务时间的 OMNeT++ 统计；ComputeBrokerApp3 另含排队时间统计，需在所述历史 OMNeT++/INET 环境中使用相应模块。"
+            },
+            "source": "review:fognetsimpp:mqtt-statistics"
+          },
+          {
+            "text": {
+              "en": "ComputeBrokerApp3 queues arriving tasks while a resource is busy, calculates service time from required MIPS and configured MIPS, and schedules completion events. On completion it takes the next queued task and emits its queue time.",
+              "zh": "ComputeBrokerApp3 在资源繁忙时将任务入队，根据任务需求与配置 MIPS 计算服务时间并安排完成事件；完成后取出下一任务并记录排队时间。"
+            },
+            "source": "review:fognetsimpp:compute-queue"
+          },
           {
             "text": {
               "en": "Requires the documented OMNeT++ 4.6 and INET 3.3.0 environment; packaged testing/example scenarios are provided.",
@@ -6994,7 +7336,9 @@
           }
         ],
         "sources": [
-          "audit:fognetsimpp:overview"
+          "audit:fognetsimpp:overview",
+          "review:fognetsimpp:mqtt-statistics",
+          "review:fognetsimpp:compute-queue"
         ],
         "accessNote": null
       }
@@ -7264,7 +7608,13 @@
             },
             "source": "audit:gem5:dimension-3"
           },
-          null,
+          {
+            "text": {
+              "en": "Configure processors, cache hierarchy, buses, and memory connections in Python. CPU/cache choices determine the modeled architecture; these controls configure the simulated machine rather than a cloud task allocator.",
+              "zh": "使用 Python 配置处理器、缓存层次、总线与内存连接；CPU 与缓存选择决定所建模的体系结构，这些控制用于配置模拟机器。"
+            },
+            "source": "review:gem5:configuration"
+          },
           {
             "text": {
               "en": "Official site links learning material, API documentation, and source code.",
@@ -7275,7 +7625,8 @@
         ],
         "sources": [
           "audit:gem5:overview",
-          "audit:gem5:dimension-3"
+          "audit:gem5:dimension-3",
+          "review:gem5:configuration"
         ],
         "accessNote": null
       }
@@ -7612,12 +7963,7 @@
       ],
       "features": {
         "visualization": {
-          "status": "unknown",
-          "source": "audit:iotsim-edge:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "custom-metrics": {
           "status": "unknown"
@@ -7791,12 +8137,7 @@
       ],
       "features": {
         "visualization": {
-          "status": "unknown",
-          "source": "audit:iotsim-osmosis:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "custom-metrics": {
           "status": "unknown"
@@ -7966,7 +8307,13 @@
             },
             "source": "audit:itetris:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The project reports evaluating cooperative ITS effects on urban traffic efficiency and traffic-information collection. Its public deliverables page offers technical reports through a request form; it does not expose a downloadable metric schema.",
+              "zh": "项目介绍了协作式 ITS 对城市交通效率及交通信息采集效果的评估；公开交付物页面通过申请表提供技术报告，没有直接提供可下载的指标结构。"
+            },
+            "source": "review:itetris:deliverables"
+          },
           {
             "text": {
               "en": "Architecture describes access-technology selection, priorities and congestion control; implementation coverage needs separate checks.",
@@ -7983,7 +8330,8 @@
           }
         ],
         "sources": [
-          "audit:itetris:overview"
+          "audit:itetris:overview",
+          "review:itetris:deliverables"
         ],
         "accessNote": null
       }
@@ -8022,6 +8370,9 @@
         ],
         "type": [
           "emulator"
+        ],
+        "metric": [
+          "Resource utilization"
         ]
       },
       "claims": [
@@ -8073,6 +8424,11 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "metric",
+          "value": "Resource utilization",
+          "source": "review:kathar:src/Kathara/manager/docker/stats/DockerMachineStats.py"
         }
       ],
       "features": {
@@ -8129,7 +8485,13 @@
             },
             "source": "audit:kathar:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The Docker backend collects per-device CPU usage, memory usage/percentage, process counts, and network traffic from Docker container statistics. These are container-runtime measurements.",
+              "zh": "Docker 后端从容器统计中采集各设备 CPU 使用率、内存用量及比例、进程数和网络流量；这些是容器运行时测量值。"
+            },
+            "source": "review:kathar:src/Kathara/manager/docker/stats/DockerMachineStats.py"
+          },
           {
             "text": {
               "en": "Scenario configuration starts and stops devices and applies per-device startup configuration.",
@@ -8146,7 +8508,8 @@
           }
         ],
         "sources": [
-          "audit:kathar:overview"
+          "audit:kathar:overview",
+          "review:kathar:src/Kathara/manager/docker/stats/DockerMachineStats.py"
         ],
         "accessNote": null
       }
@@ -8418,12 +8781,7 @@
         "date": "2026-09-08",
         "url": "https://github.com/qijianpeng/awesome-edge-computing/blob/96b38d3cb95bdc38ef49d9853986172854e93426/README.md#L297-L300"
       },
-      "notes": [
-        {
-          "en": "Public project documentation has not been recovered; implementation capabilities remain unverified.",
-          "zh": "尚未找到可核对的公开项目文档，实现能力暂保留待核实。"
-        }
-      ],
+      "notes": [],
       "officialChecked": null,
       "verification": {
         "date": "2026-09-08",
@@ -8436,8 +8794,8 @@
         ],
         "sources": [],
         "accessNote": {
-          "en": "Direct project documentation has not yet been recovered. Historical research records are excluded from capability judgments.",
-          "zh": "尚未找到可核对的项目直接资料；历史研究记录不用于判断工具能力。"
+          "en": "The original lightmano/lightmano-core GitHub endpoint returned HTTP 404. The inventory description remains available, but no public implementation was recovered from that endpoint.",
+          "zh": "原 lightmano/lightmano-core GitHub 入口返回 HTTP 404。保留清单简介，该入口没有提供可读取的公开实现。"
         }
       }
     },
@@ -8677,12 +9035,7 @@
           }
         },
         "custom-scheduling": {
-          "status": "unknown",
-          "source": "audit:maxinet:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "real-code": {
           "status": "supported",
@@ -8779,6 +9132,9 @@
         ],
         "type": [
           "packet"
+        ],
+        "metric": [
+          "Latency"
         ]
       },
       "claims": [
@@ -8835,6 +9191,11 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "metric",
+          "value": "Latency",
+          "source": "review:mec-simulator:contrib/mec-sim/model/client-app.cc"
         }
       ],
       "features": {
@@ -8886,7 +9247,13 @@
             },
             "source": "audit:mec-simulator:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "Completed tasks report end-to-end delay and processing delay through the UE TaskDelay logger, together with UE, context, application, and host identifiers.",
+              "zh": "任务完成时通过 UE 的 TaskDelay 日志记录端到端时延和处理时延，同时记录 UE、上下文、应用与主机标识。"
+            },
+            "source": "review:mec-simulator:contrib/mec-sim/model/client-app.cc"
+          },
           {
             "text": {
               "en": "Implements orchestration of MEC resources and task distribution.",
@@ -8903,7 +9270,8 @@
           }
         ],
         "sources": [
-          "audit:mec-simulator:overview"
+          "audit:mec-simulator:overview",
+          "review:mec-simulator:contrib/mec-sim/model/client-app.cc"
         ],
         "accessNote": null
       }
@@ -9535,7 +9903,13 @@
             },
             "source": "audit:mininet-wifi:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "telemetry() samples RSSI through iw and interface counters from Linux sysfs, saves time series, and plots live traces. The example enables data_type=\"rssi\" for stations. These measurements describe the emulated wireless interfaces.",
+              "zh": "telemetry() 通过 iw 采集 RSSI、通过 Linux sysfs 读取接口计数器，保存时间序列并实时绘图；示例为站点启用 data_type=\"rssi\"，测量对象是仿真的无线接口。"
+            },
+            "source": "review:mininet-wifi:mn_wifi/telemetry.py"
+          },
           {
             "text": {
               "en": "Topology construction extends Mininet; the documented setup includes OpenFlow/OVS and optional P4 dependencies.",
@@ -9553,7 +9927,8 @@
         ],
         "sources": [
           "audit:mininet-wifi:overview",
-          "audit:mininet-wifi:project-simplewifitopology"
+          "audit:mininet-wifi:project-simplewifitopology",
+          "review:mininet-wifi:mn_wifi/telemetry.py"
         ],
         "accessNote": null
       }
@@ -10025,7 +10400,12 @@
           }
         },
         "logging": {
-          "status": "unknown"
+          "status": "supported",
+          "source": "review:ndn4ivc:helper/mylog-helper.h",
+          "note": {
+            "en": "MYLOG_DEBUG and MYLOG_INFO route to ns-3 logging or timestamped console output.",
+            "zh": "MYLOG_DEBUG 和 MYLOG_INFO 输出到 ns-3 日志或带时间戳的控制台。"
+          }
         },
         "custom-scheduling": {
           "status": "unknown"
@@ -10058,7 +10438,13 @@
             },
             "source": "audit:ndn4ivc:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The project log helper emits application debug/info events through ns-3 logging when enabled, or timestamped console messages otherwise. Its log output is available for scenario-specific analysis.",
+              "zh": "项目日志辅助模块在启用 ns-3 日志时输出应用调试与信息事件，否则输出带时间戳的控制台消息，可用于具体场景分析。"
+            },
+            "source": "review:ndn4ivc:helper/mylog-helper.h"
+          },
           {
             "text": {
               "en": "Provides traffic-safety, traffic-management, and ITS application cases; no generic compute scheduler is established by the README.",
@@ -10075,7 +10461,8 @@
           }
         ],
         "sources": [
-          "audit:ndn4ivc:overview"
+          "audit:ndn4ivc:overview",
+          "review:ndn4ivc:helper/mylog-helper.h"
         ],
         "accessNote": null
       }
@@ -10479,10 +10866,20 @@
           "status": "unknown"
         },
         "scenario-scripts": {
-          "status": "unknown"
+          "status": "supported",
+          "source": "review:nfaas:ns-3/run.sh",
+          "note": {
+            "en": "run.sh varies kernel counts and invokes ndn-function with simulation parameters.",
+            "zh": "run.sh 改变内核数量并通过仿真参数调用 ndn-function。"
+          }
         },
         "logging": {
-          "status": "unknown"
+          "status": "supported",
+          "source": "review:nfaas:ns-3/run.sh",
+          "note": {
+            "en": "run.sh enables component-specific NS_LOG and redirects output into per-run log files.",
+            "zh": "run.sh 启用各组件 NS_LOG，将每次运行的输出重定向到日志文件。"
+          }
         },
         "custom-scheduling": {
           "status": "unknown"
@@ -10497,21 +10894,52 @@
         "url": "https://github.com/qijianpeng/awesome-edge-computing/blob/96b38d3cb95bdc38ef49d9853986172854e93426/README.md#L368-L370"
       },
       "notes": [],
-      "officialChecked": null,
+      "officialChecked": "review:nfaas:README.md",
       "verification": {
         "date": "2026-09-08",
         "dimensions": [
-          null,
-          null,
-          null,
-          null,
-          null
+          {
+            "text": {
+              "en": "An ndnSIM/NFD extension models named-function execution using a Kernel Store for unikernel images. The documented cloud-node mode adds network delay and treats CPU resources as unlimited.",
+              "zh": "ndnSIM/NFD 扩展，通过保存 unikernel 镜像的 Kernel Store 建模具名函数执行；文档中的云节点模式增加网络时延，并将 CPU 资源视为无限。"
+            },
+            "source": "review:nfaas:README.md"
+          },
+          {
+            "text": {
+              "en": "Kernel Store caches unikernel images, limits concurrent modeled functions through MAX_RUN_KERNELS, and optionally adapts cache size with SPECIALIZE. Cloud-node resource assumptions differ from ordinary nodes.",
+              "zh": "Kernel Store 缓存 unikernel 镜像，以 MAX_RUN_KERNELS 限制并发建模函数，并可通过 SPECIALIZE 自适应调整缓存大小；云节点采用不同于普通节点的资源假设。"
+            },
+            "source": "review:nfaas:README.md"
+          },
+          {
+            "text": {
+              "en": "manageDelay updates per-function/per-face response-delay records and timeout information. Kernel Store debug output describes running kernels, overload, queue transitions, and forwarding tables.",
+              "zh": "manageDelay 更新各函数与接口的响应时延记录及超时信息；Kernel Store 调试输出描述运行函数、过载、队列变化和转发表。"
+            },
+            "source": "review:nfaas:ns-3/src/ndnSIM/NFD/daemon/table/ks.cpp"
+          },
+          {
+            "text": {
+              "en": "Kernel Store runs a modeled function when the concurrency limit permits, queues requests when occupied, and starts queued work after completion. ns-3 schedules completion from task-size time values; this code models execution time.",
+              "zh": "Kernel Store 在并发额度允许时启动建模函数，繁忙时排队，完成后继续处理队列；ns-3 根据任务大小对应的时间值调度完成事件，代码建模的是执行时间。"
+            },
+            "source": "review:nfaas:ns-3/src/ndnSIM/NFD/daemon/table/ks.cpp"
+          },
+          {
+            "text": {
+              "en": "The archived repository builds its bundled ns-3/ndnSIM with waf and provides the ndn-function example. run.sh sweeps parameters and captures logs; the pinned implementation dates to 2019.",
+              "zh": "归档仓库使用 waf 构建附带的 ns-3/ndnSIM，提供 ndn-function 示例；run.sh 扫描参数并保存日志，此处固定的实现提交来自 2019 年。"
+            },
+            "source": "review:nfaas:README.md"
+          }
         ],
-        "sources": [],
-        "accessNote": {
-          "en": "Direct project documentation has not yet been recovered. Historical research records are excluded from capability judgments.",
-          "zh": "尚未找到可核对的项目直接资料；历史研究记录不用于判断工具能力。"
-        }
+        "sources": [
+          "review:nfaas:README.md",
+          "review:nfaas:ns-3/src/ndnSIM/NFD/daemon/table/ks.cpp",
+          "review:nfaas:ns-3/run.sh"
+        ],
+        "accessNote": null
       }
     },
     {
@@ -10614,12 +11042,7 @@
           }
         },
         "custom-scheduling": {
-          "status": "unknown",
-          "source": "audit:ns-3:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "real-code": {
           "status": "unknown"
@@ -10927,12 +11350,7 @@
           }
         },
         "custom-scheduling": {
-          "status": "unknown",
-          "source": "audit:omnetpp:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "real-code": {
           "status": "unknown"
@@ -11334,7 +11752,12 @@
           "status": "unknown"
         },
         "custom-metrics": {
-          "status": "unknown"
+          "status": "supported",
+          "source": "review:peersim:observers",
+          "note": {
+            "en": "Implement a Control observer to aggregate protocol state, as demonstrated by QuotaObserver.",
+            "zh": "通过实现 Control 观察器汇总协议状态，项目提供 QuotaObserver 示例。"
+          }
         },
         "scenario-scripts": {
           "status": "unknown"
@@ -11373,7 +11796,13 @@
             },
             "source": "audit:peersim:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "A Control observer runs at configured cycles and can inspect protocol state. The QuotaObserver example accumulates node quotas with IncrementalStats and prints their statistics; extend the observer for a chosen protocol metric.",
+              "zh": "Control 观察器按配置周期检查协议状态。QuotaObserver 示例使用 IncrementalStats 汇总节点配额并输出统计值，可扩展观察器以测量选定的协议指标。"
+            },
+            "source": "review:peersim:observers"
+          },
           {
             "text": {
               "en": "Extensible components and configuration support dynamic node participation and protocol experiments.",
@@ -11390,7 +11819,8 @@
           }
         ],
         "sources": [
-          "audit:peersim:overview"
+          "audit:peersim:overview",
+          "review:peersim:observers"
         ],
         "accessNote": null
       }
@@ -11755,12 +12185,7 @@
         "date": "2026-09-08",
         "url": "https://github.com/qijianpeng/awesome-edge-computing/blob/96b38d3cb95bdc38ef49d9853986172854e93426/README.md#L424-L430"
       },
-      "notes": [
-        {
-          "en": "The original download site was unavailable; direct implementation documentation remains unverified.",
-          "zh": "原下载网站无法访问，尚未核实直接实现文档。"
-        }
-      ],
+      "notes": [],
       "officialChecked": null,
       "verification": {
         "date": "2026-09-08",
@@ -11773,8 +12198,8 @@
         ],
         "sources": [],
         "accessNote": {
-          "en": "Direct project documentation has not yet been recovered. Historical research records are excluded from capability judgments.",
-          "zh": "尚未找到可核对的项目直接资料；历史研究记录不用于判断工具能力。"
+          "en": "The original RaSim download endpoint could not be opened. The inventory description is retained; executable downloads and implementation details are unavailable from that endpoint.",
+          "zh": "原 RaSim 下载入口无法打开。保留清单简介，该入口无法提供可执行下载及实现细节。"
         }
       }
     },
@@ -11821,12 +12246,7 @@
           "status": "unknown"
         },
         "custom-metrics": {
-          "status": "unknown",
-          "source": "audit:recap-des:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish an extensible metric interface for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的可扩展的指标接口能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "scenario-scripts": {
           "status": "unknown"
@@ -12229,8 +12649,20 @@
             },
             "source": "audit:shadow:overview"
           },
-          null,
-          null,
+          {
+            "text": {
+              "en": "The profiling guide explains top/htop and Linux perf for identifying host CPU and execution-time bottlenecks in Shadow and application processes. Host profiling is distinct from simulated network latency.",
+              "zh": "性能分析指南介绍通过 top/htop 与 Linux perf 定位 Shadow 及应用进程的宿主机 CPU 和执行时间瓶颈；这些宿主机指标需与模拟网络时延区分。"
+            },
+            "source": "review:shadow:docs/profiling.md"
+          },
+          {
+            "text": {
+              "en": "Configure simulation parallelism, CPU pinning, and thread-per-core or thread-per-host work scheduling. Experimental options can change results or execution speed; the guide documents their tradeoffs.",
+              "zh": "可配置仿真并行度、CPU 绑定，以及按核心或按主机组织的工作调度；实验性选项可能影响结果或执行速度，指南说明了各选项的取舍。"
+            },
+            "source": "review:shadow:docs/perf_config_options.md"
+          },
           {
             "text": {
               "en": "Linux-oriented simulator with documentation and examples; its supported system calls cover only part of Linux.",
@@ -12240,7 +12672,9 @@
           }
         ],
         "sources": [
-          "audit:shadow:overview"
+          "audit:shadow:overview",
+          "review:shadow:docs/profiling.md",
+          "review:shadow:docs/perf_config_options.md"
         ],
         "accessNote": null
       }
@@ -12430,12 +12864,7 @@
           }
         },
         "custom-metrics": {
-          "status": "unknown",
-          "source": "audit:simfaas:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish an extensible metric interface for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的可扩展的指标接口能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "scenario-scripts": {
           "status": "supported",
@@ -13103,12 +13532,7 @@
       ],
       "features": {
         "visualization": {
-          "status": "unknown",
-          "source": "audit:simu5g:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish visualization for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的可视化能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "custom-metrics": {
           "status": "unknown"
@@ -13167,7 +13591,13 @@
             },
             "source": "audit:simu5g:dimension-3"
           },
-          null,
+          {
+            "text": {
+              "en": "The MAC scheduler includes deficit round-robin allocation: It tracks active connections and deficit budgets, requests transmission grants, and commits the schedule. This schedules radio transmissions.",
+              "zh": "MAC 调度包含赤字轮询分配：维护活动连接与额度，申请发送授权并提交调度结果；调度对象是无线传输。"
+            },
+            "source": "review:simu5g:src/simu5g/stack/mac/scheduling_modules/LteDrr.cc"
+          },
           {
             "text": {
               "en": "C++ simulation project with linked documentation and installation information.",
@@ -13179,7 +13609,8 @@
         "sources": [
           "audit:simu5g:overview",
           "audit:simu5g:dimension-3",
-          "audit:simu5g:project-omnetpp-ini"
+          "audit:simu5g:project-omnetpp-ini",
+          "review:simu5g:src/simu5g/stack/mac/scheduling_modules/LteDrr.cc"
         ],
         "accessNote": null
       }
@@ -13504,12 +13935,7 @@
           "status": "unknown"
         },
         "custom-metrics": {
-          "status": "unknown",
-          "source": "audit:starrynet:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish an extensible metric interface for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的可扩展的指标接口能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "scenario-scripts": {
           "status": "supported",
@@ -13671,12 +14097,7 @@
           }
         },
         "custom-scheduling": {
-          "status": "unknown",
-          "source": "audit:step-one:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "real-code": {
           "status": "unknown"
@@ -13699,7 +14120,13 @@
             },
             "source": "audit:step-one:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The compute tutorial configures host groups, movement paths, BPMN applications, and per-process-engine noOfCpus/cpuSpeed parameters. Its example assigns different CPU counts and speeds to two host groups.",
+              "zh": "计算示例配置主机组、移动路径和 BPMN 应用，并通过 noOfCpus、cpuSpeed 设置流程引擎的 CPU 数量与速度；两个主机组使用不同配置。"
+            },
+            "source": "review:step-one:step-one-main/samples/tutorial5_compute/settings.txt"
+          },
           {
             "source": "audit:step-one:project-FullBpmReport",
             "text": {
@@ -13725,7 +14152,8 @@
         "sources": [
           "audit:step-one:overview",
           "audit:step-one:project-FullBpmReport",
-          "audit:step-one:project-Report-java"
+          "audit:step-one:project-Report-java",
+          "review:step-one:step-one-main/samples/tutorial5_compute/settings.txt"
         ],
         "accessNote": null
       }
@@ -13806,9 +14234,27 @@
             },
             "source": "audit:svl-simulator:overview"
           },
-          null,
-          null,
-          null,
+          {
+            "text": {
+              "en": "The add_agent API creates ego vehicles, NPC vehicles, or pedestrians; ego agents load configured sensors. These are traffic and sensor objects in the archived simulator.",
+              "zh": "add_agent API 可创建自车、NPC 车辆或行人，自车加载配置的传感器；这些是归档仿真器中的交通与传感对象。"
+            },
+            "source": "review:svl-simulator:Assets/Scripts/Api/Commands/AddAgent.cs"
+          },
+          {
+            "text": {
+              "en": "When report generation is enabled, AnalysisManager gathers agent events and sensor analysis measurements into JSON reports. Sensor fields/properties marked AnalysisMeasurement are included; the archived release retains its documented WISE dependency.",
+              "zh": "启用报告生成时，AnalysisManager 将车辆事件与传感器分析指标汇总为 JSON 报告，包含标记为 AnalysisMeasurement 的字段或属性；该归档版本仍有文档所述 WISE 依赖。"
+            },
+            "source": "review:svl-simulator:Assets/Scripts/Managers/AnalysisManager.cs"
+          },
+          {
+            "text": {
+              "en": "The controllable/control_policy/set API parses and applies action sequences to controllable scene objects. This controls scenario behavior, with actions constrained by the object implementation.",
+              "zh": "controllable/control_policy/set API 解析并应用可控场景对象的动作序列，用于控制场景行为；可用动作取决于对象实现。"
+            },
+            "source": "review:svl-simulator:Assets/Scripts/Api/Commands/ControllableControlPolicySet.cs"
+          },
           {
             "text": {
               "en": "The 2021.3 release depends on WISE services for asset downloads, configuration, and launching; source availability alone does not confirm that these services remain usable.",
@@ -13818,7 +14264,10 @@
           }
         ],
         "sources": [
-          "audit:svl-simulator:overview"
+          "audit:svl-simulator:overview",
+          "review:svl-simulator:Assets/Scripts/Api/Commands/AddAgent.cs",
+          "review:svl-simulator:Assets/Scripts/Managers/AnalysisManager.cs",
+          "review:svl-simulator:Assets/Scripts/Api/Commands/ControllableControlPolicySet.cs"
         ],
         "accessNote": null
       }
@@ -14061,9 +14510,27 @@
             },
             "source": "audit:veins-its:overview"
           },
-          null,
-          null,
-          null,
+          {
+            "text": {
+              "en": "TraCIScenarioManager creates, updates, and removes vehicle and traffic-light modules in response to SUMO. Configurable module types and an update interval connect road mobility to network nodes.",
+              "zh": "TraCIScenarioManager 根据 SUMO 创建、更新和移除车辆及信号灯模块，通过可配置模块类型和更新间隔连接道路移动与网络节点。"
+            },
+            "source": "review:veins-its:src/veins/modules/mobility/traci/TraCIScenarioManager.ned"
+          },
+          {
+            "text": {
+              "en": "Mac1609_4 records scalar counts for sent/received packets, internal contention, dropped packets, and backoffs, plus accumulated busy time. These outputs characterize the selected 802.11p/MAC simulation.",
+              "zh": "Mac1609_4 记录收发包、内部竞争、丢包和退避次数以及累计忙时，用于描述选定的 802.11p/MAC 仿真。"
+            },
+            "source": "review:veins-its:src/veins/modules/mac/ieee80211p/Mac1609_4.cc"
+          },
+          {
+            "text": {
+              "en": "The TraCI manager synchronizes simulation steps with SUMO, manages vehicle-module lifecycle, and filters traffic lights. Scenario parameters control connection/start times and mobility updates.",
+              "zh": "TraCI 管理器与 SUMO 同步仿真步长，管理车辆模块生命周期并筛选信号灯；场景参数控制连接、启动时间和移动更新。"
+            },
+            "source": "review:veins-its:src/veins/modules/mobility/traci/TraCIScenarioManager.ned"
+          },
           {
             "text": {
               "en": "The official README directs users to the Veins website for installation and simulation documentation.",
@@ -14073,7 +14540,9 @@
           }
         ],
         "sources": [
-          "audit:veins-its:overview"
+          "audit:veins-its:overview",
+          "review:veins-its:src/veins/modules/mobility/traci/TraCIScenarioManager.ned",
+          "review:veins-its:src/veins/modules/mac/ieee80211p/Mac1609_4.cc"
         ],
         "accessNote": null
       }
@@ -14187,7 +14656,13 @@
             },
             "source": "audit:veins-lte-its:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The bundled SimuLTE VoIPReceiver declares frame/playout delay and loss, jitter, MOS, and application throughput statistics. These require the corresponding VoIP application in the historical integrated release.",
+              "zh": "集成的 SimuLTE VoIPReceiver 声明帧及播放时延、丢失率、抖动、MOS 和应用吞吐量统计，需在该历史集成版本中使用对应 VoIP 应用。"
+            },
+            "source": "review:veins-lte-its:simulte/src/apps/voip/VoIPReceiver.ned"
+          },
           {
             "text": {
               "en": "Supports investigation of heterogeneous vehicular network algorithms on mapped road scenarios.",
@@ -14204,7 +14679,8 @@
           }
         ],
         "sources": [
-          "audit:veins-lte-its:overview"
+          "audit:veins-lte-its:overview",
+          "review:veins-lte-its:simulte/src/apps/voip/VoIPReceiver.ned"
         ],
         "accessNote": null
       }
@@ -14548,12 +15024,7 @@
           }
         },
         "logging": {
-          "status": "unknown",
-          "source": "audit:virtfogsim:overview",
-          "note": {
-            "en": "The reviewed project material does not yet establish logging output for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的日志输出能力，暂保留待核实。"
-          }
+          "status": "unknown"
         },
         "custom-scheduling": {
           "status": "unknown"
@@ -14689,8 +15160,20 @@
             },
             "source": "audit:vns:overview"
           },
-          null,
-          null,
+          {
+            "text": {
+              "en": "TravelStatsModule accumulates elapsed simulation time and distance between vehicle positions at each step, then prints vehicle ID, travel time, and traveled distance when removed.",
+              "zh": "TravelStatsModule 按步累加模拟时间及车辆位置间距离，在移除时输出车辆编号、行驶时间和行驶距离。"
+            },
+            "source": "review:vns:sources/vehicles/modules/travelstatsmodule.cpp"
+          },
+          {
+            "text": {
+              "en": "FixedTimeTrafficLightController configures lane lights, phase colors/durations, and a time offset; phase transitions are scheduled on the simulator event scheduler. This manages road traffic signals.",
+              "zh": "FixedTimeTrafficLightController 配置车道信号灯、相位颜色与时长及时间偏移，通过模拟器事件调度器切换相位；管理对象是道路交通信号。"
+            },
+            "source": "review:vns:sources/trafficlights/fixedtimetrafficlightcontroller.cpp"
+          },
           {
             "text": {
               "en": "The official OMNeT++ catalog links surviving code repositories and reports that the original project website is unavailable.",
@@ -14700,7 +15183,9 @@
           }
         ],
         "sources": [
-          "audit:vns:overview"
+          "audit:vns:overview",
+          "review:vns:sources/vehicles/modules/travelstatsmodule.cpp",
+          "review:vns:sources/trafficlights/fixedtimetrafficlightcontroller.cpp"
         ],
         "accessNote": null
       }
@@ -15090,8 +15575,8 @@
         ],
         "sources": [],
         "accessNote": {
-          "en": "The former product domain now hosts an unrelated AI resource hub; no current ClawBox specification was recovered.",
-          "zh": "原产品域名现为无关 AI 资源站，尚未找回可核实的 ClawBox 规格。"
+          "en": "The former ClawBox product domain now serves an unrelated AI resource hub. Its current contents provide no ClawBox product specification.",
+          "zh": "原 ClawBox 产品域名现提供无关 AI 资源内容，当前页面没有 ClawBox 产品规格。"
         }
       }
     },
@@ -15474,6 +15959,10 @@
         ],
         "resource": [
           "Containers"
+        ],
+        "metric": [
+          "Cold start",
+          "Latency"
         ]
       },
       "claims": [
@@ -15531,6 +16020,16 @@
           "facet": "resource",
           "value": "Containers",
           "source": "audit:apache-openwhisk:overview"
+        },
+        {
+          "facet": "metric",
+          "value": "Cold start",
+          "source": "review:apache-openwhisk:metrics"
+        },
+        {
+          "facet": "metric",
+          "value": "Latency",
+          "source": "review:apache-openwhisk:metrics"
         }
       ],
       "features": {
@@ -15582,7 +16081,13 @@
             },
             "source": "audit:apache-openwhisk:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "Controller/invoker metrics and activation events report queue wait, cold-start initialization, execution duration, status, and configured memory limits. The user-events service exports Prometheus/Datadog metrics when deployed and configured.",
+              "zh": "控制器、执行器指标及激活事件报告排队等待、冷启动初始化、执行时长、状态和配置内存上限；部署并配置 user-events 服务后可导出 Prometheus/Datadog 指标。"
+            },
+            "source": "review:apache-openwhisk:metrics"
+          },
           {
             "text": {
               "en": "Manages function infrastructure and scaling; triggers and feeds schedule actions in response to events or HTTP requests.",
@@ -15599,7 +16104,8 @@
           }
         ],
         "sources": [
-          "audit:apache-openwhisk:overview"
+          "audit:apache-openwhisk:overview",
+          "review:apache-openwhisk:metrics"
         ],
         "accessNote": null
       }
@@ -15947,7 +16453,13 @@
             },
             "source": "audit:bochs:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The compiled-in debugger exposes simulated ticks with ptime, CPU/device state, instruction traces, and memory-access traces. Custom instrumentation requires building a separate instrumentation library; the default library contains stubs.",
+              "zh": "编译启用内部调试器后，可通过 ptime 查看模拟时钟 tick，以及 CPU/设备状态、指令和内存访问轨迹。自定义插桩需编译独立插桩库，默认库仅包含桩函数。"
+            },
+            "source": "review:bochs:debugger"
+          },
           {
             "text": {
               "en": "Provides complete PC emulation; deployment capacity depends on the emulated configuration and host.",
@@ -15964,7 +16476,8 @@
           }
         ],
         "sources": [
-          "audit:bochs:overview"
+          "audit:bochs:overview",
+          "review:bochs:debugger"
         ],
         "accessNote": null
       }
@@ -16044,7 +16557,13 @@
             },
             "source": "audit:boinc:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The client runs parallel CPU benchmarks and records floating-point and integer performance estimates for the host. These host calibration values inform workload handling and are separate from application result quality.",
+              "zh": "客户端并行执行 CPU 基准，记录宿主机浮点与整数性能估计；这些宿主机校准值用于工作负载处理，需与应用结果质量区分。"
+            },
+            "source": "review:boinc:client/cs_benchmark.cpp"
+          },
           {
             "text": {
               "en": "Coordinates volunteer computing; detailed policies are documented outside the short root README.",
@@ -16061,7 +16580,8 @@
           }
         ],
         "sources": [
-          "audit:boinc:overview"
+          "audit:boinc:overview",
+          "review:boinc:client/cs_benchmark.cpp"
         ],
         "accessNote": null
       }
@@ -16083,6 +16603,9 @@
         ],
         "purpose": [
           "deployment"
+        ],
+        "metric": [
+          "Energy consumption"
         ]
       },
       "claims": [
@@ -16090,6 +16613,11 @@
           "facet": "purpose",
           "value": "deployment",
           "source": "readme"
+        },
+        {
+          "facet": "metric",
+          "value": "Energy consumption",
+          "source": "review:chameleon:source/technical/power_monitoring/index.rst"
         }
       ],
       "features": {
@@ -16136,7 +16664,13 @@
             },
             "source": "audit:chameleon:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The current power guide documents IPMI/DCMI system readings and application energy measurement with etrace2/Intel RAPL; Prometheus/Grafana support longer collection. Availability varies by node type, with limited FPGA/ARM support.",
+              "zh": "当前功耗指南介绍 IPMI/DCMI 整机读数、etrace2/Intel RAPL 应用能量测量，以及用于持续采集的 Prometheus/Grafana；可用性取决于节点类型，FPGA/ARM 支持有限。"
+            },
+            "source": "review:chameleon:source/technical/power_monitoring/index.rst"
+          },
           {
             "text": {
               "en": "Resource access depends on the selected testbed site and allocation.",
@@ -16153,7 +16687,8 @@
           }
         ],
         "sources": [
-          "audit:chameleon:overview"
+          "audit:chameleon:overview",
+          "review:chameleon:source/technical/power_monitoring/index.rst"
         ],
         "accessNote": null
       }
@@ -16511,7 +17046,13 @@
             },
             "source": "audit:edgegallery-documents-maintained-in-chinese:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "Version 1.5.0 documents VM state and metric displays in MECM resource management, OpenStack/filesystem resource statistics, and periodic edge-node checks. The release note establishes these monitoring functions without defining every metric field.",
+              "zh": "1.5.0 发布说明列出 MECM 资源管理中的虚拟机状态与度量指标展示、OpenStack/文件系统资源统计及周期性边缘节点检查；该说明确认这些监测功能，未逐项定义指标字段。"
+            },
+            "source": "review:edgegallery-documents-maintained-in-chinese:release-1.5"
+          },
           {
             "text": {
               "en": "MECM APP orchestration parses and orchestrates application packages.",
@@ -16528,7 +17069,8 @@
           }
         ],
         "sources": [
-          "audit:edgegallery-documents-maintained-in-chinese:overview"
+          "audit:edgegallery-documents-maintained-in-chinese:overview",
+          "review:edgegallery-documents-maintained-in-chinese:release-1.5"
         ],
         "accessNote": null
       }
@@ -16648,7 +17190,13 @@
             },
             "source": "audit:edgemesh:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "EnableProfiling starts an HTTP server with Go pprof CPU-profile, trace, symbol, and index endpoints at the configured address/port. This profiles the agent process and requires explicit configuration.",
+              "zh": "EnableProfiling 在配置地址与端口启动 HTTP 服务，提供 Go pprof CPU 分析、trace、symbol 和索引接口；用于分析代理进程，需显式配置。"
+            },
+            "source": "review:edgemesh:pkg/profile/profile.go"
+          },
           {
             "text": {
               "en": "Includes random and round-robin balancing and session persistence; selectable policies do not establish a custom-scheduler API.",
@@ -16665,7 +17213,8 @@
           }
         ],
         "sources": [
-          "audit:edgemesh:overview"
+          "audit:edgemesh:overview",
+          "review:edgemesh:pkg/profile/profile.go"
         ],
         "accessNote": null
       }
@@ -16745,7 +17294,13 @@
             },
             "source": "audit:edgex-foundry:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "Application services report received/invalid messages, pipeline processing, export errors, and HTTP/MQTT export sizes. Reporting is disabled by default; enable the selected Writable.Telemetry.Metrics entries and configure the interval.",
+              "zh": "应用服务指标包含接收及无效消息、流水线处理、导出错误和 HTTP/MQTT 导出大小。默认关闭上报，需启用相应 Writable.Telemetry.Metrics 项并配置周期。"
+            },
+            "source": "review:edgex-foundry:service-metrics"
+          },
           {
             "text": {
               "en": "Plug-in microservices allow adding analytics and device/application connectors.",
@@ -16762,7 +17317,8 @@
           }
         ],
         "sources": [
-          "audit:edgex-foundry:overview"
+          "audit:edgex-foundry:overview",
+          "review:edgex-foundry:service-metrics"
         ],
         "accessNote": null
       }
@@ -17306,7 +17862,13 @@
             },
             "source": "audit:k3os:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The k3os.install.debug setting enables extra installer logging and configures debugging for the installed system. The OS is managed through kubectl; application-performance measurements belong to the deployed workload and monitoring tools.",
+              "zh": "k3os.install.debug 可增加安装器日志并为安装后的系统配置调试；系统通过 kubectl 管理，应用性能测量由所部署工作负载及监测工具提供。"
+            },
+            "source": "review:k3os:README.md"
+          },
           {
             "text": {
               "en": "k3OS operator manages OS and k3s upgrades through Kubernetes; config.yaml persists configuration.",
@@ -17323,7 +17885,8 @@
           }
         ],
         "sources": [
-          "audit:k3os:overview"
+          "audit:k3os:overview",
+          "review:k3os:README.md"
         ],
         "accessNote": null
       }
@@ -17489,7 +18052,12 @@
           "status": "unknown"
         },
         "logging": {
-          "status": "unknown"
+          "status": "supported",
+          "source": "review:krustlet:demos/wasi/hello-world-rust/README.md",
+          "note": {
+            "en": "The WASI Rust example exposes module stdout and stderr through kubectl logs.",
+            "zh": "WASI Rust 示例通过 kubectl logs 提供模块标准输出和错误输出。"
+          }
         },
         "custom-scheduling": {
           "status": "unknown"
@@ -17527,7 +18095,13 @@
             },
             "source": "audit:krustlet:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "Container status records expose waiting/running/terminated state, start/finish timestamps, termination messages, and a failure-derived exit code through Kubernetes status. These are workload lifecycle observations.",
+              "zh": "容器状态通过 Kubernetes 提供等待、运行、终止状态，起止时间戳、终止消息和根据失败标志生成的退出码；这些是工作负载生命周期观测。"
+            },
+            "source": "review:krustlet:crates/kubelet/src/container/status.rs"
+          },
           {
             "text": {
               "en": "Receives pod assignments from the Kubernetes scheduler rather than supplying an independently documented scheduling algorithm.",
@@ -17544,7 +18118,9 @@
           }
         ],
         "sources": [
-          "audit:krustlet:overview"
+          "audit:krustlet:overview",
+          "review:krustlet:crates/kubelet/src/container/status.rs",
+          "review:krustlet:demos/wasi/hello-world-rust/README.md"
         ],
         "accessNote": null
       }
@@ -18983,13 +19559,19 @@
             },
             "source": "audit:wasmer:overview"
           },
-          null,
           {
             "text": {
-              "en": "Pluggable interfaces and SDK embedding integrate the runtime into applications.",
-              "zh": "可插拔接口及 SDK 嵌入将运行时集成到应用中。"
+              "en": "Metering middleware tracks an operator-cost budget and exposes remaining points. The application supplies a cost function and limit; exhausting points stops execution. These points are a configured accounting unit, not measured CPU time.",
+              "zh": "Metering 中间件按操作符成本累计预算并提供剩余额度；应用设置成本函数和上限，额度耗尽时停止执行。这是配置的计量单位，不是实测 CPU 时间。"
             },
-            "source": "audit:wasmer:overview"
+            "source": "review:wasmer:examples/metering.rs"
+          },
+          {
+            "text": {
+              "en": "Embed metering middleware in the compiler to limit guest execution cost. The example uses Cranelift, allows resetting remaining points, and traps when the configured budget is exhausted.",
+              "zh": "可在编译器中加入计量中间件限制客户程序执行成本；示例使用 Cranelift，可重设剩余额度，并在预算耗尽时触发异常。"
+            },
+            "source": "review:wasmer:examples/metering.rs"
           },
           {
             "text": {
@@ -19000,7 +19582,8 @@
           }
         ],
         "sources": [
-          "audit:wasmer:overview"
+          "audit:wasmer:overview",
+          "review:wasmer:examples/metering.rs"
         ],
         "accessNote": null
       }
@@ -19574,7 +20157,13 @@
             },
             "source": "audit:edgenet:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The repository supplies a Prometheus ServiceMonitor for the controller manager HTTPS /metrics endpoint, using a service-account bearer token. Collection requires the corresponding monitoring stack and deployment configuration.",
+              "zh": "仓库提供 Prometheus ServiceMonitor，使用服务账户令牌采集控制器管理器的 HTTPS /metrics；实际采集需相应监控组件和部署配置。"
+            },
+            "source": "review:edgenet:config/prometheus/monitor.yaml"
+          },
           {
             "text": {
               "en": "Multitenancy and location-based selection govern resource sharing and regional placement.",
@@ -19591,7 +20180,8 @@
           }
         ],
         "sources": [
-          "audit:edgenet:overview"
+          "audit:edgenet:overview",
+          "review:edgenet:config/prometheus/monitor.yaml"
         ],
         "accessNote": null
       }
@@ -19861,7 +20451,13 @@
             },
             "source": "audit:mosquitto:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "Subscribe to $SYS broker topics for connection/client counts, message/byte counters, stored messages, subscriptions, and selected memory readings. sys_interval controls periodic publication; a zero interval disables periodic updates.",
+              "zh": "订阅 $SYS 主题可读取连接与客户端数量、消息及字节计数、存储消息、订阅数量和部分内存读数；sys_interval 控制周期发布，设为 0 会关闭周期更新。"
+            },
+            "source": "review:mosquitto:sys"
+          },
           {
             "text": {
               "en": "Broker routes topic-based messages between publishers and subscribers.",
@@ -19878,7 +20474,8 @@
           }
         ],
         "sources": [
-          "audit:mosquitto:overview"
+          "audit:mosquitto:overview",
+          "review:mosquitto:sys"
         ],
         "accessNote": null
       }
@@ -20611,7 +21208,13 @@
             },
             "source": "audit:vernemq:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "vmq-admin metrics show reports counters and gauges for MQTT traffic, queues, and retained-message memory. Native monitoring integrations include Graphite, $SYS, and Prometheus; configure the chosen exporter or listener.",
+              "zh": "vmq-admin metrics show 提供 MQTT 流量、队列和保留消息内存的计数器及仪表值；原生监控接入包括 Graphite、$SYS 和 Prometheus，需配置选定导出器或监听器。"
+            },
+            "source": "review:vernemq:metrics"
+          },
           {
             "text": {
               "en": "Supports broker clustering and extensible authentication/authorization plugins.",
@@ -20628,7 +21231,8 @@
           }
         ],
         "sources": [
-          "audit:vernemq:overview"
+          "audit:vernemq:overview",
+          "review:vernemq:metrics"
         ],
         "accessNote": null
       }
@@ -22581,8 +23185,8 @@
         ],
         "sources": [],
         "accessNote": {
-          "en": "The sharing page exposed no readable dataset description or schema; contents were not verified.",
-          "zh": "分享页未呈现可读取的数据集描述或结构，内容尚未核实。"
+          "en": "The vivo sharing page returned no readable dataset description or schema. Access to the data files is needed to describe its fields and evaluation outputs.",
+          "zh": "vivo 分享页没有返回可读取的数据集描述或结构；需获取数据文件后才能描述其字段与评估输出。"
         }
       }
     },
@@ -23367,8 +23971,8 @@
         ],
         "sources": [],
         "accessNote": {
-          "en": "The original GitHub repository returned HTTP 404. Its implementation cannot be verified from that endpoint.",
-          "zh": "原 GitHub 仓库返回 HTTP 404，无法通过该入口核实实现。"
+          "en": "The original GitHub repository returned HTTP 404. Its implementation is not accessible through the listed endpoint.",
+          "zh": "原 GitHub 仓库返回 HTTP 404，所列入口无法访问其实现。"
         }
       }
     },
@@ -23607,6 +24211,9 @@
         "language": [
           "Python",
           "C++"
+        ],
+        "metric": [
+          "Latency"
         ]
       },
       "claims": [
@@ -23624,6 +24231,11 @@
           "facet": "language",
           "value": "C++",
           "source": "audit:apache-tvm:overview"
+        },
+        {
+          "facet": "metric",
+          "value": "Latency",
+          "source": "review:apache-tvm:vm-timing"
         }
       ],
       "features": {
@@ -23675,7 +24287,13 @@
             },
             "source": "audit:apache-tvm:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "VirtualMachine.time_evaluator benchmarks a named runtime function with configurable repetition and warmup handling, returning timing samples/BenchmarkResult. Use the target runtime/device when interpreting latency.",
+              "zh": "VirtualMachine.time_evaluator 对指定运行时函数执行计时，可配置重复次数并处理预热，返回计时样本或 BenchmarkResult；解释时延时需对应实际目标运行时和设备。"
+            },
+            "source": "review:apache-tvm:vm-timing"
+          },
           {
             "text": {
               "en": "Python-customizable transformations optimize graphs, tensor programs, and libraries across levels.",
@@ -23692,7 +24310,8 @@
           }
         ],
         "sources": [
-          "audit:apache-tvm:overview"
+          "audit:apache-tvm:overview",
+          "review:apache-tvm:vm-timing"
         ],
         "accessNote": null
       }
@@ -25302,6 +25921,9 @@
         ],
         "language": [
           "Python"
+        ],
+        "metric": [
+          "Accuracy"
         ]
       },
       "claims": [
@@ -25314,6 +25936,11 @@
           "facet": "language",
           "value": "Python",
           "source": "audit:deepiot:overview"
+        },
+        {
+          "facet": "metric",
+          "value": "Accuracy",
+          "source": "review:deepiot:DeepIoT_DeepSense_HHAR.py"
         }
       ],
       "features": {
@@ -25365,7 +25992,13 @@
             },
             "source": "audit:deepiot:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The HHAR example calculates training/development classification accuracy and tracks compression ratio during model compression. plot.py receives the training curves; values depend on this dataset, model, and training run.",
+              "zh": "HHAR 示例计算训练集和开发集分类准确率，并在模型压缩过程中跟踪压缩比；通过 plot.py 保存训练曲线，数值取决于该数据集、模型与训练运行。"
+            },
+            "source": "review:deepiot:DeepIoT_DeepSense_HHAR.py"
+          },
           {
             "text": {
               "en": "Compresses network structures using the research method identified by the repository.",
@@ -25382,7 +26015,8 @@
           }
         ],
         "sources": [
-          "audit:deepiot:overview"
+          "audit:deepiot:overview",
+          "review:deepiot:DeepIoT_DeepSense_HHAR.py"
         ],
         "accessNote": null
       }
@@ -29345,6 +29979,9 @@
           "Mobile",
           "Android",
           "iOS"
+        ],
+        "metric": [
+          "Latency"
         ]
       },
       "claims": [
@@ -29367,6 +30004,11 @@
           "facet": "platform",
           "value": "iOS",
           "source": "audit:pytorch-mobile-guide:overview"
+        },
+        {
+          "facet": "metric",
+          "value": "Latency",
+          "source": "review:pytorch-mobile:binaries/speed_benchmark_torch.cc"
         }
       ],
       "features": {
@@ -29413,8 +30055,20 @@
             },
             "source": "audit:pytorch-mobile-guide:overview"
           },
-          null,
-          null,
+          {
+            "text": {
+              "en": "The PyTorch 2.2 speed_benchmark_torch program loads a TorchScript model, accepts warmup/iteration options, and outputs latency measurements. This is the historical PyTorch benchmark, not an ExecuTorch measurement.",
+              "zh": "PyTorch 2.2 的 speed_benchmark_torch 加载 TorchScript 模型，支持预热和迭代次数选项并输出时延测量；这是历史 PyTorch 基准工具。"
+            },
+            "source": "review:pytorch-mobile:binaries/speed_benchmark_torch.cc"
+          },
+          {
+            "text": {
+              "en": "optimize_for_mobile applies backend-specific TorchScript optimization passes for CPU, Vulkan, or Metal. A blocklist disables selected passes and preserved_methods retains requested entry points; scope is PyTorch 2.2 mobile deployment.",
+              "zh": "optimize_for_mobile 为 CPU、Vulkan 或 Metal 应用对应的 TorchScript 优化；可通过排除列表禁用部分优化、通过 preserved_methods 保留入口方法，适用范围为 PyTorch 2.2 移动部署。"
+            },
+            "source": "review:pytorch-mobile:torch/utils/mobile_optimizer.py"
+          },
           {
             "text": {
               "en": "Official tutorial now states PyTorch Mobile is no longer actively supported and directs users to ExecuTorch.",
@@ -29424,7 +30078,9 @@
           }
         ],
         "sources": [
-          "audit:pytorch-mobile-guide:overview"
+          "audit:pytorch-mobile-guide:overview",
+          "review:pytorch-mobile:binaries/speed_benchmark_torch.cc",
+          "review:pytorch-mobile:torch/utils/mobile_optimizer.py"
         ],
         "accessNote": null
       }
@@ -29731,7 +30387,13 @@
             },
             "source": "audit:sparsezoo:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "Evaluation result records store named numeric metrics with dataset name/type/split and evaluation configuration. They describe the accompanying model evaluation, rather than a universal throughput figure for all devices.",
+              "zh": "评估结果结构保存具名数值指标，以及数据集名称、类型、划分和评估配置；描述相应模型评估，不代表所有设备的统一吞吐量。"
+            },
+            "source": "review:sparsezoo:src/sparsezoo/evaluation/results.py"
+          },
           {
             "text": {
               "en": "Recipes describe model sparsification; the model catalog is not itself a workload scheduler.",
@@ -29748,7 +30410,8 @@
           }
         ],
         "sources": [
-          "audit:sparsezoo:overview"
+          "audit:sparsezoo:overview",
+          "review:sparsezoo:src/sparsezoo/evaluation/results.py"
         ],
         "accessNote": null
       }
@@ -29837,8 +30500,20 @@
             },
             "source": "audit:snpe:overview"
           },
-          null,
-          null,
+          {
+            "text": {
+              "en": "Qualcomm’s NPE developer guide includes execution profiling in the deployment workflow. The guide describes the feature at SDK level; exact counters and tooling depend on the installed SNPE release.",
+              "zh": "Qualcomm 的 NPE 开发者指南在部署流程中明确列出执行性能分析；该指南描述 SDK 级功能，具体计数器与工具取决于安装的 SNPE 版本。"
+            },
+            "source": "review:snpe:developer-guide"
+          },
+          {
+            "text": {
+              "en": "Convert the trained model to DLC, embed the NPE runtime in the application, and execute on Snapdragon CPU or accelerate with GPU/DSP. This describes the 2017 NPE workflow; target and operator compatibility remain release-specific.",
+              "zh": "将训练好的模型转换为 DLC，在应用中嵌入 NPE 运行时，使用 Snapdragon CPU 执行或 GPU/DSP 加速；这是 2017 年 NPE 工作流，目标设备与算子兼容性随版本而异。"
+            },
+            "source": "review:snpe:developer-guide"
+          },
           {
             "text": {
               "en": "Direct-download and Qualcomm Package Manager workflows are documented; Arm macOS Ubuntu VMs are excluded by this guide.",
@@ -29848,7 +30523,8 @@
           }
         ],
         "sources": [
-          "audit:snpe:overview"
+          "audit:snpe:overview",
+          "review:snpe:developer-guide"
         ],
         "accessNote": null
       }
@@ -30159,6 +30835,9 @@
           "CPU",
           "GPU",
           "NPU"
+        ],
+        "metric": [
+          "Latency"
         ]
       },
       "claims": [
@@ -30186,6 +30865,11 @@
           "facet": "resource",
           "value": "NPU",
           "source": "audit:tnn:overview"
+        },
+        {
+          "facet": "metric",
+          "value": "Latency",
+          "source": "review:tnn:benchmark/benchmark_android/README.md"
         }
       ],
       "features": {
@@ -30242,7 +30926,13 @@
             },
             "source": "audit:tnn:overview"
           },
-          null,
+          {
+            "text": {
+              "en": "The Android benchmark scripts report per-model execution cost time. Layer benchmarks can list and filter individual layer tests and parameter combinations with GoogleTest options; results depend on model, layer parameters, and device.",
+              "zh": "Android 基准脚本输出各模型执行耗时；逐层基准可通过 GoogleTest 选项列出并筛选算子及参数组合，结果取决于模型、算子参数和设备。"
+            },
+            "source": "review:tnn:benchmark/benchmark_android/README.md"
+          },
           {
             "text": {
               "en": "Model compression and code tailoring reduce deployment requirements.",
@@ -30259,7 +30949,8 @@
           }
         ],
         "sources": [
-          "audit:tnn:overview"
+          "audit:tnn:overview",
+          "review:tnn:benchmark/benchmark_android/README.md"
         ],
         "accessNote": null
       }
@@ -30821,8 +31512,8 @@
         ],
         "sources": [],
         "accessNote": {
-          "en": "The original website failed TLS hostname validation; its current directory contents could not be verified.",
-          "zh": "原网站未通过 TLS 主机名验证，无法核实当前目录内容。"
+          "en": "The original directory URL failed TLS hostname validation during this review. Its resource listings could not be read through that endpoint.",
+          "zh": "此次访问原目录网址时 TLS 主机名验证失败，无法从该入口读取其资源列表。"
         }
       }
     },

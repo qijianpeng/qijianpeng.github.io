@@ -65,18 +65,18 @@ test('Within-group OR and cross-group AND are applied independently of display l
   assert.deepEqual(selectTools(sample, state).map(r => r.tool.id), ['A', 'B']);
   assert.deepEqual(selectTools(sample, { ...state, lang: 'zh', q: '边缘' }).map(r => r.tool.id), ['A', 'B']);
 });
-test('Every required capability must match; unknown candidates are separate and negative or inapplicable evidence never passes', () => {
+test('Required capabilities always need direct evidence, including legacy shared-link options', () => {
   const state = { ...emptyState(), required: ['visualization', 'logging'] };
   assert.deepEqual(selectTools(sample, state).map(r => r.tool.id), ['A']);
   const results = selectTools(sample, { ...state, includeUnknown: true });
-  assert.deepEqual(results.map(r => r.tool.id), ['A', 'B']);
-  assert.deepEqual(results[1].unknown, ['visualization']);
-  assert.equal(results[1].tentative, true);
+  assert.deepEqual(results.map(r => r.tool.id), ['A']);
   assert.equal(matchTool(sample.tools[3], { ...state, includeUnknown: true }), null);
 });
 test('Shared state restores filters and comparison; malformed and obsolete values fail safely', () => {
   const state = { ...emptyState(), lang: 'zh', q: '边缘 A', facets: { language: ['Python'] }, required: ['logging'], compare: ['A', 'B'], includeUnknown: true };
-  assert.deepEqual(readState(writeState(state), sample), state);
+  assert.deepEqual(readState(writeState(state), sample), { ...state, includeUnknown: false });
+  const legacy = '?lang=zh&state=' + encodeURIComponent(JSON.stringify(state));
+  assert.deepEqual(readState(legacy, sample), { ...state, includeUnknown: false });
   assert.deepEqual(readState('?state=%7Bbad&lang=zh', sample), { ...emptyState(), lang: 'zh' });
   assert.deepEqual(readState('?state=null'), emptyState());
   const cleaned = normalizeState({ compare: ['D', 'A', 'A', 'missing'], facets: { language: ['Imaginary'], nonexistent: ['A'] } }, sample);
@@ -166,7 +166,7 @@ test('Project evidence drives capabilities, with explicit external-tool and conf
   assert.match(get('yafs-yet-another-fog-simulator').features.visualization.note.en, /NetworkX\/Matplotlib/);
   assert.equal(get('simfaas').features['custom-metrics'].status, 'unknown', 'Built-in measurements do not establish an arbitrary metric API');
   assert.ok(!selectTools(data, { ...emptyState(), q: 'SimFaaS', required: ['custom-metrics'] }).some(r => r.tool.id === 'simfaas'));
-  assert.ok(selectTools(data, { ...emptyState(), q: 'SimFaaS', required: ['custom-metrics'], includeUnknown: true }).some(r => r.tool.id === 'simfaas' && r.tentative));
+  assert.equal(selectTools(data, { ...emptyState(), q: 'SimFaaS', required: ['custom-metrics'], includeUnknown: true }).length, 0);
   assert.deepEqual(get('simgrid').facets.type, ['application']);
   assert.equal(get('dfaas').facets.type, undefined, 'Current Kubernetes deployment is not a confirmed emulator');
   assert.ok(get('lightmano').verification.dimensions.every(x => x === null));
@@ -178,4 +178,28 @@ test('Bilingual dimension search finds documented API details without converting
   const unverified = tool('Documentation only', {});
   unverified.verification = { dimensions: [{ text: { en: 'Custom scheduling remains unverified.', zh: '自定义调度仍待核实。' } }] };
   assert.equal(matchTool(unverified, { ...emptyState(), required: ['custom-scheduling'] }), null);
+});
+
+test('Public catalog uses concrete project descriptions and keeps inaccessible resources honest', async () => {
+  const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
+  assert.doesNotMatch(JSON.stringify(data), /unverified|未核实/i);
+  const complete = data.tools.filter(t => t.verification.dimensions.every(Boolean));
+  assert.equal(complete.length, 209);
+  for (const tool of data.tools) {
+    if (!tool.verification.dimensions.every(Boolean)) {
+      assert.ok(tool.verification.accessNote?.en && tool.verification.accessNote?.zh, tool.id);
+      assert.equal(tool.verification.dimensions.filter(Boolean).length, 0, tool.id);
+    }
+  }
+  const get = id => data.tools.find(t => t.id === id);
+  assert.match(get('easiei').verification.dimensions[2].text.en, /RemainingCpu.*RemainingMemory/);
+  assert.match(get('cloudsim-plus-automation').verification.dimensions[2].text.en, /wall-clock/);
+  assert.match(get('wasmer').verification.dimensions[2].text.en, /not measured CPU time/);
+  assert.match(get('edgex-foundry').verification.dimensions[2].text.en, /disabled by default/);
+  assert.equal(get('nfaas').verification.accessNote, null);
+  assert.equal(get('nfaas').features['scenario-scripts'].status, 'supported');
+  assert.equal(get('nfaas').features['real-code'].status, 'unknown');
+  for (const file of ['../../assets/js/edge-explorer/labels.mjs', '../../assets/js/edge-explorer/app.mjs', '../../_pages/edge-computing.html']) {
+    assert.doesNotMatch(await readFile(new URL(file, import.meta.url), 'utf8'), /unverified|未核实/i);
+  }
 });

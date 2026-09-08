@@ -37,7 +37,8 @@ function buildTool(entry) {
     if (!projectSource(source)) return;
     if (!featureKeys.includes(feature) || !['supported', 'unsupported', 'unknown', 'not-applicable'].includes(status)) throw new Error(`Invalid feature ${entry.id}: ${feature} / ${status}`);
     if (['supported', 'unsupported'].includes(status) && !source) throw new Error(`Missing feature evidence: ${entry.id} / ${feature}`);
-    tool.features[feature] = { status, source, ...(note ? { note } : {}) };
+    // Keep archival absence-of-evidence notes in the manual file, not the public description.
+    tool.features[feature] = status === 'unknown' ? { status } : { status, source, ...(note ? { note } : {}) };
   };
   if (!reference) {
     const sourcePurpose = c.purpose || (cat === 'simulators' ? 'simulation' : cat === 'engines' ? 'deployment' : cat === 'networks' ? 'networking' : cat === 'benchmarks' ? 'benchmark' : cat === 'tools' ? 'monitoring' : null);
