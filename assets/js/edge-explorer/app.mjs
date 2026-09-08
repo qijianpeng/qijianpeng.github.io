@@ -24,7 +24,7 @@ const safeLink = value => { try { return ['https:', 'http:'].includes(new URL(va
 const link = (text, url, className) => safeLink(url) ? h('a', { href: url, target: '_blank', rel: 'noopener noreferrer', class: className }, text) : h('span', { class: className }, text);
 function sourceLink(tool, id) {
   const source = id === 'readme' ? tool.source : data.sources[id];
-  if (!source) return h('span', { class: 'ee-source' }, t('unknown'));
+  if (!source) return null;
   const name = source.kind === 'official' ? (state.lang === 'zh' ? '官方资料' : 'Official docs') : 'README';
   const result = link(`${source.title || name} · ${source.date}`, source.url, 'ee-source');
   if (source.version) result.title = `${t('version')}: ${source.version}`;
@@ -46,7 +46,6 @@ function update(next, options = {}) {
 function removeFilter(kind, key, value) {
   if (kind === 'q') return update({ ...state, q: '' });
   if (kind === 'required') return update({ ...state, required: state.required.filter(v => v !== value) });
-  if (kind === 'unknown') return update({ ...state, includeUnknown: false });
   const facets = { ...state.facets, [key]: state.facets[key].filter(v => v !== value) };
   if (!facets[key].length) delete facets[key];
   update({ ...state, facets });
@@ -75,12 +74,14 @@ function renderFilters() {
   }
   const required = h('details', { class: 'ee-filter-group', 'data-group': 'required', open: openGroups.has('required') }, h('summary', {}, t('required')), h('p', { class: 'ee-group-help' }, t('requiredHelp')), h('div', { class: 'ee-filter-options' }, featureKeys.map(key => h('label', { class: 'ee-option' }, h('input', { type: 'checkbox', id: `ee-feature-${key}`, 'data-feature': key, checked: state.required.includes(key) }), featureLabel(key)))));
   nodes.splice(3, 0, required);
-  nodes.push(h('label', { class: 'ee-option ee-unknown-option' }, h('input', { type: 'checkbox', id: 'ee-include-unknown', checked: state.includeUnknown }), t('includeUnknown')));
   $('#ee-filters').replaceChildren(...nodes);
 }
-function featureStatus(tool, key) {
-  const claim = tool.features[key] || { status: 'unknown' };
-  return h('div', { class: 'ee-feature-row' }, h('span', {}, featureLabel(key)), h('span', { class: 'ee-status', 'data-status': claim.status }, t(claim.status)), claim.source ? sourceLink(tool, claim.source) : null, claim.note ? h('p', { class: 'ee-note' }, localized(claim.note)) : null);
+function documentedFeatures(tool) {
+  const keys = featureKeys.filter(key => ['supported', 'unsupported'].includes(tool.features[key]?.status));
+  return keys.length ? keys.map(key => {
+    const claim = tool.features[key];
+    return h('div', { class: 'ee-feature-row' }, h('strong', {}, featureLabel(key)), claim.status === 'unsupported' ? h('span', { class: 'ee-status', 'data-status': claim.status }, t('unsupported')) : null, claim.source ? sourceLink(tool, claim.source) : null, claim.note ? h('p', { class: 'ee-note' }, localized(claim.note)) : null);
+  }) : [h('p', { class: 'ee-note' }, t('readScope'))];
 }
 function dimensionEvidence(tool, index) {
   const record = tool.verification?.dimensions[index];
@@ -88,32 +89,31 @@ function dimensionEvidence(tool, index) {
     const source = data.sources[record.source];
     return [h('p', {}, localized(record.text)), sourceLink(tool, record.source), source?.version ? h('p', { class: 'ee-note ee-version' }, `${t('version')}: ${/^[a-f0-9]{40}$/.test(source.version) ? source.version.slice(0, 12) : source.version}`) : null];
   }
-  return [h('p', { class: 'ee-note' }, tool.verification?.accessNote ? localized(tool.verification.accessNote) : t('dimensionPending'))];
+  return index === 0 && tool.verification?.accessNote ? [h('p', { class: 'ee-note' }, localized(tool.verification.accessNote))] : [h('span', { 'aria-label': t('readScope') }, '—')];
 }
 function reviewedDimensions(tool) {
-  return h('section', { class: 'ee-dimension-evidence', 'aria-label': t('reviewedDimensions') }, h('h4', {}, t('reviewedDimensions')), ...dimensions.map((dimension, index) => h('div', { class: 'ee-dimension' }, h('h5', {}, `${index + 1}. ${dimension[state.lang === 'zh' ? 1 : 0]}`), ...dimensionEvidence(tool, index))));
+  const records = dimensions.flatMap((dimension, index) => tool.verification?.dimensions[index] ? [h('div', { class: 'ee-dimension' }, h('h5', {}, `${index + 1}. ${dimension[state.lang === 'zh' ? 1 : 0]}`), ...dimensionEvidence(tool, index))] : []);
+  return records.length ? h('section', { class: 'ee-dimension-evidence', 'aria-label': t('reviewedDimensions') }, h('h4', {}, t('reviewedDimensions')), ...records) : null;
 }
 function toolDetails(tool) {
   const claims = tool.claims.map(claim => h('p', {}, h('strong', {}, `${groupLabel(claim.facet)}: `), label(claim.value), sourceLink(tool, claim.source), claim.note ? h('span', { class: 'ee-note' }, ` · ${localized(claim.note)}`) : null));
-  return h('details', { class: 'ee-details', 'data-tool-details': tool.id }, h('summary', {}, t('details')), h('p', {}, localized(tool.summary)), ...tool.notes.map(note => h('p', { class: 'ee-note' }, localized(note))), tool.verification?.accessNote ? h('p', { class: 'ee-note ee-tentative' }, localized(tool.verification.accessNote)) : null, reviewedDimensions(tool), h('h4', {}, t('required')), ...featureKeys.map(key => featureStatus(tool, key)), h('h4', {}, t('provenance')), ...(claims.length ? claims : [h('p', {}, t('noFacets'))]), h('details', { class: 'ee-details' }, h('summary', {}, t('fullSummary')), h('p', {}, tool.description), sourceLink(tool, 'readme')), h('div', { class: 'ee-detail-links' }, tool.url ? link(t('official'), tool.url) : null, link(t('sourceRecord'), tool.source.url)));
+  return h('details', { class: 'ee-details', 'data-tool-details': tool.id }, h('summary', {}, t('details')), h('p', {}, localized(tool.summary)), ...tool.notes.map(note => h('p', { class: 'ee-note' }, localized(note))), tool.verification?.accessNote ? h('p', { class: 'ee-note ee-tentative' }, localized(tool.verification.accessNote)) : null, reviewedDimensions(tool), h('h4', {}, t('documented')), ...documentedFeatures(tool), h('h4', {}, t('provenance')), ...(claims.length ? claims : [h('p', {}, t('noFacets'))]), h('details', { class: 'ee-details' }, h('summary', {}, t('fullSummary')), h('p', {}, tool.description), sourceLink(tool, 'readme')), h('div', { class: 'ee-detail-links' }, tool.url ? link(t('official'), tool.url) : null, link(t('sourceRecord'), tool.source.url)));
 }
 function resultCard(result) {
-  const { tool, unknown } = result;
+  const { tool } = result;
   const selected = state.compare.includes(tool.id);
   const tagValues = ['type', 'language', 'purpose'].flatMap(k => tool.facets[k] || []).slice(0, 5);
-  const matching = Object.entries(state.facets).flatMap(([k, values]) => values.filter(v => tool.facets[k]?.includes(v)).map(label)).concat(state.required.filter(k => !unknown.includes(k)).map(featureLabel));
-  return h('article', { class: 'ee-card', 'data-selected': String(selected), 'data-tool': tool.id }, h('div', { class: 'ee-card-heading' }, h('h3', {}, tool.name), tool.comparable ? h('button', { class: 'ee-add', type: 'button', id: `ee-add-${tool.id}`, 'data-compare-toggle': tool.id, 'aria-pressed': String(selected), 'aria-label': `${selected ? t('remove') : t('add')} ${tool.name}`, disabled: !selected && state.compare.length === 4 }, selected ? `✓ ${t('remove')}` : t('add')) : null), h('span', { class: 'ee-card-category' }, tool.facets.category.map(label).join(' / '), !tool.comparable ? ` · ${t('reference')}` : ''), h('p', { class: 'ee-card-summary' }, localized(tool.summary)), h('div', { class: 'ee-tags' }, tagValues.map(value => h('span', { class: 'ee-tag' }, label(value)))), h('p', { class: 'ee-evidence' }, tool.officialChecked ? t('evidenceRecord') : t('repositoryRecord'), sourceLink(tool, tool.officialChecked || 'readme')), matching.length ? h('p', { class: 'ee-match' }, `${t('matching')}: ${matching.join(' · ')}`) : null, unknown.length ? h('p', { class: 'ee-match ee-tentative' }, `${t('pending')}: ${unknown.map(featureLabel).join(' · ')}`) : null, toolDetails(tool));
+  const matching = Object.entries(state.facets).flatMap(([k, values]) => values.filter(v => tool.facets[k]?.includes(v)).map(label)).concat(state.required.map(featureLabel));
+  return h('article', { class: 'ee-card', 'data-selected': String(selected), 'data-tool': tool.id }, h('div', { class: 'ee-card-heading' }, h('h3', {}, tool.name), tool.comparable ? h('button', { class: 'ee-add', type: 'button', id: `ee-add-${tool.id}`, 'data-compare-toggle': tool.id, 'aria-pressed': String(selected), 'aria-label': `${selected ? t('remove') : t('add')} ${tool.name}`, disabled: !selected && state.compare.length === 4 }, selected ? `✓ ${t('remove')}` : t('add')) : null), h('span', { class: 'ee-card-category' }, tool.facets.category.map(label).join(' / '), !tool.comparable ? ` · ${t('reference')}` : ''), h('p', { class: 'ee-card-summary' }, localized(tool.summary)), h('div', { class: 'ee-tags' }, tagValues.map(value => h('span', { class: 'ee-tag' }, label(value)))), h('p', { class: 'ee-evidence' }, tool.officialChecked ? t('evidenceRecord') : t('repositoryRecord'), sourceLink(tool, tool.officialChecked || 'readme')), matching.length ? h('p', { class: 'ee-match' }, `${t('matching')}: ${matching.join(' · ')}`) : null, toolDetails(tool));
 }
 function renderResults() {
   const previousOpen = [...root.querySelectorAll('[data-tool-details][open]')].map(el => el.dataset.toolDetails);
   const results = selectTools(data, state);
-  const pending = results.filter(r => r.tentative).length;
-  $('#ee-count').textContent = `${results.length} ${t('results')}${pending ? ` · ${pending} ${t('tentative')}` : ''}`;
+  $('#ee-count').textContent = `${results.length} ${t('results')}`;
   const chips = [];
   if (state.q) chips.push(chip(state.q, 'q'));
   for (const [key, values] of Object.entries(state.facets)) for (const value of values) chips.push(chip(`${groupLabel(key)}: ${label(value)}`, 'facet', key, value));
   for (const key of state.required) chips.push(chip(featureLabel(key), 'required', '', key));
-  if (state.includeUnknown) chips.push(chip(t('includeUnknown'), 'unknown'));
   $('#ee-chips').replaceChildren(...chips);
   if (results.length) {
     const cards = results.slice(0, visibleLimit).map(resultCard);
@@ -132,25 +132,21 @@ function renderComparison() {
   $('#ee-comparison').hidden = !comparisonOpen || !selected.length;
   if (!comparisonOpen || !selected.length) return;
   const row = (name, cell) => h('tr', {}, h('th', { scope: 'row' }, name), selected.map(tool => h('td', {}, cell(tool))));
-  const rows = [row(t('overview'), tool => localized(tool.summary)), ...dimensions.map((dimension, index) => row(dimension[state.lang === 'zh' ? 1 : 0], tool => dimensionEvidence(tool, index))), ...Object.keys(groups).filter(key => selected.some(tool => tool.facets[key]?.length)).map(key => row(groupLabel(key), tool => {
-    const claims = tool.claims.filter(c => c.facet === key);
-    if (key === 'category') return tool.facets.category.map(label).join(' / ');
-    return claims.length ? claims.map(c => h('p', {}, label(c.value), sourceLink(tool, c.source), c.note ? h('span', { class: 'ee-note' }, ` · ${localized(c.note)}`) : null)) : t('unknown');
-  })), ...featureKeys.map(key => row(featureLabel(key), tool => featureStatus(tool, key))), row(t('condition'), tool => [t('scopeNote'), tool.verification?.accessNote ? h('p', { class: 'ee-note' }, localized(tool.verification.accessNote)) : null, ...tool.notes.map(note => h('p', { class: 'ee-note' }, localized(note)))]), row(t('source'), tool => [tool.url ? link(t('official'), tool.url) : null, h('br'), link(t('sourceRecord'), tool.source.url)])];
+  const rows = [row(t('overview'), tool => localized(tool.summary)), ...dimensions.map((dimension, index) => row(dimension[state.lang === 'zh' ? 1 : 0], tool => dimensionEvidence(tool, index))), row(t('documented'), tool => documentedFeatures(tool)), row(t('condition'), tool => [t('scopeNote'), tool.verification?.accessNote ? h('p', { class: 'ee-note' }, localized(tool.verification.accessNote)) : null, ...tool.notes.map(note => h('p', { class: 'ee-note' }, localized(note)))]), row(t('source'), tool => [tool.url ? link(t('official'), tool.url) : null, h('br'), link(t('sourceRecord'), tool.source.url)])];
   $('#ee-comparison-table').replaceChildren(h('table', {}, h('caption', { class: 'ee-sr-only' }, t('comparison')), h('thead', {}, h('tr', {}, h('th', { scope: 'col' }, t('dimensions')), selected.map(tool => h('th', { scope: 'col' }, tool.name)))), h('tbody', {}, rows)));
 }
 function renderMethod() {
   const texts = state.lang === 'zh' ? [
     '五个维度依据项目官网、使用手册、API、固定提交源码及项目技术文档整理。能力说明写明具体功能与适用条件，不根据综述表格、依赖关系或图示推断功能。',
     '收录范围是 awesome-edge-computing 的固定提交快照。原清单用于资源身份、分类与简介；必需能力判断只使用项目直接资料。',
-    '“支持”需有项目资料中的明确依据；“不支持”需有明确否定依据；资料不足保留“未核实”。“不适用”用于参考资源。开启待核实候选后，仍有未知必需能力的项目会单独标出并排在后面。',
+    '功能区列出资料明确描述的能力、接口及条件。勾选必需能力后，只返回有直接依据的项目；未列出的功能不据此判为不支持。比较表以五个维度的具体内容为主，入口失效或仅剩历史介绍时展示实际资料状况。',
     '每项证据展示来源、版本或查阅日期。外部可视化工具、可选依赖和配置要求会注明；基于源码或文档的核查不代表已安装实测所有工具。',
     '编程语言包括脚本和配置语言。抽象网络模型、协议实现与应用调度需要分别核对。规模数据只对应来源所述实验条件，不用于工具排名。',
     '资源按名称排列；每次手动核对后更新目录。机构与资源清单保留参考入口，不能加入工具比较。'
   ] : [
     'The five dimensions use project websites, manuals, APIs, pinned source code, and project technical documents. Capability descriptions explain concrete behavior and conditions; survey marks, dependencies, and diagrams do not establish support.',
     'The inventory follows a fixed commit of awesome-edge-computing. The list provides resource identity, categories, and summaries. Required capabilities use direct project evidence only.',
-    'Supported requires explicit project evidence. Unsupported requires an explicit negative statement. Missing evidence remains unverified; reference resources are not applicable. Candidates with unverified requirements are labeled and listed after documented matches when included.',
+    'Capability lists describe documented interfaces and conditions. Required filters return only projects with direct evidence; an omitted capability does not establish lack of support. Compare the concrete five-dimension descriptions. Retired or inaccessible resources show their actual source availability.',
     'Each record includes its source, version, or access date. External visualization tools, optional dependencies, and configuration requirements are stated. Documentation and source review do not mean every tool has been installed and tested.',
     'Languages include scripting and configuration languages. Abstract network models, protocol implementations, and application scheduling are checked separately. Scale figures apply only to their documented experimental conditions and are not rankings.',
     'Resources are alphabetical and manually reviewed. Institutions and resource lists retain reference links and cannot enter capability comparisons.'
@@ -177,7 +173,7 @@ root.addEventListener('change', event => {
   } else if (input.dataset.feature) {
     const key = input.dataset.feature;
     update({ ...state, required: input.checked ? [...state.required, key] : state.required.filter(v => v !== key) });
-  } else if (input.id === 'ee-include-unknown') update({ ...state, includeUnknown: input.checked });
+  }
 });
 root.addEventListener('click', async event => {
   const button = event.target.closest('button'); if (!button) return;
