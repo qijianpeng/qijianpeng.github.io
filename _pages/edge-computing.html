@@ -7,7 +7,8 @@ lang: en
 edge_explorer: true
 nav: false
 ---
-<div id="edge-explorer" class="edge-explorer" data-catalog="{{ '/assets/data/edge-tools.json' | relative_url }}">
+{% assign explorer_release = site.time | date: '%s' %}
+<div id="edge-explorer" class="edge-explorer" data-catalog="{{ '/assets/data/edge-tools.json' | relative_url }}?v={{ explorer_release }}">
   <div class="ee-topline"><a href="{{ '/repositories/' | relative_url }}">← <span data-i18n="repositories">Repositories</span></a><div class="ee-languages" aria-label="Language"><button id="ee-lang-en" type="button" data-lang="en" aria-pressed="true">EN</button><button id="ee-lang-zh" type="button" data-lang="zh" aria-pressed="false">中文</button></div></div>
   <header class="ee-header">
     <p class="ee-eyebrow">AWESOME EDGE COMPUTING <span>/</span> <span data-i18n="explorer">TOOL EXPLORER</span></p>
@@ -39,4 +40,4 @@ nav: false
   <div id="ee-shortlist" class="ee-shortlist" hidden><div><strong id="ee-shortlist-count"></strong><div id="ee-shortlist-items" class="ee-shortlist-items"></div></div><button id="ee-compare" class="ee-primary" type="button" data-i18n="compare">Compare tools →</button></div>
   <p id="ee-announcement" class="ee-sr-only" role="status" aria-live="polite"></p>
 </div>
-<script type="module" src="{{ '/assets/js/edge-explorer/app.mjs' | relative_url }}"></script>
+<script type="module" src="{{ '/assets/js/edge-explorer/app.mjs' | relative_url }}?v={{ explorer_release }}"></script>

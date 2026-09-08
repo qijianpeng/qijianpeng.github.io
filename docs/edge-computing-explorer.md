@@ -73,6 +73,8 @@ A resource may have evidence across all five dimensions while individual require
 
 The production workflow uses Ruby 3.2.2, Bundler 2.5.7, Node.js 22, Jekyll, and the locked PurgeCSS dependency. It runs catalog validation before building. PurgeCSS scans `.mjs` files and preserves the explorer's dynamic CSS classes.
 
+Each build adds the same release timestamp to the catalog URL and the JavaScript entry point. The entry point forwards that version to its module imports, so a refreshed page does not combine cached labels, filter logic, or data from an earlier release.
+
 If the host Ruby cannot build the site, the isolated build image contains the same Ruby and Bundler versions plus ImageMagick and Jupyter:
 
 ```sh
