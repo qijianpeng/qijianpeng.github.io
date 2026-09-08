@@ -120,3 +120,10 @@
   .ee-entry { padding: 20px; } .ee-entry-kicker { letter-spacing: .8px; } .ee-entry strong { font-size: 21px; }
 }
 @media (prefers-reduced-motion: reduce) { .edge-explorer * { scroll-behavior: auto !important; } }
+
+.edge-explorer .ee-dimension { border-top: 1px solid var(--global-divider-color); padding: 1rem 0; }
+.edge-explorer .ee-dimension h5 { font-size: .95rem; font-weight: 650; margin-bottom: .5rem; }
+.edge-explorer .ee-dimension p { margin-bottom: .5rem; }
+.edge-explorer .ee-dimension .ee-source, .edge-explorer .ee-version { display: block; overflow-wrap: anywhere; }
+.edge-explorer .ee-card:has([data-tool-details][open]) { grid-column: 1 / -1; }
+.edge-explorer .ee-source { overflow-wrap: anywhere; }

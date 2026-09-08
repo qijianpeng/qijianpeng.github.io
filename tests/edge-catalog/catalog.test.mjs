@@ -45,6 +45,7 @@ test('Applying a pinned sync updates inventory while preserving curated evidence
     await writeFile(join(catalog, 'source.json'), '{}');
     await writeFile(join(catalog, 'inventory.json'), JSON.stringify(original));
     await writeFile(join(catalog, 'curated.json'), annotations);
+    await writeFile(join(catalog, 'verification.json'), annotations);
     await writeFile(join(catalog, 'summaries.tsv'), translation);
     const incoming = join(directory, 'incoming.md');
     await writeFile(incoming, '# Tools\n- [Renamed](https://example.com/tool): Revised description.');
@@ -53,6 +54,7 @@ test('Applying a pinned sync updates inventory while preserving curated evidence
     assert.equal(result.entries[0].id, 'original');
     assert.equal(result.entries[0].name, 'Renamed');
     assert.equal(await readFile(join(catalog, 'curated.json'), 'utf8'), annotations);
+    assert.equal(await readFile(join(catalog, 'verification.json'), 'utf8'), annotations);
     assert.equal(await readFile(join(catalog, 'summaries.tsv'), 'utf8'), translation);
   } finally { await rm(directory, { recursive: true, force: true }); }
 });
@@ -122,4 +124,39 @@ test('Catalog exactly covers the pinned README and retains a source for every fi
 test('Non-HTTP URLs are never accepted as resource links', () => {
   for (const url of ['javascript:alert(1)', 'data:text/html,test', 'file:///etc/passwd', '/relative', '']) assert.equal(safeUrl(url), null);
   assert.equal(safeUrl('https://example.com'), 'https://example.com/');
+});
+test('Every resource has five review slots, bilingual source-backed evidence, and honest access outcomes', async () => {
+  const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
+  let count = 0;
+  for (const tool of data.tools) {
+    const review = tool.verification;
+    assert.equal(review.dimensions.length, 5, tool.id);
+    assert.match(review.date, /^\d{4}-\d{2}-\d{2}$/);
+    for (const dimension of review.dimensions.filter(Boolean)) {
+      count++;
+      assert.ok(dimension.text.en && /[\u4e00-\u9fff]/.test(dimension.text.zh), tool.id);
+      assert.ok(review.sources.includes(dimension.source), tool.id);
+      const source = data.sources[dimension.source];
+      assert.ok(safeUrl(source.url) && source.date && source.version, tool.id);
+    }
+    if (!review.sources.length) assert.ok(review.accessNote?.en && review.accessNote?.zh, tool.id);
+  }
+  assert.equal(count, data.meta.dimensionEvidenceCount);
+  assert.equal(data.meta.reviewedCount, data.tools.length);
+  const get = id => data.tools.find(t => t.id === id);
+  assert.equal(get('edgesim').name, 'SimEdgeIntel (EdgeSim)');
+  assert.equal(get('edgesim').paper.length, 5);
+  assert.ok(!get('dfaas').facets.engine.includes('Containernet'));
+  assert.ok(get('dfaas').facets.engine.includes('Kubernetes'));
+  assert.equal(get('clawbox').features['real-code'].status, 'unknown');
+  assert.equal(get('faas-sim').features['custom-metrics'].status, 'supported');
+  assert.match(get('faas-sim').features.logging.note.en, /NullLogger/);
+});
+test('Bilingual dimension search finds documented API details without converting text into capability support', async () => {
+  const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
+  assert.ok(selectTools(data, { ...emptyState(), q: 'fogify.metrics.json' }).some(r => r.tool.id === 'fogify'));
+  assert.ok(selectTools(data, { ...emptyState(), q: '自定义插桩', lang: 'zh' }).some(r => r.tool.id === 'ns-3'));
+  const unverified = tool('Documentation only', {});
+  unverified.verification = { dimensions: [{ text: { en: 'Custom scheduling remains unverified.', zh: '自定义调度仍待核实。' } }] };
+  assert.equal(matchTool(unverified, { ...emptyState(), required: ['custom-scheduling'] }), null);
 });

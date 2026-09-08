@@ -5,12 +5,14 @@ import { featureKeys, facetKeys } from '../../assets/js/edge-explorer/core.mjs';
 
 const root = new URL('../../_data/edge_catalog/', import.meta.url);
 const json = async file => JSON.parse(await readFile(new URL(file, root), 'utf8'));
-const [inventory, meta, paper, curated, official] = await Promise.all(['inventory.json', 'source.json', 'paper.json', 'curated.json', 'official.json'].map(json));
+const [inventory, meta, paper, curated, official, verification] = await Promise.all(['inventory.json', 'source.json', 'paper.json', 'curated.json', 'official.json', 'verification.json'].map(json));
 const summaries = Object.fromEntries((await readFile(new URL('summaries.tsv', root), 'utf8')).trim().split('\n').map(line => { const [id, ...rest] = line.split('\t'); return [id, rest.join('\t')]; }));
 const categories = ['simulators', 'engines', 'networks', 'hardware', 'benchmarks', 'tools', 'applications', 'edge-ai', 'institutions', 'resources'];
 const sources = {};
 for (let i = 1; i <= 5; i++) sources[`paper-${i}`] = { kind: 'paper', table: ['I', 'II', 'III', 'IV', 'V'][i - 1], date: meta.paperDate, url: `${meta.paper}#S${i + 1}.T${i}` };
 for (const [repo, doc] of Object.entries(official)) if (doc.url) sources[`official:${repo}`] = { kind: 'official', date: doc.retrievedAt, url: doc.url, version: doc.blobSha };
+Object.assign(sources, verification.sources);
+for (const [id, source] of Object.entries(sources)) if (!safeUrl(source.url) || !source.date) throw new Error(`Invalid evidence source: ${id}`);
 const referenceIds = new Set(['awesome-pcaptools', 'webassembly-curated-list-of-awesome-things-regarding-webassembly-wasm-ecosystem', 'neural-network-accelerator-comparison']);
 function category(entry) {
   if (entry.section === 'Frameworks') return entry.subsection === 'Networks' ? 'networks' : entry.subsection === 'Edge AI Hardware Products' ? 'hardware' : 'engines';
@@ -93,13 +95,26 @@ function buildTool(entry) {
     documentFeature(feature, claim.source || 'readme', claim.note, claim.status || 'supported');
     if (claim.source?.startsWith('official:')) tool.officialChecked ||= claim.source;
   }
+  const review = verification.tools[entry.id];
+  tool.verification = review ? { date: review.date, dimensions: review.dimensions, sources: review.sources, accessNote: review.accessNote || null } : null;
+  if (review) {
+    if (!review.date || !Array.isArray(review.sources)) throw new Error(`Invalid review metadata: ${entry.id}`);
+    if (review.dimensions.length !== 5) throw new Error(`Expected five review dimensions: ${entry.id}`);
+    for (const source of review.sources) if (!sources[source]) throw new Error(`Unknown review source: ${entry.id} / ${source}`);
+    for (const record of review.dimensions) if (record && (!record.text?.en || !record.text?.zh || !sources[record.source])) throw new Error(`Invalid dimension evidence: ${entry.id}`);
+    for (const facet of review.clearFacets || []) { delete tool.facets[facet]; tool.claims = tool.claims.filter(x => x.facet !== facet); }
+    for (const claim of review.claims || []) add(claim.facet, claim.value, claim.source, claim.note);
+    for (const [key, claim] of Object.entries(review.features || {})) documentFeature(key, claim.source, claim.note, claim.status);
+    tool.notes.push(...(review.notes || []));
+    if (review.sources.length) tool.officialChecked = review.sources[0];
+  }
   if (reference) tool.features = Object.fromEntries(featureKeys.map(k => [k, { status: 'not-applicable' }]));
   for (const claim of [...tool.claims, ...Object.values(tool.features)]) if (claim.source && claim.source !== 'readme' && !sources[claim.source]) throw new Error(`Missing source ${claim.source}`);
   if (tool.url && !safeUrl(tool.url)) throw new Error(`Unsafe URL: ${tool.id}`);
   return tool;
 }
 const tools = inventory.entries.map(buildTool);
-const publicData = { schemaVersion: 1, meta: { ...meta, count: tools.length, inventoryHash: fingerprint(inventory.entries), paperCoverage: tools.filter(t => t.paper.length).length }, categories, sources, tools };
+const publicData = { schemaVersion: 1, meta: { ...meta, evidenceUpdatedAt: verification.date, count: tools.length, inventoryHash: fingerprint(inventory.entries), paperCoverage: tools.filter(t => t.paper.length).length, reviewedCount: tools.filter(t => t.verification).length, dimensionEvidenceCount: tools.reduce((sum, tool) => sum + (tool.verification?.dimensions.filter(Boolean).length || 0), 0), accessIssueCount: tools.filter(t => t.verification?.accessNote).length }, categories, sources, tools };
 const output = JSON.stringify(publicData, null, 2) + '\n';
 const destination = new URL('../../assets/data/edge-tools.json', import.meta.url);
 if (process.argv.includes('--check')) {

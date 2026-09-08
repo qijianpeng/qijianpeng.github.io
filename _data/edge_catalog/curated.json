@@ -122,6 +122,14 @@
         "value": "application",
         "source": "readme"
       }
+    ],
+    "paperNames": [
+      "SimEdgeIntel"
+    ],
+    "name": "SimEdgeIntel (EdgeSim)",
+    "aliases": [
+      "EdgeSim",
+      "SimEdgeIntel"
     ]
   },
   "edgesimpy": {
@@ -961,7 +969,8 @@
   "eua-datasets": {
     "purpose": [
       "dataset"
-    ]
+    ],
+    "url": "https://github.com/swinedge/eua-dataset"
   },
   "gt-itm-georgia-tech-internetwork-topology-models": {
     "name": "GT-ITM",

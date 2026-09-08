@@ -32,7 +32,8 @@ export function writeState(state) {
 }
 const fold = text => text.normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase();
 export function matchTool(tool, state) {
-  const haystack = fold([tool.name, ...(tool.aliases || []), tool.summary.en, tool.summary.zh, ...Object.values(tool.facets).flat()].join(' '));
+  const evidenceText = (tool.verification?.dimensions || []).flatMap(record => record ? [record.text.en, record.text.zh] : []);
+  const haystack = fold([tool.name, ...(tool.aliases || []), tool.summary.en, tool.summary.zh, ...evidenceText, ...Object.values(tool.facets).flat()].join(' '));
   if (!fold(state.q.trim()).split(/\s+/).filter(Boolean).every(word => haystack.includes(word))) return null;
   for (const [key, values] of Object.entries(state.facets)) if (values.length && !values.some(v => (tool.facets[key] || []).includes(v))) return null;
   const unknown = [];
