@@ -1,0 +1,218 @@
+artery	基于 ETSI ITS-G5 协议的车联网通信仿真。
+causalsim	利用因果模型减少历史轨迹回放中的干预偏差。
+cloudsim	云计算基础设施、服务和资源分配策略仿真。
+cloudsim-express	以可读脚本定义 CloudSim 场景、扩展与部署。
+cloudsim-plus	用于云基础设施和应用服务建模的 Java 仿真框架。
+cloudsim-plus-automation	通过 YAML 配置自动运行 CloudSim Plus 仿真。
+cloudsim-py4j-gateway	通过 Py4J 连接 Python 与 CloudSim Plus。
+cloudsimsdn	CloudSim 的 SDN 扩展，用于网络感知的资源管理研究。
+cloudsimpy	基于 SimPy 的任务调度仿真，面向学习驱动的资源管理。
+cfn	基于命名数据网络的计算优先网络研究工具。
+cooja	面向无线传感器网络的 Cooja 仿真工具。
+core	构造虚拟网络并运行真实应用，可连接实际网络。
+dfaas	面向联合边缘节点的分布式无服务器函数执行与负载均衡。
+easiei	建模边缘计算、通信与存储资源，提供任务调度算法。
+echoes	边云混合环境仿真，用于任务卸载策略评估。
+ecsnetpp	基于 OMNeT++ 和 INET 的边云分布式流处理仿真。
+edgeaisim	扩展 EdgeSimPy，研究 AI 驱动的能耗优化与任务迁移。
+edgecloudsim	面向边缘计算系统性能评估的仿真环境。
+edgesim	边缘计算与缓存仿真，包含内容、基站和用户模型。
+edgesimpy	使用 Python 建模边缘环境中的容器化应用生命周期。
+emu5gnet	基于容器和 Mininet-WiFi 的 5G 网络与数据处理实验环境。
+emuedge	基于 Xen、Linux 网络命名空间和 OVS 的边缘网络仿真运行环境。
+emufog	生成可运行边缘应用的虚拟雾计算网络。
+epcsac	比较云环境中将任务分配到虚拟机的调度算法。
+faap-simulator	研究工业雾计算网络中的应用分配问题。
+faas-sim	基于真实轨迹模拟容器化 FaaS 平台及运行策略。
+fogbed	扩展 Mininet，使用 Docker 容器建立虚拟雾计算测试床。
+fogify	建模、部署并实验验证包含异构资源的雾计算测试床。
+fognetsimpp	基于 OMNeT++ 的雾计算网络与通信协议仿真。
+fogtorchpi	使用硬件、软件与网络 QoS 约束研究雾应用部署。
+gem5	用于计算机系统架构和处理器微架构研究的模块化仿真器。
+ifogsim	研究物联网、边缘和雾计算的资源管理；论文记录对应 iFogSim2。
+iotsim-edge	建模异构物联网与边缘基础设施的设备和应用行为。
+iotsim-osmosis	建模跨物联网、边缘和云的渗透计算应用。
+itetris	面向智能交通系统通信架构的联合仿真平台。
+kathar	基于 Docker 的网络实验环境，可用于教学和网络测试。
+leaf	当前清单链接指向 LEAF Java；用于能耗感知的雾计算仿真。
+lightmano	面向资源受限 MEC 环境的轻量分布式服务编排器。
+marssx86	面向多核 x86-64 架构的周期精确全系统仿真。
+maxinet	把 Mininet 实验分布到多台物理机器运行。
+mec-simulator	基于 ns-3 的 MEC 实体、资源编排和任务分配仿真扩展。
+mobfogsim	扩展 iFogSim，建模设备移动和虚拟机或容器迁移。
+mini-ndn	面向 NDN 协议与应用的轻量网络实验环境。
+minnet	Mininet 在单机上创建运行真实内核、交换机与应用代码的虚拟网络。
+mininet-wifi	面向软件定义无线网络的仿真运行环境。
+mintedge	用于配置边缘基础设施并评估能耗优化策略的仿真框架。
+mobemu	通过移动轨迹或合成模型测试机会网络路由与传播算法。
+ndn4ivc	结合 ns-3、NDN 和 SUMO 研究车联网应用。
+ndnsim	基于 ns-3 的命名数据网络仿真模块。
+nextgsim	结合无线网络与边缘计算仿真，研究 MEC 资源管理。
+nfaas	研究 ICN 环境中将函数迁移到靠近用户的位置。
+ns-3	用于网络协议、通信机制和性能评估的离散事件网络仿真器。
+nossim	结合全系统模型与 OMNeT++ 网络模型的联合仿真框架。
+omnetpp	模块化离散事件仿真环境，主要用于通信网络建模。
+open-simulator	模拟 Kubernetes 集群和调度器行为，评估工作负载部署。
+packet-tracer	Cisco 网络教学工具，可视化构建拓扑并模拟设备配置。
+peersim	使用 Java 研究点对点协议的可配置仿真环境。
+pfogsim	基于 iFogSim 研究大规模雾网络与分层资源组织策略。
+pureedgesim	建模云、边缘和雾端环境，评估资源管理、时延和能耗。
+rasim	在物理部署前模拟边缘设备的运动、交互与资源使用。
+recap-des	基于 CloudSim Plus 的 RECAP 离散事件仿真扩展。
+recap-simulator-framework	研究网络拓扑、工作负载和资源放置的基础设施仿真框架。
+satedgesim	基于 CloudSim Plus 和 PureEdgeSim 的卫星边缘计算仿真。
+shadow	使用离散事件方式执行真实应用代码，研究分布式系统。
+sumo-its	微观、多模式道路交通仿真，逐个建模车辆与路线。
+simfaas	模拟无服务器平台，分析响应时间、冷启动与资源占用。
+simflex	结合全系统仿真与统计采样研究计算机体系结构。
+simgrid	用于网格、云、HPC 和点对点分布式系统的仿真工具。
+simmobility	集成不同时间尺度的出行行为与交通系统仿真。
+simpleiotsimulator	模拟物联网传感器和网关，提供多种物联网协议。
+simu5g	面向 5G 新空口及相关网络场景的 OMNeT++ 扩展。
+simulte	基于 OMNeT++ 的 LTE 和 LTE-Advanced 系统级仿真。
+sleipnir	面向移动云、边缘和物联网基础设施的 DAG 任务调度仿真。
+starrynet	模拟卫星动态与星地网络行为的实验环境。
+step-one	基于 The ONE 的边缘与雾计算进程仿真测试环境。
+svl-simulator	用于自动驾驶研究的端到端仿真平台。
+the-one	生成节点移动、模拟 DTN 消息路由并可视化通信过程。
+veins-its	结合 OMNeT++ 与 SUMO 的车联网联合仿真框架。
+veins-lte-its	研究异构车联网通信的 Veins 扩展。
+ventos	结合车辆交通流、协同驾驶与 DSRC 无线通信的 C++ 仿真器。
+vessim	基于 Mosaik 和 Python 的碳感知应用联合仿真测试床。
+virtfogsim	使用 MATLAB 研究移动、雾和云环境的任务分配、能耗与时延。
+vns	集成移动行为与网络通信的仿真框架。
+wotemu	面向 Python Web of Things 应用的边缘物联网实验环境。
+yafs-yet-another-fog-simulator	使用 Python 研究雾计算拓扑、资源放置、调度与路由。
+clawbox	基于 NVIDIA Jetson Orin Nano 的预配置边缘 AI 助手设备。
+aimdb	在微控制器、边缘网关和云之间同步数据的内存数据桥。
+akraino-edge-stack	面向不同边缘场景的开放基础设施与应用蓝图集合。
+apache-edgent-incubating	可嵌入网关和小型设备的流数据分析编程模型与运行时。
+apache-openwhisk	基于事件触发执行函数的分布式无服务器平台。
+areg-sdk	面向分布式与雾端计算的异步通信和服务交互引擎。
+baetyl	将云端数据、服务和计算扩展到边缘设备的框架。
+bochs	用 C++ 实现的 IA-32 PC 仿真器，包含处理器和常见设备模型。
+boinc	通过参与者计算机执行科学计算任务的志愿计算平台。
+chameleon	面向实验研究的云计算与边缘计算测试设施。
+distributed-strom	扩展 Apache Storm，支持分布式、自适应和 QoS 感知的调度策略。
+enorm	面向边缘环境的资源管理框架。
+edgegallery-documents-maintained-in-chinese	面向 MEC 应用开发与边缘服务生态的平台，提供中文文档。
+edgemesh	面向边缘应用的网络通信与服务连接组件。
+edgex-foundry	面向物联网边缘设备和服务互操作的框架。
+folding-home	通过分布式志愿计算支持分子模拟等科学研究。
+fogatlas	管理分布式雾计算基础设施与应用的框架。
+fogflow	支持边缘与云之间分布式数据处理的编程与运行框架。
+foresthub-edge-agents	在 Linux 边缘设备上运行可组合 AI 工作流和本地模型。
+k3os	面向资源受限环境、通过 Kubernetes 管理的操作系统。
+k3s	面向边缘、物联网和小型环境的轻量 Kubernetes 发行版。
+krustlet	使用 Rust 实现 Kubernetes Kubelet，在 Wasmtime 中调度 WASM 工作负载。
+kubeedge	基于 Kubernetes，将容器应用编排和设备管理扩展到边缘。
+kubestellar-console	面向边云环境的多集群 Kubernetes 管理与可观测性控制台。
+oci	开放运营商边缘设施，支持服务提供商在网络边缘部署应用。
+openstackpp	在 x86 计算机上提供基于虚拟机的 Cloudlet 平台和移动应用卸载。
+openyurt	基于 Kubernetes 管理边缘应用，支持节点自治与断连场景。
+phonesploit-pro	组合 ADB 与 Metasploit 的 Android 设备安全测试工具。
+superedge	使用 Kubernetes 集群管理多个边缘区域的计算资源和容器应用。
+webassembly-curated-list-of-awesome-things-regarding-webassembly-wasm-ecosystem	WebAssembly 生态相关项目与资料清单。
+webassembly-micro-runtime	面向小体积部署的 WebAssembly 运行时，提供解释、AOT 和 JIT 执行。
+wasmcloud	面向边缘到云环境的可移植分布式应用平台。
+wasmedge-runtime	用于云原生、边缘和分布式应用的 WebAssembly 运行时。
+wasmer	用于在桌面、云与边缘运行 WebAssembly 应用的运行时。
+wasmtime	可作为命令行工具或嵌入式库使用的 WebAssembly 与 WASI 运行时。
+wso2-iot-server	连接物联网设备与云，并支持边缘实时流处理的平台扩展。
+xybrid	在应用和游戏中本地运行语言模型、语音识别与语音合成的运行时。
+awesome-pcaptools	用于处理网络数据包轨迹的工具与资源清单。
+edgenet	基于云技术构建的分布式边缘云实验平台。
+komondor	研究下一代 WLAN、信道绑定与空间复用的无线网络仿真器。
+mosquitto	面向物联网消息通信的轻量 MQTT 消息代理。
+naming-data-network-platform	面向命名数据网络架构的研究与实现平台。
+node-red	使用浏览器中的流程编辑器连接设备、API 与在线服务。
+open-vswitch	支持网络自动化和跨主机连接的多层虚拟交换机。
+pox	用 Python 开发网络控制器、交换机和网络应用的软件平台。
+rice	利用 ICN 命名与路由机制实现远程函数调用。
+vernemq	面向物联网应用的分布式 MQTT 消息代理。
+wonder-shaper	通过 Linux tc 简化网卡带宽限制设置的脚本。
+abeacon-data	包含配送人员 BLE 感知、位置轨迹和人工报告的数据集。
+ai-benchmark	用于比较移动芯片 AI 推理能力的基准工具。
+cloudsuite	面向云服务和数据中心应用的基准测试套件。
+clusterdata	阿里巴巴生产集群轨迹，用于云调度与资源管理研究。
+defog	用于比较与分析雾计算平台的基准测试套件。
+edge-aibench	涵盖医疗监测、摄像头、智能家居和自动驾驶等场景的边缘 AI 基准。
+eua-datasets	基于澳大利亚真实数据构建的边缘计算研究数据集。
+gt-itm-georgia-tech-internetwork-topology-models	生成并分析互联网拓扑图的模型与程序集合。
+huawei-dataset-for-network-ai-scheduling-technology-research-in-chinese	面向网络 AI 计算服务与任务调度研究的数据资料。
+mlperf-inference-benchmark-suite	在不同部署场景中测量模型推理性能的基准套件。
+networkx	用 Python 表示、分析网络图和研究图算法的工具包。
+network-modeling-datasets	由 OMNeT++ 生成的网络拓扑、路由、流量与端到端性能数据。
+neural-network-accelerator-comparison	不同平台上的 AI 硬件加速器比较资料。
+rocketfuel	基于 traceroute 测量构建的互联网服务商拓扑数据。
+the-caida-anonymized-internet-traces-2015-dataset	用于网络流量研究的匿名化互联网骨干链路轨迹数据。
+tinymlperf-deep-learning-benchmarks-for-embedded-devices	面向微控制器、DSP 和小型神经网络加速器的推理基准。
+vivo-dataset-for-wireless-resource-scheduling-in-cell-free-scenarios-in-chinese	用于研究无蜂窝系统 AI 无线资源调度策略的数据与代码。
+assolo	通过主动探测估计网络可用带宽的工具。
+netem	模拟网络时延、丢包、重复和乱序等条件以测试协议。
+nmon	采集与分析系统运行和资源性能信息的监测工具。
+geolite2	将 IP 地址映射到地理位置的数据资源。
+sigar	通过可移植 API 采集系统和进程的资源状态。
+edge-courier	面向云端整文件同步带宽开销的应用方案。
+eman-s-edge-computing-system-for-ai-applications	监测边缘设备资源并编排计算密集型 AI 应用。
+adlik	优化深度学习模型，以支持云与嵌入式设备上的推理部署。
+ai-model-efficiency-toolkit-aimet	用于训练后模型量化与压缩的工具库。
+apache-tvm	将机器学习模型编译部署到 CPU、GPU 和专用加速器。
+autodice	自动拆分 CNN 并生成代码，在多个异构边缘设备上协同推理。
+berrynet	把树莓派等设备转换为可本地运行深度学习的智能网关。
+bi-real-net	研究一位二值神经网络的结构与训练方法。
+bmxnet	MXNet 生态中的神经网络工具；原清单简介主要介绍 MXNet 框架。
+branchynet	通过分支提前退出机制降低深度神经网络推理开销。
+caffe2	轻量、模块化的深度学习框架。
+cmsis-nn	面向 Arm Cortex-M 的神经网络计算内核集合。
+communication-aware-dnn-pruning-cap	结合网络拓扑进行神经网络剪枝与分布式推理。
+compute-library	针对 Arm Cortex-A 和 Mali GPU 优化的底层机器学习函数库。
+condensa	使用可编程策略与贝叶斯优化研究深度学习模型压缩。
+core-ml	利用 Apple 设备上的 CPU、GPU 和神经网络引擎运行模型。
+dabnn	面向 Arm 设备的二值神经网络推理框架。
+ddnn	在云、边缘和终端层次之间分布式执行深度神经网络。
+deepiot	通过压缩神经网络结构减少设备端存储与计算需求。
+deepstack	在边缘设备或私有云本地提供 AI 模型 API 服务。
+deepthings	面向资源受限物联网集群的分布式 CNN 推理框架。
+distiller	在 PyTorch 环境中研究神经网络稀疏化和压缩算法。
+fate	支持联邦学习与安全计算的开源框架。
+fedprox	研究系统与数据异构条件下的联邦优化方法。
+genesis-2	面向 CPU 边缘部署的神经网络项目；性能需结合具体条件验证。
+gnn-rl-pipleline	结合图神经网络与强化学习，研究拓扑感知压缩和任务调度。
+ianvs	面向分布式协同 AI 方案的基准测试项目。
+kitnet	用于在线无监督异常检测的神经网络模型。
+mace	面向移动异构计算平台的深度学习推理框架。
+megengine	支持自动微分的深度学习框架。
+mindspore-lite	面向设备端智能应用的轻量 AI 推理引擎。
+ml-kit	提供文本识别、图像标注等功能的移动机器学习 SDK。
+mlc-llm	面向不同设备上的大语言模型编译与部署工具。
+mnn	用于设备端模型推理与训练的轻量深度学习框架。
+model-compression-toolkit-mct	面向受限硬件的神经网络模型优化与量化工具。
+mqbench	基于 PyTorch FX 的模型量化工具包。
+ncnn	面向移动平台的神经网络推理框架。
+neurosurgeon	在移动设备和数据中心之间按网络层划分 DNN 计算。
+nn-meter	通过算子内核建模预测不同边缘设备上的 DNN 推理时延。
+nndeploy	以有向无环图组织跨平台推理和模型部署流程。
+ns3-ai	连接 ns-3 与独立 AI 框架，在 C++ 和 Python 之间交换数据。
+ns3-gym	连接 ns-3 与 Gym，以支持网络领域的强化学习研究。
+nvidia-tensorrt	面向深度学习推理的模型优化器与执行运行时。
+once-for-all	通过一次训练生成适配不同部署约束的子网络。
+onnx-runtime	跨平台的机器学习模型推理与训练执行引擎。
+openvino	优化并部署 AI 推理的开源工具包。
+paddle-lite	面向移动、嵌入式和物联网设备的深度学习推理框架。
+pocket	通过共享机器学习运行时与轻量容器提供边缘模型服务。
+pytorch-mobile	PyTorch 生态中的移动端模型部署运行时，具体支持情况参见官方资料。
+sparseml	使用剪枝、量化和蒸馏优化机器学习模型。
+shimmy	兼容 OpenAI API 的本地 AI 推理服务器，面向边缘部署。
+sparsezoo	提供稀疏化、量化模型与对应优化配方的模型资源库。
+snpe	在 Snapdragon CPU、GPU 和 DSP 上转换、优化与运行神经网络。
+tengine	面向不同 CPU、GPU 和 NPU 平台的神经网络部署框架。
+tensorflow-lite	面向移动与嵌入式设备的模型推理工具链。
+tnn	面向移动与多平台部署的轻量神经网络推理框架。
+torch-pruning-tp	利用依赖关系移除模型结构，支持多类神经网络剪枝。
+utensor	面向 Arm 设备的轻量模型运行时与离线转换工具。
+cloud-computing-and-distributed-systems-clouds-laboratory	墨尔本大学云计算与分布式系统研究实验室。
+ai-at-the-edge	嵌入式 AI 相关资源清单。
+edge-computing-internet-of-things	侧重物联网数据工程的边缘计算项目清单。
+explore-edge-computing	用于发现边缘计算库、项目与学习资料的资源入口。
+mec-ecosystem	ETSI MEC 部署与生态系统相关资料入口。

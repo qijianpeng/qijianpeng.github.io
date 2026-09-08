@@ -1,0 +1,2484 @@
+[
+  {
+    "id": "S2.T1.2",
+    "rows": [
+      {
+        "cells": [
+          "Simulator",
+          "Paradigms",
+          "Core Engines",
+          "Highlights/Scenarios"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "NS-3 [68]",
+          "Networking",
+          "-",
+          "Simulates network at packet-level"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "OMNeT++ [84] and INET",
+          "Networking",
+          "-",
+          "Simulates network at packet-level; excellent visualization"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "ndnSIM [48]",
+          "Information-Centric Networking",
+          "NS-3",
+          "Supports NDN protocols"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "The ONE [30]",
+          "Opportunistic Networking",
+          "-",
+          "Generates mobility traces, supports different routing protocols"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Artery [67]",
+          "V2X",
+          "OMNeT++, SUMO, Vanetza",
+          "Supports ETSI ITS-G5 protocols"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Simu5G [56, 85]",
+          "Multi-access Edge, Cellular V2X",
+          "OMNeT++, INET",
+          "Supports 5G New Radio Networks"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CFN [33]",
+          "Edge, In-network Computing",
+          "ndnSIM",
+          "Supports NFaS"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EasiEI [92]",
+          "Edge, Cloud Computing",
+          "NS-3",
+          "Supports various device representations, task scheduling policies"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "ECSNeT++ [3]",
+          "Edge, Distributed Stream Computing",
+          "OMNeT++, INET",
+          "Supports distributed stream processing applications"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimGrid [7]",
+          "Grid, P2P, Cloud, Fog Computing",
+          "-",
+          "Offers rich APIs, practical abstraction models"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Step-ONE [47]",
+          "IoT, Edge-Fog Computing",
+          "The ONE",
+          "Supports executing a set of processes (scenarios)"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "PeerSim [53]",
+          "Networking (Peer-to-peer)",
+          "-",
+          "Extreme scalability and support for dynamicity"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim [6]",
+          "(Federated) Cloud Computing",
+          "-",
+          "Models (federated) cloud environment, scheduling, and allocating policies"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim Plus [73]",
+          "(Federated) Cloud Computing",
+          "CloudSim",
+          "Dynamically manages resources in runtime"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim Express [24]",
+          "Cloud Computing",
+          "CloudSim",
+          "Allows human-readable scenario scripts, dynamic injection of extensible modules"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim Plus Automation [74]",
+          "Cloud Computing",
+          "CloudSim, CloudSim Plus",
+          "Allows human-readable scenario scripts"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSimSDN [75]",
+          "Cloud, Edge, In-network Computing",
+          "CloudSim",
+          "Supports Edge Computing, NFV, and SFC support"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSimPy [39]",
+          "Cloud Computing",
+          "SimPy",
+          "Supports deep learning frameworks, such as TensorFlow and PyTorch"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EdgeCloudSim [76]",
+          "Fog, Cloud, Multi-access Edge Computing",
+          "CloudSim",
+          "Supports WLAN/WAN, Mobility, and multi-tier edge computing architecture"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "faas-sim [65]",
+          "Serverless Edge Computing",
+          "SimPy",
+          "Replays traces from real-world platforms; supports function adaptations"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "iFogSim2 [44]",
+          "Fog, (Mobile) Edge Computing",
+          "CloudSim, iFogSim2",
+          "Simulates the movement of IoT devices; supports microservices management"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "IoTSim-Edge [28]",
+          "IoT, Edge Computing",
+          "CloudSim",
+          "Incorporates IoT and edge device behaviors, supports various network protocols"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "IoTSim-Osmosis [2]",
+          "IoT, Edge Computing",
+          "CloudSim",
+          "Supports edge-cloud heterogeneity and IoT application complexity"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "LEAF [91]",
+          "Cloud, Edge Computing",
+          "CloudSim Plus, SimPy, NetworkX",
+          "Emphasizes dynamic networks, power consumption modeling"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MobFogSim [61]",
+          "Fog, (Mobile) Edge Computing",
+          "iFogSim2",
+          "Models device mobility and service migration"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "PureEdgeSim [50]",
+          "Cloud, Edge, Mist Computing",
+          "CloudSim Plus",
+          "Supports energy consumption analysis, dynamic workloads, AI algorithms"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "RECAP-DES [77]",
+          "Cloud to Edge Computing",
+          "CloudSim Plus",
+          "Simulates distributed data flow in a hierarchical architecture"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SatEdgeSim [88]",
+          "Satellite Edge Computing",
+          "CloudSim Plus, PureEdgeSim",
+          "Simulates satellite edge computing environment, supports high dynamic scenarios"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimFaaS [43]",
+          "Serverless Computing",
+          "-",
+          "Mimics public serverless computing platforms"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimEdgeIntel [86]",
+          "Edge Computing, D2D",
+          "-",
+          "Simulates mobile networks for edge intelligence"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "VirtFogSim [71]",
+          "5G Mobile-Edge-Cloud Computing",
+          "-",
+          "Supports energy and delay performance optimization"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "YAFS [38]",
+          "Fog Computing",
+          "-",
+          "Supports network topology dynamics, placement, scheduling, and routing"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MaxiNet [90]",
+          "SDN",
+          "MiniNet (WiFi)",
+          "Emulates very large software-defined networks"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MiniNet (WiFi) [37]",
+          "SDN",
+          "-",
+          "Creates a realistic virtual network on a single machine"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Contiki Cooja [14]",
+          "WSN",
+          "Contiki OS",
+          "Allows large WSN network emulation"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Mini-NDN [51]",
+          "Information-Centric Networking",
+          "MiniNet (WiFi)",
+          "Emulates testing and research on the NDN platform"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Phantom [27]",
+          "Networking, Distributed Computing",
+          "Shadow v1",
+          "Supports real networked applications; high scalability"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "StarryNet [36]",
+          "Satellite Networking",
+          "SkyField, Docker, OpenvSwitch, tc",
+          "Mimics satellite dynamics and network behaviors"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CORE [1]",
+          "Edge, Cloud Computing",
+          "-",
+          "Builds a real computer network and runs it in real time"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "DFaaS [11]",
+          "(Federated) Edge Computing",
+          "OpenFaaS, libp2p",
+          "Balances traffic load across edge nodes; supports serverless function execution"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EmuFog [49]",
+          "Fog Computing",
+          "MaxiNet",
+          "Emulates fog computing infrastructures, including network topology generation"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Fogify [54]",
+          "Fog, Edge Computing",
+          "-",
+          "Supports fog and edge computing typologies through Docker"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      }
+    ]
+  },
+  {
+    "id": "S3.T2.2",
+    "rows": [
+      {
+        "cells": [
+          "Simulator",
+          "Hardware11footnotemark: 1",
+          "Protocols",
+          "Granularity & Representation",
+          "Env."
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "NS-3 [68]",
+          "simulated network",
+          "various (see the official [58])",
+          "network element (can be realistic)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "OMNeT++",
+          "simulated network",
+          "various (see the official [59])",
+          "network element (can be realistic)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "ndnSIM [48]",
+          "≃ NS-3",
+          "NDN; ≃ NS-3",
+          "≃ NS-3",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "The ONE [30]",
+          "router",
+          "DTN routing protocols",
+          "radio (related to communication range and bit-rate), storage, energy (a budget)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Artery [67]",
+          "≃ {OMNeT++, Vanetza}",
+          "ETSI ITS-G5 stack, IEEE 802.11",
+          "≃ OMNeT++",
+          "weather, accident"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Simu5G [56, 85]",
+          "base stations, UEs; ≃ OMNeT++",
+          "4G, 5G; ≃ {OMNeT++, INET}",
+          "≃ realistic 4G and 5G parameters; ≃ {OMNeT++, INET}",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CFN [33]",
+          "computing resources; ≃ ndnSIM",
+          "≃ ndnSIM",
+          "function duration (an integer)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EasiEI [92]",
+          "computing node; ≃ NS-3",
+          "≃ NS-3",
+          "computing (# resource units, resource pool); ≃ NS-3",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "ECSNeT++ [3]",
+          "edge device, cloud server",
+          "≃ OMNeT++ and INET",
+          "# CPU cores, CPU frequency, and # threads/core, power (a number)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimGrid [7]",
+          "networks, CPUs, and disks",
+          "mathematical models for TCP/IP",
+          "network (bandwidth, latencies in numbers), computing (# FLOPs), Disk (w/r rates)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Step-ONE [47]",
+          "CPU cores",
+          "≃ The ONE",
+          "# CPU cores, CPU speed DMIPS + The ONE",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "PeerSim [53]",
+          "networking node",
+          "P2P (full list see the official [60])",
+          "networking (delay matrix)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim, Plus [6, 73]",
+          "physical and virtual machine, switch",
+          "abstract model",
+          "# CPU cores, MIPS, network delay matrix, power and storage in numbers",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim Express, Plus Automation [24, 74]",
+          "≃ CloudSim",
+          "≃ CloudSim",
+          "≃ CloudSim",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSimSDN [75]",
+          "edge datacenter, backbone, gateway",
+          "NFV MANO architecture [15]",
+          "≃ CloudSim; edge datacenter (physical machines); VNF (VMs)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSimPy [39]",
+          "machine, cluster",
+          "trace-driven",
+          "CPU, Memory, and Disk in numbers",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EdgeCloudSim [76]",
+          "mobile device, AP; ≃ CloudSim",
+          "WLAN, WAN; ≃ CloudSim",
+          "≃ CloudSim",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "faas-sim [65]",
+          "CPU, RAM, GPU, Network (traces)",
+          "data flows (no specific protocols)",
+          "based on traces (a vector of resource utilization metrics)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "iFogSim2 [44]",
+          "fog device, actuator, sensor",
+          "≃ CloudSim",
+          "≃ CloudSim",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "IoTSim-Edge [28]",
+          "sensor, edge datacenter",
+          "IoT protocols; ≃ CloudSim",
+          "≃ CloudSim",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "IoTSim-Osmosis [2]",
+          "IoT, edge datacenter, cloud datacenter",
+          "SDN; ≃ IoTSim-Edge",
+          "≃ CloudSim",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "LEAF [91]",
+          "datacenter and sensor",
+          "abstract model (based on graphs)",
+          "a weighted, directed multigraph",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MobFogSim [61]",
+          "≃ iFogSim2",
+          "≃ iFogSim2",
+          "≃ iFogSim2",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "PureEdgeSim [50]",
+          "datacenter, server, end device",
+          "ethernet, cellular, WiFi",
+          "networking delay matrix, # CPU Cores, MIPS/core, storage (in Mb), energy (related to task’s MIPS and transmitting data size)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "RECAP-DES [77]",
+          "switch, router, computing node",
+          "≃ CloudSim Plus",
+          "≃ CloudSim Plus",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SatEdgeSim [88]",
+          "cloud, edge, mist node, such as satellite",
+          "≃ PureEdgeSim",
+          "≃ PureEdgeSim",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimFaaS [43]",
+          "service-related time instead",
+          "NaF",
+          "function execution time (in numbers)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimEdgeIntel [86]",
+          "cloud server, base station and mobile device",
+          "D2D link",
+          "storage (# caching size), network (transmission delay, noise power, etc.)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "VirtFogSim [71]",
+          "cloud, fog, mobile devices",
+          "TCP/IP",
+          "the processing frequency, and the throughput",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "YAFS [38]",
+          "fog nodes",
+          "abstract model (at application-level)",
+          "instructions per time, memory capacity, bandwidth (in bytes), link propagation delay, and other user-defined resources",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MaxiNet [90]",
+          "realistic network",
+          "≃ realistic network stack and SDN",
+          "container node",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MiniNet (WiFi) [37]",
+          "realistic network",
+          "≃ realistic network stack and SDN",
+          "Process",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Contiki Cooja [14]",
+          "sensor",
+          "WSN, 6TiSCH, 6LoWPAN",
+          "CPU, memory in physical form",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Mini-NDN [51]",
+          "≃ MiniNet (WiFi)",
+          "NDN; ≃ MiniNet (WiFi)",
+          "≃ MiniNet (WiFi)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Phantom [27]",
+          "networking node",
+          "≃ realistic network stack",
+          "Process",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "StarryNet [36]",
+          "satellite, ground-station, terminal",
+          "realistic network stack",
+          "container (users can configure the CPU capability)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CORE [1]",
+          "realistic network",
+          "≃ realistic network stack",
+          "container",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "DFaaS [11]",
+          "realistic network or traces",
+          "TCP/HTTP",
+          "container, link",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EmuFog [49]",
+          "realistic network",
+          "≃ MaxiNet",
+          "≃ MaxiNet",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Fogify [54]",
+          "realistic network",
+          "realistic network stack",
+          "CPU (cores and cycles), network (as VXLAN), memory and disk",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      }
+    ]
+  },
+  {
+    "id": "S4.T3.4",
+    "rows": [
+      {
+        "cells": [
+          "Simulator",
+          "Basic",
+          "Custom (Interfaces)",
+          "System-wide"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "NS-3 [68]",
+          "bandwidth, latency, throughput, jitter, packet loss rate, energy consumption, etc.",
+          "Tracing System",
+          "20k+ [52]"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "OMNeT++ [84]",
+          "bandwidth, latency, throughput, jitter, packet loss rate, energy consumption, etc.",
+          "cStatistic",
+          "∼5k [52]"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "ndnSIM [48]",
+          "bandwidth, latency, packet loss; ≃ NS-3",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "The ONE [30]",
+          "energy level, inter-contact times, messages, message delivery ratio, message life",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Artery [67]",
+          "NaF",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Simu5G [56, 85]",
+          "latency, error rate, and metrics from OMNeT++, INET",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CFN [33]",
+          "inherited from ndnSIM",
+          "NaF",
+          "scalability"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EasiEI [92]",
+          "resource usage, latency (end-to-end, hop-by-hop); ≃ NS-3",
+          "≃ NS-3",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "ECSNeT++ [3]",
+          "delay (processing, transmitting, total), average power consumption; ≃ OMNeT++",
+          "≃ NS-3",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimGrid [7]",
+          "task execution time, resource usage, communication overhead, system reliability and robustness, energy consumption",
+          "NaF",
+          "∼2m processors, 16GB RAM"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Step-ONE [30]",
+          "costs and budgets per CPU; ≃The ONE",
+          "CostHelper",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "PeerSim [53]",
+          "latency",
+          "NaF",
+          "> 107 (cycle-based) and 105 (event-based) nodes, 4Gb RAM"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim [6], CloudSim Plus [73]",
+          "latency (execution, transmission), resource usage, power consumption",
+          "NaF",
+          "1m nodes, 2.27GHz Intel Core Duo x 2, 16GB RAM"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim Express [24], CloudSim Plus Automation [74]",
+          "≃ CloudSim",
+          "NaF",
+          "≃ CloudSim; code complexity reduction"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSimSDN [75]",
+          "VNF throughput; link capacity; ≃ CloudSim",
+          "NaF",
+          "≃ CloudSim"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSimPy [39]",
+          "cluster and machine state",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EdgeCloudSim [76]",
+          "Task Failure Rate (includes mobility-related failures), WLAN/WAN delay; ≃ CloudSim",
+          "NaF",
+          "≃ CloudSim"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "faas-sim [65]",
+          "function execution time, resource usage, latency",
+          "NaF",
+          "CPU and RAM usage"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "iFogSim2 [44]",
+          "mobility-related(migration delay, energy consumption, etc.); ≃ CloudSim",
+          "NaF",
+          "resources usage, 2.33GHz Intel Core 2 Duo, 2 GBRAM"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "IoTSim-Edge [28]",
+          "mobility related metrics, migration delay, energy consumption; ≃ CloudSim",
+          "NaF",
+          "19.14 MB RAM for 50 IoT devices (no chip specified)"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "IoTSim-Osmosis [2]",
+          "≃ CloudSim",
+          "NaF",
+          "520 devices, 200MB RAM (no chip specified)"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "LEAF [91]",
+          "detailed energy consumption",
+          "NaF",
+          "46.5k taxis (s​i​m 330k tasks), 1.4GHz Intel Single Core"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MobFogSim [61]",
+          "≃ iFogSim2; mobility related metrics such as moving speed",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "PureEdgeSim [50]",
+          "delays, energy consumption, resources utilization, and tasks success rate",
+          "NaF",
+          "10k+ devices, a single Intel Core i7-8550U"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "RECAP-DES [77]",
+          "CPU, memory, storage, and power utilization, bandwidth, end-to-end response time",
+          "Utilisation",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SatEdgeSim [88]",
+          "delays, energy consumption, and task success rate",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimFaaS [43]",
+          "probabilities related to service execution, average instance life span, average server count, average running count, average idle count",
+          "SimProcess",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimEdgeIntel [86]",
+          "cache hit rate, content popularity, delivery latency",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "VirtFogSim [71]",
+          "computing frequency, transport bit rate, energy consumption",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "YAFS [38]",
+          "average response time, link latency, resource utilization, etc.",
+          "Stats, Metrics",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MaxiNet [90]",
+          "CPU utilization, memory consumption, and network usage",
+          "NaF",
+          "the speedups for actual experiments are more than linear"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MiniNet (WiFi) [37]",
+          "bandwidth, latency, packet loss, queue type (FIFO, SFQ, TBF), and CPU limits",
+          "NaF",
+          "∼1k nodes, 2.4 GHz Intel Core 2 Duo, 6GB RAM"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Contiki Cooja [14]",
+          "packet transmission rate, end-to-end latency, network throughput, power consumption, signal strength, communication range, etc.",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Mini-NDN [51]",
+          "≃ MiniNet (WiFi)",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Phantom [27]",
+          "latencies, bandwidth, CPU and RAM usage, and other statistics at packet level",
+          "NaF",
+          "64k nodes, 2.6 GHz Intel Xeon 2x14 cores, 256GB RAM"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "StarryNet [36]",
+          "CPU/memory/bandwidth usage",
+          "connectivity",
+          "4408 nodes, 7 machines (two Intel Xeon, 8*32GB RAM)"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CORE [1]",
+          "bandwidth, delay, and loss",
+          "NaF",
+          "∼100 nodes, 3.0GHz single-CPU Xeon, 2GB RAM"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "DFaaS [11]",
+          "latency, workload states",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EmuFog [49]",
+          "≃ MaxiNet",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Fogify [54]",
+          "CPU time, memory usage, disk I/O, network traffic",
+          "application-level",
+          "CPU and Network usage, real service deployment"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      }
+    ]
+  },
+  {
+    "id": "S5.T4.4",
+    "rows": [
+      {
+        "cells": [
+          "Simulator",
+          "Allocation What",
+          "Scheduling Policies",
+          "Cost Management (Or Optimization Target)22footnotemark: 2"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "NS-3 [68]",
+          "network nodes, BW, energy",
+          "simulator events: calendar queue, heap sort, double linked-list, etc.; user-defined",
+          "user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "OMNeT++ [84]",
+          "network nodes, BW, energy",
+          "real-time or sequential scheduling (simulator events), user-defined",
+          "user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "ndnSIM [48]",
+          "≃ NS-3",
+          "≃ NS-3",
+          "≃ NS-3"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "The ONE [30]",
+          "network nodes",
+          "FIFO, random, etc. (for messages)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Artery [67]",
+          "vehicles (OMNeT++ modules)",
+          "Data replaying",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Simu5G [56, 85]",
+          "CPU, memory, disk; ≃ OMNeT++",
+          "max C/I, proportional fair, round robin, etc.",
+          "user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CFN [33]",
+          "computation ; ≃ ndnSIM",
+          "based on name location and resource availability",
+          "first fit"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EasiEI [92]",
+          "resource units",
+          "FCFS, round robin, high-priority, user-defined",
+          "user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "ECSNeT++ [3]",
+          "CPU Core and thread",
+          "round robin, predefined plan, user-defined",
+          "min latencies, max throughput, optimize energy cost"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimGrid [7]",
+          "CPU, network, storage",
+          "performance-based, load balancing, data-aware, energy-efficient, priority",
+          "user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Step-ONE [47]",
+          "CPU instructions, BW",
+          "user-defined",
+          "custom, such as place processes among fog and cloud"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "PeerSim [53]",
+          "network elements",
+          "heap sort based on scheduled time (simulator events)",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim, Plus [6, 73]",
+          "VMs, memory, storage, BW",
+          "FCFS, space-shared, time-shared, user-defined",
+          "max resource utilization, correlation; random, user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim Express, Plus Automation [24, 74]",
+          "≃ CloudSim",
+          "≃ CloudSim",
+          "≃ CloudSim"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSimSDN [75]",
+          "≃ CloudSim",
+          "VM/VNF/Container: first fit, most full; network: first met, random, modulo operation-based, most remaining capacity; ≃ CloudSim",
+          "shortest path; ≃ CloudSim"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSimPy [39]",
+          "resource usage ratios",
+          "first fit, reinforcement learning, random",
+          "min make-span; average slowdown, completion of jobs"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EdgeCloudSim [76]",
+          "≃ CloudSim",
+          "least loaded; ≃ CloudSim",
+          "min latency, energy consumption; balance load; ≃ CloudSim"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "faas-sim [65]",
+          "memory, computation, network",
+          "Skippy-based (a scheduling system [66] ); fair and max-min (max bottleneck) flow allocation; user-defined",
+          "min function execution time, max resource usage"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "iFogSim2 [44]",
+          "≃ CloudSim",
+          "mobility-aware; ≃ CloudSim",
+          "min migration delay, user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "IoTSim-Edge [28]",
+          "≃ CloudSim",
+          "≃ CloudSim",
+          "user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "IoTSim-Osmosis [2]",
+          "computation, network, battery",
+          "network: shortest path, shortest path & max BW; VM: least used resources, time-shared; ≃ CloudSim",
+          "user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Contiki Cooja [14]",
+          "memory, computation",
+          "priority-based, event-based (≃ Contiki OS)",
+          "various (≃ Contiki OS)"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "LEAF [91]",
+          "memory, computation, network, energy",
+          "energy-aware",
+          "reduce static power usage by min # of running nodes"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MobFogSim [61]",
+          "≃ CloudSim",
+          "migration based on network and location-aware metrics, user-defined",
+          "reducing latency, ensuring proximity, optimizing QoS"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "PureEdgeSim [50]",
+          "≃ CloudSim Plus",
+          "round robin, trade-off (computation & communication), user-defined",
+          "user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "RECAP-DES [77]",
+          "≃ CloudSim Plus",
+          "used to evaluate different deployments",
+          "in terms of cost, energy, resource allocation, and utilization"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SatEdgeSim [88]",
+          "≃ PureEdgeSim",
+          "round robin, trade-off (transmission distance, energy consumption, task parallelism, CPU processing time), traditional polling, user-defined",
+          "user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimFaaS [43]",
+          "service instance",
+          "scale-per-request, concurrency value scaling; metrics-based scaling",
+          "min response time, reduce cold-starts, improve resource efficiency, user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimEdgeIntel [86]",
+          "cache",
+          "FIFO, greedy, Knapsack, least-used, least recently used, etc.",
+          "max cache hit rates and min average transmission delay"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "VirtFogSim [71]",
+          "processing frequency, throughput",
+          "genetic task allocation, only mobile/fog/cloud allocation, exhaustive search",
+          "min total consumed energy"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "YAFS [38]",
+          "CPU, BW",
+          "cluster placement (select the cheapest cluster), edge placement",
+          "random, the shortest path, user defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MaxiNet [90]",
+          "virtual node",
+          "user-defined",
+          "user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MiniNet (WiFi) [37]",
+          "host, switch",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Mini-NDN [51]",
+          "≃ MiniNet (WiFi)",
+          "≃ MiniNet (WiFi)",
+          "≃ MiniNet (WiFi)"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Phantom [27]",
+          "virtual node",
+          "CPU affinity, work stealing",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "StarryNet [36]",
+          "virtual node (docker)",
+          "shortest distance, longest remaining visible time",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CORE [1]",
+          "virtual node",
+          "NaF",
+          "NaF"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "DFaaS [11]",
+          "virtual node (emulation); CPU, RAM ratios (simulation)",
+          "equal, margin, and power saving strategies (emulation); empirical random, weight-based strategies (simulation); user-defined strategies",
+          "load balancing"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EmuFog [49]",
+          "≃ MaxiNet",
+          "latency-based, user-defined",
+          "keep a latency bound"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Fogify [54]",
+          "virtual node (docker)",
+          "NaF",
+          "user-defined"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      }
+    ]
+  },
+  {
+    "id": "S6.T5.2",
+    "rows": [
+      {
+        "cells": [
+          "Simulator",
+          "Types33footnotemark: 3",
+          "PL44footnotemark: 4",
+          "SEV",
+          "FAC",
+          "HW",
+          "NET",
+          "COF",
+          "SCN",
+          "LOG",
+          "VIS55footnotemark: 5",
+          "Statistics66footnotemark: 6"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "NS-3 [68]",
+          "DES",
+          "cpp python",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "1.4k/GPL/S(208),F(528), W(35), C(23)/2008"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "The ONE [30]",
+          "DES",
+          "java",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "2983/GPL/S(200), F(195), W(23), C(10)/2009"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Artery [67]",
+          "DES",
+          "cpp",
+          "⚫",
+          "⚫",
+          "",
+          "",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "33/GPL/S(182), F(122), W(27), C(18)/2019"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "OMNeT++ [84]",
+          "DES",
+          "cpp java",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "2.8k/S(546),F(141), W(30), C(12)/1997"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "ndnSIM [48]",
+          "DES",
+          "cpp python",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "360/GPL/S(107),F(163), W(35), C(36)/2017"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Simu5G [56, 85]",
+          "Hybrid",
+          "cpp",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "244/LGPL/S(137), F(71), W(15), C(6)/2020"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CFN [33]",
+          "DES",
+          "cpp",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "96/GPL/S(6), F(4), W(3), C(1)/2019"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EasiEI [92]",
+          "DES",
+          "cpp python",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "1/GPL/S(3), F(4), W(-), C(6)/2023"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "ECSNeT++ [3]",
+          "DES",
+          "cpp",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "17/None/S(9), F(7), W(3), C(1)/2020"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimGrid [7]",
+          "DES",
+          "cpp java python",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "1288/LGPL/S(162), F(90), W(17), C(76)/200177footnotemark: 7"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Step-ONE [47]",
+          "DES",
+          "java",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "13/GPL/S(3), F(0), W(4), C(1)/2020"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "PeerSim [53]",
+          "DES",
+          "java",
+          "",
+          "",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "",
+          "",
+          "826/LGPLv2/in SourceForge88footnotemark: 8 /2009"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim (Plus) [6, 73]",
+          "DES",
+          "java",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "",
+          "",
+          "⚫",
+          "",
+          "6.1k/Apache/S(727), F(474), W(66), C(6)/2011"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim Express [24]",
+          "DES",
+          "java yaml",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "",
+          "0/GPL/S(3), F(1), W(11), C(1)/2023"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSim Plus Automation [74]",
+          "DES",
+          "java yaml",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "",
+          "2/GPL/S(27), F(19), W(3), C(2)/2014"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSimSDN [75]",
+          "DES",
+          "java",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "",
+          "⚫",
+          "",
+          "40/GPL/S(86), F(59), W(9), C(3)/2019"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CloudSimPy [39]",
+          "DES",
+          "python",
+          "",
+          "",
+          "⚫",
+          "",
+          "",
+          "",
+          "⚫",
+          "",
+          "4/MIT/S(197), F(70), W(2), C(2)/2019"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EdgeCloudSim [76]",
+          "DES",
+          "java",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "",
+          "565/GPL/S(405), F(225), W(32), C(2)/2018"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "faas-sim [65]",
+          "DES",
+          "python",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "4/MIT/S(58), F(16), W(3), C(5)/2023"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "iFogSim2 [44]",
+          "DES",
+          "java",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "",
+          "⚫",
+          "",
+          "1.8k/None/S(123), F(72), W(17), C(2)/2022"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "IoTSim-Edge [28]",
+          "DES",
+          "java",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "127/None/S(24), F(8), W(8), C(2)/2020"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "IoTSim-Osmosis [2]",
+          "DES",
+          "java",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "48/LGPL/S(8), F(7), W(1), C(1)/2021"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "LEAF [91]",
+          "DES",
+          "java python",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "",
+          "⚫",
+          "",
+          "20/MIT/S(97), F(12), W(13), C(2)/2021"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MobFogSim [61]",
+          "DES",
+          "java",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "",
+          "⚫",
+          "",
+          "130/GPL/S(16), F(16), W(5), C(1)/2020"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "PureEdgeSim [50]",
+          "DSE",
+          "java",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "47/GPL/S(166), F(72), W(4), C(4)/2019"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "RECAP-DES [77]",
+          "DES99footnotemark: 9",
+          "java",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "",
+          "4/GPL/in Bitbucket1010footnotemark: 10 /2020"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SatEdgeSim [88]",
+          "DES",
+          "java",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "17/EPL/S(37), F(10), W(1), C(2)/2020"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimFaaS [43]",
+          "DES",
+          "python",
+          "⚫",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "⚫",
+          "⚫",
+          "26/MIT/S(20), F(10), W(3), C(1)/2021"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "SimEdgeIntel [86]",
+          "DES",
+          "java python",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "23/MIT/S(15),F(7), W(3), C(1)/2021"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "VirtFogSim [71]",
+          "DES",
+          "matlab",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "",
+          "",
+          "⚫",
+          "⚫",
+          "20/MIT/S(4), F(4), W(1), C(1)/2019"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "YAFS [38]",
+          "DES",
+          "python",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "219/MIT/S(97), F(69), W(12), C(7)/2019"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MaxiNet [90]",
+          "Emu",
+          "python",
+          "",
+          "",
+          "",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "233/Custom/S(88), F(41), W(17), C(8)/2014"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Contiki Cooja [14]",
+          "Emu",
+          "java cpp",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "292/BSD/S(28), F(46), W(9), C(18)/2009"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "MiniNet (WiFi) [37]",
+          "Emu",
+          "python shell",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "⚫",
+          "2.7k/BSD/S(5.6k+), F(1.9k+), W(312), C(69)/2010"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Mini-NDN [51]",
+          "Emu",
+          "python shell",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "",
+          "np1111footnotemark: 11 /GPL/S(66), F(39), W(9), C(22)/np"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Phantom [27]",
+          "DES",
+          "rust cpp",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "",
+          "225/Custom/S(1.4k), F(235), W(50), C(42)/2011"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "StarryNet [36]",
+          "Emu",
+          "python",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "",
+          "16/MIT/S(57), F(5), W(2), C(3)/2023"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "CORE [1]",
+          "Emu",
+          "python",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "⚫",
+          "429/BSD/S(610), F(154), W(37), C(28)/2009"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "DFaaS [11]",
+          "Emu",
+          "python",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "⚫",
+          "",
+          "22/None/S(16), F(2), W(3), C(7)/2021"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "EmuFog [49]",
+          "Emu",
+          "kotlin",
+          "",
+          "",
+          "",
+          "",
+          "⚫",
+          "⚫",
+          "",
+          "",
+          "155/MIT/S(23), F(9), W(6), C(2)/2017"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      },
+      {
+        "cells": [
+          "Fogify [54]",
+          "Emu",
+          "python yaml",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "⚫",
+          "",
+          "29/Apache/S(24), F(8), W(8), C(2)/2020"
+        ],
+        "style": null,
+        "class": "ltx_tr"
+      }
+    ]
+  }
+]

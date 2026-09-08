@@ -1,0 +1,42 @@
+---
+layout: default
+permalink: /repositories/edge-computing/
+title: Edge Computing Tool Explorer
+description: Find and compare edge computing tools using documented capabilities and research needs.
+lang: en
+edge_explorer: true
+nav: false
+---
+<div id="edge-explorer" class="edge-explorer" data-catalog="{{ '/assets/data/edge-tools.json' | relative_url }}">
+  <div class="ee-topline"><a href="{{ '/repositories/' | relative_url }}">← <span data-i18n="repositories">Repositories</span></a><div class="ee-languages" aria-label="Language"><button id="ee-lang-en" type="button" data-lang="en" aria-pressed="true">EN</button><button id="ee-lang-zh" type="button" data-lang="zh" aria-pressed="false">中文</button></div></div>
+  <header class="ee-header">
+    <p class="ee-eyebrow">AWESOME EDGE COMPUTING <span>/</span> <span data-i18n="explorer">TOOL EXPLORER</span></p>
+    <h1 data-i18n="title">Find the tools for<br>your next edge experiment.</h1>
+    <p class="ee-intro" data-i18n="intro">Start with your requirements. Narrow the field. Compare the evidence.</p>
+    <div class="ee-meta"><span id="ee-dataset-meta">Loading catalog…</span><a href="https://github.com/qijianpeng/awesome-edge-computing" target="_blank" rel="noopener noreferrer" data-i18n="repository">Source repository ↗</a><a href="https://arxiv.org/abs/2505.09995" target="_blank" rel="noopener noreferrer" data-i18n="paper">Read the survey ↗</a></div>
+  </header>
+  <section id="ee-categories" class="ee-categories" aria-label="Resource categories"></section>
+  <div class="ee-workspace">
+    <aside class="ee-sidebar">
+      <details id="ee-filter-drawer" open>
+        <summary><span data-i18n="filters">Refine your search</span><span class="ee-mobile-hint" data-i18n="expand">Open / close</span></summary>
+        <p class="ee-filter-help" data-i18n="filterHelp">Choose alternatives within a group. Requirements across groups must all match.</p>
+        <div id="ee-filters"></div>
+      </details>
+    </aside>
+    <section class="ee-main" aria-label="Tool results">
+      <div class="ee-search-row"><label class="ee-search"><span data-i18n="search">Search tools</span><input id="ee-search" type="search" placeholder="Name, topic, or use case…" autocomplete="off"></label><button id="ee-share" type="button" class="ee-secondary" data-i18n="share">Share selection ↗</button></div>
+      <div class="ee-results-heading"><h2 id="ee-count" aria-live="polite">Loading…</h2><button id="ee-reset" class="ee-text-button" type="button" data-i18n="reset">Reset filters</button></div>
+      <div id="ee-chips" class="ee-chips" aria-label="Selected filters"></div>
+      <p id="ee-availability" class="ee-availability" data-i18n="availability">Capabilities reflect the cited sources. Unverified does not mean unsupported.</p>
+      <div id="ee-load-error" class="ee-empty" hidden><h3 data-i18n="loadError">The catalog could not be loaded.</h3><button type="button" id="ee-retry" class="ee-primary" data-i18n="retry">Try again</button> <a href="https://github.com/qijianpeng/awesome-edge-computing" data-i18n="repository">Source repository ↗</a></div>
+      <div id="ee-results" class="ee-results"></div>
+      <noscript><p>This explorer needs JavaScript for filtering. Browse the <a href="https://github.com/qijianpeng/awesome-edge-computing">complete source list</a>.</p></noscript>
+    </section>
+  </div>
+  <details class="ee-method"><summary data-i18n="method">How to read the evidence</summary><div id="ee-method-content"></div></details>
+  <section id="ee-comparison" class="ee-comparison" hidden tabindex="-1" aria-label="Tool comparison"><div class="ee-results-heading"><h2 data-i18n="comparison">Compare your shortlist</h2><button type="button" id="ee-close-comparison" class="ee-text-button" data-i18n="close">Close</button></div><p data-i18n="compareHelp">Read capability conditions and source dates before choosing a tool. Scroll horizontally to compare all columns.</p><div id="ee-comparison-table" class="ee-table-scroll" tabindex="0" role="region" aria-label="Comparison table"></div></section>
+  <div id="ee-shortlist" class="ee-shortlist" hidden><div><strong id="ee-shortlist-count"></strong><div id="ee-shortlist-items" class="ee-shortlist-items"></div></div><button id="ee-compare" class="ee-primary" type="button" data-i18n="compare">Compare tools →</button></div>
+  <p id="ee-announcement" class="ee-sr-only" role="status" aria-live="polite"></p>
+</div>
+<script type="module" src="{{ '/assets/js/edge-explorer/app.mjs' | relative_url }}"></script>

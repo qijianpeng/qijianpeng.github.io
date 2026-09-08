@@ -1,0 +1,62 @@
+{
+  "Cloudslab/iFogSim": {
+    "url": "https://github.com/Cloudslab/iFogSim/blob/main/README.md",
+    "blobSha": "6975fb1dfa9e98b9ddaf3e4de02ec0acb08ed059",
+    "retrievedAt": "2026-09-08"
+  },
+  "dos-group/leaf-java": {
+    "url": "https://github.com/dos-group/leaf-java/blob/master/README.md",
+    "blobSha": "9a3572da6662af90b5eef4285df165734b81079f",
+    "retrievedAt": "2026-09-08"
+  },
+  "dos-group/leaf": {
+    "url": "https://github.com/dos-group/leaf/blob/main/README.md",
+    "blobSha": "86bfd063ec3661cedbb21f86e038dcc0ec0a96ae",
+    "retrievedAt": "2026-09-08"
+  },
+  "hust-diangroup/ns3-ai": {
+    "url": "https://github.com/hust-diangroup/ns3-ai/blob/main/README.md",
+    "blobSha": "e1fbb476d3b664f2314485c51b91081dec9b2436",
+    "retrievedAt": "2026-09-08"
+  },
+  "tkn-tub/ns3-gym": {
+    "url": "https://github.com/tkn-tub/ns3-gym/blob/app-ns-3.36+/README.md",
+    "blobSha": "605163785e5a126c740966d29b679e932fa1bf99",
+    "retrievedAt": "2026-09-08"
+  },
+  "kubeedge/kubeedge": {
+    "url": "https://github.com/kubeedge/kubeedge/blob/master/README.md",
+    "blobSha": "8a59c3bfd758b746414007cc3bd923bf8c8d8443",
+    "retrievedAt": "2026-09-08"
+  },
+  "microsoft/onnxruntime": {
+    "url": "https://github.com/microsoft/onnxruntime/blob/main/README.md",
+    "blobSha": "3e4e46f9aa04a769e83790037da70908e4bc1c9e",
+    "retrievedAt": "2026-09-08"
+  },
+  "openvinotoolkit/openvino": {
+    "url": "https://github.com/openvinotoolkit/openvino/blob/master/README.md",
+    "blobSha": "7fa8d27f1e8f8e7d675aebc7a0a7c718c5b26d32",
+    "retrievedAt": "2026-09-08"
+  },
+  "EdgeSimPy/EdgeSimPy": {
+    "url": "https://github.com/EdgeSimPy/EdgeSimPy/blob/master/README.md",
+    "blobSha": "f8f28f1eae45618b162b86b6f1e8b9df47d17464",
+    "retrievedAt": "2026-09-08"
+  },
+  "simgrid/simgrid": {
+    "url": "https://github.com/simgrid/simgrid/blob/master/README.md",
+    "blobSha": "c2234b6a87ce0d400e7ffc4da7cc5fca2f631a8e",
+    "retrievedAt": "2026-09-08"
+  },
+  "cloudsimplus/cloudsimplus": {
+    "url": "https://github.com/cloudsimplus/cloudsimplus/blob/master/README.md",
+    "blobSha": "7880b7b0a78eabc4eb0d08a55156099fb6cd7165",
+    "retrievedAt": "2026-09-08"
+  },
+  "omnetpp/omnetpp": {
+    "url": "https://github.com/omnetpp/omnetpp/blob/omnetpp-6.x/.github/README.md",
+    "blobSha": "247e822bbc68bb0aa054764ee869ac1551436c7b",
+    "retrievedAt": "2026-09-08"
+  }
+}
