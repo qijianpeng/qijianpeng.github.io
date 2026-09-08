@@ -60,6 +60,47 @@ test('Applying a pinned sync updates inventory while preserving curated evidence
 });
 const tool = (id, facets, statuses = {}, comparable = true) => ({ id, name: id, aliases: [], summary: { en: 'Edge experiment', zh: '边缘实验' }, comparable, facets, features: Object.fromEntries(Object.entries(statuses).map(([k, status]) => [k, { status }])) });
 const sample = { tools: [tool('A', { category: ['simulators'], language: ['Python'], protocol: ['NDN'] }, { visualization: 'supported', logging: 'supported' }), tool('B', { category: ['simulators'], language: ['Java'], protocol: ['NDN'] }, { visualization: 'unknown', logging: 'supported' }), tool('C', { category: ['edge-ai'], language: ['Python'] }, { visualization: 'unsupported', logging: 'supported' }), tool('D', { category: ['resources'], language: ['Python'] }, { visualization: 'not-applicable' }, false)] };
+test('Every reviewed dimension tag reaches the public filters with its original project source', async () => {
+  const review = JSON.parse(await readFile(new URL('../../_data/edge_catalog/verification.json', import.meta.url), 'utf8'));
+  const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
+  for (const tool of data.tools) {
+    const record = review.tools[tool.id];
+    assert.match(record.facetReviewedAt, /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(record.facetReviewNote.en && record.facetReviewNote.zh);
+    for (const dimension of record.dimensions.filter(Boolean)) {
+      for (const [facet, values] of Object.entries(dimension.facets || {})) {
+        assert.equal(data.sources[dimension.source]?.kind, 'official');
+        for (const value of values) {
+          assert.ok(tool.facets[facet]?.includes(value), `${tool.id}: Missing ${facet} / ${value}`);
+          assert.ok(tool.claims.some(c => c.facet === facet && c.value === value && c.source === dimension.source));
+        }
+      }
+    }
+  }
+});
+test('Actual catalog restores omitted paradigms and combined requirements without inheriting generic engines', async () => {
+  const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
+  const ids = facets => selectTools(data, { ...emptyState(), facets }).map(r => r.tool.id);
+  for (const [paradigm, expected] of Object.entries({
+    Cloud: ['cloudsim-plus', 'cloudsimpy', 'edgecloudsim', 'fogbed', 'yafs-yet-another-fog-simulator', 'onnx-runtime'],
+    Edge: ['edgecloudsim', 'pureedgesim', 'simu5g', 'edgenet', 'nvidia-tensorrt'],
+    Fog: ['fogify', 'fogbed', 'mobfogsim', 'yafs-yet-another-fog-simulator'],
+    Serverless: ['simfaas', 'nfaas', 'apache-openwhisk', 'wasmedge-runtime'],
+    Mist: ['pureedgesim', 'satedgesim', 'areg-sdk'],
+    'In-network': ['cfn', 'nfaas', 'rice']
+  })) for (const id of expected) assert.ok(ids({ paradigm: [paradigm] }).includes(id), `${paradigm}: ${id}`);
+  for (const id of ['edgesimpy', 'yafs-yet-another-fog-simulator']) {
+    assert.ok(ids({ category: ['simulators'], paradigm: ['Edge'], language: ['Python'] }).includes(id));
+  }
+  assert.ok(ids({ paradigm: ['Edge'], resource: ['CPU'], type: ['emulator'] }).includes('simu5g'));
+  assert.ok(ids({ paradigm: ['Cloud', 'Fog'], language: ['Python'] }).includes('cloudsimpy'));
+  assert.ok(!ids({ paradigm: ['Edge'] }).includes('ns-3'));
+  assert.ok(!ids({ protocol: ['UDP'] }).includes('neurosurgeon')); // Still a TODO in the source.
+  assert.ok(!ids({ metric: ['Latency'] }).includes('netem')); // Configured impairment is not an output.
+  const state = { ...emptyState(), lang: 'zh', facets: { paradigm: ['Mist'], scenario: ['Satellite'] }, compare: ['satedgesim'] };
+  assert.deepEqual(readState(writeState(state), data), state);
+  assert.deepEqual(ids(state.facets), ['satedgesim']);
+});
 test('Within-group OR and cross-group AND are applied independently of display language', () => {
   const state = { ...emptyState(), facets: { language: ['Java', 'Python'], protocol: ['NDN'] } };
   assert.deepEqual(selectTools(sample, state).map(r => r.tool.id), ['A', 'B']);

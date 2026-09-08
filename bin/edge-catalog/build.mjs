@@ -62,6 +62,14 @@ function buildTool(entry) {
     for (const record of review.dimensions) if (record && (!record.text?.en || !record.text?.zh || !sources[record.source])) throw new Error(`Invalid dimension evidence: ${entry.id}`);
     for (const facet of review.clearFacets || []) { delete tool.facets[facet]; tool.claims = tool.claims.filter(x => x.facet !== facet); }
     for (const claim of review.claims || []) add(claim.facet, claim.value, claim.source, claim.note);
+    // Explicitly reviewed tags travel with their description and its project source.
+    // Never infer capabilities by scanning prose or inheriting an engine's tags.
+    for (const record of review.dimensions.filter(Boolean)) {
+      for (const [facet, values] of Object.entries(record.facets || {})) {
+        if (!Array.isArray(values) || !values.length) throw new Error(`Invalid dimension facets: ${entry.id} / ${facet}`);
+        for (const value of values) add(facet, value, record.source);
+      }
+    }
     for (const [key, claim] of Object.entries(review.features || {})) documentFeature(key, claim.source, claim.note, claim.status);
     tool.notes.push(...(review.notes || []));
     if (review.sources.some(projectSource)) tool.officialChecked = review.sources.find(projectSource);

@@ -14,7 +14,12 @@ nav: false
     <p class="ee-eyebrow">AWESOME EDGE COMPUTING <span>/</span> <span data-i18n="explorer">TOOL EXPLORER</span></p>
     <h1 data-i18n="title">Find the tools for<br>your next edge experiment.</h1>
     <p class="ee-intro" data-i18n="intro">Start with your requirements. Narrow the field. Compare the evidence.</p>
-    <div class="ee-meta"><span id="ee-dataset-meta">Loading catalog…</span><a href="https://github.com/qijianpeng/awesome-edge-computing" target="_blank" rel="noopener noreferrer" data-i18n="repository">Source repository ↗</a></div>
+    <div class="ee-meta"><span id="ee-dataset-meta">Loading catalog…</span></div>
+    <nav class="ee-project-links" aria-label="Project and publication">
+      <a class="ee-secondary" href="https://github.com/qijianpeng/awesome-edge-computing" target="_blank" rel="noopener noreferrer">awesome-edge-computing ↗</a>
+      <a class="ee-secondary" href="https://arxiv.org/abs/2505.09995" target="_blank" rel="noopener noreferrer" data-i18n="paper">Read the survey ↗</a>
+      <a href="#ee-citation" data-i18n="cite">Cite this work ↓</a>
+    </nav>
   </header>
   <section id="ee-categories" class="ee-categories" aria-label="Resource categories"></section>
   <div class="ee-workspace">
@@ -36,6 +41,12 @@ nav: false
     </section>
   </div>
   <details class="ee-method"><summary data-i18n="method">How to read the evidence</summary><div id="ee-method-content"></div></details>
+  <section id="ee-citation" class="ee-citation" aria-labelledby="ee-citation-title" tabindex="-1">
+    <h2 id="ee-citation-title" data-i18n="citationTitle">Paper citation</h2>
+    <p data-i18n="citationScope">The survey provides the classification context. Tool filters and capability descriptions use the linked project documentation and code.</p>
+    <p class="ee-reference">Jianpeng Qi, Chao Liu, Xiao Zhang, Lei Wang, Rui Wang, Junyu Dong, and Yanwei Yu. (2025). <a href="https://arxiv.org/abs/2505.09995"><cite>A Survey on Open-Source Edge Computing Simulators and Emulators: The Computing and Networking Convergence Perspective.</cite></a> arXiv: 2505.09995 [cs.NI]. <a href="https://doi.org/10.48550/arXiv.2505.09995">doi: 10.48550/arXiv.2505.09995</a>.</p>
+    <a class="ee-secondary" href="{{ '/assets/bibliography/edge-computing-survey.bib' | relative_url }}" download data-i18n="downloadBib">Download BibTeX</a>
+  </section>
   <section id="ee-comparison" class="ee-comparison" hidden tabindex="-1" aria-label="Tool comparison"><div class="ee-results-heading"><h2 data-i18n="comparison">Compare your shortlist</h2><button type="button" id="ee-close-comparison" class="ee-text-button" data-i18n="close">Close</button></div><p data-i18n="compareHelp">Read capability conditions and source dates before choosing a tool. Scroll horizontally to compare all columns.</p><div id="ee-comparison-table" class="ee-table-scroll" tabindex="0" role="region" aria-label="Comparison table"></div></section>
   <div id="ee-shortlist" class="ee-shortlist" hidden><div><strong id="ee-shortlist-count"></strong><div id="ee-shortlist-items" class="ee-shortlist-items"></div></div><button id="ee-compare" class="ee-primary" type="button" data-i18n="compare">Compare tools →</button></div>
   <p id="ee-announcement" class="ee-sr-only" role="status" aria-live="polite"></p>

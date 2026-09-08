@@ -89,3 +89,20 @@ python3 -m http.server 8765 --bind 127.0.0.1 --directory _site
 Open the real generated page at `http://127.0.0.1:8765/repositories/edge-computing/`. Check desktop and mobile layouts, both themes and languages, search and filters, strict capability matching, four-item comparison, sharing, browser Back, source links, keyboard navigation, and the repositories entry. Do not report a static mockup as a successful Jekyll/browser build.
 
 Publishing the reviewed change to `master` triggers the existing deployment workflow. Confirm that the matching commit's deployment succeeds and verify the public route and its data after release. Revert the feature commit through normal Git history if a rollback is needed; never force-push over unrelated work.
+## September 2026 filter maintenance update
+
+The [filter audit](edge-filter-audit.md) records the review of all 218 entries, coverage changes, and per-resource assignments. Add explicit filter values to the corresponding `verification.json` dimension using `facets`, for example:
+
+```json
+{
+  "text": { "en": "Cloud, edge, and mist workload simulation.", "zh": "云、边缘与雾端工作负载仿真。" },
+  "source": "Existing official source ID",
+  "facets": { "paradigm": ["Cloud", "Edge", "Mist"] }
+}
+```
+
+The source must describe each assigned value. The build publishes these tags alongside the text, with the same source reference. It does not infer tags from keywords, project names, or parent-engine capabilities. Use a separate sourced `claims` entry when a new document supports additional tags, and retain version/configuration conditions. Update `facetReviewedAt` and `facetReviewNote` after review. General-purpose and reference resources may have no paradigm; this does not mean that a possible application is unsupported.
+
+The regression suite checks that every dimension tag reaches the public filters and exercises real catalog combinations. Run `npm run catalog:build`, `npm run test:catalog`, and `npm run catalog:check` after editing. Keep the American-English labels and corresponding Chinese labels in `labels.mjs` synchronized for new terms.
+
+The page header links directly to awesome-edge-computing and the survey. The citation section identifies the arXiv preprint and offers `assets/bibliography/edge-computing-survey.bib`; this bibliographic reference is separate from project capability evidence.
