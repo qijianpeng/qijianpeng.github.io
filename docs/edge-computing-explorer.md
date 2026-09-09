@@ -106,3 +106,9 @@ The source must describe each assigned value. The build publishes these tags alo
 The regression suite checks that every dimension tag reaches the public filters and exercises real catalog combinations. Run `npm run catalog:build`, `npm run test:catalog`, and `npm run catalog:check` after editing. Keep the American-English labels and corresponding Chinese labels in `labels.mjs` synchronized for new terms.
 
 The page header links directly to awesome-edge-computing and the survey. The citation section identifies the arXiv preprint and offers `assets/bibliography/edge-computing-survey.bib`; this bibliographic reference is separate from project capability evidence.
+
+## Engine tags and icons
+
+The Core engine filter includes base-engine entries as well as projects that explicitly use the engine. Preserve conditions for optional integrations and version-specific execution stacks. Do not tag an engine merely because a README lists its model format or compares against it. For composable scenarios, state the required components or extension interfaces instead of implying a ready-made preset. See [the September 9 review](edge-label-review-2026-09-09.md) for examples.
+
+`assets/js/edge-explorer/icons.mjs` supplies local decorative SVGs for categories, facets, and paradigms. Add a mapping when a new category needs its own symbol; retain visible text and `aria-hidden="true"` / `focusable="false"` on icons. Cards and comparison tables show all recorded paradigm and engine tags.

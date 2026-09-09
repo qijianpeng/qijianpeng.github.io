@@ -134,3 +134,25 @@
 .edge-explorer .ee-dimension .ee-source, .edge-explorer .ee-version { display: block; overflow-wrap: anywhere; }
 .edge-explorer .ee-card:has([data-tool-details][open]) { grid-column: 1 / -1; }
 .edge-explorer .ee-source { overflow-wrap: anywhere; }
+
+/* Decorative icons follow the site's theme; labels remain readable without them. */
+.ee-icon { display: inline-block; width: 18px; height: 18px; flex: 0 0 auto; vertical-align: middle; color: var(--ee-accent); }
+.ee-category-name { display: flex; align-items: center; gap: 9px; min-width: 0; }
+.ee-icon-tile { display: inline-flex; align-items: center; justify-content: center; width: 33px; height: 33px; flex: 0 0 33px; border-radius: 9px; background: var(--ee-soft); }
+.ee-icon-tile .ee-icon { width: 22px; height: 22px; }
+.ee-category-label { align-items: center; }
+.ee-group-title, .ee-option-label, .ee-dimension-title { display: inline-flex; align-items: center; gap: 8px; }
+.ee-option-label { min-width: 0; }
+.ee-option-label .ee-icon { width: 15px; height: 15px; }
+.ee-card-facet { margin: 13px 0; }
+.ee-card-facet-label { display: flex; gap: 6px; align-items: center; margin-bottom: 6px; font-size: 10px; font-weight: 650; color: var(--global-text-color-light); }
+.ee-card-facet-label .ee-icon { width: 14px; height: 14px; }
+.ee-facet-tag { display: inline-flex; align-items: center; gap: 5px; background: var(--ee-soft); }
+.ee-facet-tag .ee-icon { width: 14px; height: 14px; }
+.ee-secondary-tags { border-top: 1px solid var(--ee-line); padding-top: 10px; margin-top: 13px; }
+@media (max-width: 480px) {
+  .ee-category { padding: 10px; }
+  .ee-category-name { gap: 6px; }
+  .ee-icon-tile { width: 27px; height: 27px; flex-basis: 27px; }
+  .ee-icon-tile .ee-icon { width: 19px; height: 19px; }
+}

@@ -244,3 +244,25 @@ test('Public catalog uses concrete project descriptions and keeps inaccessible r
     assert.doesNotMatch(await readFile(new URL(file, import.meta.url), 'utf8'), /unverified|未核实/i);
   }
 });
+
+test('EasiEI appears in each documented paradigm and ns-3 combination, with component conditions retained', async () => {
+  const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
+  for (const paradigm of ['Cloud', 'Fog', 'IoT', 'Edge']) {
+    const state = { ...emptyState(), facets: { paradigm: [paradigm], engine: ['ns-3'] }, required: ['custom-scheduling', 'logging'] };
+    assert.ok(selectTools(data, state).some(r => r.tool.id === 'easiei'), paradigm);
+  }
+  const easiei = data.tools.find(t => t.id === 'easiei');
+  assert.match(easiei.claims.find(c => c.facet === 'paradigm' && c.value === 'Fog').note.en, /composed fog scenarios/);
+  assert.match(easiei.claims.find(c => c.facet === 'paradigm' && c.value === 'IoT').note.en, /Implement InitialMachine/);
+});
+test('Engine filters include base engines and explicit dependencies without importing baselines or model formats', async () => {
+  const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
+  const entries = Object.fromEntries(data.tools.map(t => [t.id, t]));
+  for (const [id, engine] of [['ns-3', 'ns-3'], ['cloudsim', 'CloudSim'], ['edgecloudsim', 'EdgeCloudSim'], ['ifogsim', 'iFogSim'], ['ifogsim', 'CloudSim'], ['pfogsim', 'EdgeCloudSim'], ['yafs-yet-another-fog-simulator', 'SimPy'], ['edgesimpy', 'Mesa'], ['nndeploy', 'ONNX Runtime']]) {
+    assert.ok(selectTools(data, { ...emptyState(), facets: { engine: [engine] } }).some(r => r.tool.id === id), `${id}: ${engine}`);
+  }
+  assert.ok(!entries.pureedgesim.facets.engine.includes('CloudSim Plus'));
+  assert.ok(!entries.komondor.facets.engine.includes('ns-3'));
+  assert.ok(!entries.pfogsim.facets.engine.includes('iFogSim'));
+  assert.ok(!entries.ncnn.facets.engine.includes('PyTorch'));
+});

@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-08",
+  "date": "2026-09-09",
   "sources": {
     "audit:cloudsim:overview": {
       "kind": "official",
@@ -2477,11 +2477,158 @@
       "url": "https://github.com/microsoft/nn-Meter/blob/cd8dab49b735d58d03746141f73ef5934559ae68/README.md",
       "version": "cd8dab49b735d58d03746141f73ef5934559ae68",
       "title": "nn-meter / Pinned project README"
+    },
+    "tags:easiei:resources": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/wikis/Computing-resource-unit",
+      "title": "EasiEI / Computing resource unit",
+      "version": "Wiki accessed 2026-09-09"
+    },
+    "tags:easiei:components": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/wikis/Functional-components",
+      "title": "EasiEI / Functional components",
+      "version": "Wiki accessed 2026-09-09"
+    },
+    "tags:easiei:quick-start": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/wikis/Quick-Start",
+      "title": "EasiEI / Quick Start",
+      "version": "Wiki accessed 2026-09-09"
+    },
+    "tags:easiei:setup": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/wikis/Guide/EasiEI开发环境配置",
+      "title": "EasiEI / Development environment",
+      "version": "Wiki accessed 2026-09-09"
+    },
+    "tags:easiei:sensor": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/contrib/devices/model/sensorbase.h",
+      "title": "EasiEI / SensorBase interface",
+      "version": "e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "tags:easiei:server": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/contrib/myapplication/model/server.cc",
+      "title": "EasiEI / Server application",
+      "version": "e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "tags:ifogsim:readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/Cloudslab/iFogSim/blob/5f68d3947e450d8d2b4af42670be819206be68c9/README.md",
+      "title": "ifogsim / Project README",
+      "version": "5f68d3947e450d8d2b4af42670be819206be68c9"
+    },
+    "tags:mobfogsim:readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/diogomg/MobFogSim/blob/30c949474eee5538207fb0900b11ddcf4ec13103/README.md",
+      "title": "mobfogsim / Project README",
+      "version": "30c949474eee5538207fb0900b11ddcf4ec13103"
+    },
+    "tags:emufog:readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/emufog/emufog/blob/d79defb13b203ef5bfb45c3396782516ade9338f/README.md",
+      "title": "emufog / Project README",
+      "version": "d79defb13b203ef5bfb45c3396782516ade9338f"
+    },
+    "tags:edgeaisim:readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/MuhammedGolec/EdgeAISIM/blob/0a1bdea66be763a74734fa1418ba33476549d011/README.md",
+      "title": "edgeaisim / Project README",
+      "version": "0a1bdea66be763a74734fa1418ba33476549d011"
+    },
+    "tags:once-for-all:readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/mit-han-lab/once-for-all/blob/f03b2673db313b9167e2a1c2b7a5cad540cc1313/README.md",
+      "title": "once-for-all / Project README",
+      "version": "f03b2673db313b9167e2a1c2b7a5cad540cc1313"
+    },
+    "tags:torch-pruning-tp:readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/VainF/Torch-Pruning/blob/e80127d7c6935c319a7dd6719b8a72e3c1fcbff9/README.md",
+      "title": "torch-pruning-tp / Project README",
+      "version": "e80127d7c6935c319a7dd6719b8a72e3c1fcbff9"
+    },
+    "tags:model-compression-toolkit-mct:readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/SonySemiconductorSolutions/mct-model-optimization/blob/5d0a96f238e90fb9e68f794e8b88ffae69d2c4a7/README.md",
+      "title": "model-compression-toolkit-mct / Project README",
+      "version": "5d0a96f238e90fb9e68f794e8b88ffae69d2c4a7"
+    },
+    "tags:pocket:readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/GTkernel/Pocket/blob/f7c4bd008da95bd1dd1ad2fef71558cbb0b28b04/README.md",
+      "title": "pocket / Project README",
+      "version": "f7c4bd008da95bd1dd1ad2fef71558cbb0b28b04"
+    },
+    "tags:pfogsim:dependencies": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/jihall77/pFogSim/3d3591ef44ef74a08cab4e3e6f53a2b84e3d30dd/src/edu/boun/edgecloudsim/core/SimManager.java",
+      "title": "pfogsim / src/edu/boun/edgecloudsim/core/SimManager.java",
+      "version": "3d3591ef44ef74a08cab4e3e6f53a2b84e3d30dd"
+    },
+    "tags:yafs-yet-another-fog-simulator:dependencies": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/acsicuib/YAFS/d98c0053626840d4deadafa4c8c8b6db78929117/pyproject.toml",
+      "title": "yafs-yet-another-fog-simulator / pyproject.toml",
+      "version": "d98c0053626840d4deadafa4c8c8b6db78929117"
+    },
+    "tags:edgesimpy:dependencies": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/EdgeSimPy/EdgeSimPy/76eb5ead74596bb4240759fa4336f1d6f190c70a/pyproject.toml",
+      "title": "edgesimpy / pyproject.toml",
+      "version": "76eb5ead74596bb4240759fa4336f1d6f190c70a"
+    },
+    "tags:fedprox:dependencies": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/litian96/FedProx/d2a4501f319f1594b732d88315c5ca1a72855f50/requirements.txt",
+      "title": "fedprox / requirements.txt",
+      "version": "d2a4501f319f1594b732d88315c5ca1a72855f50"
+    },
+    "tags:pfogsim:readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/jihall77/pFogSim/blob/3d3591ef44ef74a08cab4e3e6f53a2b84e3d30dd/README.md",
+      "title": "pfogsim / Project README",
+      "version": "3d3591ef44ef74a08cab4e3e6f53a2b84e3d30dd"
+    },
+    "tags:nndeploy:readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/nndeploy/nndeploy/blob/1c9e2d508bf82fd8ee47656897906d133ebf7f3d/README_EN.md",
+      "title": "nndeploy / Project README",
+      "version": "1c9e2d508bf82fd8ee47656897906d133ebf7f3d"
+    },
+    "tags:mlperf-inference-benchmark-suite:readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/mlcommons/inference/blob/3fbc329939999c13d0a7b5e67fb2092287e06047/README.md",
+      "title": "mlperf-inference-benchmark-suite / Project README",
+      "version": "3fbc329939999c13d0a7b5e67fb2092287e06047"
     }
   },
   "tools": {
     "cloudsim": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -2615,10 +2762,28 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "CloudSim",
+          "source": "audit:cloudsim:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
+        },
+        {
+          "facet": "scheduling",
+          "value": "VM placement",
+          "source": "audit:cloudsim:overview",
+          "note": {
+            "en": "Custom host-to-VM placement and resource provisioning policies are explicitly supported.",
+            "zh": "明确支持自定义虚拟机放置与主机资源分配策略。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -2751,7 +2916,7 @@
       }
     },
     "cloudsim-express": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -2865,17 +3030,26 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "scheduling",
+          "value": "VM placement",
+          "source": "audit:cloudsim-express:dimension-4",
+          "note": {
+            "en": "The custom-policy tutorial implements a VM allocation policy and loads it through the extension mechanism.",
+            "zh": "自定义策略教程展示 VM 分配策略实现，并通过扩展机制加载。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "cloudsim-plus": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -3016,10 +3190,28 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "CloudSim Plus",
+          "source": "audit:cloudsim-plus:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
+        },
+        {
+          "facet": "scheduling",
+          "value": "VM placement",
+          "source": "audit:cloudsim-plus:overview",
+          "note": {
+            "en": "Interfaces support custom heuristics, VM placement, scaling, and migration; a Completely Fair Scheduler model is documented.",
+            "zh": "接口支持自定义启发式、虚拟机放置、扩缩容与迁移，文档列出完全公平调度模型。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -3162,7 +3354,7 @@
       }
     },
     "cloudsim-py4j-gateway": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -3247,10 +3439,28 @@
           "facet": "resource",
           "value": "Virtual machines",
           "source": "audit:cloudsim-py4j-gateway:dimension-2"
+        },
+        {
+          "facet": "scheduling",
+          "value": "VM placement",
+          "source": "audit:cloudsim-py4j-gateway:dimension-4",
+          "note": {
+            "en": "CloudSimProxy constructs VmAllocationPolicySimple and OptimizedCloudletScheduler and manages VM/cloudlet state; policies must be assessed at the proxy implementation level.",
+            "zh": "CloudSimProxy 构建 VmAllocationPolicySimple 与 OptimizedCloudletScheduler，并管理 VM／cloudlet 状态；策略能力需以代理实现为准。"
+          }
+        },
+        {
+          "facet": "platform",
+          "value": "Docker",
+          "source": "audit:cloudsim-py4j-gateway:overview",
+          "note": {
+            "en": "The official README documents Gradle build/test and Docker-image tasks; it does not establish parity with all CloudSim Plus APIs.",
+            "zh": "官方 README 记载 Gradle 构建、测试和 Docker 镜像任务，未证明其暴露 CloudSim Plus 的全部 API。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -3865,7 +4075,7 @@
       }
     },
     "echoes": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -3956,10 +4166,19 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "scheduling",
+          "value": "Task offloading",
+          "source": "audit:echoes:overview",
+          "note": {
+            "en": "Simulates hybrid edge/cloud task offloading.",
+            "zh": "模拟边缘与云混合环境中的任务卸载。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -4115,7 +4334,7 @@
       }
     },
     "edgeaisim": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -4165,7 +4384,8 @@
       ],
       "sources": [
         "audit:edgeaisim:overview",
-        "filter:edgeaisim:readme"
+        "filter:edgeaisim:readme",
+        "tags:edgeaisim:readme"
       ],
       "features": {
         "scenario-scripts": {
@@ -4250,17 +4470,26 @@
             "en": "The project describes IoT applications as the target of its edge resource-management experiments.",
             "zh": "项目将物联网应用列为边缘资源管理实验的应用对象。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "PyTorch",
+          "source": "tags:edgeaisim:readme",
+          "note": {
+            "en": "Execution dependency documented by this project; version and selected workflow requirements still apply.",
+            "zh": "项目明确记录的执行依赖；仍需遵循所选版本与工作流程的要求。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "edgesimpy": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -4305,7 +4534,8 @@
         }
       ],
       "sources": [
-        "audit:edgesimpy:overview"
+        "audit:edgesimpy:overview",
+        "tags:edgesimpy:dependencies"
       ],
       "features": {
         "scenario-scripts": {
@@ -4385,10 +4615,37 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "Mesa",
+          "source": "tags:edgesimpy:dependencies",
+          "note": {
+            "en": "Pinned source/build dependencies establish this execution stack; this does not import every dependency feature.",
+            "zh": "固定提交源码或构建依赖明确使用此执行栈，不据此继承依赖的全部功能。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "NetworkX",
+          "source": "tags:edgesimpy:dependencies",
+          "note": {
+            "en": "Pinned source/build dependencies establish this execution stack; this does not import every dependency feature.",
+            "zh": "固定提交源码或构建依赖明确使用此执行栈，不据此继承依赖的全部功能。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "EdgeSimPy",
+          "source": "audit:edgesimpy:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -4997,7 +5254,7 @@
       }
     },
     "emufog": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -5047,7 +5304,8 @@
         }
       ],
       "sources": [
-        "audit:emufog:overview"
+        "audit:emufog:overview",
+        "tags:emufog:readme"
       ],
       "features": {
         "scenario-scripts": {
@@ -5114,10 +5372,19 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "Docker",
+          "source": "tags:emufog:readme",
+          "note": {
+            "en": "Execution dependency documented by this project; version and selected workflow requirements still apply.",
+            "zh": "项目明确记录的执行依赖；仍需遵循所选版本与工作流程的要求。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -5606,7 +5873,7 @@
       }
     },
     "ifogsim": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -5663,7 +5930,8 @@
       ],
       "sources": [
         "audit:ifogsim:overview",
-        "audit:ifogsim:dimension-3"
+        "audit:ifogsim:dimension-3",
+        "tags:ifogsim:readme"
       ],
       "features": {
         "scenario-scripts": {
@@ -5747,10 +6015,28 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "CloudSim",
+          "source": "tags:ifogsim:readme",
+          "note": {
+            "en": "Execution dependency documented by this project; version and selected workflow requirements still apply.",
+            "zh": "项目明确记录的执行依赖；仍需遵循所选版本与工作流程的要求。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "iFogSim",
+          "source": "audit:ifogsim:overview",
+          "note": {
+            "en": "This entry provides the named engine family itself; the reviewed version and its documented scope apply.",
+            "zh": "此条目本身提供所列引擎系列，具体以本次核对版本及文档范围为准。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -5907,7 +6193,7 @@
       }
     },
     "iotsim-osmosis": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -6030,10 +6316,55 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "resource",
+          "value": "CPU",
+          "source": "audit:iotsim-osmosis:dimension-4",
+          "note": {
+            "en": "Users select or propose VM/MEL placement, VM-CPU scheduling, routing and traffic-sharing policies. Examples include combined least-full-first placement, multi-CPU time sharing and fair-share traffic; this manual’s version keeps IoT locations fixed.",
+            "zh": "用户可选择或提出 VM／MEL 放置、VM-CPU 调度、路由及流量共享策略；示例包含组合最少占用优先、多 CPU 时间共享及公平流量共享；此手册版本固定 IoT 位置。"
+          }
+        },
+        {
+          "facet": "resource",
+          "value": "Virtual machines",
+          "source": "audit:iotsim-osmosis:dimension-4",
+          "note": {
+            "en": "Users select or propose VM/MEL placement, VM-CPU scheduling, routing and traffic-sharing policies. Examples include combined least-full-first placement, multi-CPU time sharing and fair-share traffic; this manual’s version keeps IoT locations fixed.",
+            "zh": "用户可选择或提出 VM／MEL 放置、VM-CPU 调度、路由及流量共享策略；示例包含组合最少占用优先、多 CPU 时间共享及公平流量共享；此手册版本固定 IoT 位置。"
+          }
+        },
+        {
+          "facet": "scheduling",
+          "value": "VM placement",
+          "source": "audit:iotsim-osmosis:dimension-4",
+          "note": {
+            "en": "Users select or propose VM/MEL placement, VM-CPU scheduling, routing and traffic-sharing policies. Examples include combined least-full-first placement, multi-CPU time sharing and fair-share traffic; this manual’s version keeps IoT locations fixed.",
+            "zh": "用户可选择或提出 VM／MEL 放置、VM-CPU 调度、路由及流量共享策略；示例包含组合最少占用优先、多 CPU 时间共享及公平流量共享；此手册版本固定 IoT 位置。"
+          }
+        },
+        {
+          "facet": "scheduling",
+          "value": "Time sharing",
+          "source": "audit:iotsim-osmosis:dimension-4",
+          "note": {
+            "en": "Users select or propose VM/MEL placement, VM-CPU scheduling, routing and traffic-sharing policies. Examples include combined least-full-first placement, multi-CPU time sharing and fair-share traffic; this manual’s version keeps IoT locations fixed.",
+            "zh": "用户可选择或提出 VM／MEL 放置、VM-CPU 调度、路由及流量共享策略；示例包含组合最少占用优先、多 CPU 时间共享及公平流量共享；此手册版本固定 IoT 位置。"
+          }
+        },
+        {
+          "facet": "resource",
+          "value": "Energy",
+          "source": "audit:iotsim-osmosis:dimension-3",
+          "note": {
+            "en": "outputFiles/result.txt records IoT transactions, osmotic applications, IoT battery consumption and power use of edge/cloud/SD-WAN infrastructure, with total power consumption.",
+            "zh": "outputFiles/result.txt 记录 IoT 事务、渗透式应用、IoT 电池消耗、边缘／云／SD-WAN 基础设施功耗及总功耗。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -6289,7 +6620,7 @@
       }
     },
     "mec-simulator": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -6390,17 +6721,26 @@
           "facet": "metric",
           "value": "Latency",
           "source": "review:mec-simulator:contrib/mec-sim/model/client-app.cc"
+        },
+        {
+          "facet": "paradigm",
+          "value": "IoT",
+          "source": "audit:mec-simulator:overview",
+          "note": {
+            "en": "The documented target is ns-3.31; an industrial example combines aircraft, guided vehicles, IoT, and mixed-reality devices.",
+            "zh": "文档目标环境为 ns-3.31，工业示例包含飞行器、自动导引车、物联网与混合现实设备。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "mobfogsim": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -6454,7 +6794,8 @@
       "sources": [
         "audit:mobfogsim:overview",
         "audit:mobfogsim:project-DecisionMigration",
-        "filter:mobfogsim:readme"
+        "filter:mobfogsim:readme",
+        "tags:mobfogsim:readme"
       ],
       "features": {
         "scenario-scripts": {
@@ -6530,17 +6871,35 @@
             "en": "The current pinned README documents VM destinations on edge servers and eligible end devices.",
             "zh": "当前固定版本 README 说明可将 VM 迁移到边缘服务器及满足资源条件的终端。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "CloudSim",
+          "source": "tags:mobfogsim:readme",
+          "note": {
+            "en": "Execution dependency documented by this project; version and selected workflow requirements still apply.",
+            "zh": "项目明确记录的执行依赖；仍需遵循所选版本与工作流程的要求。"
+          }
+        },
+        {
+          "facet": "paradigm",
+          "value": "IoT",
+          "source": "audit:mobfogsim:overview",
+          "note": {
+            "en": "Mobility datasets, access points, server cloudlets, VMs, applications, sensors, and actuators.",
+            "zh": "表示移动轨迹、接入点、服务器 Cloudlet、虚拟机、应用、传感器和执行器。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "mininet-wifi": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -6667,10 +7026,28 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "platform",
+          "value": "Docker",
+          "source": "audit:mininet-wifi:overview",
+          "note": {
+            "en": "MiniEdit generates Python topology scripts through a GUI; Ubuntu installation, Docker execution, and a book/example collection are provided.",
+            "zh": "MiniEdit 可通过 GUI 生成 Python 拓扑脚本，另有 Ubuntu 安装、Docker 运行和书籍示例集。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "Mininet-WiFi",
+          "source": "audit:mininet-wifi:overview",
+          "note": {
+            "en": "This entry provides the named engine family itself; the reviewed version and its documented scope apply.",
+            "zh": "此条目本身提供所列引擎系列，具体以本次核对版本及文档范围为准。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -6858,7 +7235,7 @@
       }
     },
     "mobemu": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -6940,10 +7317,19 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "language",
+          "value": "Java",
+          "source": "audit:mobemu:overview",
+          "note": {
+            "en": "The concise README links the project publication; exact APIs require inspection of the Java code.",
+            "zh": "简短 README 链接项目论文，具体 API 需检查 Java 代码。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -7511,7 +7897,7 @@
       }
     },
     "pfogsim": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -7559,7 +7945,9 @@
       ],
       "sources": [
         "audit:pfogsim:overview",
-        "filter:pfogsim:readme"
+        "filter:pfogsim:readme",
+        "tags:pfogsim:dependencies",
+        "tags:pfogsim:readme"
       ],
       "features": {
         "scenario-scripts": {
@@ -7636,17 +8024,44 @@
             "en": "The README explicitly lists built-in Cloud-only and Edge-only task-placement strategies.",
             "zh": "README 明确列出了内置的仅云端、仅边缘任务放置策略。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "CloudSim",
+          "source": "tags:pfogsim:dependencies",
+          "note": {
+            "en": "Pinned source/build dependencies establish this execution stack; this does not import every dependency feature.",
+            "zh": "固定提交源码或构建依赖明确使用此执行栈，不据此继承依赖的全部功能。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "EdgeCloudSim",
+          "source": "tags:pfogsim:dependencies",
+          "note": {
+            "en": "Pinned source/build dependencies establish this execution stack; this does not import every dependency feature.",
+            "zh": "固定提交源码或构建依赖明确使用此执行栈，不据此继承依赖的全部功能。"
+          }
+        },
+        {
+          "facet": "paradigm",
+          "value": "IoT",
+          "source": "tags:pfogsim:readme",
+          "note": {
+            "en": "The topology importer includes sensor/actuator/mobile devices at level 0 and cloud nodes at level 6.",
+            "zh": "拓扑导入器的第 0 层包含传感器、执行器和移动设备，第 6 层为云节点。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "pureedgesim": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -7785,10 +8200,19 @@
             "en": "The power-model description includes edge/fog servers.",
             "zh": "功耗模型说明明确包括边缘／雾服务器。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "PureEdgeSim",
+          "source": "audit:pureedgesim:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -8142,7 +8566,7 @@
       }
     },
     "simgrid": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -8292,10 +8716,19 @@
           "facet": "platform",
           "value": "Docker",
           "source": "filter:simgrid:introduction"
+        },
+        {
+          "facet": "engine",
+          "value": "ns-3",
+          "source": "audit:simgrid:project-Models",
+          "note": {
+            "en": "CPU/disk and default network models use analytical resource sharing. A separately configured ns-3 integration provides packet-level networking.",
+            "zh": "CPU、磁盘和默认网络采用解析资源共享模型；另行配置 ns-3 集成后才使用分组级网络。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -8561,7 +8994,7 @@
       }
     },
     "sleipnir": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -8670,7 +9103,7 @@
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -8952,7 +9385,7 @@
       }
     },
     "svl-simulator": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -9005,21 +9438,31 @@
         "review:svl-simulator:Assets/Scripts/Api/Commands/ControllableControlPolicySet.cs"
       ],
       "features": {},
-      "claims": [],
+      "claims": [
+        {
+          "facet": "language",
+          "value": "C#",
+          "source": "review:svl-simulator:Assets/Scripts/Api/Commands/AddAgent.cs",
+          "note": {
+            "en": "The add_agent API creates ego vehicles, NPC vehicles, or pedestrians; ego agents load configured sensors. These are traffic and sensor objects in the archived simulator.",
+            "zh": "add_agent API 可创建自车、NPC 车辆或行人，自车加载配置的传感器；这些是归档仿真器中的交通与传感对象。"
+          }
+        }
+      ],
       "notes": [
         {
           "en": "Historical project with a cloud-service dependency; verify service access before selecting it.",
           "zh": "这是依赖云服务的历史项目；选型前应验证服务可访问性。"
         }
       ],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "veins-its": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -9100,17 +9543,26 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "Veins",
+          "source": "audit:veins-its:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "vessim": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -9186,9 +9638,19 @@
           }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "scheduling",
+          "value": "Energy-aware",
+          "source": "audit:vessim:overview",
+          "note": {
+            "en": "Supports battery dispatch, load shifting, outages, and demand-response experiments.",
+            "zh": "支持电池调度、负荷转移、停电及需求响应实验。"
+          }
+        }
+      ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -9306,7 +9768,7 @@
       }
     },
     "wotemu": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -9441,17 +9903,35 @@
             "en": "The README describes IoT deployment experiments based on edge computing.",
             "zh": "README 描述基于边缘计算模型的物联网部署实验。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "WoTPy",
+          "source": "audit:wotemu:overview",
+          "note": {
+            "en": "Runs real Python WoTPy applications in a Docker Swarm emulation environment.",
+            "zh": "在 Docker Swarm 仿真环境中运行真实 Python WoTPy 应用。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "NetEm",
+          "source": "audit:wotemu:overview",
+          "note": {
+            "en": "Models network conditions with NetEm and iptables; supports HTTP, CoAP, WebSocket, and MQTT communication.",
+            "zh": "通过 NetEm 和 iptables 建模网络条件；支持 HTTP、CoAP、WebSocket 和 MQTT 通信。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "yafs-yet-another-fog-simulator": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -9517,7 +9997,8 @@
         "audit:yafs-yet-another-fog-simulator:project-metrics-py",
         "audit:yafs-yet-another-fog-simulator:project-core-py",
         "audit:yafs-yet-another-fog-simulator:project-tutorial_scenarios",
-        "filter:yafs:basic"
+        "filter:yafs:basic",
+        "tags:yafs-yet-another-fog-simulator:dependencies"
       ],
       "features": {
         "scenario-scripts": {
@@ -9600,10 +10081,19 @@
           "facet": "engine",
           "value": "NetworkX",
           "source": "filter:yafs:basic"
+        },
+        {
+          "facet": "engine",
+          "value": "SimPy",
+          "source": "tags:yafs-yet-another-fog-simulator:dependencies",
+          "note": {
+            "en": "Pinned source/build dependencies establish this execution stack; this does not import every dependency feature.",
+            "zh": "固定提交源码或构建依赖明确使用此执行栈，不据此继承依赖的全部功能。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -10301,7 +10791,7 @@
       }
     },
     "kubeedge": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -10373,10 +10863,19 @@
           "facet": "protocol",
           "value": "HTTP",
           "source": "audit:kubeedge:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "KubeEdge",
+          "source": "audit:kubeedge:overview",
+          "note": {
+            "en": "This entry provides the named engine family itself; the reviewed version and its documented scope apply.",
+            "zh": "此条目本身提供所列引擎系列，具体以本次核对版本及文档范围为准。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -10763,7 +11262,7 @@
       }
     },
     "adlik": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -10842,9 +11341,19 @@
           }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "platform",
+          "value": "Docker",
+          "source": "audit:adlik:overview",
+          "note": {
+            "en": "Docker images, tutorials, and runnable examples; on-device use links the generated library.",
+            "zh": "提供 Docker 镜像、教程及可运行示例；设备端使用需链接生成的库。"
+          }
+        }
+      ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -11966,7 +12475,7 @@
       }
     },
     "fate": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -12040,6 +12549,15 @@
           "facet": "language",
           "value": "Python",
           "source": "audit:fate:overview"
+        },
+        {
+          "facet": "platform",
+          "value": "Docker",
+          "source": "audit:fate:overview",
+          "note": {
+            "en": "Python-oriented demos, PyPI, Docker Compose, CLI deployment, and development guides.",
+            "zh": "提供以 Python 为主的示例、PyPI、Docker Compose、命令行部署及开发指南。"
+          }
         }
       ],
       "notes": [
@@ -12048,14 +12566,14 @@
           "zh": "FATE-Board 可视化需要配套项目，并非内置仿真器 GUI。"
         }
       ],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "fedprox": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -12105,7 +12623,8 @@
         }
       ],
       "sources": [
-        "audit:fedprox:overview"
+        "audit:fedprox:overview",
+        "tags:fedprox:dependencies"
       ],
       "features": {
         "visualization": {
@@ -12138,10 +12657,28 @@
           "facet": "language",
           "value": "Python",
           "source": "audit:fedprox:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "TensorFlow",
+          "source": "tags:fedprox:dependencies",
+          "note": {
+            "en": "Pinned source/build dependencies establish this execution stack; this does not import every dependency feature.",
+            "zh": "固定提交源码或构建依赖明确使用此执行栈，不据此继承依赖的全部功能。"
+          }
+        },
+        {
+          "facet": "language",
+          "value": "Shell",
+          "source": "audit:fedprox:overview",
+          "note": {
+            "en": "Python and shell experiment scripts generate PDF figures; synthetic experiments do not require a GPU.",
+            "zh": "Python 与 Shell 实验脚本生成 PDF 图；合成实验不要求 GPU。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -12474,7 +13011,7 @@
       }
     },
     "megengine": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -12556,10 +13093,19 @@
           "facet": "resource",
           "value": "GPU",
           "source": "audit:megengine:overview"
+        },
+        {
+          "facet": "resource",
+          "value": "Memory",
+          "source": "audit:megengine:overview",
+          "note": {
+            "en": "Dynamic tensor rematerialization and a memory planner reduce storage pressure; quantization and dynamic shapes are supported.",
+            "zh": "动态张量重计算与内存规划降低存储压力；支持量化及动态形状。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -12690,7 +13236,7 @@
       }
     },
     "mnn": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -12779,17 +13325,26 @@
           "facet": "language",
           "value": "C++",
           "source": "audit:mnn:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "MNN",
+          "source": "audit:mnn:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "model-compression-toolkit-mct": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -12835,7 +13390,8 @@
       ],
       "sources": [
         "audit:model-compression-toolkit-mct:overview",
-        "filter:model-compression-toolkit-mct:readme"
+        "filter:model-compression-toolkit-mct:readme",
+        "tags:model-compression-toolkit-mct:readme"
       ],
       "features": {
         "visualization": {
@@ -12869,10 +13425,19 @@
             "en": "Optimizes models for edge deployment; target execution requires a compatible runtime.",
             "zh": "优化面向边缘部署的模型；目标执行仍需兼容运行时。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "TensorFlow",
+          "source": "tags:model-compression-toolkit-mct:readme",
+          "note": {
+            "en": "Execution dependency documented by this project; version and selected workflow requirements still apply.",
+            "zh": "项目明确记录的执行依赖；仍需遵循所选版本与工作流程的要求。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -12947,7 +13512,7 @@
       }
     },
     "ncnn": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -13040,10 +13605,19 @@
           "facet": "metric",
           "value": "Latency",
           "source": "audit:ncnn:dimension-3"
+        },
+        {
+          "facet": "engine",
+          "value": "ncnn",
+          "source": "audit:ncnn:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -13224,7 +13798,7 @@
       }
     },
     "nndeploy": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -13280,7 +13854,8 @@
       ],
       "sources": [
         "audit:nndeploy:overview",
-        "audit:nndeploy:dimension-3"
+        "audit:nndeploy:dimension-3",
+        "tags:nndeploy:readme"
       ],
       "features": {
         "visualization": {
@@ -13364,17 +13939,143 @@
           "facet": "metric",
           "value": "Latency",
           "source": "audit:nndeploy:dimension-3"
+        },
+        {
+          "facet": "engine",
+          "value": "ONNX Runtime",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "TensorRT",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "OpenVINO",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "MNN",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "TNN",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "ncnn",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "Core ML",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "AscendCL",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "RKNN",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "SNPE",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "TVM",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "PyTorch",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "nndeploy",
+          "source": "tags:nndeploy:readme",
+          "note": {
+            "en": "Selectable backend integrations: The default Python package includes ONNX Runtime and MNN. Additional backends require developer-mode builds and compatible target hardware; a custom engine can run independently.",
+            "zh": "可选择的后端集成：默认 Python 包包含 ONNX Runtime 和 MNN，其他后端需开发者模式构建及兼容硬件；自定义引擎可独立运行。"
+          }
+        },
+        {
+          "facet": "resource",
+          "value": "Memory",
+          "source": "audit:nndeploy:overview",
+          "note": {
+            "en": "Supports serial, pipeline-parallel, and task-parallel execution, zero-copy, memory pools, and buffer reuse.",
+            "zh": "支持串行、流水并行、任务并行执行，以及零拷贝、内存池和缓冲复用。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "ns3-ai": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -13467,17 +14168,26 @@
           "facet": "engine",
           "value": "ns-3",
           "source": "audit:ns3-ai:overview"
+        },
+        {
+          "facet": "scheduling",
+          "value": "Reinforcement learning",
+          "source": "audit:ns3-ai:overview",
+          "note": {
+            "en": "Examples integrate user network-control algorithms, including Wi-Fi rate control and RL-TCP; the bridge itself supplies no general AI algorithm.",
+            "zh": "示例集成用户网络控制算法，包括 Wi-Fi 速率控制及 RL-TCP；桥接本身不提供通用 AI 算法。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "ns3-gym": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -13569,17 +14279,26 @@
           "facet": "engine",
           "value": "ns-3",
           "source": "audit:ns3-gym:overview"
+        },
+        {
+          "facet": "scheduling",
+          "value": "Reinforcement learning",
+          "source": "audit:ns3-gym:overview",
+          "note": {
+            "en": "Integrates ns-3 network simulation with an external Gym reinforcement-learning agent.",
+            "zh": "将 ns-3 网络仿真与外部 Gym 强化学习智能体集成。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "once-for-all": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -13618,7 +14337,8 @@
         }
       ],
       "sources": [
-        "audit:once-for-all:overview"
+        "audit:once-for-all:overview",
+        "tags:once-for-all:readme"
       ],
       "features": {
         "scenario-scripts": {
@@ -13640,17 +14360,44 @@
           "facet": "metric",
           "value": "Accuracy",
           "source": "audit:once-for-all:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "PyTorch",
+          "source": "tags:once-for-all:readme",
+          "note": {
+            "en": "Execution dependency documented by this project; version and selected workflow requirements still apply.",
+            "zh": "项目明确记录的执行依赖；仍需遵循所选版本与工作流程的要求。"
+          }
+        },
+        {
+          "facet": "purpose",
+          "value": "training",
+          "source": "audit:once-for-all:overview",
+          "note": {
+            "en": "Trains a shared network and extracts subnetworks for specialized deployment.",
+            "zh": "训练共享网络，并提取子网络以进行专门部署。"
+          }
+        },
+        {
+          "facet": "purpose",
+          "value": "compression",
+          "source": "audit:once-for-all:overview",
+          "note": {
+            "en": "Trains a shared network and extracts subnetworks for specialized deployment.",
+            "zh": "训练共享网络，并提取子网络以进行专门部署。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "onnx-runtime": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -13814,17 +14561,26 @@
           "facet": "resource",
           "value": "NPU",
           "source": "filter:onnx-runtime:platforms"
+        },
+        {
+          "facet": "engine",
+          "value": "ONNX Runtime",
+          "source": "audit:onnx-runtime:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "openvino": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -13925,10 +14681,19 @@
           "facet": "metric",
           "value": "Throughput",
           "source": "audit:openvino:dimension-3"
+        },
+        {
+          "facet": "engine",
+          "value": "OpenVINO",
+          "source": "audit:openvino:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -14024,7 +14789,7 @@
       }
     },
     "pocket": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -14075,7 +14840,8 @@
         }
       ],
       "sources": [
-        "audit:pocket:overview"
+        "audit:pocket:overview",
+        "tags:pocket:readme"
       ],
       "features": {
         "scenario-scripts": {
@@ -14100,10 +14866,19 @@
           "facet": "platform",
           "value": "Linux",
           "source": "audit:pocket:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "TensorFlow",
+          "source": "tags:pocket:readme",
+          "note": {
+            "en": "Execution dependency documented by this project; version and selected workflow requirements still apply.",
+            "zh": "项目明确记录的执行依赖；仍需遵循所选版本与工作流程的要求。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -14307,7 +15082,7 @@
       }
     },
     "tengine": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -14391,17 +15166,26 @@
           "facet": "resource",
           "value": "NPU",
           "source": "audit:tengine:overview"
+        },
+        {
+          "facet": "metric",
+          "value": "Latency",
+          "source": "audit:tengine:overview",
+          "note": {
+            "en": "Provides a benchmark tool for network execution speed.",
+            "zh": "提供网络执行速度基准工具。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "tnn": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -14501,17 +15285,26 @@
           "facet": "metric",
           "value": "Latency",
           "source": "review:tnn:benchmark/benchmark_android/README.md"
+        },
+        {
+          "facet": "engine",
+          "value": "TNN",
+          "source": "audit:tnn:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "torch-pruning-tp": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -14557,7 +15350,8 @@
       ],
       "sources": [
         "audit:torch-pruning-tp:overview",
-        "audit:torch-pruning-tp:dimension-3"
+        "audit:torch-pruning-tp:dimension-3",
+        "tags:torch-pruning-tp:readme"
       ],
       "features": {
         "scenario-scripts": {
@@ -14589,10 +15383,19 @@
           "facet": "metric",
           "value": "Resource utilization",
           "source": "audit:torch-pruning-tp:dimension-3"
+        },
+        {
+          "facet": "engine",
+          "value": "PyTorch",
+          "source": "tags:torch-pruning-tp:readme",
+          "note": {
+            "en": "Execution dependency documented by this project; version and selected workflow requirements still apply.",
+            "zh": "项目明确记录的执行依赖；仍需遵循所选版本与工作流程的要求。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -14863,7 +15666,7 @@
       }
     },
     "komondor": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -14973,10 +15776,19 @@
           "facet": "metric",
           "value": "RSSI",
           "source": "audit:komondor:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "COST",
+          "source": "audit:komondor:overview",
+          "note": {
+            "en": "CompC++/COST-based simulator with input-generation tools, scripts, configuration, and regression scenarios.",
+            "zh": "基于 CompC++、COST 的仿真器，提供输入生成工具、脚本、配置及回归场景。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -15473,7 +16285,7 @@
       }
     },
     "edgecloudsim": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -15632,6 +16444,15 @@
           "facet": "scheduling",
           "value": "Time sharing",
           "source": "filter:edgecloudsim:cloud-manager"
+        },
+        {
+          "facet": "engine",
+          "value": "EdgeCloudSim",
+          "source": "audit:edgecloudsim:overview",
+          "note": {
+            "en": "This entry provides the named engine family itself; the reviewed version and its documented scope apply.",
+            "zh": "此条目本身提供所列引擎系列，具体以本次核对版本及文档范围为准。"
+          }
         }
       ],
       "notes": [
@@ -15640,7 +16461,7 @@
           "zh": "Python 与 MATLAB 为分析选项，并不替代 Java 仿真引擎。"
         }
       ],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -15823,7 +16644,7 @@
       }
     },
     "mlperf-inference-benchmark-suite": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -15873,7 +16694,8 @@
         }
       ],
       "sources": [
-        "audit:mlperf-inference-benchmark-suite:overview"
+        "audit:mlperf-inference-benchmark-suite:overview",
+        "tags:mlperf-inference-benchmark-suite:readme"
       ],
       "features": {
         "scenario-scripts": {
@@ -15893,16 +16715,53 @@
           }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "engine",
+          "value": "PyTorch",
+          "source": "tags:mlperf-inference-benchmark-suite:readme",
+          "note": {
+            "en": "These frameworks are used by different reference benchmarks. Select the model-specific implementation; submissions may use other frameworks.",
+            "zh": "不同参考基准使用这些框架，需选择对应模型的实现；提交结果可使用其他框架。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "TensorFlow",
+          "source": "tags:mlperf-inference-benchmark-suite:readme",
+          "note": {
+            "en": "These frameworks are used by different reference benchmarks. Select the model-specific implementation; submissions may use other frameworks.",
+            "zh": "不同参考基准使用这些框架，需选择对应模型的实现；提交结果可使用其他框架。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "TVM",
+          "source": "tags:mlperf-inference-benchmark-suite:readme",
+          "note": {
+            "en": "These frameworks are used by different reference benchmarks. Select the model-specific implementation; submissions may use other frameworks.",
+            "zh": "不同参考基准使用这些框架，需选择对应模型的实现；提交结果可使用其他框架。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "ncnn",
+          "source": "tags:mlperf-inference-benchmark-suite:readme",
+          "note": {
+            "en": "These frameworks are used by different reference benchmarks. Select the model-specific implementation; submissions may use other frameworks.",
+            "zh": "不同参考基准使用这些框架，需选择对应模型的实现；提交结果可使用其他框架。"
+          }
+        }
+      ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "tinymlperf-deep-learning-benchmarks-for-embedded-devices": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -15973,9 +16832,19 @@
           }
         }
       },
-      "claims": [],
+      "claims": [
+        {
+          "facet": "engine",
+          "value": "TensorFlow Lite Micro",
+          "source": "audit:tinymlperf-deep-learning-benchmarks-for-embedded-devices:overview",
+          "note": {
+            "en": "Reference benchmarks use TFLM, while submissions may use an appropriate alternative software stack.",
+            "zh": "参考基准采用 TFLM，提交可使用合适的其他软件栈。"
+          }
+        }
+      ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -16417,7 +17286,7 @@
       }
     },
     "the-one": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -16521,10 +17390,19 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "The ONE",
+          "source": "audit:the-one:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -16759,7 +17637,7 @@
       }
     },
     "vns": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -16829,14 +17707,24 @@
         "review:vns:sources/trafficlights/fixedtimetrafficlightcontroller.cpp"
       ],
       "features": {},
-      "claims": [],
+      "claims": [
+        {
+          "facet": "language",
+          "value": "C++",
+          "source": "review:vns:sources/vehicles/modules/travelstatsmodule.cpp",
+          "note": {
+            "en": "TravelStatsModule accumulates elapsed simulation time and distance between vehicle positions at each step, then prints vehicle ID, travel time, and traveled distance when removed.",
+            "zh": "TravelStatsModule 按步累加模拟时间及车辆位置间距离，在移除时输出车辆编号、行驶时间和行驶距离。"
+          }
+        }
+      ],
       "notes": [
         {
           "en": "Historical OMNeT++ 4-era project; original-site availability has not been restored.",
           "zh": "属于 OMNeT++ 4 时代的历史项目；原网站尚未恢复可用。"
         }
       ],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -17548,7 +18436,7 @@
       }
     },
     "k3s": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -17619,10 +18507,19 @@
           "facet": "platform",
           "value": "Linux",
           "source": "audit:k3s:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "K3s",
+          "source": "audit:k3s:overview",
+          "note": {
+            "en": "This entry provides the named engine family itself; the reviewed version and its documented scope apply.",
+            "zh": "此条目本身提供所列引擎系列，具体以本次核对版本及文档范围为准。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -17999,7 +18896,7 @@
       }
     },
     "node-red": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -18072,17 +18969,26 @@
           "facet": "language",
           "value": "JavaScript",
           "source": "audit:node-red:overview"
+        },
+        {
+          "facet": "platform",
+          "value": "Docker",
+          "source": "audit:node-red:overview",
+          "note": {
+            "en": "Low-code visual flow environment with local, Docker, device, and cloud setup guides.",
+            "zh": "低代码可视化流程环境，提供本地、Docker、设备及云安装指南。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "open-vswitch": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -18160,10 +19066,19 @@
           "facet": "protocol",
           "value": "IPFIX",
           "source": "audit:open-vswitch:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "Open vSwitch",
+          "source": "audit:open-vswitch:overview",
+          "note": {
+            "en": "This entry provides the named engine family itself; the reviewed version and its documented scope apply.",
+            "zh": "此条目本身提供所列引擎系列，具体以本次核对版本及文档范围为准。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -18619,7 +19534,7 @@
       }
     },
     "cooja": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -18721,10 +19636,19 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "paradigm",
+          "value": "IoT",
+          "source": "audit:cooja:overview",
+          "note": {
+            "en": "MSPSim emulates MSP430 processors and selected sensor-network platforms.",
+            "zh": "MSPSim 仿真 MSP430 处理器及部分传感网络平台。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -18841,7 +19765,7 @@
       }
     },
     "minnet": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -18960,17 +19884,26 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "Mininet",
+          "source": "audit:minnet:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "ndnsim": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -19123,17 +20056,26 @@
             "en": "Optional Python bindings; the corresponding build dependencies are required.",
             "zh": "可选 Python 绑定，需配置对应构建依赖。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "ndnSIM",
+          "source": "audit:ndnsim:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "ns-3": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -19272,10 +20214,28 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "ns-3",
+          "source": "audit:ns-3:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
+        },
+        {
+          "facet": "protocol",
+          "value": "WiFi",
+          "source": "audit:ns-3:dimension-3",
+          "note": {
+            "en": "The statistics framework collects counters and min/max/mean/total observations, supports custom instrumentation, and exports text or SQLite data. Its Wi-Fi example measures sent/received packets, bytes and end-to-end delay.",
+            "zh": "统计框架提供计数及最小／最大／均值／总量观测，支持自定义插桩，输出文本或 SQLite 数据；Wi-Fi 示例测量收发分组、字节和端到端时延。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -19704,7 +20664,7 @@
       }
     },
     "wasmedge-runtime": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -19803,17 +20763,26 @@
           "facet": "metric",
           "value": "Throughput",
           "source": "audit:wasmedge-runtime:dimension-3"
+        },
+        {
+          "facet": "platform",
+          "value": "Kubernetes",
+          "source": "audit:wasmedge-runtime:overview",
+          "note": {
+            "en": "Embedding APIs and extensions expose host capabilities; Kubernetes orchestration is an integration option.",
+            "zh": "嵌入 API 及扩展暴露宿主能力；Kubernetes 编排为集成选项。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "wasmer": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -19907,17 +20876,26 @@
           "facet": "platform",
           "value": "Linux",
           "source": "audit:wasmer:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "Cranelift",
+          "source": "review:wasmer:examples/metering.rs",
+          "note": {
+            "en": "Embed metering middleware in the compiler to limit guest execution cost. The example uses Cranelift, allows resetting remaining points, and traps when the configured budget is exhausted.",
+            "zh": "可在编译器中加入计量中间件限制客户程序执行成本；示例使用 Cranelift，可重设剩余额度，并在预算耗尽时触发异常。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "wasmtime": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -20002,17 +20980,35 @@
           "facet": "platform",
           "value": "Windows",
           "source": "audit:wasmtime:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "Cranelift",
+          "source": "audit:wasmtime:overview",
+          "note": {
+            "en": "Cranelift generates native code at runtime or ahead of time; instances run within the configured runtime.",
+            "zh": "Cranelift 在运行时或提前生成原生代码；实例在配置的运行时中运行。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "Wasmtime",
+          "source": "audit:wasmtime:overview",
+          "note": {
+            "en": "This entry provides the named engine family itself; the reviewed version and its documented scope apply.",
+            "zh": "此条目本身提供所列引擎系列，具体以本次核对版本及文档范围为准。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "networkx": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -20068,17 +21064,26 @@
           "facet": "language",
           "value": "Python",
           "source": "audit:networkx:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "NetworkX",
+          "source": "audit:networkx:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "apache-tvm": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -20145,10 +21150,19 @@
           "facet": "metric",
           "value": "Latency",
           "source": "review:apache-tvm:vm-timing"
+        },
+        {
+          "facet": "engine",
+          "value": "TVM",
+          "source": "audit:apache-tvm:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -20222,7 +21236,7 @@
       }
     },
     "sumo-its": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -20305,10 +21319,19 @@
           "facet": "scenario",
           "value": "Vehicular",
           "source": "audit:sumo-its:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "SUMO",
+          "source": "audit:sumo-its:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -20421,7 +21444,7 @@
       }
     },
     "simulte": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -20527,10 +21550,28 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "scheduling",
+          "value": "Max C/I",
+          "source": "audit:simulte:overview",
+          "note": {
+            "en": "Includes Max C/I, proportional fair, and round-robin radio scheduling; pluggable modules allow new algorithms.",
+            "zh": "包含 Max C/I、比例公平及轮询无线调度；可插拔模块允许添加新算法。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "SimuLTE",
+          "source": "audit:simulte:overview",
+          "note": {
+            "en": "This entry provides the named engine family itself; the reviewed version and its documented scope apply.",
+            "zh": "此条目本身提供所列引擎系列，具体以本次核对版本及文档范围为准。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -20751,7 +21792,7 @@
       }
     },
     "nvidia-tensorrt": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -20823,17 +21864,26 @@
           "facet": "metric",
           "value": "Throughput",
           "source": "audit:nvidia-tensorrt:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "TensorRT",
+          "source": "audit:nvidia-tensorrt:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "core-ml": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -20917,10 +21967,19 @@
           "facet": "platform",
           "value": "iOS",
           "source": "audit:core-ml:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "Core ML",
+          "source": "audit:core-ml:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -20988,7 +22047,7 @@
       }
     },
     "easiei": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -21004,10 +22063,10 @@
         },
         {
           "text": {
-            "en": "Models CPU, memory, bandwidth, and different network topologies.",
-            "zh": "建模 CPU、内存、带宽及不同网络拓扑。"
+            "en": "Resource units model CPU and memory; multiple units form pools for edge devices, edge servers, and cloud servers. Capacity is normalized relative to the largest modeled resource.",
+            "zh": "资源单元建模 CPU 与内存，多个单元组成边缘设备、边缘服务器或云服务器的资源池；容量按建模资源中的最大值归一化。"
           },
-          "source": "audit:easiei-wiki:overview"
+          "source": "tags:easiei:resources"
         },
         {
           "text": {
@@ -21026,10 +22085,10 @@
         },
         {
           "text": {
-            "en": "Supports distributed task offloading and scheduling.",
-            "zh": "支持分布式任务卸载及调度。"
+            "en": "Composable generators, receivers, orchestrators, and senders model heterogeneous devices. Default task scheduling uses arrival order and non-preemptive priority for simultaneous arrivals; allocation policies can be replaced.",
+            "zh": "可组合任务生成器、接收器、编排器和发送器以建模异构设备；默认按到达顺序调度，同时到达使用非抢占优先级，资源分配策略可替换。"
           },
-          "source": "audit:easiei-wiki:overview",
+          "source": "tags:easiei:components",
           "facets": {
             "scheduling": [
               "Task offloading"
@@ -21038,15 +22097,21 @@
         },
         {
           "text": {
-            "en": "Official wiki identifies hardware-simulator and container integration as future work, not existing support.",
-            "zh": "官方 Wiki 将硬件仿真器及容器集成列为未来工作，并非已有支持。"
+            "en": "C++ examples extend ns-3 nodes with resource and management components. Quick Start shows CSV workload replay, trace callbacks, and file output; adapt hard-coded paths. The Wiki lists hardware-simulator and container integration as future work.",
+            "zh": "C++ 示例为 ns-3 节点扩展资源与管理组件；快速入门演示 CSV 工作负载重放、轨迹回调和文件输出，需修改硬编码路径。Wiki 将硬件仿真器与容器集成列为未来工作。"
           },
-          "source": "audit:easiei-wiki:overview"
+          "source": "tags:easiei:quick-start"
         }
       ],
       "sources": [
         "audit:easiei-wiki:overview",
-        "review:easiei:scratch/managertest.cc"
+        "review:easiei:scratch/managertest.cc",
+        "tags:easiei:resources",
+        "tags:easiei:components",
+        "tags:easiei:sensor",
+        "tags:easiei:quick-start",
+        "tags:easiei:setup",
+        "tags:easiei:server"
       ],
       "features": {
         "visualization": {
@@ -21066,19 +22131,27 @@
           }
         },
         "logging": {
-          "status": "unknown",
-          "source": "audit:easiei-wiki:overview",
+          "status": "supported",
+          "source": "tags:easiei:quick-start",
           "note": {
-            "en": "The reviewed project material does not yet establish logging output for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的日志输出能力，暂保留待核实。"
+            "en": "Quick Start connects resource trace callbacks and writes time/value output files. Adapt its local CSV input path.",
+            "zh": "快速入门连接资源轨迹回调并写出时间与资源值；需修改本地 CSV 输入路径。"
           }
         },
         "custom-scheduling": {
-          "status": "unknown",
-          "source": "audit:easiei-wiki:overview",
+          "status": "supported",
+          "source": "tags:easiei:components",
           "note": {
-            "en": "The reviewed project material does not yet establish custom resource scheduling for this version. This remains unverified.",
-            "zh": "已查阅的项目资料尚未明确此版本的自定义资源调度能力，暂保留待核实。"
+            "en": "Task orchestration and resource-allocation policies are user-replaceable components.",
+            "zh": "任务编排与资源分配策略是用户可替换的组件。"
+          }
+        },
+        "custom-metrics": {
+          "status": "supported",
+          "source": "tags:easiei:quick-start",
+          "note": {
+            "en": "Users connect their own trace sinks to the demonstrated resource trace sources to collect additional observations.",
+            "zh": "用户可将自定义轨迹回调连接到示例中的资源轨迹源，收集自定义观测。"
           }
         }
       },
@@ -21106,10 +22179,123 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "paradigm",
+          "value": "Cloud",
+          "source": "tags:easiei:resources",
+          "note": {
+            "en": "Resource pools explicitly model edge computing devices, edge servers, and cloud servers. Configure the number and capacity of resource units for the chosen tier.",
+            "zh": "资源池明确建模边缘计算设备、边缘服务器和云服务器；需按层级配置资源单元数量与容量。"
+          }
+        },
+        {
+          "facet": "paradigm",
+          "value": "Edge",
+          "source": "tags:easiei:resources",
+          "note": {
+            "en": "Resource pools explicitly model edge computing devices, edge servers, and cloud servers. Configure the number and capacity of resource units for the chosen tier.",
+            "zh": "资源池明确建模边缘计算设备、边缘服务器和云服务器；需按层级配置资源单元数量与容量。"
+          }
+        },
+        {
+          "facet": "paradigm",
+          "value": "Fog",
+          "source": "tags:easiei:components",
+          "note": {
+            "en": "Catalog mapping for composed fog scenarios: Equip intermediate routers, switches, or base stations with task processing and resource-allocation components. The Wiki describes these configurable devices; it does not supply a preset named Fog.",
+            "zh": "按可组合场景归入雾计算：为中间路由器、交换机或基站配置任务处理与资源分配组件。Wiki 明确描述这些可配置设备，并未提供名为 Fog 的预设。"
+          }
+        },
+        {
+          "facet": "paradigm",
+          "value": "IoT",
+          "source": "tags:easiei:sensor",
+          "note": {
+            "en": "IoT device modeling uses the SensorBase extension interface bound to an ns-3 node. Implement InitialMachine and compose task-generation/processing components for a concrete sensor; this interface is not a ready-made physical sensor model.",
+            "zh": "物联网设备建模使用绑定 ns-3 节点的 SensorBase 扩展接口；具体传感器需实现 InitialMachine 并组合任务生成、处理组件。该接口不是现成的物理传感器模型。"
+          }
+        },
+        {
+          "facet": "scenario",
+          "value": "IoT",
+          "source": "tags:easiei:sensor",
+          "note": {
+            "en": "Sensor scenarios require a concrete SensorBase implementation.",
+            "zh": "传感器场景需实现具体的 SensorBase 子类。"
+          }
+        },
+        {
+          "facet": "engine",
+          "value": "ns-3",
+          "source": "tags:easiei:quick-start"
+        },
+        {
+          "facet": "platform",
+          "value": "Linux",
+          "source": "tags:easiei:setup",
+          "note": {
+            "en": "The project recommends Ubuntu with Boost and waf. Its macOS instructions record unresolved include-name conflicts.",
+            "zh": "项目推荐 Ubuntu、Boost 与 waf；macOS 说明记录了尚待解决的头文件命名冲突。"
+          }
+        },
+        {
+          "facet": "scheduling",
+          "value": "FIFO",
+          "source": "tags:easiei:components",
+          "note": {
+            "en": "Default scheduling uses arrival order with non-preemptive priority for simultaneous arrivals. Resource allocation policies can be customized.",
+            "zh": "默认按到达顺序调度，同一时刻到达使用非抢占优先级；资源分配策略可自定义。"
+          }
+        },
+        {
+          "facet": "scheduling",
+          "value": "Priority",
+          "source": "tags:easiei:components",
+          "note": {
+            "en": "Default scheduling uses arrival order with non-preemptive priority for simultaneous arrivals. Resource allocation policies can be customized.",
+            "zh": "默认按到达顺序调度，同一时刻到达使用非抢占优先级；资源分配策略可自定义。"
+          }
+        },
+        {
+          "facet": "scheduling",
+          "value": "User-defined",
+          "source": "tags:easiei:components",
+          "note": {
+            "en": "Default scheduling uses arrival order with non-preemptive priority for simultaneous arrivals. Resource allocation policies can be customized.",
+            "zh": "默认按到达顺序调度，同一时刻到达使用非抢占优先级；资源分配策略可自定义。"
+          }
+        },
+        {
+          "facet": "protocol",
+          "value": "UDP",
+          "source": "tags:easiei:server",
+          "note": {
+            "en": "The Server application binds ns-3 UDP sockets to IPv4 and IPv6 addresses.",
+            "zh": "Server 应用将 ns-3 UDP 套接字绑定到 IPv4、IPv6 地址。"
+          }
+        },
+        {
+          "facet": "protocol",
+          "value": "IPv4",
+          "source": "tags:easiei:server",
+          "note": {
+            "en": "The Server application binds ns-3 UDP sockets to IPv4 and IPv6 addresses.",
+            "zh": "Server 应用将 ns-3 UDP 套接字绑定到 IPv4、IPv6 地址。"
+          }
+        },
+        {
+          "facet": "protocol",
+          "value": "IPv6",
+          "source": "tags:easiei:server",
+          "note": {
+            "en": "The Server application binds ns-3 UDP sockets to IPv4 and IPv6 addresses.",
+            "zh": "Server 应用将 ns-3 UDP 套接字绑定到 IPv4、IPv6 地址。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -21407,7 +22593,7 @@
       }
     },
     "pytorch-mobile": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -21477,10 +22663,19 @@
           "facet": "metric",
           "value": "Latency",
           "source": "review:pytorch-mobile:binaries/speed_benchmark_torch.cc"
+        },
+        {
+          "facet": "engine",
+          "value": "PyTorch",
+          "source": "review:pytorch-mobile:torch/utils/mobile_optimizer.py",
+          "note": {
+            "en": "optimize_for_mobile applies backend-specific TorchScript optimization passes for CPU, Vulkan, or Metal. A blocklist disables selected passes and preserved_methods retains requested entry points; scope is PyTorch 2.2 mobile deployment.",
+            "zh": "optimize_for_mobile 为 CPU、Vulkan 或 Metal 应用对应的 TorchScript 优化；可通过排除列表禁用部分优化、通过 preserved_methods 保留入口方法，适用范围为 PyTorch 2.2 移动部署。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -21575,7 +22770,7 @@
       }
     },
     "tensorflow-lite": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -21660,10 +22855,19 @@
           "facet": "metric",
           "value": "Latency",
           "source": "audit:tensorflow-lite:dimension-3"
+        },
+        {
+          "facet": "engine",
+          "value": "TensorFlow Lite",
+          "source": "audit:tensorflow-lite:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -21956,7 +23160,7 @@
       }
     },
     "maxinet": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -22079,10 +23283,19 @@
             "en": "Python 2 monitoring example; maxinet_plot.py plots the collected files separately.",
             "zh": "提供 Python 2 监控示例，通过独立的 maxinet_plot.py 绘制输出文件。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "MaxiNet",
+          "source": "audit:maxinet:overview",
+          "note": {
+            "en": "This entry provides the named engine family itself; the reviewed version and its documented scope apply.",
+            "zh": "此条目本身提供所列引擎系列，具体以本次核对版本及文档范围为准。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -22208,7 +23421,7 @@
       }
     },
     "omnetpp": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -22321,17 +23534,26 @@
             "en": "C++ simulation-library manual includes executable API examples; GUI and analysis documentation are separate.",
             "zh": "C++ 仿真库手册提供 API 示例；GUI 和分析工具另有文档。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "OMNeT++",
+          "source": "audit:omnetpp:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "marssx86": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -22428,17 +23650,26 @@
           "facet": "language",
           "value": "C++",
           "source": "audit:marssx86:overview"
+        },
+        {
+          "facet": "metric",
+          "value": "Instruction count",
+          "source": "audit:marssx86:overview",
+          "note": {
+            "en": "Switch between booted QEMU execution and simulation; stopinsns bounds simulated instructions.",
+            "zh": "可从已启动的 QEMU 切入仿真，stopinsns 限制仿真指令数。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "cloudsuite": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -22530,17 +23761,26 @@
           "facet": "metric",
           "value": "Latency",
           "source": "audit:cloudsuite:dimension-3"
+        },
+        {
+          "facet": "engine",
+          "value": "Docker",
+          "source": "audit:cloudsuite:overview",
+          "note": {
+            "en": "Docker images support benchmark deployment; release notes include ARM workload support.",
+            "zh": "通过 Docker 镜像部署基准；版本说明包含 ARM 工作负载支持。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
       }
     },
     "netem": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -22630,10 +23870,19 @@
           "facet": "language",
           "value": "Shell",
           "source": "audit:netem:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "NetEm",
+          "source": "audit:netem:overview",
+          "note": {
+            "en": "This entry provides the named engine family itself; the reviewed version and its documented scope apply.",
+            "zh": "此条目本身提供所列引擎系列，具体以本次核对版本及文档范围为准。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -23632,7 +24881,7 @@
       }
     },
     "snpe": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -23690,10 +24939,19 @@
           "facet": "platform",
           "value": "Linux",
           "source": "audit:snpe:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "SNPE",
+          "source": "audit:snpe:overview",
+          "note": {
+            "en": "This entry provides the named engine itself. Consult the listed version and scope before selecting an extension or backend.",
+            "zh": "此条目本身提供所列引擎；选择扩展或后端时需查看版本与适用范围。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
