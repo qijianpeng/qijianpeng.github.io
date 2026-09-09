@@ -112,3 +112,14 @@ The page header links directly to awesome-edge-computing and the survey. The cit
 The Core engine filter includes base-engine entries as well as projects that explicitly use the engine. Preserve conditions for optional integrations and version-specific execution stacks. Do not tag an engine merely because a README lists its model format or compares against it. For composable scenarios, state the required components or extension interfaces instead of implying a ready-made preset. See [the September 9 review](edge-label-review-2026-09-09.md) for examples.
 
 `assets/js/edge-explorer/icons.mjs` supplies local decorative SVGs for categories, facets, and paradigms. Add a mapping when a new category needs its own symbol; retain visible text and `aria-hidden="true"` / `focusable="false"` on icons. Cards and comparison tables show all recorded paradigm and engine tags.
+
+
+## Network model and protocol maintenance
+
+`_data/edge_catalog/network.json` is the authoritative network facet. Keep one record per stable inventory ID, including resources with only a scope description or an actual access outcome. `entries` contain `values`, `scope`, `source`, and bilingual `note`; the builder rejects missing reviews and non-project evidence. The README sync command leaves this manual file unchanged. Newly synchronized IDs require a reviewed record before generation succeeds.
+
+The six scopes distinguish protocol simulation, analytical abstraction, real networking, application interfaces, optional integrations, and data/trace resources. Record the installed module, compatible version, firmware, backend, and limitations in the note. Do not copy all protocols from a dependency. Keep original evidence in `verification.json`; the network file overrides older protocol tags while preserving the other five-dimension annotations.
+
+After editing, run `npm run catalog:build`, `npm run test:catalog`, and `npm run catalog:check`. Inspect both the expandable network section on a result card and the network row in the comparison table in English and Chinese. When a README conflicts with code, link the exact implementation and describe which version it establishes.
+
+The complete September 9 network audit is in [the review register](edge-network-review-2026-09-09.md).

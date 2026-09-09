@@ -6717,11 +6717,11 @@
         },
         {
           "facet": "type",
-          "value": "packet",
-          "source": "audit:mec-simulator:overview",
+          "value": "application",
+          "source": "review:mec-simulator:contrib/mec-sim/model/client-app.cc",
           "note": {
-            "en": "Catalog classification based on the project’s stated simulation or execution model.",
-            "zh": "按项目说明的仿真或执行模型进行目录分类。"
+            "en": "The reviewed ClientApp schedules task objects with a radio-delay model. It models application tasks using the ns-3 event engine rather than installing an LTE/IP packet stack on this path.",
+            "zh": "所查 ClientApp 使用无线时延模型调度任务对象；该路径借助 ns-3 事件引擎建模应用任务，未安装 LTE/IP 分组协议栈。"
           }
         },
         {

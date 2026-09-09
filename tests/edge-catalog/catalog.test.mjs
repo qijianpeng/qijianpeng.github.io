@@ -46,6 +46,7 @@ test('Applying a pinned sync updates inventory while preserving curated evidence
     await writeFile(join(catalog, 'inventory.json'), JSON.stringify(original));
     await writeFile(join(catalog, 'curated.json'), annotations);
     await writeFile(join(catalog, 'verification.json'), annotations);
+    await writeFile(join(catalog, 'network.json'), annotations);
     await writeFile(join(catalog, 'summaries.tsv'), translation);
     const incoming = join(directory, 'incoming.md');
     await writeFile(incoming, '# Tools\n- [Renamed](https://example.com/tool): Revised description.');
@@ -55,6 +56,7 @@ test('Applying a pinned sync updates inventory while preserving curated evidence
     assert.equal(result.entries[0].name, 'Renamed');
     assert.equal(await readFile(join(catalog, 'curated.json'), 'utf8'), annotations);
     assert.equal(await readFile(join(catalog, 'verification.json'), 'utf8'), annotations);
+    assert.equal(await readFile(join(catalog, 'network.json'), 'utf8'), annotations);
     assert.equal(await readFile(join(catalog, 'summaries.tsv'), 'utf8'), translation);
   } finally { await rm(directory, { recursive: true, force: true }); }
 });
@@ -72,7 +74,7 @@ test('Every reviewed dimension tag reaches the public filters with its original 
         assert.equal(data.sources[dimension.source]?.kind, 'official');
         for (const value of values) {
           assert.ok(tool.facets[facet]?.includes(value), `${tool.id}: Missing ${facet} / ${value}`);
-          assert.ok(tool.claims.some(c => c.facet === facet && c.value === value && c.source === dimension.source));
+          if (facet !== 'protocol') assert.ok(tool.claims.some(c => c.facet === facet && c.value === value && c.source === dimension.source)); // Network records now own protocol provenance.
         }
       }
     }
@@ -95,7 +97,7 @@ test('Actual catalog restores omitted paradigms and combined requirements withou
   assert.ok(ids({ paradigm: ['Edge'], resource: ['CPU'], type: ['emulator'] }).includes('simu5g'));
   assert.ok(ids({ paradigm: ['Cloud', 'Fog'], language: ['Python'] }).includes('cloudsimpy'));
   assert.ok(!ids({ paradigm: ['Edge'] }).includes('ns-3'));
-  assert.ok(!ids({ protocol: ['UDP'] }).includes('neurosurgeon')); // Still a TODO in the source.
+  assert.ok(ids({ protocol: ['UDP'] }).includes('neurosurgeon')); // The UDP server implementation supersedes the stale README TODO.
   assert.ok(!ids({ metric: ['Latency'] }).includes('netem')); // Configured impairment is not an output.
   const state = { ...emptyState(), lang: 'zh', facets: { paradigm: ['Mist'], scenario: ['Satellite'] }, compare: ['satedgesim'] };
   assert.deepEqual(readState(writeState(state), data), state);
@@ -265,4 +267,62 @@ test('Engine filters include base engines and explicit dependencies without impo
   assert.ok(!entries.komondor.facets.engine.includes('ns-3'));
   assert.ok(!entries.pfogsim.facets.engine.includes('iFogSim'));
   assert.ok(!entries.ncnn.facets.engine.includes('PyTorch'));
+});
+
+
+test('Every resource has an explicit network review and all protocol filters derive from scoped project evidence', async () => {
+  const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
+  const manual = JSON.parse(await readFile(new URL('../../_data/edge_catalog/network.json', import.meta.url), 'utf8'));
+  assert.deepEqual(Object.keys(manual.tools).sort(), data.tools.map(t => t.id).sort());
+  assert.equal(data.meta.networkReviewedCount, data.tools.length);
+  for (const t of data.tools) {
+    assert.deepEqual(t.network, manual.tools[t.id]);
+    assert.ok(t.network.summary.en && /[\u4e00-\u9fff]/.test(t.network.summary.zh), t.id);
+    const values = new Set();
+    for (const entry of t.network.entries) {
+      assert.ok(['packet', 'abstract', 'runtime', 'service', 'extension', 'data'].includes(entry.scope));
+      assert.ok(entry.note.en && entry.note.zh);
+      assert.equal(data.sources[entry.source]?.kind, 'official', t.id);
+      assert.ok(data.sources[entry.source].version && data.sources[entry.source].date);
+      assert.ok(t.network.reviewedSources.includes(entry.source));
+      for (const value of entry.values) {
+        values.add(value);
+        assert.ok(t.claims.some(c => c.facet === 'protocol' && c.value === value && c.source === entry.source), `${t.id}: ${value}`);
+      }
+    }
+    assert.deepEqual([...(t.facets.protocol || [])].sort(), [...values].sort(), t.id);
+  }
+});
+test('ns-3 protocol coverage includes independent model families and qualifies external modules', async () => {
+  const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
+  const ns = data.tools.find(t => t.id === 'ns-3');
+  for (const value of ['IPv4', 'IPv6', 'TCP', 'UDP', 'ARP', 'ICMPv6', 'DHCP', 'DHCPv6', 'AODV', 'DSDV', 'DSR', 'OLSR', 'RIPng', 'IEEE 802.11ax', 'IEEE 802.11be', 'IEEE 802.11s', 'IEEE 802.15.4', '6LoWPAN', 'Zigbee', 'LTE', 'Point-to-point', 'Underwater acoustic model', 'TCP BBR', 'LoRaWAN', '5G NR']) {
+    const state = { ...emptyState(), facets: { engine: ['ns-3'], protocol: [value] } };
+    assert.ok(selectTools(data, state).some(r => r.tool.id === 'ns-3'), value);
+    assert.deepEqual(readState(writeState(state), data), state);
+  }
+  for (const value of ['5G', '5G NR', 'LoRaWAN', 'OpenFlow']) {
+    const entries = ns.network.entries.filter(e => e.values.includes(value));
+    assert.ok(entries.length && entries.every(e => e.scope === 'extension'), value);
+  }
+  assert.ok(!ns.facets.protocol.includes('OSPF'), 'Global routing weights do not implement OSPF');
+});
+test('Network scope separates abstract models, services and optional integrations without engine inheritance', async () => {
+  const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
+  const get = id => data.tools.find(t => t.id === id);
+  assert.ok(get('pureedgesim').network.entries.filter(e => e.values.includes('5G')).every(e => e.scope === 'abstract'));
+  assert.ok(get('iotsim-edge').network.entries.filter(e => e.values.includes('CoAP')).every(e => e.scope === 'abstract'));
+  assert.ok(get('omnetpp').network.entries.every(e => e.scope === 'extension'));
+  assert.ok(get('mec-simulator').network.entries.every(e => e.scope === 'abstract'));
+  assert.ok(!get('mec-simulator').facets.protocol.includes('LTE'));
+  assert.deepEqual(get('mec-simulator').facets.type, ['application']);
+  assert.ok(!get('easiei').facets.protocol.includes('LoRaWAN'));
+  assert.ok(!get('simgrid').facets.protocol.includes('Zigbee'));
+  assert.ok(!get('simulte').facets.protocol.includes('5G NR'));
+  assert.ok(!get('foresthub-edge-agents').facets.protocol.includes('Modbus'));
+  assert.ok(get('deepthings').facets.protocol.includes('UDP'));
+  assert.ok(get('adlik').network.entries.every(e => e.scope === 'service'));
+  assert.equal(get('kitnet').network.entries.length, 0, 'A detector is not the separately linked full capture system');
+  assert.equal(get('lightmano').network.disposition, 'source-unavailable');
+  assert.equal(get('ncnn').network.entries.length, 0, 'Neural-network layers do not imply network protocols');
 });

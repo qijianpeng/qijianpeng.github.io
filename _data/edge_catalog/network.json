@@ -1,0 +1,5804 @@
+{
+  "date": "2026-09-09",
+  "sources": {
+    "network:ns3-internet-stack": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/internet/doc/internet-stack.rst",
+      "title": "ns-3 / Internet stack",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:ns3-internet-apps": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/internet-apps/doc/internet-apps.rst",
+      "title": "ns-3 / Internet applications",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:ns3-routing-overview": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/internet/doc/routing-overview.rst",
+      "title": "ns-3 / Routing overview",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:ns3-wifi-design": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/wifi/doc/source/wifi-design.rst",
+      "title": "ns-3 / Wi-Fi model design",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:ns3-csma": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/csma/doc/csma.rst",
+      "title": "ns-3 / CSMA NetDevice",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:ns3-index": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/doc/models/source/index.rst",
+      "title": "ns-3 / Model library index",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:ns3-lte-design": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/lte/doc/source/lte-design.rst",
+      "title": "ns-3 / LTE and EPC model design",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:ns3-lr-wpan": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/lr-wpan/doc/lr-wpan.rst",
+      "title": "ns-3 / LR-WPAN",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:ns3-sixlowpan": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/sixlowpan/doc/sixlowpan.rst",
+      "title": "ns-3 / 6LoWPAN",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:ns3-zigbee": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/zigbee/doc/zigbee.rst",
+      "title": "ns-3 / Zigbee model",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:ns3-uan": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/uan/doc/uan.rst",
+      "title": "ns-3 / Underwater acoustic networking",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:ns3-openflow-switch": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/openflow/doc/openflow-switch.rst",
+      "title": "ns-3 / OpenFlow switch integration",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:nr": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://cttc-lena.gitlab.io/nr/html/index.html",
+      "title": "5G-LENA / ns-3 compatibility and installation",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:lorawan": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/signetlabdei/lorawan/develop/README.md",
+      "title": "ns-3 LoRaWAN module / Installation",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:inet-features": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://inet.omnetpp.org/Introduction.html",
+      "title": "INET / Protocol model overview",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:core-services": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://coreemu.github.io/core/services.html",
+      "title": "CORE / Configurable node services",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:core-emane": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://coreemu.github.io/core/emane.html",
+      "title": "CORE / EMANE integration",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:contiki-protocols": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://docs.contiki-ng.org/en/develop/doc/programming/IPv6.html",
+      "title": "Contiki-NG / IPv6 networking",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:contiki-cooja": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://docs.contiki-ng.org/en/develop/doc/tutorials/Running-Contiki-NG-in-Cooja.html",
+      "title": "Contiki-NG / Running firmware in Cooja",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:mininet-walkthrough": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://mininet.org/walkthrough/",
+      "title": "Mininet / Walkthrough",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:ndnsim-examples": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://ndnsim.net/current/examples.html",
+      "title": "ndnSIM / Example scenarios",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:ndn4ivc-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/insert-lab/ndn4ivc/5c57662a2485e51e25f65c9242ade6b0be37fe4d/helper/wifi-setup-helper.cc",
+      "title": "NDN4IVC / Wi-Fi setup helper",
+      "version": "5c57662a2485e51e25f65c9242ade6b0be37fe4d"
+    },
+    "network:fognetsimpp-code-1": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/rtqayyum/fognetsimpp/d2a91b3b986a1fcb8293ac5bf686c1ff8d6c53ed/src/node/compute/WirelessCompute.ned",
+      "title": "FogNetSim++ / WirelessCompute node",
+      "version": "d2a91b3b986a1fcb8293ac5bf686c1ff8d6c53ed"
+    },
+    "network:fognetsimpp-code-2": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/rtqayyum/fognetsimpp/d2a91b3b986a1fcb8293ac5bf686c1ff8d6c53ed/src/node/compute/StandardCompute.ned",
+      "title": "FogNetSim++ / StandardCompute node",
+      "version": "d2a91b3b986a1fcb8293ac5bf686c1ff8d6c53ed"
+    },
+    "network:nossim-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/zoranzhao/NoSSim/7b0e9edde0fe19f83d7aaa946fd580a6d9dab978/examples/vision_graph/src/omnetpp.ini.wifi",
+      "title": "NoSSim / Wi-Fi configuration",
+      "version": "7b0e9edde0fe19f83d7aaa946fd580a6d9dab978"
+    },
+    "network:nossim-code-1": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/zoranzhao/NoSSim/7b0e9edde0fe19f83d7aaa946fd580a6d9dab978/examples/vision_graph/src/omnetpp.ini.6lowpan",
+      "title": "NoSSim / Low-power wireless configuration",
+      "version": "7b0e9edde0fe19f83d7aaa946fd580a6d9dab978"
+    },
+    "network:cloudsim-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/Cloudslab/cloudsim/703cf19e37c3e588e2991e58fed5b583f51b4b43/modules/cloudsim/src/main/java/org/cloudbus/cloudsim/NetworkTopology.java",
+      "title": "CloudSim / NetworkTopology",
+      "version": "703cf19e37c3e588e2991e58fed5b583f51b4b43"
+    },
+    "network:cloudsim-plus-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/cloudsimplus/cloudsimplus/32c1af3f9831926112d021052c5efa89a50ce23d/src/main/java/org/cloudsimplus/network/topologies/BriteNetworkTopology.java",
+      "title": "CloudSim Plus / BRITE topology",
+      "version": "32c1af3f9831926112d021052c5efa89a50ce23d"
+    },
+    "network:ifogsim-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/Cloudslab/iFogSim/5f68d3947e450d8d2b4af42670be819206be68c9/src/org/fog/entities/FogDevice.java",
+      "title": "iFogSim / FogDevice forwarding",
+      "version": "5f68d3947e450d8d2b4af42670be819206be68c9"
+    },
+    "network:mec-simulator-more-1": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/telematics-dev/MEC-simulator/438301dd2da1c14a19dac6f142bf617192420cf3/contrib/mec-sim/model/client-app.cc",
+      "title": "MEC-simulator / ClientApp task offloading",
+      "version": "438301dd2da1c14a19dac6f142bf617192420cf3"
+    },
+    "network:simgrid-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/simgrid/simgrid/12a63c78cdaa56b78836c95c6a18484f367dca38/docs/source/Models.rst",
+      "title": "SimGrid / Network models",
+      "version": "12a63c78cdaa56b78836c95c6a18484f367dca38"
+    },
+    "network:sleipnir-more-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/vindem/sleipnir/26bbc2e7a8fd47b435e1fb1958235b520a2827d4/src/main/java/at/ac/tuwien/ec/model/infrastructure/network/NetworkConnection.java",
+      "title": "SLEIPNIR / NetworkConnection",
+      "version": "26bbc2e7a8fd47b435e1fb1958235b520a2827d4"
+    },
+    "network:simgrid-code-1": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/simgrid/simgrid/12a63c78cdaa56b78836c95c6a18484f367dca38/src/kernel/resource/models/network_ns3.cpp",
+      "title": "SimGrid / ns-3 network backend",
+      "version": "12a63c78cdaa56b78836c95c6a18484f367dca38"
+    },
+    "network:veins-features": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://veins.car2x.org/documentation/modules/",
+      "title": "Veins / Models and limitations",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:step-one-more-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/jaks6/step-one/25ce4c3d75de898daecf2b0251ad259a0eeb95a9/the-one/README.txt",
+      "title": "STEP-ONE / Bundled ONE documentation",
+      "version": "25ce4c3d75de898daecf2b0251ad259a0eeb95a9"
+    },
+    "network:ovs-features": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://www.openvswitch.org/features/",
+      "title": "Open vSwitch / Features",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:baetyl-more-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/baetyl/baetyl/854e32419785b8edb884aca7cfa7b6a88245b776/plugin/mqttlink/mqtt.go",
+      "title": "Baetyl / MQTT cloud-edge link",
+      "version": "854e32419785b8edb884aca7cfa7b6a88245b776"
+    },
+    "network:boinc-more-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/BOINC/boinc/019f539b92dd2b9f1c4301b511cf33c4cf7a4bd3/client/http_curl.cpp",
+      "title": "BOINC / HTTP transfers",
+      "version": "019f539b92dd2b9f1c4301b511cf33c4cf7a4bd3"
+    },
+    "network:edgex-services": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://www.edgexfoundry.org/platform-old/",
+      "title": "EdgeX / Published device-service catalog",
+      "version": "Historical platform catalog; component versions vary"
+    },
+    "network:k3s-network": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://docs.k3s.io/networking/basic-network-options",
+      "title": "K3s / Basic network options",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:kubeedge-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/kubeedge/kubeedge/509543d78311bb696dcfa525c168cf739527819f/edge/pkg/edgehub/clients/wsclient/websocket.go",
+      "title": "KubeEdge / EdgeHub WebSocket client",
+      "version": "509543d78311bb696dcfa525c168cf739527819f"
+    },
+    "network:kubeedge-code-1": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/kubeedge/kubeedge/509543d78311bb696dcfa525c168cf739527819f/edge/pkg/edgehub/clients/quicclient/quicclient.go",
+      "title": "KubeEdge / EdgeHub QUIC client",
+      "version": "509543d78311bb696dcfa525c168cf739527819f"
+    },
+    "network:webassembly-micro-runtime-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/wasm-micro-runtime/wasm-micro-runtime/cd0497e26a7355973948f1fd903b049003cf0e85/doc/socket_api.md",
+      "title": "WAMR / Socket API",
+      "version": "cd0497e26a7355973948f1fd903b049003cf0e85"
+    },
+    "network:wasmtime-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/bytecodealliance/wasmtime/668016926adfd1b8a79dbce894f1e203d8892599/crates/wasi/src/p2/mod.rs",
+      "title": "Wasmtime / WASI Preview 2 socket interfaces",
+      "version": "668016926adfd1b8a79dbce894f1e203d8892599"
+    },
+    "network:wasmtime-code-1": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/bytecodealliance/wasmtime/668016926adfd1b8a79dbce894f1e203d8892599/crates/wasi-http/src/lib.rs",
+      "title": "Wasmtime / wasi:http",
+      "version": "668016926adfd1b8a79dbce894f1e203d8892599"
+    },
+    "network:wasmedge-sockets": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://wasmedge.org/docs/category/socket-networking",
+      "title": "WasmEdge / Socket networking",
+      "version": "Socket networking documentation retrieved September 9, 2026"
+    },
+    "network:wasix-sockets": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://wasix.org/docs/api-reference/wasix/sock_open",
+      "title": "WASIX / sock_open",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:vernemq-listeners": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://docs.vernemq.com/configuring-vernemq/listeners",
+      "title": "VerneMQ / MQTT listeners",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:adlik-code-1": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/Adlik/Adlik/9e61295845447d4452cf9589127d36be44443770/adlik_serving/clients/adlik_serving_apis.md",
+      "title": "Adlik / Serving client interfaces",
+      "version": "9e61295845447d4452cf9589127d36be44443770"
+    },
+    "network:deepthings-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/SLAM-Lab/DeepThings/5db2c034ef117988406748eca140cac42745d441/distriot/src/network_util.c",
+      "title": "DeepThings / Network socket implementation",
+      "version": "5db2c034ef117988406748eca140cac42745d441"
+    },
+    "network:fate-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/FederatedAI/FATE/5a06d9e4c4cd7ab97a5c8357828adbffaca87785/doc/2.0/osx/osx.md",
+      "title": "FATE / Open Site Exchange configuration",
+      "version": "5a06d9e4c4cd7ab97a5c8357828adbffaca87785"
+    },
+    "network:mlc-llm-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/mlc-ai/mlc-llm/9fa644f54b04983adea4d0168f49fc6af4a893ba/python/mlc_llm/interface/serve.py",
+      "title": "MLC LLM / HTTP serving interface",
+      "version": "9fa644f54b04983adea4d0168f49fc6af4a893ba"
+    },
+    "network:shimmy-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/Michael-A-Kuykendall/shimmy/4895730a700cb164ac2855d2ad35cb3ce59e557e/docs/API.md",
+      "title": "Shimmy / API reference",
+      "version": "4895730a700cb164ac2855d2ad35cb3ce59e557e"
+    },
+    "network:deepstack-api": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://deepstack.readthedocs.io/en/latest/getting-started/index.html",
+      "title": "DeepStack / Getting started API",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:ns3-ai-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/hust-diangroup/ns3-ai/b8c9858294b1d6a7f122b5154a3ce25057a54740/examples/lte-cqi/README.md",
+      "title": "ns3-ai / LTE-CQI example",
+      "version": "b8c9858294b1d6a7f122b5154a3ce25057a54740"
+    },
+    "network:ns3-gym-code-1": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/tkn-tub/ns3-gym/cfff7f3217b7da2c263c717a4540d6adf189eeb1/examples/rl-tcp/sim.cc",
+      "title": "ns3-gym / RL TCP scenario",
+      "version": "cfff7f3217b7da2c263c717a4540d6adf189eeb1"
+    },
+    "network:ns3-gym-code-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/tkn-tub/ns3-gym/cfff7f3217b7da2c263c717a4540d6adf189eeb1/examples/interference-pattern/sim.cc",
+      "title": "ns3-gym / Interference scenario",
+      "version": "cfff7f3217b7da2c263c717a4540d6adf189eeb1"
+    },
+    "network:ns3-tcp": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/nsnam/ns-3-dev-git/29f6a374c394efcabb19c528bf13502578840a56/src/internet/doc/tcp.rst",
+      "title": "ns-3 / TCP congestion-control models",
+      "version": "29f6a374c394efcabb19c528bf13502578840a56"
+    },
+    "network:neurosurgeon-more-0": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/njcpe/neurosurgeon/94805ea40016ebeae43a841b63c987069c33f89f/object_detection/udpFastServer.py",
+      "title": "Neurosurgeon adaptation / UDP server",
+      "version": "94805ea40016ebeae43a841b63c987069c33f89f"
+    },
+    "network:kathara-labs": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/KatharaFramework/Kathara-Labs/tree/e5dd526a87eb4ac8df57a8c57002d4eda2ce496b/main-labs",
+      "title": "Kathara / Official network labs",
+      "version": "e5dd526a87eb4ac8df57a8c57002d4eda2ce496b"
+    },
+    "network:node-red-network-help": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/node-red/node-red/dev/packages/node_modules/@node-red/nodes/locales/en-US/network/31-tcpin.html",
+      "title": "Node-RED / TCP node help",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:node-red-udp": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/node-red/node-red/blob/dev/packages/node_modules/@node-red/nodes/core/network/32-udp.js",
+      "title": "Node-RED / 32-udp.js",
+      "version": "dev branch inspected September 9, 2026"
+    },
+    "network:node-red-mqtt": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/node-red/node-red/blob/dev/packages/node_modules/@node-red/nodes/core/network/10-mqtt.js",
+      "title": "Node-RED / 10-mqtt.js",
+      "version": "dev branch inspected September 9, 2026"
+    },
+    "network:node-red-http": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/node-red/node-red/blob/dev/packages/node_modules/@node-red/nodes/core/network/21-httpin.js",
+      "title": "Node-RED / 21-httpin.js",
+      "version": "dev branch inspected September 9, 2026"
+    },
+    "network:node-red-websocket": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/node-red/node-red/blob/dev/packages/node_modules/@node-red/nodes/core/network/22-websocket.js",
+      "title": "Node-RED / 22-websocket.js",
+      "version": "dev branch inspected September 9, 2026"
+    },
+    "network:wso2-protocols": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://raw.githubusercontent.com/wso2/product-iots/master/README.md",
+      "title": "WSO2 IoT Server / Protocol support",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:fogflow-integration": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://fogflow.readthedocs.io/ja/latest/integration.html",
+      "title": "FogFlow / Device integration",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:edgex-coap": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://docs.edgexfoundry.org/4.0.2/microservices/device/services/device-coap/",
+      "title": "EdgeX 4.0.2 / CoAP device service",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:gem5-network": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://www.gem5.org/documentation/general_docs/ruby/interconnection-network/",
+      "title": "gem5 / Ruby interconnection network",
+      "version": "Project documentation retrieved September 9, 2026"
+    },
+    "network:bochs-network": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://bochs.sourceforge.io/doc/docbook/user/bochsrc.html",
+      "title": "Bochs / Ethernet adapter configuration",
+      "version": "Project documentation retrieved September 9, 2026"
+    }
+  },
+  "tools": {
+    "artery": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "V2X simulation using ETSI ITS-G5 services.",
+        "zh": "使用 ETSI ITS-G5 服务进行 V2X 仿真。"
+      },
+      "reviewedSources": [
+        "audit:artery:overview",
+        "review:artery:src/artery/application/CaService.cc"
+      ],
+      "entries": [
+        {
+          "values": [
+            "ITS-G5"
+          ],
+          "scope": "packet",
+          "source": "audit:artery:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "GeoNetworking"
+          ],
+          "scope": "packet",
+          "source": "audit:artery:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "BTP"
+          ],
+          "scope": "packet",
+          "source": "audit:artery:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "CAM"
+          ],
+          "scope": "packet",
+          "source": "review:artery:src/artery/application/CaService.cc",
+          "note": {
+            "en": "CaService constructs and processes cooperative-awareness messages using the Vanetza stack.",
+            "zh": "CaService 使用 Vanetza 栈构造与处理协同感知消息。"
+          }
+        }
+      ]
+    },
+    "causalsim": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Learns trace-driven dynamics for adaptive video streaming; traces and causal models do not implement a transport stack.",
+        "zh": "学习自适应视频流的轨迹驱动动态；轨迹与因果模型不实现传输协议栈。"
+      },
+      "reviewedSources": [
+        "audit:causalsim:overview"
+      ],
+      "entries": []
+    },
+    "cloudsim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "BRITE topology and delay/bandwidth matrices model communication between simulation entities.",
+        "zh": "通过 BRITE 拓扑及时延、带宽矩阵建模仿真实体间通信。"
+      },
+      "reviewedSources": [
+        "audit:cloudsim:overview",
+        "network:cloudsim-code-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "network:cloudsim-code-0",
+          "note": {
+            "en": "BRITE topology and delay/bandwidth matrices model communication between simulation entities.",
+            "zh": "通过 BRITE 拓扑及时延、带宽矩阵建模仿真实体间通信。"
+          }
+        }
+      ]
+    },
+    "cloudsim-express": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "YAML references inter-zone network descriptions; the network is part of the CloudSim scenario configuration.",
+        "zh": "YAML 引用区域间网络描述，网络属于 CloudSim 场景配置。"
+      },
+      "reviewedSources": [
+        "audit:cloudsim-express:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:cloudsim-express:overview",
+          "note": {
+            "en": "YAML references inter-zone network descriptions; the network is part of the CloudSim scenario configuration.",
+            "zh": "YAML 引用区域间网络描述，网络属于 CloudSim 场景配置。"
+          }
+        }
+      ]
+    },
+    "cloudsim-plus": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Graph links and delay matrices model communication; NetworkCloudlet support is a task/message abstraction, not a complete Internet stack.",
+        "zh": "图链路与时延矩阵建模通信；NetworkCloudlet 是任务及消息抽象，不是完整互联网协议栈。"
+      },
+      "reviewedSources": [
+        "audit:cloudsim-plus:overview",
+        "network:cloudsim-plus-code-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "network:cloudsim-plus-code-0",
+          "note": {
+            "en": "Graph links and delay matrices model communication; NetworkCloudlet support is a task/message abstraction, not a complete Internet stack.",
+            "zh": "图链路与时延矩阵建模通信；NetworkCloudlet 是任务及消息抽象，不是完整互联网协议栈。"
+          }
+        }
+      ]
+    },
+    "cloudsim-plus-automation": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "YAML automates CloudSim Plus compute scenarios. Installing the base simulator does not establish that this wrapper exposes every network model.",
+        "zh": "YAML 自动化 CloudSim Plus 计算场景；安装基础仿真器不等于该封装开放全部网络模型。"
+      },
+      "reviewedSources": [
+        "audit:cloudsim-plus-automation:overview"
+      ],
+      "entries": []
+    },
+    "cloudsim-py4j-gateway": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Py4J exposes CloudSim Plus configuration and simulation calls. Host bandwidth is a resource setting, not a protocol implementation.",
+        "zh": "Py4J 开放 CloudSim Plus 配置与仿真调用；主机带宽是资源参数，不是协议实现。"
+      },
+      "reviewedSources": [
+        "audit:cloudsim-py4j-gateway:overview"
+      ],
+      "entries": []
+    },
+    "cloudsimsdn": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Flow/channel forwarding, topology and bandwidth allocation are modeled. SDN does not imply a wire-compatible OpenFlow controller.",
+        "zh": "建模流与信道转发、拓扑和带宽分配；SDN 标签不代表兼容线上 OpenFlow 协议的控制器。"
+      },
+      "reviewedSources": [
+        "audit:cloudsimsdn:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network",
+            "SDN"
+          ],
+          "scope": "abstract",
+          "source": "audit:cloudsimsdn:overview",
+          "note": {
+            "en": "Flow/channel forwarding, topology and bandwidth allocation are modeled. SDN does not imply a wire-compatible OpenFlow controller.",
+            "zh": "建模流与信道转发、拓扑和带宽分配；SDN 标签不代表兼容线上 OpenFlow 协议的控制器。"
+          }
+        }
+      ]
+    },
+    "cloudsimpy": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "SimPy models cluster jobs and scheduling. The reviewed machine/task model provides no named packet protocol.",
+        "zh": "SimPy 建模集群作业与调度；所阅机器及任务模型没有描述具名分组协议。"
+      },
+      "reviewedSources": [
+        "audit:cloudsimpy:overview"
+      ],
+      "entries": []
+    },
+    "cfn": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "NDN compute-function simulation in the repository’s ndnSIM branch.",
+        "zh": "仓库 ndnSIM 分支中的 NDN 计算函数仿真。"
+      },
+      "reviewedSources": [
+        "audit:cfn:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "NDN"
+          ],
+          "scope": "packet",
+          "source": "audit:cfn:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "cooja": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Network simulator with instruction-level emulation through MSPSim.",
+        "zh": "网络仿真器，通过 MSPSim 提供指令级仿真。"
+      },
+      "reviewedSources": [
+        "audit:cooja:overview",
+        "network:contiki-protocols",
+        "network:contiki-cooja"
+      ],
+      "entries": [
+        {
+          "values": [
+            "IPv6",
+            "UDP",
+            "RPL",
+            "6LoWPAN",
+            "IEEE 802.15.4"
+          ],
+          "scope": "packet",
+          "source": "network:contiki-protocols",
+          "note": {
+            "en": "Run the corresponding Contiki-NG mote firmware in Cooja. These protocols belong to the firmware stack; selecting Cooja alone does not install every application protocol.",
+            "zh": "在 Cooja 中运行对应 Contiki-NG 节点固件；这些协议属于固件协议栈，仅选择 Cooja 不会启用所有应用协议。"
+          }
+        },
+        {
+          "values": [
+            "CoAP",
+            "MQTT",
+            "LwM2M",
+            "TSCH"
+          ],
+          "scope": "extension",
+          "source": "network:contiki-cooja",
+          "note": {
+            "en": "Use the appropriate Contiki-NG application and MAC build configuration; the Cooja tutorial links the firmware examples and RPL/TSCH workflows.",
+            "zh": "需选择对应的 Contiki-NG 应用及 MAC 编译配置；Cooja 教程关联了固件示例和 RPL/TSCH 操作流程。"
+          }
+        }
+      ]
+    },
+    "core": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Network emulation across one or several machines, with connections to live networks.",
+        "zh": "在单机或多机上进行网络仿真运行，并可连接真实网络。"
+      },
+      "reviewedSources": [
+        "audit:core:overview",
+        "network:core-services",
+        "network:core-emane"
+      ],
+      "entries": [
+        {
+          "values": [
+            "BGP",
+            "OSPF",
+            "OSPFv3",
+            "RIP",
+            "RIPng",
+            "Babel",
+            "PIM",
+            "OLSR",
+            "DHCP",
+            "IPsec"
+          ],
+          "scope": "runtime",
+          "source": "network:core-services",
+          "note": {
+            "en": "CORE service definitions launch installed routing and utility daemons (such as FRR, BIRD or Quagga). Availability depends on the selected service and software installed on the node.",
+            "zh": "CORE 服务定义启动已安装的路由与工具进程，例如 FRR、BIRD 或 Quagga；可用性取决于节点服务配置及安装的软件。"
+          }
+        },
+        {
+          "values": [
+            "IEEE 802.11 model"
+          ],
+          "scope": "extension",
+          "source": "network:core-emane",
+          "note": {
+            "en": "The optional EMANE integration provides its IEEE 802.11abg radio model; other EMANE models have different fidelity and prerequisites.",
+            "zh": "可选 EMANE 集成提供 IEEE 802.11abg 无线模型；其他 EMANE 模型的精度与依赖不同。"
+          }
+        }
+      ]
+    },
+    "dfaas": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Current DFaaS runs decentralized serverless functions on federated edge nodes, using Go agents and OpenFaaS CE.",
+        "zh": "当前 DFaaS 通过 Go 代理和 OpenFaaS CE，在联邦边缘节点运行去中心化无服务器函数。"
+      },
+      "reviewedSources": [
+        "audit:dfaas:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "packet",
+          "source": "audit:dfaas:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "easiei": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Edge/Computing-First Networking simulation for changing compute, bandwidth, and storage resources.",
+        "zh": "面向变化计算、带宽和存储资源的边缘及算力优先网络仿真。"
+      },
+      "reviewedSources": [
+        "audit:easiei-wiki:overview",
+        "tags:easiei:server"
+      ],
+      "entries": [
+        {
+          "values": [
+            "UDP"
+          ],
+          "scope": "packet",
+          "source": "tags:easiei:server",
+          "note": {
+            "en": "The Server application binds ns-3 UDP sockets to IPv4 and IPv6 addresses.",
+            "zh": "Server 应用将 ns-3 UDP 套接字绑定到 IPv4、IPv6 地址。"
+          }
+        },
+        {
+          "values": [
+            "IPv4"
+          ],
+          "scope": "packet",
+          "source": "tags:easiei:server",
+          "note": {
+            "en": "The Server application binds ns-3 UDP sockets to IPv4 and IPv6 addresses.",
+            "zh": "Server 应用将 ns-3 UDP 套接字绑定到 IPv4、IPv6 地址。"
+          }
+        },
+        {
+          "values": [
+            "IPv6"
+          ],
+          "scope": "packet",
+          "source": "tags:easiei:server",
+          "note": {
+            "en": "The Server application binds ns-3 UDP sockets to IPv4 and IPv6 addresses.",
+            "zh": "Server 应用将 ns-3 UDP 套接字绑定到 IPv4、IPv6 地址。"
+          }
+        }
+      ]
+    },
+    "echoes": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Edge/cloud topology and task-offloading experiments are modeled at the application level.",
+        "zh": "在应用层建模边缘与云拓扑以及任务卸载实验。"
+      },
+      "reviewedSources": [
+        "audit:echoes:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:echoes:overview",
+          "note": {
+            "en": "Edge/cloud topology and task-offloading experiments are modeled at the application level.",
+            "zh": "在应用层建模边缘与云拓扑以及任务卸载实验。"
+          }
+        }
+      ]
+    },
+    "ecsnetpp": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "OMNeT++/INET toolkit for distributed stream processing across edge and cloud.",
+        "zh": "基于 OMNeT++/INET，模拟边云分布式流处理。"
+      },
+      "reviewedSources": [
+        "audit:ecsnetpp:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "WiFi"
+          ],
+          "scope": "packet",
+          "source": "audit:ecsnetpp:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "Ethernet"
+          ],
+          "scope": "packet",
+          "source": "audit:ecsnetpp:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "4G",
+            "LTE"
+          ],
+          "scope": "extension",
+          "source": "audit:ecsnetpp:overview",
+          "note": {
+            "en": "The separate ECSNeT-LTE-Plugin integrates SimuLTE user-plane connectivity. The base project also explicitly documents INET WirelessHost and StandardHost.",
+            "zh": "独立 ECSNeT-LTE-Plugin 接入 SimuLTE 用户面；基础项目明确支持 INET WirelessHost 和 StandardHost。"
+          }
+        }
+      ]
+    },
+    "edgeaisim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Service migration uses network flows and max-min bandwidth sharing.",
+        "zh": "服务迁移使用网络流及最大最小公平带宽共享模型。"
+      },
+      "reviewedSources": [
+        "audit:edgeaisim:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network",
+            "Flow sharing"
+          ],
+          "scope": "abstract",
+          "source": "audit:edgeaisim:overview",
+          "note": {
+            "en": "Service migration uses network flows and max-min bandwidth sharing.",
+            "zh": "服务迁移使用网络流及最大最小公平带宽共享模型。"
+          }
+        }
+      ]
+    },
+    "edgecloudsim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "The default network model uses queues to calculate WLAN/WAN upload/download delays; this is not an IEEE 802.11 packet implementation.",
+        "zh": "默认网络模型通过队列计算 WLAN/WAN 上下载时延，不是 IEEE 802.11 分组协议实现。"
+      },
+      "reviewedSources": [
+        "audit:edgecloudsim:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network",
+            "WLAN/WAN queue model"
+          ],
+          "scope": "abstract",
+          "source": "audit:edgecloudsim:overview",
+          "note": {
+            "en": "The default network model uses queues to calculate WLAN/WAN upload/download delays; this is not an IEEE 802.11 packet implementation.",
+            "zh": "默认网络模型通过队列计算 WLAN/WAN 上下载时延，不是 IEEE 802.11 分组协议实现。"
+          }
+        }
+      ]
+    },
+    "edgesim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Communication uses a large-scale path-loss model; do not interpret the base-station setting as a complete cellular stack.",
+        "zh": "通信采用大尺度路径损耗模型；基站场景不等于完整蜂窝协议栈。"
+      },
+      "reviewedSources": [
+        "audit:edgesim:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network",
+            "Path-loss model"
+          ],
+          "scope": "abstract",
+          "source": "audit:edgesim:overview",
+          "note": {
+            "en": "Communication uses a large-scale path-loss model; do not interpret the base-station setting as a complete cellular stack.",
+            "zh": "通信采用大尺度路径损耗模型；基站场景不等于完整蜂窝协议栈。"
+          }
+        }
+      ]
+    },
+    "edgesimpy": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "NetworkX topology, link bandwidth/delay and flow scheduling represent the network.",
+        "zh": "使用 NetworkX 拓扑、链路带宽与时延及流调度表示网络。"
+      },
+      "reviewedSources": [
+        "audit:edgesimpy:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network",
+            "Flow sharing"
+          ],
+          "scope": "abstract",
+          "source": "audit:edgesimpy:overview",
+          "note": {
+            "en": "NetworkX topology, link bandwidth/delay and flow scheduling represent the network.",
+            "zh": "使用 NetworkX 拓扑、链路带宽与时延及流调度表示网络。"
+          }
+        }
+      ]
+    },
+    "emu5gnet": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Runs containerized 5G RAN/core and applications in Mininet-WiFi/Containernet experiments.",
+        "zh": "在 Mininet-WiFi/Containernet 实验环境中运行容器化 5G 接入网、核心网与应用。"
+      },
+      "reviewedSources": [
+        "audit:emu5gnet:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "5G"
+          ],
+          "scope": "runtime",
+          "source": "audit:emu5gnet:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "WiFi"
+          ],
+          "scope": "runtime",
+          "source": "audit:emu5gnet:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "IPv4",
+            "ICMP"
+          ],
+          "scope": "runtime",
+          "source": "audit:emu5gnet:overview",
+          "note": {
+            "en": "The packaged UERANSIM/Open5GS examples configure IPv4 routing and NAT and verify UE connectivity with ping. This emulates the selected 5G software stack, not a full radio waveform.",
+            "zh": "打包的 UERANSIM/Open5GS 示例配置 IPv4 路由与 NAT，并用 ping 检查 UE 连通性；它运行所选 5G 软件栈，不复现完整射频波形。"
+          }
+        }
+      ]
+    },
+    "emuedge": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Runs unchanged programs in network namespaces or Xen VMs for edge/network experiments.",
+        "zh": "在网络命名空间或 Xen 虚拟机中运行原有程序，开展边缘与网络实验。"
+      },
+      "reviewedSources": [
+        "audit:emuedge:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Linux network stack"
+          ],
+          "scope": "runtime",
+          "source": "audit:emuedge:overview",
+          "note": {
+            "en": "Real application networking runs through the configured Linux/container or VM stack. A particular routing daemon or application protocol must be installed and configured; no entire protocol catalog is inherited automatically.",
+            "zh": "真实应用通信通过配置的 Linux、容器或虚拟机协议栈运行；具体路由进程与应用协议需安装配置，不自动继承整套协议清单。"
+          }
+        }
+      ]
+    },
+    "emufog": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Places fog nodes in imported topologies and runs Docker applications through MaxiNet.",
+        "zh": "在导入拓扑中放置雾节点，并通过 MaxiNet 运行 Docker 应用。"
+      },
+      "reviewedSources": [
+        "audit:emufog:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Linux network stack"
+          ],
+          "scope": "runtime",
+          "source": "audit:emufog:overview",
+          "note": {
+            "en": "Real application networking runs through the configured Linux/container or VM stack. A particular routing daemon or application protocol must be installed and configured; no entire protocol catalog is inherited automatically.",
+            "zh": "真实应用通信通过配置的 Linux、容器或虚拟机协议栈运行；具体路由进程与应用协议需安装配置，不自动继承整套协议清单。"
+          }
+        }
+      ]
+    },
+    "epcsac": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "The web platform compares task/VM schedulers. Its reviewed experiment interface does not define a network protocol model.",
+        "zh": "Web 平台比较任务与虚拟机调度器；所阅实验接口没有定义网络协议模型。"
+      },
+      "reviewedSources": [
+        "audit:epcsac:overview"
+      ],
+      "entries": []
+    },
+    "faap-simulator": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Application and infrastructure graphs with optional latency paths define allocation constraints.",
+        "zh": "应用图、基础设施图及可选时延路径定义分配约束。"
+      },
+      "reviewedSources": [
+        "audit:faap-simulator:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:faap-simulator:overview",
+          "note": {
+            "en": "Application and infrastructure graphs with optional latency paths define allocation constraints.",
+            "zh": "应用图、基础设施图及可选时延路径定义分配约束。"
+          }
+        }
+      ]
+    },
+    "faas-sim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "The project uses Ether as its network simulation layer for cluster topology and communication.",
+        "zh": "项目使用 Ether 作为集群拓扑与通信的网络仿真层。"
+      },
+      "reviewedSources": [
+        "audit:faas-sim:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:faas-sim:overview",
+          "note": {
+            "en": "The project uses Ether as its network simulation layer for cluster topology and communication.",
+            "zh": "项目使用 Ether 作为集群拓扑与通信的网络仿真层。"
+          }
+        }
+      ]
+    },
+    "fogbed": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Local or distributed network emulation using real Docker containers.",
+        "zh": "使用真实 Docker 容器开展本地或分布式网络仿真运行。"
+      },
+      "reviewedSources": [
+        "audit:fogbed:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Linux network stack"
+          ],
+          "scope": "runtime",
+          "source": "audit:fogbed:overview",
+          "note": {
+            "en": "Real application networking runs through the configured Linux/container or VM stack. A particular routing daemon or application protocol must be installed and configured; no entire protocol catalog is inherited automatically.",
+            "zh": "真实应用通信通过配置的 Linux、容器或虚拟机协议栈运行；具体路由进程与应用协议需安装配置，不自动继承整套协议清单。"
+          }
+        }
+      ]
+    },
+    "fogify": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Emulates containerized fog applications without changing their business logic.",
+        "zh": "仿真运行容器化雾应用，无需修改业务逻辑。"
+      },
+      "reviewedSources": [
+        "audit:fogify:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Linux network stack",
+            "Link impairment"
+          ],
+          "scope": "runtime",
+          "source": "audit:fogify:overview",
+          "note": {
+            "en": "Container overlay links are shaped using bandwidth, latency and error parameters; application protocols depend on the deployed services.",
+            "zh": "容器覆盖网络按带宽、时延及误差参数整形；应用协议由部署的服务决定。"
+          }
+        }
+      ]
+    },
+    "fognetsimpp": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Toolkit for distributed fog-computing simulation.",
+        "zh": "用于分布式雾计算仿真的工具包。"
+      },
+      "reviewedSources": [
+        "audit:fognetsimpp:overview",
+        "network:fognetsimpp-code-1",
+        "network:fognetsimpp-code-2"
+      ],
+      "entries": [
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "packet",
+          "source": "audit:fognetsimpp:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "WiFi"
+          ],
+          "scope": "packet",
+          "source": "network:fognetsimpp-code-1",
+          "note": {
+            "en": "WirelessCompute extends INET WirelessHost in the archived compatible environment.",
+            "zh": "WirelessCompute 在归档版本的兼容环境中扩展 INET WirelessHost。"
+          }
+        },
+        {
+          "values": [
+            "Ethernet"
+          ],
+          "scope": "packet",
+          "source": "network:fognetsimpp-code-2",
+          "note": {
+            "en": "StandardCompute extends INET StandardHost; interface setup remains scenario-dependent.",
+            "zh": "StandardCompute 扩展 INET StandardHost，具体接口配置取决于场景。"
+          }
+        }
+      ]
+    },
+    "fogtorchpi": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Links use specified or sampled latency and directional-bandwidth QoS profiles.",
+        "zh": "链路使用给定或采样的时延及双向带宽 QoS 参数。"
+      },
+      "reviewedSources": [
+        "audit:fogtorchpi:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:fogtorchpi:overview",
+          "note": {
+            "en": "Links use specified or sampled latency and directional-bandwidth QoS profiles.",
+            "zh": "链路使用给定或采样的时延及双向带宽 QoS 参数。"
+          }
+        }
+      ]
+    },
+    "gem5": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Modular computer-system architecture and processor-microarchitecture simulation.",
+        "zh": "模块化计算机系统架构及处理器微架构仿真。"
+      },
+      "reviewedSources": [
+        "audit:gem5:overview",
+        "network:gem5-network"
+      ],
+      "entries": [
+        {
+          "values": [
+            "On-chip network"
+          ],
+          "scope": "abstract",
+          "source": "network:gem5-network",
+          "note": {
+            "en": "Ruby provides SimpleNetwork and Garnet interconnection models for on-chip/cache-system communication. These are distinct from Internet transport protocols.",
+            "zh": "Ruby 提供 SimpleNetwork 与 Garnet 互连模型，用于片上及缓存系统通信，区别于互联网传输协议。"
+          }
+        }
+      ]
+    },
+    "ifogsim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Tuple queues and scheduled transmission delays use tuple size and uplink/downlink bandwidth.",
+        "zh": "元组队列及调度传输延时由元组大小、上下行带宽等参数计算。"
+      },
+      "reviewedSources": [
+        "audit:ifogsim:overview",
+        "network:ifogsim-code-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "network:ifogsim-code-0",
+          "note": {
+            "en": "Tuple queues and scheduled transmission delays use tuple size and uplink/downlink bandwidth.",
+            "zh": "元组队列及调度传输延时由元组大小、上下行带宽等参数计算。"
+          }
+        }
+      ]
+    },
+    "iotsim-edge": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "CoAP/XMPP labels denote protocol-dependent latency/energy profiles in the documented experiment; they are not evidence of wire-compatible application stacks.",
+        "zh": "CoAP/XMPP 标签表示实验中与协议相关的时延和能耗参数，不代表兼容线上报文的应用协议栈。"
+      },
+      "reviewedSources": [
+        "audit:iotsim-edge:overview",
+        "audit:iotsim-edge:dimension-3"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network",
+            "CoAP",
+            "XMPP"
+          ],
+          "scope": "abstract",
+          "source": "audit:iotsim-edge:dimension-3",
+          "note": {
+            "en": "CoAP/XMPP labels denote protocol-dependent latency/energy profiles in the documented experiment; they are not evidence of wire-compatible application stacks.",
+            "zh": "CoAP/XMPP 标签表示实验中与协议相关的时延和能耗参数，不代表兼容线上报文的应用协议栈。"
+          }
+        }
+      ]
+    },
+    "iotsim-osmosis": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "The project models SDN-managed IoT/edge/cloud data flows and resource allocation.",
+        "zh": "项目建模受 SDN 管理的物联网、边缘与云数据流及资源分配。"
+      },
+      "reviewedSources": [
+        "audit:iotsim-osmosis:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network",
+            "SDN"
+          ],
+          "scope": "abstract",
+          "source": "audit:iotsim-osmosis:overview",
+          "note": {
+            "en": "The project models SDN-managed IoT/edge/cloud data flows and resource allocation.",
+            "zh": "项目建模受 SDN 管理的物联网、边缘与云数据流及资源分配。"
+          }
+        }
+      ]
+    },
+    "itetris": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Vehicular ITS platform; the project documents road safety and traffic-efficiency scenarios.",
+        "zh": "车联网 ITS 平台；项目介绍道路安全与交通效率场景。"
+      },
+      "reviewedSources": [
+        "audit:itetris:overview"
+      ],
+      "entries": []
+    },
+    "kathar": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Docker- or Kubernetes-backed network emulation that executes actual network software.",
+        "zh": "基于 Docker 或 Kubernetes 运行真实网络软件的网络仿真环境。"
+      },
+      "reviewedSources": [
+        "audit:kathar:overview",
+        "network:kathara-labs"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Linux network stack"
+          ],
+          "scope": "runtime",
+          "source": "audit:kathar:overview",
+          "note": {
+            "en": "Network devices run container software on virtual L2 LANs; each lab controls the installed routing and application services.",
+            "zh": "网络设备在虚拟二层 LAN 上运行容器软件；每个实验控制安装的路由与应用服务。"
+          }
+        },
+        {
+          "values": [
+            "BGP",
+            "OSPF",
+            "RIP",
+            "DNS",
+            "HTTP",
+            "TCP",
+            "IPv6"
+          ],
+          "scope": "runtime",
+          "source": "network:kathara-labs",
+          "note": {
+            "en": "Official labs include BGP/OSPF/RIP interplay, DNS, HTTP/TCP and basic IPv6. These use lab-specific container images and configuration.",
+            "zh": "官方实验包含 BGP/OSPF/RIP 协同、DNS、HTTP/TCP 及基础 IPv6；需对应容器镜像与实验配置。"
+          }
+        }
+      ]
+    },
+    "leaf": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Compute nodes and communication links support traffic and energy studies.",
+        "zh": "计算节点与通信链路用于流量及能耗研究。"
+      },
+      "reviewedSources": [
+        "audit:leaf:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:leaf:overview",
+          "note": {
+            "en": "Compute nodes and communication links support traffic and energy studies.",
+            "zh": "计算节点与通信链路用于流量及能耗研究。"
+          }
+        }
+      ]
+    },
+    "lightmano": {
+      "date": "2026-09-09",
+      "disposition": "source-unavailable",
+      "summary": {
+        "en": "The original lightmano/lightmano-core GitHub endpoint returned HTTP 404. The inventory description remains available, but no public implementation was recovered from that endpoint.",
+        "zh": "原 lightmano/lightmano-core GitHub 入口返回 HTTP 404。保留清单简介，该入口没有提供可读取的公开实现。"
+      },
+      "reviewedSources": [],
+      "entries": []
+    },
+    "marssx86": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "QEMU/PTLsim full-system x86-64 simulator; boots a QEMU disk image.",
+        "zh": "基于 QEMU/PTLsim 的 x86-64 全系统仿真器，可启动 QEMU 磁盘镜像。"
+      },
+      "reviewedSources": [
+        "audit:marssx86:overview"
+      ],
+      "entries": []
+    },
+    "maxinet": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Distributed Mininet network emulation; the example runs real iperf processes on emulated hosts.",
+        "zh": "分布式 Mininet 网络仿真；示例在仿真主机中运行真实 iperf 进程。"
+      },
+      "reviewedSources": [
+        "audit:maxinet:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Linux network stack"
+          ],
+          "scope": "runtime",
+          "source": "audit:maxinet:overview",
+          "note": {
+            "en": "Real application networking runs through the configured Linux/container or VM stack. A particular routing daemon or application protocol must be installed and configured; no entire protocol catalog is inherited automatically.",
+            "zh": "真实应用通信通过配置的 Linux、容器或虚拟机协议栈运行；具体路由进程与应用协议需安装配置，不自动继承整套协议清单。"
+          }
+        }
+      ]
+    },
+    "mec-simulator": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "ClientApp schedules TaskOffloading objects using MecDelayModel::GetRadioDelay. This path does not install an ns-3 LTE/IP packet stack.",
+        "zh": "ClientApp 通过 MecDelayModel::GetRadioDelay 调度 TaskOffloading 对象，该路径不安装 ns-3 LTE/IP 分组协议栈。"
+      },
+      "reviewedSources": [
+        "audit:mec-simulator:overview",
+        "network:mec-simulator-more-1"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "network:mec-simulator-more-1",
+          "note": {
+            "en": "ClientApp schedules TaskOffloading objects using MecDelayModel::GetRadioDelay. This path does not install an ns-3 LTE/IP packet stack.",
+            "zh": "ClientApp 通过 MecDelayModel::GetRadioDelay 调度 TaskOffloading 对象，该路径不安装 ns-3 LTE/IP 分组协议栈。"
+          }
+        }
+      ]
+    },
+    "mobfogsim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "AP association, cloudlet bandwidth, latency and migration-transfer times are simulation parameters.",
+        "zh": "AP 关联、云端小型节点带宽、时延和迁移传输时间采用仿真参数。"
+      },
+      "reviewedSources": [
+        "audit:mobfogsim:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:mobfogsim:overview",
+          "note": {
+            "en": "AP association, cloudlet bandwidth, latency and migration-transfer times are simulation parameters.",
+            "zh": "AP 关联、云端小型节点带宽、时延和迁移传输时间采用仿真参数。"
+          }
+        }
+      ]
+    },
+    "mini-ndn": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Mininet-based environment runs real NDN components in an emulated network.",
+        "zh": "基于 Mininet，在仿真网络环境运行真实 NDN 组件。"
+      },
+      "reviewedSources": [
+        "audit:mini-ndn:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "NDN"
+          ],
+          "scope": "runtime",
+          "source": "audit:mini-ndn:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "NLSR"
+          ],
+          "scope": "runtime",
+          "source": "audit:mini-ndn:overview",
+          "note": {
+            "en": "Runs the real NDN Link State Routing daemon alongside NFD in the configured Mininet environment.",
+            "zh": "在配置的 Mininet 环境中运行真实 NLSR 命名数据链路状态路由进程及 NFD。"
+          }
+        }
+      ]
+    },
+    "minnet": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Runs real Linux programs in a virtual host/link/switch network.",
+        "zh": "在虚拟主机、链路及交换机网络中运行真实 Linux 程序。"
+      },
+      "reviewedSources": [
+        "audit:minnet:overview",
+        "network:mininet-walkthrough"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Ethernet"
+          ],
+          "scope": "runtime",
+          "source": "audit:minnet:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "Linux network stack"
+          ],
+          "scope": "runtime",
+          "source": "network:mininet-walkthrough",
+          "note": {
+            "en": "Real application networking runs through the configured Linux/container or VM stack. A particular routing daemon or application protocol must be installed and configured; no entire protocol catalog is inherited automatically.",
+            "zh": "真实应用通信通过配置的 Linux、容器或虚拟机协议栈运行；具体路由进程与应用协议需安装配置，不自动继承整套协议清单。"
+          }
+        },
+        {
+          "values": [
+            "TCP",
+            "UDP",
+            "ICMP",
+            "IPv4",
+            "OpenFlow",
+            "SDN"
+          ],
+          "scope": "runtime",
+          "source": "network:mininet-walkthrough",
+          "note": {
+            "en": "The walkthrough demonstrates ping, TCP/UDP iperf traffic and OpenFlow switching using real Linux hosts and configurable switches.",
+            "zh": "教程演示真实 Linux 主机上的 ping、TCP/UDP iperf 流量和可配置交换机上的 OpenFlow 交换。"
+          }
+        },
+        {
+          "values": [
+            "P4"
+          ],
+          "scope": "extension",
+          "source": "audit:minnet:overview",
+          "note": {
+            "en": "The project site identifies P4 experimentation; use an appropriate programmable switch integration rather than expecting the default OVS switch to execute P4.",
+            "zh": "项目网站列出 P4 实验用途；需接入相应可编程交换机，默认 OVS 交换机不会直接执行 P4。"
+          }
+        }
+      ]
+    },
+    "mininet-wifi": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Extends Mininet with WiFi stations and access points and runs standard wireless tools.",
+        "zh": "为 Mininet 增加 WiFi 站点与接入点，可运行标准无线网络工具。"
+      },
+      "reviewedSources": [
+        "audit:mininet-wifi:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "WiFi"
+          ],
+          "scope": "runtime",
+          "source": "audit:mininet-wifi:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "SDN"
+          ],
+          "scope": "runtime",
+          "source": "audit:mininet-wifi:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "OpenFlow"
+          ],
+          "scope": "runtime",
+          "source": "audit:mininet-wifi:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "Linux network stack"
+          ],
+          "scope": "runtime",
+          "source": "audit:mininet-wifi:overview",
+          "note": {
+            "en": "Real application networking runs through the configured Linux/container or VM stack. A particular routing daemon or application protocol must be installed and configured; no entire protocol catalog is inherited automatically.",
+            "zh": "真实应用通信通过配置的 Linux、容器或虚拟机协议栈运行；具体路由进程与应用协议需安装配置，不自动继承整套协议清单。"
+          }
+        }
+      ]
+    },
+    "mintedge": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "The README explicitly states RAN-agnostic operation; SNR, bandwidth and backhaul capacity parameterize communication.",
+        "zh": "README 明确说明不依赖特定 RAN；通信通过 SNR、带宽与回传容量参数化。"
+      },
+      "reviewedSources": [
+        "audit:mintedge:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network",
+            "Path-loss model"
+          ],
+          "scope": "abstract",
+          "source": "audit:mintedge:overview",
+          "note": {
+            "en": "The README explicitly states RAN-agnostic operation; SNR, bandwidth and backhaul capacity parameterize communication.",
+            "zh": "README 明确说明不依赖特定 RAN；通信通过 SNR、带宽与回传容量参数化。"
+          }
+        }
+      ]
+    },
+    "mobemu": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Opportunistic-network simulation driven by replayed mobility traces.",
+        "zh": "通过重放移动轨迹开展机会网络仿真。"
+      },
+      "reviewedSources": [
+        "audit:mobemu:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "DTN",
+            "Contact model"
+          ],
+          "scope": "abstract",
+          "source": "audit:mobemu:overview",
+          "note": {
+            "en": "Contact opportunities, mobility and message forwarding model delay-tolerant communication. This does not establish a full Bundle Protocol wire implementation.",
+            "zh": "通过接触机会、移动与消息转发建模容迟通信，不据此认定实现了完整 Bundle Protocol 报文协议。"
+          }
+        }
+      ]
+    },
+    "ndn4ivc": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Bidirectional ns-3/ndnSIM and SUMO coupling for vehicular Named Data Networking.",
+        "zh": "双向耦合 ns-3、ndnSIM 与 SUMO，研究车联网命名数据网络。"
+      },
+      "reviewedSources": [
+        "audit:ndn4ivc:overview",
+        "network:ndn4ivc-code-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "NDN"
+          ],
+          "scope": "packet",
+          "source": "audit:ndn4ivc:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "WiFi",
+            "IEEE 802.11p"
+          ],
+          "scope": "packet",
+          "source": "network:ndn4ivc-code-0",
+          "note": {
+            "en": "The pinned helper installs Wifi80211pHelper with OcbWifiMac and a 10 MHz OFDM mode for vehicular NDN.",
+            "zh": "固定提交辅助代码为车载 NDN 配置 Wifi80211pHelper、OcbWifiMac 与 10 MHz OFDM 模式。"
+          }
+        }
+      ]
+    },
+    "ndnsim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "ns-3-based NDN simulation can run applications written against ndn-cxx.",
+        "zh": "基于 ns-3 的 NDN 仿真可运行基于 ndn-cxx 编写的应用。"
+      },
+      "reviewedSources": [
+        "audit:ndnsim:overview",
+        "network:ndnsim-examples"
+      ],
+      "entries": [
+        {
+          "values": [
+            "NDN"
+          ],
+          "scope": "packet",
+          "source": "audit:ndnsim:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "Point-to-point"
+          ],
+          "scope": "packet",
+          "source": "network:ndnsim-examples",
+          "note": {
+            "en": "Official examples install NDN on point-to-point links. An OSPF weight in topology input is a routing cost, not evidence of OSPF protocol simulation.",
+            "zh": "官方示例在点到点链路上安装 NDN；拓扑文件中的 OSPF 权重是路径代价，不表示仿真了 OSPF 协议。"
+          }
+        }
+      ]
+    },
+    "nextgsim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Models RAN channels, control/user-plane state and link bandwidth/latency; routers use shortest-path forwarding. This is not a full wire-protocol implementation.",
+        "zh": "建模 RAN 信道、控制面与用户面状态及链路带宽、时延；路由器采用最短路径转发，不是完整线上协议实现。"
+      },
+      "reviewedSources": [
+        "audit:nextgsim:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network",
+            "Cellular RAN model"
+          ],
+          "scope": "abstract",
+          "source": "audit:nextgsim:overview",
+          "note": {
+            "en": "Models RAN channels, control/user-plane state and link bandwidth/latency; routers use shortest-path forwarding. This is not a full wire-protocol implementation.",
+            "zh": "建模 RAN 信道、控制面与用户面状态及链路带宽、时延；路由器采用最短路径转发，不是完整线上协议实现。"
+          }
+        }
+      ]
+    },
+    "nfaas": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "An ndnSIM/NFD extension models named-function execution using a Kernel Store for unikernel images. The documented cloud-node mode adds network delay and treats CPU resources as unlimited.",
+        "zh": "ndnSIM/NFD 扩展，通过保存 unikernel 镜像的 Kernel Store 建模具名函数执行；文档中的云节点模式增加网络时延，并将 CPU 资源视为无限。"
+      },
+      "reviewedSources": [
+        "review:nfaas:README.md"
+      ],
+      "entries": [
+        {
+          "values": [
+            "NDN"
+          ],
+          "scope": "packet",
+          "source": "review:nfaas:README.md",
+          "note": {
+            "en": "The documented NFaaS branch extends ndnSIM/NFD with named-function execution; it does not inherit every protocol of a newer ns-3 release.",
+            "zh": "NFaaS 文档分支在 ndnSIM/NFD 上扩展命名函数执行，不继承新版 ns-3 的全部协议。"
+          }
+        }
+      ]
+    },
+    "ns-3": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Packet-level Internet and wireless models. Built-in models and separately installed extensions are listed separately; each model implements a defined subset of its standard.",
+        "zh": "分组级互联网与无线网络模型。内置模型与需另行安装的扩展分别列出；各模型实现相应标准中明确界定的部分。"
+      },
+      "reviewedSources": [
+        "audit:ns-3:overview",
+        "network:ns3-internet-stack",
+        "network:ns3-internet-apps",
+        "network:ns3-routing-overview",
+        "network:ns3-wifi-design",
+        "network:ns3-csma",
+        "network:ns3-index",
+        "network:ns3-lte-design",
+        "network:ns3-lr-wpan",
+        "network:ns3-sixlowpan",
+        "network:ns3-zigbee",
+        "network:ns3-uan",
+        "network:ns3-openflow-switch",
+        "network:nr",
+        "network:lorawan",
+        "network:ns3-tcp"
+      ],
+      "entries": [
+        {
+          "values": [
+            "IPv4",
+            "IPv6",
+            "ARP",
+            "TCP",
+            "UDP"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-internet-stack",
+          "note": {
+            "en": "Internet-stack models at the pinned source revision; install the appropriate stack and NetDevice in the scenario.",
+            "zh": "固定提交中的互联网协议栈模型；场景需安装对应协议栈与网络设备。"
+          }
+        },
+        {
+          "values": [
+            "ICMP",
+            "ICMPv6",
+            "DHCP",
+            "DHCPv6"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-internet-apps",
+          "note": {
+            "en": "Ping covers IPv4/IPv6. DHCP client/server models have documented message and relay limitations; consult the selected model.",
+            "zh": "Ping 覆盖 IPv4/IPv6；DHCP 客户端与服务器模型有报文及中继限制，需查看对应模型说明。"
+          }
+        },
+        {
+          "values": [
+            "AODV",
+            "OLSR",
+            "DSDV",
+            "DSR",
+            "RIP",
+            "RIPng",
+            "Static routing",
+            "Global routing"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-routing-overview",
+          "note": {
+            "en": "Routing choices include MANET, distance-vector, static and centrally computed global routes. Global routing does not implement OSPF message exchange.",
+            "zh": "路由选项包括 MANET、距离向量、静态及集中计算的全局路由；全局路由不实现 OSPF 报文交换。"
+          }
+        },
+        {
+          "values": [
+            "WiFi",
+            "IEEE 802.11a",
+            "IEEE 802.11b",
+            "IEEE 802.11g",
+            "IEEE 802.11n",
+            "IEEE 802.11ac",
+            "IEEE 802.11ax",
+            "IEEE 802.11be",
+            "IEEE 802.11e",
+            "IEEE 802.11s"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-wifi-design",
+          "note": {
+            "en": "The pinned guide lists a/b/g/n/ac/ax/be PHY, EDCA and mesh models. Standard coverage is partial: For example, beamforming and PCF/HCCA are excluded in this revision.",
+            "zh": "固定提交手册列出 a/b/g/n/ac/ax/be PHY、EDCA 及 Mesh 模型。标准覆盖有边界，例如该版本不包含波束成形和 PCF/HCCA。"
+          }
+        },
+        {
+          "values": [
+            "Ethernet",
+            "CSMA"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-csma",
+          "note": {
+            "en": "Ethernet-style framing on a simplified shared channel; the model does not reproduce every IEEE 802.3 PHY or collision behavior.",
+            "zh": "简化共享信道上的以太网式帧模型，不复现 IEEE 802.3 的全部物理层和冲突行为。"
+          }
+        },
+        {
+          "values": [
+            "Point-to-point",
+            "Nix-vector routing"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-index",
+          "note": {
+            "en": "Separate point-to-point device and Nix-vector routing modules are included in the model catalog.",
+            "zh": "模型目录包含独立的点到点设备及 Nix-vector 路由模块。"
+          }
+        },
+        {
+          "values": [
+            "4G",
+            "LTE",
+            "EPC"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-lte-design",
+          "note": {
+            "en": "LTE models RRC, PDCP, RLC, MAC and PHY; EPC models core entities and interfaces. The guide specifies the fidelity and omissions of each layer.",
+            "zh": "LTE 建模 RRC、PDCP、RLC、MAC 与 PHY；EPC 建模核心网实体与接口，各层精度和省略项以手册为准。"
+          }
+        },
+        {
+          "values": [
+            "IEEE 802.15.4"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-lr-wpan",
+          "note": {
+            "en": "LR-WPAN supports beacon/non-beacon operation, slotted/unslotted CSMA/CA and scan/association within the documented PHY/MAC subset.",
+            "zh": "LR-WPAN 在文档界定的 PHY/MAC 范围内支持信标与非信标、时隙与非时隙 CSMA/CA、扫描与关联。"
+          }
+        },
+        {
+          "values": [
+            "6LoWPAN"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-sixlowpan",
+          "note": {
+            "en": "IPv6 adaptation with the documented compression, fragmentation and neighbor-discovery capabilities; configure a compatible underlying NetDevice.",
+            "zh": "IPv6 适配层，包含文档中的压缩、分片及邻居发现功能，需配置兼容的底层网络设备。"
+          }
+        },
+        {
+          "values": [
+            "Zigbee"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-zigbee",
+          "note": {
+            "en": "Research model with NWK/APS and limited ZDO functionality in this revision. Security, ZCL and the application framework are outside its implemented scope.",
+            "zh": "该提交提供 NWK/APS 与有限 ZDO 功能的研究模型，不包含安全机制、ZCL 和应用框架。"
+          }
+        },
+        {
+          "values": [
+            "Underwater acoustic model"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-uan",
+          "note": {
+            "en": "UAN provides acoustic PHY, channel and MAC abstractions; this tag identifies the underwater network model family, not a wire protocol.",
+            "zh": "UAN 提供水声 PHY、信道及 MAC 抽象；该标签表示水下网络模型家族，并非一个线上协议。"
+          }
+        },
+        {
+          "values": [
+            "OpenFlow"
+          ],
+          "scope": "extension",
+          "source": "network:ns3-openflow-switch",
+          "note": {
+            "en": "The OpenFlow switch module requires a separately built compatible OFSID library. It is not enabled by an ordinary ns-3 build alone.",
+            "zh": "OpenFlow 交换模块要求另行编译兼容的 OFSID 库，普通 ns-3 构建不会单独提供这项集成。"
+          }
+        },
+        {
+          "values": [
+            "5G",
+            "5G NR"
+          ],
+          "scope": "extension",
+          "source": "network:nr",
+          "note": {
+            "en": "Install CTTC 5G-LENA separately and follow its ns-3 version matrix (for example, 5G-LENA 5.1 with ns-3.48). This is not a bundled ns-3 module.",
+            "zh": "需另行安装 CTTC 5G-LENA，并遵循其 ns-3 版本对应表，例如 5G-LENA 5.1 对应 ns-3.48；它不是 ns-3 自带模块。"
+          }
+        },
+        {
+          "values": [
+            "LoRaWAN"
+          ],
+          "scope": "extension",
+          "source": "network:lorawan",
+          "note": {
+            "en": "Install the signetlabdei LoRaWAN module separately; use the compatible ns-3 revision specified by that module.",
+            "zh": "需另行安装 signetlabdei 的 LoRaWAN 模块，并采用该模块指定的兼容 ns-3 版本。"
+          }
+        },
+        {
+          "values": [
+            "TCP NewReno",
+            "TCP CUBIC",
+            "TCP BBR",
+            "DCTCP"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-tcp",
+          "note": {
+            "en": "The TCP guide documents selectable congestion-control implementations. Select the required SocketType; a TCP tag does not imply that all algorithms run simultaneously.",
+            "zh": "TCP 手册记录可选择的拥塞控制实现；需选择所需 SocketType，TCP 标签不表示同时运行所有算法。"
+          }
+        }
+      ]
+    },
+    "nossim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Network/system co-simulation couples host-compiled application execution with OMNeT++ networking.",
+        "zh": "网络与系统协同仿真将主机编译的应用执行与 OMNeT++ 网络模型结合。"
+      },
+      "reviewedSources": [
+        "audit:nossim:overview",
+        "network:nossim-code-0",
+        "network:nossim-code-1"
+      ],
+      "entries": [
+        {
+          "values": [
+            "lwIP"
+          ],
+          "scope": "packet",
+          "source": "audit:nossim:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "WiFi",
+            "IEEE 802.11n"
+          ],
+          "scope": "packet",
+          "source": "network:nossim-code-0",
+          "note": {
+            "en": "The archived vision-graph configuration selects opMode n and EDCA in its INET-compatible environment.",
+            "zh": "归档 vision-graph 配置在兼容 INET 环境中选择 n 模式与 EDCA。"
+          }
+        },
+        {
+          "values": [
+            "IEEE 802.15.4"
+          ],
+          "scope": "packet",
+          "source": "network:nossim-code-1",
+          "note": {
+            "en": "The file named omnetpp.ini.6lowpan configures MAC addresses and CSMA backoffs. Its filename alone does not establish a complete IPv6/6LoWPAN adaptation stack.",
+            "zh": "名为 omnetpp.ini.6lowpan 的文件配置 MAC 地址与 CSMA 退避；文件名本身不能证明完整 IPv6/6LoWPAN 适配栈。"
+          }
+        }
+      ]
+    },
+    "omnetpp": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "OMNeT++ supplies the simulation kernel and tooling; network protocols are selected through model frameworks such as INET.",
+        "zh": "OMNeT++ 提供仿真内核与工具；网络协议通过 INET 等模型框架配置。"
+      },
+      "reviewedSources": [
+        "audit:omnetpp:overview",
+        "network:inet-features"
+      ],
+      "entries": [
+        {
+          "values": [
+            "IPv4",
+            "IPv6",
+            "TCP",
+            "UDP",
+            "SCTP",
+            "OSPF",
+            "BGP",
+            "Ethernet",
+            "PPP",
+            "WiFi",
+            "MPLS",
+            "LDP",
+            "RSVP-TE"
+          ],
+          "scope": "extension",
+          "source": "network:inet-features",
+          "note": {
+            "en": "These models are provided by the separately installed INET framework, not the OMNeT++ simulation kernel. Select a mutually compatible OMNeT++/INET version.",
+            "zh": "这些模型来自另行安装的 INET 框架，不属于 OMNeT++ 仿真内核；需选择相互兼容的版本。"
+          }
+        }
+      ]
+    },
+    "open-simulator": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Simulates Kubernetes scheduling and resource placement. Pod or node network fields do not establish packet-network simulation.",
+        "zh": "仿真 Kubernetes 调度及资源放置；Pod 或节点网络字段不表示分组网络仿真。"
+      },
+      "reviewedSources": [
+        "audit:open-simulator:overview"
+      ],
+      "entries": []
+    },
+    "packet-tracer": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Interactive educational network simulation.",
+        "zh": "交互式教学网络仿真。"
+      },
+      "reviewedSources": [
+        "audit:packet-tracer:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP",
+            "TFTP",
+            "Telnet",
+            "SSH",
+            "DNS",
+            "DHCP",
+            "TCP",
+            "UDP",
+            "IPv4",
+            "IPv6",
+            "ICMP",
+            "ICMPv6",
+            "ARP",
+            "RIP",
+            "RIPng",
+            "OSPF",
+            "EIGRP",
+            "Ethernet",
+            "PPP",
+            "HDLC",
+            "Frame Relay",
+            "STP",
+            "RSTP",
+            "VLAN",
+            "VTP",
+            "DTP",
+            "CDP",
+            "PAgP",
+            "WiFi",
+            "Static routing"
+          ],
+          "scope": "packet",
+          "source": "audit:packet-tracer:overview",
+          "note": {
+            "en": "Cisco-hosted Packet Tracer 5.1 presentation, slide 7: Educational protocol models and a subset of IOS commands. This historical baseline does not certify every option in a current release.",
+            "zh": "Cisco 托管的 Packet Tracer 5.1 演示文稿第 7 页列出教学协议模型及 IOS 命令子集；该历史基线不证明当前版本的每个选项。"
+          }
+        }
+      ]
+    },
+    "peersim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Peer-to-peer simulation with cycle-based and event-driven engines.",
+        "zh": "对等网络仿真，提供周期驱动和事件驱动引擎。"
+      },
+      "reviewedSources": [
+        "audit:peersim:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:peersim:overview",
+          "note": {
+            "en": "Cycle/event-driven protocol experiments deliberately abstract transport details.",
+            "zh": "周期或事件驱动协议实验有意抽象传输层细节。"
+          }
+        },
+        {
+          "values": [
+            "Chord",
+            "Kademlia",
+            "Pastry",
+            "BitTorrent"
+          ],
+          "scope": "extension",
+          "source": "audit:peersim:overview",
+          "note": {
+            "en": "These are separately downloadable contributed models listed by the project; they are not all bundled in the simulator core.",
+            "zh": "这些是项目列出的可单独下载的贡献模型，并非全部内置于仿真器内核。"
+          }
+        }
+      ]
+    },
+    "pfogsim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Node/link topology, user movement and fog grouping parameterize network experiments.",
+        "zh": "节点与链路拓扑、用户移动和雾节点分组共同定义网络实验。"
+      },
+      "reviewedSources": [
+        "audit:pfogsim:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:pfogsim:overview",
+          "note": {
+            "en": "Node/link topology, user movement and fog grouping parameterize network experiments.",
+            "zh": "节点与链路拓扑、用户移动和雾节点分组共同定义网络实验。"
+          }
+        }
+      ]
+    },
+    "pureedgesim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "The README explicitly models communication technologies with adjustable mathematical equations, bandwidth, delay and energy parameters, not detailed protocol packets.",
+        "zh": "README 明确采用可调数学公式及带宽、时延、能耗参数表示通信技术，不进行详细协议分组建模。"
+      },
+      "reviewedSources": [
+        "audit:pureedgesim:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network",
+            "WiFi",
+            "4G",
+            "5G",
+            "Ethernet"
+          ],
+          "scope": "abstract",
+          "source": "audit:pureedgesim:overview",
+          "note": {
+            "en": "The README explicitly models communication technologies with adjustable mathematical equations, bandwidth, delay and energy parameters, not detailed protocol packets.",
+            "zh": "README 明确采用可调数学公式及带宽、时延、能耗参数表示通信技术，不进行详细协议分组建模。"
+          }
+        }
+      ]
+    },
+    "rasim": {
+      "date": "2026-09-09",
+      "disposition": "source-unavailable",
+      "summary": {
+        "en": "The original RaSim download endpoint could not be opened. The inventory description is retained; executable downloads and implementation details are unavailable from that endpoint.",
+        "zh": "原 RaSim 下载入口无法打开。保留清单简介，该入口无法提供可执行下载及实现细节。"
+      },
+      "reviewedSources": [],
+      "entries": []
+    },
+    "recap-des": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "CloudSimPlus 4.0.6 extension for distributed edge systems.",
+        "zh": "面向分布式边缘系统的 CloudSimPlus 4.0.6 扩展。"
+      },
+      "reviewedSources": [
+        "audit:recap-des:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:recap-des:overview",
+          "note": {
+            "en": "The project technical deliverable models infrastructure links and application/workload interactions. The historical endpoint is unavailable; this describes the archived design.",
+            "zh": "项目技术交付文档建模基础设施链路及应用、负载交互；历史项目入口失效，此处描述归档设计。"
+          }
+        }
+      ]
+    },
+    "recap-simulator-framework": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Integrates discrete-event and discrete-time simulation.",
+        "zh": "整合离散事件与离散时间仿真。"
+      },
+      "reviewedSources": [
+        "audit:recap-simulator-framework:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "packet",
+          "source": "audit:recap-simulator-framework:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "satedgesim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Dynamic satellite topology, distance, bandwidth and energy constraints define the modeled communication environment.",
+        "zh": "动态卫星拓扑、距离、带宽及能量约束定义建模通信环境。"
+      },
+      "reviewedSources": [
+        "audit:satedgesim:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:satedgesim:overview",
+          "note": {
+            "en": "Dynamic satellite topology, distance, bandwidth and energy constraints define the modeled communication environment.",
+            "zh": "动态卫星拓扑、距离、带宽及能量约束定义建模通信环境。"
+          }
+        }
+      ]
+    },
+    "shadow": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Discrete-event simulation executes unmodified Linux processes through system-call interposition.",
+        "zh": "通过系统调用拦截，在离散事件仿真中执行未修改的 Linux 进程。"
+      },
+      "reviewedSources": [
+        "audit:shadow:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "TCP"
+          ],
+          "scope": "packet",
+          "source": "audit:shadow:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "UDP"
+          ],
+          "scope": "packet",
+          "source": "audit:shadow:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "sumo-its": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "SUMO models road traffic and mobility; coupled communication requires a network simulator. Road-routing algorithms are not packet-routing protocols.",
+        "zh": "SUMO 建模道路交通及移动；耦合通信需使用网络仿真器，道路路径算法不是分组路由协议。"
+      },
+      "reviewedSources": [
+        "audit:sumo-its:overview"
+      ],
+      "entries": []
+    },
+    "simfaas": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Models request arrivals, warm/cold service instances and execution distributions. The documented model focuses on serverless performance, not a packet network.",
+        "zh": "建模请求到达、冷热服务实例及执行分布；文档模型关注无服务器性能，不是分组网络。"
+      },
+      "reviewedSources": [
+        "audit:simfaas:overview"
+      ],
+      "entries": []
+    },
+    "simflex": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Full-system architecture simulation with Simics; runs unmodified applications and operating systems.",
+        "zh": "结合 Simics 进行全系统体系结构仿真，可运行未修改的应用与操作系统。"
+      },
+      "reviewedSources": [
+        "audit:simflex:overview"
+      ],
+      "entries": []
+    },
+    "simgrid": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Default analytical models estimate resource sharing and TCP effects (such as LV08/CM02); packet simulation is a separate ns-3 integration.",
+        "zh": "默认解析模型估计资源共享及 TCP 效应，例如 LV08/CM02；分组仿真需单独接入 ns-3。"
+      },
+      "reviewedSources": [
+        "audit:simgrid:overview",
+        "network:simgrid-code-0",
+        "network:simgrid-code-1"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network",
+            "TCP/IP model",
+            "Flow sharing"
+          ],
+          "scope": "abstract",
+          "source": "network:simgrid-code-0",
+          "note": {
+            "en": "Default analytical models estimate resource sharing and TCP effects (such as LV08/CM02); packet simulation is a separate ns-3 integration.",
+            "zh": "默认解析模型估计资源共享及 TCP 效应，例如 LV08/CM02；分组仿真需单独接入 ns-3。"
+          }
+        },
+        {
+          "values": [
+            "TCP",
+            "IPv4",
+            "WiFi",
+            "CSMA",
+            "Point-to-point"
+          ],
+          "scope": "extension",
+          "source": "network:simgrid-code-1",
+          "note": {
+            "en": "The separately configured ns-3 backend implements these devices and TCP/IPv4 transfers in its adapter. This does not expose every protocol in ns-3.",
+            "zh": "另行配置的 ns-3 后端在适配器中使用这些设备及 TCP/IPv4 传输，不开放 ns-3 中的全部协议。"
+          }
+        }
+      ]
+    },
+    "simmobility": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Road-network and traveler/vehicle routing describe mobility. They are not IP routing protocols.",
+        "zh": "道路网络及旅客、车辆路径表示交通移动，不是 IP 路由协议。"
+      },
+      "reviewedSources": [
+        "audit:simmobility:overview"
+      ],
+      "entries": []
+    },
+    "simpleiotsimulator": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Commercial simulator creates IoT sensor and gateway test environments.",
+        "zh": "商业仿真器创建物联网传感器及网关测试环境。"
+      },
+      "reviewedSources": [
+        "audit:simpleiotsimulator:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "LoRaWAN"
+          ],
+          "scope": "packet",
+          "source": "audit:simpleiotsimulator:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "CoAP"
+          ],
+          "scope": "packet",
+          "source": "audit:simpleiotsimulator:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "packet",
+          "source": "audit:simpleiotsimulator:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "MQTT-SN"
+          ],
+          "scope": "packet",
+          "source": "audit:simpleiotsimulator:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "packet",
+          "source": "audit:simpleiotsimulator:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "Modbus"
+          ],
+          "scope": "packet",
+          "source": "audit:simpleiotsimulator:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "BACnet"
+          ],
+          "scope": "packet",
+          "source": "audit:simpleiotsimulator:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "simu5g": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "5G NR and LTE/LTE-Advanced user-plane simulation integrated with OMNeT++ and INET.",
+        "zh": "集成 OMNeT++ 和 INET 的 5G NR、LTE/LTE-Advanced 用户面仿真。"
+      },
+      "reviewedSources": [
+        "audit:simu5g:overview",
+        "filter:simu5g:mec"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "packet",
+          "source": "filter:simu5g:mec",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "TCP"
+          ],
+          "scope": "packet",
+          "source": "filter:simu5g:mec",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "UDP"
+          ],
+          "scope": "packet",
+          "source": "filter:simu5g:mec",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "5G"
+          ],
+          "scope": "packet",
+          "source": "audit:simu5g:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "4G"
+          ],
+          "scope": "packet",
+          "source": "audit:simu5g:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "LTE",
+            "5G NR",
+            "GTP"
+          ],
+          "scope": "packet",
+          "source": "audit:simu5g:overview",
+          "note": {
+            "en": "The README specifies LTE/NR user-plane stacks and a simplified PGW/UPF with GTP. RRC-based dynamic bearer setup is excluded.",
+            "zh": "README 描述 LTE/NR 用户面协议栈及含 GTP 的简化 PGW/UPF，不包含基于 RRC 的动态承载建立。"
+          }
+        }
+      ]
+    },
+    "simulte": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Historical LTE/LTE-Advanced user-plane simulation for OMNeT++ and INET.",
+        "zh": "用于 OMNeT++、INET 的历史 LTE、LTE-Advanced 用户面仿真。"
+      },
+      "reviewedSources": [
+        "audit:simulte:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "4G"
+          ],
+          "scope": "packet",
+          "source": "audit:simulte:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "LTE"
+          ],
+          "scope": "packet",
+          "source": "audit:simulte:overview",
+          "note": {
+            "en": "LTE/LTE-Advanced user-plane simulation for the documented OMNeT++/INET combination; not a 5G NR implementation.",
+            "zh": "针对文档指定 OMNeT++/INET 组合的 LTE/LTE-Advanced 用户面仿真，不是 5G NR 实现。"
+          }
+        }
+      ]
+    },
+    "sleipnir": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Connections sample QoS profiles exposing latency and bandwidth.",
+        "zh": "连接对 QoS 参数采样，提供时延与带宽。"
+      },
+      "reviewedSources": [
+        "audit:sleipnir:overview",
+        "network:sleipnir-more-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "network:sleipnir-more-0",
+          "note": {
+            "en": "Connections sample QoS profiles exposing latency and bandwidth.",
+            "zh": "连接对 QoS 参数采样，提供时延与带宽。"
+          }
+        }
+      ]
+    },
+    "starrynet": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Container-based satellite network emulation using real Linux networking and routing processes.",
+        "zh": "使用真实 Linux 网络及路由进程的容器化卫星网络仿真环境。"
+      },
+      "reviewedSources": [
+        "audit:starrynet:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "OSPF"
+          ],
+          "scope": "runtime",
+          "source": "audit:starrynet:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "step-one": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Process-oriented simulation based on The ONE, with BPMN process models.",
+        "zh": "基于 The ONE 的流程仿真，使用 BPMN 流程模型。"
+      },
+      "reviewedSources": [
+        "audit:step-one:overview",
+        "network:step-one-more-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "DTN",
+            "Contact model"
+          ],
+          "scope": "abstract",
+          "source": "network:step-one-more-0",
+          "note": {
+            "en": "Contact opportunities, mobility and message forwarding model delay-tolerant communication. This does not establish a full Bundle Protocol wire implementation.",
+            "zh": "通过接触机会、移动与消息转发建模容迟通信，不据此认定实现了完整 Bundle Protocol 报文协议。"
+          }
+        }
+      ]
+    },
+    "svl-simulator": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Archived autonomous-driving simulator with sensor and vehicle APIs. Communication with a driving stack depends on the configured bridge.",
+        "zh": "归档自动驾驶仿真器提供传感器与车辆 API；与驾驶栈的通信取决于配置的桥接组件。"
+      },
+      "reviewedSources": [
+        "audit:svl-simulator:overview"
+      ],
+      "entries": []
+    },
+    "the-one": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Delay-tolerant/opportunistic network simulation.",
+        "zh": "容迟及机会网络仿真。"
+      },
+      "reviewedSources": [
+        "audit:the-one:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "DTN"
+          ],
+          "scope": "packet",
+          "source": "audit:the-one:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "DTN",
+            "Contact model"
+          ],
+          "scope": "abstract",
+          "source": "audit:the-one:overview",
+          "note": {
+            "en": "Contact opportunities, mobility and message forwarding model delay-tolerant communication. This does not establish a full Bundle Protocol wire implementation.",
+            "zh": "通过接触机会、移动与消息转发建模容迟通信，不据此认定实现了完整 Bundle Protocol 报文协议。"
+          }
+        }
+      ]
+    },
+    "veins-its": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Vehicular network simulation framework.",
+        "zh": "车联网仿真框架。"
+      },
+      "reviewedSources": [
+        "audit:veins-its:overview",
+        "review:veins-its:src/veins/modules/mac/ieee80211p/Mac1609_4.cc",
+        "network:veins-features"
+      ],
+      "entries": [
+        {
+          "values": [
+            "WiFi"
+          ],
+          "scope": "packet",
+          "source": "review:veins-its:src/veins/modules/mac/ieee80211p/Mac1609_4.cc",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "IEEE 802.11p",
+            "IEEE 1609.4"
+          ],
+          "scope": "packet",
+          "source": "network:veins-features",
+          "note": {
+            "en": "Vehicular IEEE 802.11p and the documented multichannel IEEE 1609.4 MAC subset; use the release-compatible model combination.",
+            "zh": "车载 IEEE 802.11p 及文档界定的多信道 IEEE 1609.4 MAC 子集，需使用版本兼容的模型组合。"
+          }
+        }
+      ]
+    },
+    "veins-lte-its": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Heterogeneous vehicular networking integrates Veins, SUMO, and SimuLTE.",
+        "zh": "异构车联网集成 Veins、SUMO 及 SimuLTE。"
+      },
+      "reviewedSources": [
+        "audit:veins-lte-its:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "WiFi"
+          ],
+          "scope": "packet",
+          "source": "audit:veins-lte-its:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "4G"
+          ],
+          "scope": "packet",
+          "source": "audit:veins-lte-its:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "IEEE 802.11p",
+            "IEEE 1609.4"
+          ],
+          "scope": "packet",
+          "source": "audit:veins-lte-its:overview",
+          "note": {
+            "en": "Vehicular IEEE 802.11p and the documented multichannel IEEE 1609.4 MAC subset; use the release-compatible model combination.",
+            "zh": "车载 IEEE 802.11p 及文档界定的多信道 IEEE 1609.4 MAC 子集，需使用版本兼容的模型组合。"
+          }
+        }
+      ]
+    },
+    "ventos": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Vehicle traffic and collaborative-driving simulation with DSRC communication.",
+        "zh": "通过 DSRC 通信开展车辆交通及协同驾驶仿真。"
+      },
+      "reviewedSources": [
+        "audit:ventos:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "DSRC"
+          ],
+          "scope": "packet",
+          "source": "audit:ventos:overview",
+          "note": {
+            "en": "DSRC-enabled vehicle/infrastructure communication is part of the project scope.",
+            "zh": "项目提供支持 DSRC 的车车与车路通信。"
+          }
+        },
+        {
+          "values": [
+            "SNMP"
+          ],
+          "scope": "extension",
+          "source": "audit:ventos:overview",
+          "note": {
+            "en": "The project documents bidirectional integration with an Econolite COBALT traffic controller through SNMP.",
+            "zh": "项目记录了经 SNMP 与 Econolite COBALT 交通控制器双向交互的集成。"
+          }
+        }
+      ]
+    },
+    "vessim": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Electrical microgrid co-simulation and optional software-in-the-loop integration. The electrical grid is not a computer-network protocol model.",
+        "zh": "电力微网协同仿真及可选软件在环集成；电网不是计算机网络协议模型。"
+      },
+      "reviewedSources": [
+        "audit:vessim:overview"
+      ],
+      "entries": []
+    },
+    "virtfogsim": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "The toolbox optimizes task placement with modeled communication resources and energy/delay; a 5G study setting does not establish an NR packet stack.",
+        "zh": "工具箱使用建模通信资源及能耗、时延优化任务放置；5G 研究场景不证明 NR 分组协议栈。"
+      },
+      "reviewedSources": [
+        "audit:virtfogsim:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:virtfogsim:overview",
+          "note": {
+            "en": "The toolbox optimizes task placement with modeled communication resources and energy/delay; a 5G study setting does not establish an NR packet stack.",
+            "zh": "工具箱使用建模通信资源及能耗、时延优化任务放置；5G 研究场景不证明 NR 分组协议栈。"
+          }
+        }
+      ]
+    },
+    "vns": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "The project couples vehicle mobility with a selected network simulator; protocols depend on the configured networking component.",
+        "zh": "项目将车辆移动与选定网络仿真器耦合；协议取决于配置的网络组件。"
+      },
+      "reviewedSources": [
+        "audit:vns:overview"
+      ],
+      "entries": []
+    },
+    "wotemu": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Runs real Python WoTPy applications in a Docker Swarm emulation environment.",
+        "zh": "在 Docker Swarm 仿真环境中运行真实 Python WoTPy 应用。"
+      },
+      "reviewedSources": [
+        "audit:wotemu:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "runtime",
+          "source": "audit:wotemu:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "CoAP"
+          ],
+          "scope": "runtime",
+          "source": "audit:wotemu:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "WebSocket"
+          ],
+          "scope": "runtime",
+          "source": "audit:wotemu:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "runtime",
+          "source": "audit:wotemu:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "yafs-yet-another-fog-simulator": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Dynamic graph topology and per-message/per-hop transmission timing model communication.",
+        "zh": "通过动态图拓扑和每消息、每跳传输时间建模通信。"
+      },
+      "reviewedSources": [
+        "audit:yafs-yet-another-fog-simulator:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Abstract network"
+          ],
+          "scope": "abstract",
+          "source": "audit:yafs-yet-another-fog-simulator:overview",
+          "note": {
+            "en": "Dynamic graph topology and per-message/per-hop transmission timing model communication.",
+            "zh": "通过动态图拓扑和每消息、每跳传输时间建模通信。"
+          }
+        }
+      ]
+    },
+    "clawbox": {
+      "date": "2026-09-09",
+      "disposition": "source-unavailable",
+      "summary": {
+        "en": "The former ClawBox product domain now serves an unrelated AI resource hub. Its current contents provide no ClawBox product specification.",
+        "zh": "原 ClawBox 产品域名现提供无关 AI 资源内容，当前页面没有 ClawBox 产品规格。"
+      },
+      "reviewedSources": [],
+      "entries": []
+    },
+    "aimdb": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Typed Rust data pipelines execute across microcontrollers, gateways, cloud, and browsers.",
+        "zh": "类型化 Rust 数据管道跨微控制器、网关、云及浏览器执行。"
+      },
+      "reviewedSources": [
+        "audit:aimdb:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "service",
+          "source": "audit:aimdb:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "KNX",
+            "WebSocket",
+            "TCP"
+          ],
+          "scope": "service",
+          "source": "audit:aimdb:overview",
+          "note": {
+            "en": "The README connector table lists these shipping connectors; enabled runtime features differ between std, no_std and wasm.",
+            "zh": "README 连接器表列出这些已提供的连接器；std、no_std 与 wasm 的启用条件不同。"
+          }
+        }
+      ]
+    },
+    "akraino-edge-stack": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "A family of deployable blueprints. 5G/IoT use cases describe blueprint scope; choose a specific blueprint before selecting its protocol implementation.",
+        "zh": "可部署蓝图集合；5G/IoT 用例描述蓝图范围，需选定具体蓝图后判断其协议实现。"
+      },
+      "reviewedSources": [
+        "audit:akraino-edge-stack:overview"
+      ],
+      "entries": []
+    },
+    "apache-edgent-incubating": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Historical edge stream-processing runtime executes local analytics.",
+        "zh": "历史边缘流处理运行时执行本地分析。"
+      },
+      "reviewedSources": [
+        "audit:apache-edgent-incubating:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "MQTT",
+            "Kafka"
+          ],
+          "scope": "service",
+          "source": "audit:apache-edgent-incubating:overview",
+          "note": {
+            "en": "Archived Edgent includes MQTT and Kafka connectors; configure the matching client and broker.",
+            "zh": "归档 Edgent 包含 MQTT 与 Kafka 连接器，需配置对应客户端与消息代理。"
+          }
+        }
+      ]
+    },
+    "apache-openwhisk": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Distributed serverless platform executes event-triggered functions.",
+        "zh": "分布式无服务器平台执行事件触发函数。"
+      },
+      "reviewedSources": [
+        "audit:apache-openwhisk:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "audit:apache-openwhisk:overview",
+          "note": {
+            "en": "HTTP invocations and the REST control API are application interfaces, not network simulation models.",
+            "zh": "HTTP 调用和 REST 控制 API 属于应用接口，不是网络仿真模型。"
+          }
+        }
+      ]
+    },
+    "areg-sdk": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "C++ middleware runs services across threads, processes, and networked devices.",
+        "zh": "C++ 中间件跨线程、进程和联网设备运行服务。"
+      },
+      "reviewedSources": [
+        "audit:areg-sdk:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "TCP"
+          ],
+          "scope": "service",
+          "source": "audit:areg-sdk:overview",
+          "note": {
+            "en": "Cross-process/device service routing uses the documented TCP transport. Benchmark comparisons to other libraries do not establish support for their protocols.",
+            "zh": "跨进程及设备服务路由使用文档中的 TCP 传输；与其他库的基准比较不表示支持其协议。"
+          }
+        }
+      ]
+    },
+    "baetyl": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Cloud-managed edge framework deploys real container and function applications.",
+        "zh": "云端管理的边缘框架部署真实容器和函数应用。"
+      },
+      "reviewedSources": [
+        "audit:baetyl:overview",
+        "network:baetyl-more-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "service",
+          "source": "network:baetyl-more-0",
+          "note": {
+            "en": "The mqttlink plugin publishes state and processes link events using the Baetyl MQTT client; configure this plugin explicitly.",
+            "zh": "mqttlink 插件使用 Baetyl MQTT 客户端发布状态及处理连接事件，需明确配置该插件。"
+          }
+        }
+      ]
+    },
+    "bochs": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Emulates an x86 PC and executes guest operating systems and software.",
+        "zh": "仿真 x86 计算机并执行客户操作系统及软件。"
+      },
+      "reviewedSources": [
+        "audit:bochs:overview",
+        "network:bochs-network"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Ethernet"
+          ],
+          "scope": "runtime",
+          "source": "network:bochs-network",
+          "note": {
+            "en": "Emulated NE2000/e1000 adapters connect guest networking to a selected packet mover. e1000 needs the corresponding build option; the guest OS supplies higher protocols.",
+            "zh": "仿真 NE2000/e1000 网卡通过所选 packet mover 接入网络；e1000 需对应编译选项，更高层协议由客户机操作系统提供。"
+          }
+        }
+      ]
+    },
+    "boinc": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Volunteer-computing platform runs distributed high-throughput workloads.",
+        "zh": "志愿计算平台运行分布式高吞吐工作负载。"
+      },
+      "reviewedSources": [
+        "audit:boinc:overview",
+        "network:boinc-more-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "network:boinc-more-0",
+          "note": {
+            "en": "The client implements GET, POST and PUT through libcurl for project communication and transfers.",
+            "zh": "客户端通过 libcurl 实现 GET、POST 和 PUT，用于项目通信与文件传输。"
+          }
+        }
+      ]
+    },
+    "chameleon": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Experimental infrastructure for edge-to-cloud research.",
+        "zh": "用于边缘到云研究的实验基础设施。"
+      },
+      "reviewedSources": [
+        "audit:chameleon:overview"
+      ],
+      "entries": []
+    },
+    "distributed-strom": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Apache Storm extension executes adaptive distributed stream-processing placement.",
+        "zh": "Apache Storm 扩展执行自适应分布式流处理放置。"
+      },
+      "reviewedSources": [
+        "audit:distributed-strom:overview"
+      ],
+      "entries": []
+    },
+    "enorm": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Research prototype runs edge services for a cloud-connected mobile application.",
+        "zh": "研究原型为连接云端的移动应用运行边缘服务。"
+      },
+      "reviewedSources": [
+        "audit:enorm:overview"
+      ],
+      "entries": []
+    },
+    "edgegallery-documents-maintained-in-chinese": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "MEC platform family for edge applications and cloud interconnection.",
+        "zh": "用于边缘应用及云互联的 MEC 平台系列。"
+      },
+      "reviewedSources": [
+        "audit:edgegallery-documents-maintained-in-chinese:overview"
+      ],
+      "entries": []
+    },
+    "edgemesh": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "KubeEdge data plane provides discovery and proxies traffic between real edge applications.",
+        "zh": "KubeEdge 数据面为真实边缘应用提供服务发现和流量代理。"
+      },
+      "reviewedSources": [
+        "audit:edgemesh:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "audit:edgemesh:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "HTTPS"
+          ],
+          "scope": "service",
+          "source": "audit:edgemesh:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "TCP"
+          ],
+          "scope": "service",
+          "source": "audit:edgemesh:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "UDP"
+          ],
+          "scope": "service",
+          "source": "audit:edgemesh:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "WebSocket"
+          ],
+          "scope": "service",
+          "source": "audit:edgemesh:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "DNS"
+          ],
+          "scope": "service",
+          "source": "audit:edgemesh:overview",
+          "note": {
+            "en": "EdgeDNS provides service discovery alongside the documented traffic proxies and LibP2P tunnels.",
+            "zh": "EdgeDNS 提供服务发现，并与文档中的流量代理、LibP2P 隧道配合。"
+          }
+        }
+      ]
+    },
+    "edgex-foundry": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Modular middleware connects real IoT devices and edge applications.",
+        "zh": "模块化中间件连接真实物联网设备及边缘应用。"
+      },
+      "reviewedSources": [
+        "audit:edgex-foundry:overview",
+        "review:edgex-foundry:service-metrics",
+        "network:edgex-services",
+        "network:edgex-coap"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "review:edgex-foundry:service-metrics",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "service",
+          "source": "review:edgex-foundry:service-metrics",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "Modbus",
+            "BACnet",
+            "BLE",
+            "OPC UA",
+            "SNMP",
+            "ONVIF"
+          ],
+          "scope": "extension",
+          "source": "network:edgex-services",
+          "note": {
+            "en": "Install the matching device service and driver. The linked historical catalog is not a claim that every connector ships with the current default deployment.",
+            "zh": "需安装对应设备服务及驱动；所引历史组件目录不表示当前默认部署包含全部连接器。"
+          }
+        },
+        {
+          "values": [
+            "CoAP"
+          ],
+          "scope": "extension",
+          "source": "network:edgex-coap",
+          "note": {
+            "en": "Device CoAP is a separately deployed service for CoAP-based REST device communication.",
+            "zh": "Device CoAP 是需单独部署的设备服务，用于基于 CoAP 的 REST 通信。"
+          }
+        }
+      ]
+    },
+    "folding-home": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Volunteer computers execute biomedical simulation work units.",
+        "zh": "志愿者计算机执行生物医学仿真工作单元。"
+      },
+      "reviewedSources": [
+        "audit:folding-home:overview"
+      ],
+      "entries": []
+    },
+    "fogatlas": {
+      "date": "2026-09-09",
+      "disposition": "source-unavailable",
+      "summary": {
+        "en": "The project URL redirects to a Google sign-in page; public technical details were not accessible.",
+        "zh": "项目网址跳转到 Google 登录页，公开技术细节不可访问。"
+      },
+      "reviewedSources": [],
+      "entries": []
+    },
+    "fogflow": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Runs context-driven IoT processing flows across cloud and edge.",
+        "zh": "跨云和边缘运行上下文驱动的物联网处理流程。"
+      },
+      "reviewedSources": [
+        "audit:fogflow:overview",
+        "network:fogflow-integration"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP",
+            "NGSI"
+          ],
+          "scope": "service",
+          "source": "network:fogflow-integration",
+          "note": {
+            "en": "The v2.0 integration guide configures NGSI register/update calls over HTTP.",
+            "zh": "v2.0 接入指南通过 HTTP 配置 NGSI 注册与更新调用。"
+          }
+        },
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "extension",
+          "source": "network:fogflow-integration",
+          "note": {
+            "en": "MQTT devices connect through the documented FIWARE IoT Agent integration; deploy the agent and broker for that path.",
+            "zh": "MQTT 设备通过文档中的 FIWARE IoT Agent 接入，需部署该路径的代理与消息服务。"
+          }
+        }
+      ]
+    },
+    "foresthub-edge-agents": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "MQTT is implemented as a workflow transport. The README marks OPC UA and Modbus as roadmap items, and describes the engine as having no inbound HTTP server.",
+        "zh": "MQTT 已作为工作流传输实现；README 将 OPC UA 与 Modbus 列为规划项，并说明引擎不提供入站 HTTP 服务。"
+      },
+      "reviewedSources": [
+        "audit:foresthub-edge-agents:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "service",
+          "source": "audit:foresthub-edge-agents:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "k3os": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Historical Linux distribution designed to run k3s workloads.",
+        "zh": "为运行 k3s 工作负载设计的历史 Linux 发行版。"
+      },
+      "reviewedSources": [
+        "audit:k3os:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "WiFi"
+          ],
+          "scope": "runtime",
+          "source": "audit:k3os:overview",
+          "note": {
+            "en": "The archived k3OS configuration documents connman-managed Wi-Fi name/passphrase settings; more complex configuration is supplied through connman.",
+            "zh": "归档 k3OS 配置通过 connman 管理 Wi-Fi 名称与口令；复杂配置需由 connman 提供。"
+          }
+        }
+      ]
+    },
+    "k3s": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Kubernetes distribution runs workloads in resource-constrained edge and IoT environments.",
+        "zh": "Kubernetes 发行版在资源受限的边缘及物联网环境运行工作负载。"
+      },
+      "reviewedSources": [
+        "audit:k3s:overview",
+        "network:k3s-network"
+      ],
+      "entries": [
+        {
+          "values": [
+            "IPv4",
+            "IPv6",
+            "VXLAN",
+            "WebSocket"
+          ],
+          "scope": "runtime",
+          "source": "network:k3s-network",
+          "note": {
+            "en": "Flannel defaults to VXLAN; dual stack is an installation-time choice. Control-plane connections use WebSocket tunnels.",
+            "zh": "Flannel 默认采用 VXLAN；双栈需在安装时选择，控制面连接使用 WebSocket 隧道。"
+          }
+        },
+        {
+          "values": [
+            "WireGuard"
+          ],
+          "scope": "extension",
+          "source": "network:k3s-network",
+          "note": {
+            "en": "Select the wireguard-native Flannel backend and install the required kernel modules on all nodes.",
+            "zh": "选择 Flannel 的 wireguard-native 后端，并在所有节点安装所需内核模块。"
+          }
+        }
+      ]
+    },
+    "krustlet": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Experimental Rust kubelet executes WebAssembly workloads in Kubernetes.",
+        "zh": "实验性 Rust kubelet 在 Kubernetes 中执行 WebAssembly 工作负载。"
+      },
+      "reviewedSources": [
+        "audit:krustlet:overview"
+      ],
+      "entries": []
+    },
+    "kubeedge": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Kubernetes-based cloud-edge orchestration runs containerized edge applications.",
+        "zh": "基于 Kubernetes 的云边编排运行容器化边缘应用。"
+      },
+      "reviewedSources": [
+        "audit:kubeedge:overview",
+        "official:kubeedge/kubeedge",
+        "network:kubeedge-code-0",
+        "network:kubeedge-code-1"
+      ],
+      "entries": [
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "service",
+          "source": "official:kubeedge/kubeedge",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "audit:kubeedge:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "WebSocket"
+          ],
+          "scope": "service",
+          "source": "network:kubeedge-code-0",
+          "note": {
+            "en": "The pinned EdgeHub client implements the WebSocket cloud-edge transport.",
+            "zh": "固定提交的 EdgeHub 客户端实现 WebSocket 云边传输。"
+          }
+        },
+        {
+          "values": [
+            "QUIC"
+          ],
+          "scope": "service",
+          "source": "network:kubeedge-code-1",
+          "note": {
+            "en": "The pinned branch includes a separate QUIC client. Choose a compatible CloudHub/EdgeHub configuration; this is version-specific.",
+            "zh": "固定分支包含独立 QUIC 客户端；需配置兼容的 CloudHub/EdgeHub，能力受版本限制。"
+          }
+        }
+      ]
+    },
+    "kubestellar-console": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Self-hosted console and kc-agent connect to real Kubernetes clusters; the hosted demo uses canned data.",
+        "zh": "自托管控制台及 kc-agent 连接真实 Kubernetes 集群；托管演示使用预设数据。"
+      },
+      "reviewedSources": [
+        "audit:kubestellar-console:overview"
+      ],
+      "entries": []
+    },
+    "oci": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Java client-edge service prototype with a Mininet resource-management adapter.",
+        "zh": "Java 客户端—边缘服务原型，提供 Mininet 资源管理适配器。"
+      },
+      "reviewedSources": [
+        "audit:oci:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "audit:oci:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "openstackpp": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Cloudlet extensions to OpenStack support edge-hosted applications.",
+        "zh": "OpenStack 的 cloudlet 扩展支持边缘托管应用。"
+      },
+      "reviewedSources": [
+        "audit:openstackpp:overview"
+      ],
+      "entries": []
+    },
+    "openyurt": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Extends Kubernetes to run and manage applications across edge regions.",
+        "zh": "扩展 Kubernetes，跨边缘区域运行和管理应用。"
+      },
+      "reviewedSources": [
+        "audit:openyurt:overview"
+      ],
+      "entries": []
+    },
+    "phonesploit-pro": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Python command-line frontend for Android device administration and security testing.",
+        "zh": "用于 Android 设备管理与安全测试的 Python 命令行前端。"
+      },
+      "reviewedSources": [
+        "audit:phonesploit-pro:overview"
+      ],
+      "entries": []
+    },
+    "superedge": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Kubernetes-native system runs container applications across edge regions.",
+        "zh": "Kubernetes 原生系统跨边缘区域运行容器应用。"
+      },
+      "reviewedSources": [
+        "audit:superedge:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "TCP"
+          ],
+          "scope": "service",
+          "source": "audit:superedge:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "audit:superedge:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "HTTPS"
+          ],
+          "scope": "service",
+          "source": "audit:superedge:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "webassembly-curated-list-of-awesome-things-regarding-webassembly-wasm-ecosystem": {
+      "date": "2026-09-09",
+      "disposition": "reference",
+      "summary": {
+        "en": "WebAssembly ecosystem links",
+        "zh": "WebAssembly 生态链接"
+      },
+      "reviewedSources": [
+        "audit:webassembly-curated-list-of-awesome-things-regarding-webassembly-wasm-ecosystem:overview"
+      ],
+      "entries": []
+    },
+    "webassembly-micro-runtime": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Loads and executes WebAssembly modules in embedded, edge, and other environments.",
+        "zh": "在嵌入式、边缘等环境加载并执行 WebAssembly 模块。"
+      },
+      "reviewedSources": [
+        "audit:webassembly-micro-runtime:overview",
+        "network:webassembly-micro-runtime-code-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "TCP",
+            "UDP",
+            "IPv4",
+            "IPv6"
+          ],
+          "scope": "service",
+          "source": "network:webassembly-micro-runtime-code-0",
+          "note": {
+            "en": "Requires the WAMR socket extension, WASI build support and allowed address/domain configuration; it is not portable to every WASI runtime.",
+            "zh": "需使用 WAMR 套接字扩展、WASI 编译支持及地址、域名授权配置，不能假定在所有 WASI 运行时通用。"
+          }
+        }
+      ]
+    },
+    "wasmcloud": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Runs WebAssembly component workloads across edge, cloud, and Kubernetes environments.",
+        "zh": "跨边缘、云及 Kubernetes 环境运行 WebAssembly 组件工作负载。"
+      },
+      "reviewedSources": [
+        "audit:wasmcloud:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "NATS",
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "audit:wasmcloud:overview",
+          "note": {
+            "en": "The documented operator/host control plane uses NATS. HTTP workloads require the relevant interface and host permissions; the legacy gateway is deprecated in the reviewed README.",
+            "zh": "文档中的 operator/host 控制面使用 NATS；HTTP 工作负载需相应接口与宿主授权，所阅 README 已弃用旧网关。"
+          }
+        }
+      ]
+    },
+    "wasmedge-runtime": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Executes WebAssembly bytecode, with optional application frameworks such as LlamaEdge.",
+        "zh": "执行 WebAssembly 字节码，可搭配 LlamaEdge 等可选应用框架。"
+      },
+      "reviewedSources": [
+        "audit:wasmedge-runtime:overview",
+        "network:wasmedge-sockets"
+      ],
+      "entries": [
+        {
+          "values": [
+            "TCP",
+            "UDP",
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "network:wasmedge-sockets",
+          "note": {
+            "en": "WasmEdge socket extensions provide TCP/UDP; the guide builds HTTP applications on top. Use the corresponding SDK rather than browser WebAssembly networking assumptions.",
+            "zh": "WasmEdge 套接字扩展提供 TCP/UDP，教程在其上构建 HTTP 应用；需使用对应 SDK，不能套用浏览器 WebAssembly 的网络能力。"
+          }
+        }
+      ]
+    },
+    "wasmer": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Executes WebAssembly applications through a standalone or embedded runtime.",
+        "zh": "通过独立或嵌入式运行时执行 WebAssembly 应用。"
+      },
+      "reviewedSources": [
+        "audit:wasmer:overview",
+        "network:wasix-sockets"
+      ],
+      "entries": [
+        {
+          "values": [
+            "TCP",
+            "UDP"
+          ],
+          "scope": "service",
+          "source": "network:wasix-sockets",
+          "note": {
+            "en": "The WASIX socket API exposes stream/datagram transports when network access is granted. This is a WASIX extension, not baseline WebAssembly.",
+            "zh": "WASIX 套接字 API 在获得网络授权后提供流与数据报传输；它属于 WASIX 扩展，不是基础 WebAssembly 功能。"
+          }
+        }
+      ]
+    },
+    "wasmtime": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Executes standalone or embedded WebAssembly components.",
+        "zh": "执行独立或嵌入式 WebAssembly 组件。"
+      },
+      "reviewedSources": [
+        "audit:wasmtime:overview",
+        "network:wasmtime-code-0",
+        "network:wasmtime-code-1"
+      ],
+      "entries": [
+        {
+          "values": [
+            "TCP",
+            "UDP"
+          ],
+          "scope": "service",
+          "source": "network:wasmtime-code-0",
+          "note": {
+            "en": "WASI socket host interfaces use native sockets when granted by the embedding application.",
+            "zh": "WASI 套接字宿主接口在嵌入应用授权后使用系统套接字。"
+          }
+        },
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "network:wasmtime-code-1",
+          "note": {
+            "en": "HTTP is provided by the separately configured wasi:http host implementation.",
+            "zh": "HTTP 由另行配置的 wasi:http 宿主实现提供。"
+          }
+        }
+      ]
+    },
+    "wso2-iot-server": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "IoT platform for connected-device and mobile applications.",
+        "zh": "面向联网设备及移动应用的物联网平台。"
+      },
+      "reviewedSources": [
+        "audit:wso2-iot-server:overview",
+        "network:wso2-protocols"
+      ],
+      "entries": [
+        {
+          "values": [
+            "MQTT",
+            "HTTP",
+            "WebSocket",
+            "XMPP"
+          ],
+          "scope": "service",
+          "source": "network:wso2-protocols",
+          "note": {
+            "en": "The archived IoT Server README explicitly lists these device-communication protocols and a framework extension point for additional protocols.",
+            "zh": "归档 IoT Server README 明确列出这些设备通信协议及增加协议的框架扩展点。"
+          }
+        }
+      ]
+    },
+    "xybrid": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Runs local language, speech-recognition, and speech-synthesis models in applications and games.",
+        "zh": "在应用及游戏中运行本地语言、语音识别和语音合成模型。"
+      },
+      "reviewedSources": [
+        "audit:xybrid:overview"
+      ],
+      "entries": []
+    },
+    "awesome-pcaptools": {
+      "date": "2026-09-09",
+      "disposition": "reference",
+      "summary": {
+        "en": "Packet-capture analysis tool links; the repository explicitly contains no tool source code",
+        "zh": "分组捕获分析工具链接；仓库明确不包含工具源码"
+      },
+      "reviewedSources": [
+        "audit:awesome-pcaptools:overview"
+      ],
+      "entries": []
+    },
+    "edgenet": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Kubernetes extension deploys applications across geographically distributed edge nodes.",
+        "zh": "Kubernetes 扩展跨地理分布的边缘节点部署应用。"
+      },
+      "reviewedSources": [
+        "audit:edgenet:overview"
+      ],
+      "entries": []
+    },
+    "komondor": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Event-driven WLAN simulation, including documented IEEE 802.11bn-oriented mechanisms.",
+        "zh": "事件驱动 WLAN 仿真，包含文档所述面向 IEEE 802.11bn 的机制。"
+      },
+      "reviewedSources": [
+        "audit:komondor:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "WiFi"
+          ],
+          "scope": "service",
+          "source": "audit:komondor:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "IEEE 802.11ac",
+            "IEEE 802.11ax",
+            "IEEE 802.11e",
+            "IEEE 802.11bn"
+          ],
+          "scope": "packet",
+          "source": "audit:komondor:overview",
+          "note": {
+            "en": "The reviewed README lists DCB, spatial reuse, EDCA and draft 802.11bn-oriented multi-AP mechanisms. This is mechanism-level research support, not full standards conformance.",
+            "zh": "所阅 README 列出 DCB、空间复用、EDCA 及面向 802.11bn 草案的多 AP 机制；这是机制级研究支持，不代表完整标准符合性。"
+          }
+        }
+      ]
+    },
+    "mosquitto": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "MQTT broker and client library for publish/subscribe applications.",
+        "zh": "用于发布订阅应用的 MQTT 代理及客户端库。"
+      },
+      "reviewedSources": [
+        "audit:mosquitto:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "service",
+          "source": "audit:mosquitto:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "WebSocket"
+          ],
+          "scope": "service",
+          "source": "audit:mosquitto:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "TLS"
+          ],
+          "scope": "service",
+          "source": "audit:mosquitto:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "TCP"
+          ],
+          "scope": "service",
+          "source": "audit:mosquitto:overview",
+          "note": {
+            "en": "MQTT broker transport; TLS and WebSocket listener behavior is separately documented.",
+            "zh": "MQTT 代理传输；TLS 与 WebSocket 监听行为另有文档说明。"
+          }
+        }
+      ]
+    },
+    "naming-data-network-platform": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "NDN software platform catalog covers forwarders, libraries, tools, and simulators.",
+        "zh": "NDN 软件平台目录涵盖转发器、库、工具及仿真器。"
+      },
+      "reviewedSources": [
+        "audit:naming-data-network-platform:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "NDN"
+          ],
+          "scope": "service",
+          "source": "audit:naming-data-network-platform:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "NLSR"
+          ],
+          "scope": "runtime",
+          "source": "audit:naming-data-network-platform:overview",
+          "note": {
+            "en": "The NDN platform lists NLSR as its link-state routing component.",
+            "zh": "NDN 平台将 NLSR 列为链路状态路由组件。"
+          }
+        }
+      ]
+    },
+    "node-red": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Executes event-driven data-processing and automation flows.",
+        "zh": "执行事件驱动的数据处理及自动化流程。"
+      },
+      "reviewedSources": [
+        "audit:node-red:overview",
+        "network:node-red-network-help",
+        "network:node-red-udp",
+        "network:node-red-mqtt",
+        "network:node-red-http",
+        "network:node-red-websocket"
+      ],
+      "entries": [
+        {
+          "values": [
+            "TCP"
+          ],
+          "scope": "service",
+          "source": "network:node-red-network-help",
+          "note": {
+            "en": "The built-in TCP input/output nodes use configured client or server connections.",
+            "zh": "内置 TCP 输入与输出节点使用配置的客户端或服务器连接。"
+          }
+        },
+        {
+          "values": [
+            "UDP"
+          ],
+          "scope": "service",
+          "source": "network:node-red-udp",
+          "note": {
+            "en": "Built-in network node; configure the endpoint, connection and credentials appropriate to this node.",
+            "zh": "内置网络节点，需按节点要求配置端点、连接与凭据。"
+          }
+        },
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "service",
+          "source": "network:node-red-mqtt",
+          "note": {
+            "en": "Built-in network node; configure the endpoint, connection and credentials appropriate to this node.",
+            "zh": "内置网络节点，需按节点要求配置端点、连接与凭据。"
+          }
+        },
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "network:node-red-http",
+          "note": {
+            "en": "Built-in network node; configure the endpoint, connection and credentials appropriate to this node.",
+            "zh": "内置网络节点，需按节点要求配置端点、连接与凭据。"
+          }
+        },
+        {
+          "values": [
+            "WebSocket"
+          ],
+          "scope": "service",
+          "source": "network:node-red-websocket",
+          "note": {
+            "en": "Built-in network node; configure the endpoint, connection and credentials appropriate to this node.",
+            "zh": "内置网络节点，需按节点要求配置端点、连接与凭据。"
+          }
+        }
+      ]
+    },
+    "open-vswitch": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Software virtual switch forwards traffic in virtualized systems.",
+        "zh": "软件虚拟交换机在虚拟化系统转发流量。"
+      },
+      "reviewedSources": [
+        "audit:open-vswitch:overview",
+        "network:ovs-features"
+      ],
+      "entries": [
+        {
+          "values": [
+            "NetFlow"
+          ],
+          "scope": "runtime",
+          "source": "audit:open-vswitch:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "sFlow"
+          ],
+          "scope": "runtime",
+          "source": "audit:open-vswitch:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "IPFIX"
+          ],
+          "scope": "runtime",
+          "source": "audit:open-vswitch:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "OpenFlow",
+            "VLAN",
+            "LACP",
+            "STP",
+            "RSTP",
+            "BFD",
+            "GRE",
+            "VXLAN",
+            "Geneve",
+            "STT",
+            "IPsec",
+            "RSPAN"
+          ],
+          "scope": "runtime",
+          "source": "network:ovs-features",
+          "note": {
+            "en": "Feature availability depends on the OVS version, datapath and tunnel configuration; IPsec requires the documented integration.",
+            "zh": "具体功能取决于 OVS 版本、数据路径及隧道配置；IPsec 需配置相应集成。"
+          }
+        }
+      ]
+    },
+    "pox": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Python platform runs OpenFlow control and switch components.",
+        "zh": "Python 平台运行 OpenFlow 控制及交换组件。"
+      },
+      "reviewedSources": [
+        "audit:pox:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "OpenFlow"
+          ],
+          "scope": "runtime",
+          "source": "audit:pox:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "rice": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Provides both ndnSIM simulation and an ndn-cxx prototype for remote invocation in ICN.",
+        "zh": "同时提供用于 ICN 远程调用的 ndnSIM 仿真与 ndn-cxx 原型。"
+      },
+      "reviewedSources": [
+        "audit:rice:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "NDN"
+          ],
+          "scope": "service",
+          "source": "audit:rice:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "vernemq": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Distributed MQTT broker for IoT and mobile messaging.",
+        "zh": "面向物联网及移动消息的分布式 MQTT 代理。"
+      },
+      "reviewedSources": [
+        "audit:vernemq:overview",
+        "network:vernemq-listeners"
+      ],
+      "entries": [
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "service",
+          "source": "audit:vernemq:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "TCP",
+            "WebSocket",
+            "TLS"
+          ],
+          "scope": "service",
+          "source": "network:vernemq-listeners",
+          "note": {
+            "en": "Configure separate TCP, TLS or WebSocket MQTT listeners and the appropriate certificates when using TLS.",
+            "zh": "分别配置 TCP、TLS 或 WebSocket MQTT 监听器；TLS 模式还需相应证书。"
+          }
+        }
+      ]
+    },
+    "wonder-shaper": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Configures traffic shaping on real Linux network adapters.",
+        "zh": "在真实 Linux 网络适配器配置流量整形。"
+      },
+      "reviewedSources": [
+        "audit:wonder-shaper:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Traffic shaping"
+          ],
+          "scope": "runtime",
+          "source": "audit:wonder-shaper:overview",
+          "note": {
+            "en": "Uses Linux tc/HTB for interface bandwidth control; protocol stacks are supplied by the operating system.",
+            "zh": "使用 Linux tc/HTB 控制接口带宽；协议栈由操作系统提供。"
+          }
+        }
+      ]
+    },
+    "abeacon-data": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Research dataset from an operational courier-arrival beacon system.",
+        "zh": "来自运营中快递员到达信标系统的研究数据集。"
+      },
+      "reviewedSources": [
+        "audit:abeacon-data:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "BLE"
+          ],
+          "scope": "data",
+          "source": "audit:abeacon-data:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "ai-benchmark": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Runs mobile AI tasks to evaluate smartphone inference performance.",
+        "zh": "运行移动 AI 任务以评估手机推理性能。"
+      },
+      "reviewedSources": [
+        "audit:ai-benchmark:overview"
+      ],
+      "entries": []
+    },
+    "cloudsuite": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "CloudSuite 4.0 runs eight real cloud-service benchmark stacks.",
+        "zh": "CloudSuite 4.0 运行八类真实云服务基准软件栈。"
+      },
+      "reviewedSources": [
+        "audit:cloudsuite:overview"
+      ],
+      "entries": []
+    },
+    "clusterdata": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Workload, resource-use and service-call traces. Call dependencies and response times are dataset fields, not implemented transport protocols.",
+        "zh": "工作负载、资源使用及服务调用轨迹；调用依赖和响应时间是数据字段，不是实现的传输协议。"
+      },
+      "reviewedSources": [
+        "audit:clusterdata:overview"
+      ],
+      "entries": []
+    },
+    "defog": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Container-based benchmark suite runs cloud-edge application experiments.",
+        "zh": "容器化基准套件运行云边应用实验。"
+      },
+      "reviewedSources": [
+        "audit:defog:overview"
+      ],
+      "entries": []
+    },
+    "edge-aibench": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "End-to-end benchmarks cover client, edge, and cloud AI workflows.",
+        "zh": "端到端基准覆盖客户端、边缘及云 AI 流程。"
+      },
+      "reviewedSources": [
+        "audit:edge-aibench:overview"
+      ],
+      "entries": []
+    },
+    "eua-datasets": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Server and user geographic-location data; no wire protocol is implied by the locations.",
+        "zh": "服务器与用户地理位置数据，不由位置数据推断通信协议。"
+      },
+      "reviewedSources": [
+        "audit:eua-datasets-corrected:overview"
+      ],
+      "entries": []
+    },
+    "gt-itm-georgia-tech-internetwork-topology-models": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Generates Internet topology models; a generated graph does not execute routing or transport protocols.",
+        "zh": "生成互联网拓扑模型；生成的图不会执行路由与传输协议。"
+      },
+      "reviewedSources": [
+        "audit:gt-itm-georgia-tech-internetwork-topology-models:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Graph topology"
+          ],
+          "scope": "abstract",
+          "source": "audit:gt-itm-georgia-tech-internetwork-topology-models:overview",
+          "note": {
+            "en": "Generates Internet topology models; a generated graph does not execute routing or transport protocols.",
+            "zh": "生成互联网拓扑模型；生成的图不会执行路由与传输协议。"
+          }
+        }
+      ]
+    },
+    "huawei-dataset-for-network-ai-scheduling-technology-research-in-chinese": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Scheduling input tables describe communication rates and UE/base-station/host resources. A cellular setting does not specify an implemented air-interface protocol.",
+        "zh": "调度输入表描述通信速率及 UE、基站、主机资源；蜂窝场景不指定一个已实现的空口协议。"
+      },
+      "reviewedSources": [
+        "audit:huawei-dataset-for-network-ai-scheduling-technology-research-in-chinese:overview"
+      ],
+      "entries": []
+    },
+    "mlperf-inference-benchmark-suite": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Runs reference inference benchmarks for edge and data-center deployment scenarios.",
+        "zh": "运行面向边缘及数据中心部署场景的参考推理基准。"
+      },
+      "reviewedSources": [
+        "audit:mlperf-inference-benchmark-suite:overview"
+      ],
+      "entries": []
+    },
+    "networkx": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Graph construction and graph algorithms can represent network topology; protocol behavior must be supplied by the application.",
+        "zh": "图构建及图算法可表示网络拓扑；协议行为需由应用提供。"
+      },
+      "reviewedSources": [
+        "audit:networkx:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Graph topology"
+          ],
+          "scope": "abstract",
+          "source": "audit:networkx:overview",
+          "note": {
+            "en": "Graph construction and graph algorithms can represent network topology; protocol behavior must be supplied by the application.",
+            "zh": "图构建及图算法可表示网络拓扑；协议行为需由应用提供。"
+          }
+        }
+      ]
+    },
+    "network-modeling-datasets": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Topology, traffic and performance datasets generated for network modeling. The dataset is not itself an executable protocol stack.",
+        "zh": "用于网络建模的拓扑、流量及性能数据集；数据集本身不是可执行协议栈。"
+      },
+      "reviewedSources": [
+        "audit:network-modeling-datasets:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Network trace"
+          ],
+          "scope": "data",
+          "source": "audit:network-modeling-datasets:overview",
+          "note": {
+            "en": "Topology, traffic and simulator-output datasets; use their schema and generator conditions.",
+            "zh": "拓扑、流量与仿真输出数据集，需遵循数据模式及生成条件。"
+          }
+        }
+      ]
+    },
+    "neural-network-accelerator-comparison": {
+      "date": "2026-09-09",
+      "disposition": "reference",
+      "summary": {
+        "en": "The original comparison page returned HTTP 404; this remains a reference entry.",
+        "zh": "原对比页面返回 HTTP 404；保留为参考入口。"
+      },
+      "reviewedSources": [],
+      "entries": []
+    },
+    "rocketfuel": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Historical ISP-topology mapping data and associated tools.",
+        "zh": "历史 ISP 拓扑测绘数据及配套工具。"
+      },
+      "reviewedSources": [
+        "audit:rocketfuel:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Graph topology"
+          ],
+          "scope": "data",
+          "source": "audit:rocketfuel:overview",
+          "note": {
+            "en": "Historical ISP topology maps; mapping data is not an executable routing protocol.",
+            "zh": "历史 ISP 拓扑图，映射数据不是可执行路由协议。"
+          }
+        }
+      ]
+    },
+    "the-caida-anonymized-internet-traces-2015-dataset": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Anonymized passive Internet traces; this inventory entry specifically concerns the 2015 dataset.",
+        "zh": "匿名化被动互联网轨迹；此目录条目专指 2015 年数据集。"
+      },
+      "reviewedSources": [
+        "audit:caida-guide:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Network trace"
+          ],
+          "scope": "data",
+          "source": "audit:caida-guide:overview",
+          "note": {
+            "en": "Anonymized packet traces under the dataset access terms; no protocol stack is executed by this resource.",
+            "zh": "依照数据访问条款提供的匿名分组轨迹，资源本身不执行协议栈。"
+          }
+        }
+      ]
+    },
+    "tinymlperf-deep-learning-benchmarks-for-embedded-devices": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Executes embedded-device neural-network benchmarks.",
+        "zh": "执行嵌入式设备神经网络基准。"
+      },
+      "reviewedSources": [
+        "audit:tinymlperf-deep-learning-benchmarks-for-embedded-devices:overview"
+      ],
+      "entries": []
+    },
+    "vivo-dataset-for-wireless-resource-scheduling-in-cell-free-scenarios-in-chinese": {
+      "date": "2026-09-09",
+      "disposition": "source-unavailable",
+      "summary": {
+        "en": "The vivo sharing page returned no readable dataset description or schema. Access to the data files is needed to describe its fields and evaluation outputs.",
+        "zh": "vivo 分享页没有返回可读取的数据集描述或结构；需获取数据文件后才能描述其字段与评估输出。"
+      },
+      "reviewedSources": [],
+      "entries": []
+    },
+    "assolo": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Active probing tool estimates available end-to-end bandwidth.",
+        "zh": "主动探测工具估计端到端可用带宽。"
+      },
+      "reviewedSources": [
+        "audit:assolo:overview"
+      ],
+      "entries": []
+    },
+    "netem": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Linux packet impairment emulator for testing real network traffic.",
+        "zh": "用于测试真实网络流量的 Linux 分组损伤仿真器。"
+      },
+      "reviewedSources": [
+        "audit:netem:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "Link impairment"
+          ],
+          "scope": "runtime",
+          "source": "audit:netem:overview",
+          "note": {
+            "en": "A Linux traffic-control qdisc applies delay, loss, duplication, corruption and reordering to packets; it is not itself a routing or application protocol.",
+            "zh": "Linux 流量控制队列对分组施加时延、丢失、复制、损坏及重排序，本身不是路由或应用协议。"
+          }
+        }
+      ]
+    },
+    "nmon": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Monitors real host performance.",
+        "zh": "监测真实主机性能。"
+      },
+      "reviewedSources": [
+        "audit:nmon:overview"
+      ],
+      "entries": []
+    },
+    "geolite2": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "IP geolocation and ASN data delivered as databases or web services.",
+        "zh": "通过数据库或网页服务提供 IP 地理位置及 ASN 数据。"
+      },
+      "reviewedSources": [
+        "audit:geolite2:overview"
+      ],
+      "entries": []
+    },
+    "sigar": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Native API for observing the running operating system and processes.",
+        "zh": "用于观测正在运行的操作系统与进程的原生 API。"
+      },
+      "reviewedSources": [
+        "audit:sigar:overview"
+      ],
+      "entries": []
+    },
+    "edge-courier": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Edge-hosted personal service reduces mobile cloud-file synchronization traffic.",
+        "zh": "边缘托管的个人服务减少移动云文件同步流量。"
+      },
+      "reviewedSources": [
+        "audit:edge-courier:overview"
+      ],
+      "entries": []
+    },
+    "eman-s-edge-computing-system-for-ai-applications": {
+      "date": "2026-09-09",
+      "disposition": "source-unavailable",
+      "summary": {
+        "en": "The original GitHub repository returned HTTP 404. Its implementation is not accessible through the listed endpoint.",
+        "zh": "原 GitHub 仓库返回 HTTP 404，所列入口无法访问其实现。"
+      },
+      "reviewedSources": [],
+      "entries": []
+    },
+    "adlik": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Compiles models and runs inference in cloud, edge containers, or device libraries.",
+        "zh": "编译模型，在云端、边缘容器或设备库中执行推理。"
+      },
+      "reviewedSources": [
+        "audit:adlik:overview",
+        "network:adlik-code-1"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP",
+            "gRPC"
+          ],
+          "scope": "service",
+          "source": "network:adlik-code-1",
+          "note": {
+            "en": "The serving client documentation offers HTTP and gRPC interfaces; SSL credentials apply to configured secure gRPC.",
+            "zh": "Serving 客户端文档提供 HTTP 与 gRPC 接口；启用安全 gRPC 时需相应 SSL 凭据。"
+          }
+        }
+      ]
+    },
+    "ai-model-efficiency-toolkit-aimet": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Quantizes trained PyTorch and ONNX models for deployment.",
+        "zh": "量化已训练的 PyTorch、ONNX 模型以供部署。"
+      },
+      "reviewedSources": [
+        "audit:ai-model-efficiency-toolkit-aimet:overview"
+      ],
+      "entries": []
+    },
+    "apache-tvm": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Machine-learning compiler creates deployable model modules.",
+        "zh": "机器学习编译器生成可部署模型模块。"
+      },
+      "reviewedSources": [
+        "audit:apache-tvm:overview"
+      ],
+      "entries": []
+    },
+    "autodice": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Generates and executes distributed CNN inference across edge devices.",
+        "zh": "跨边缘设备生成并执行分布式 CNN 推理。"
+      },
+      "reviewedSources": [
+        "audit:autodice:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "MPI"
+          ],
+          "scope": "service",
+          "source": "audit:autodice:overview",
+          "note": {
+            "en": "MPI is the cross-device message-passing interface integrated with OpenMP; the underlying transport depends on the installed MPI implementation.",
+            "zh": "MPI 是与 OpenMP 配合的跨设备消息传递接口；底层传输取决于安装的 MPI 实现。"
+          }
+        }
+      ]
+    },
+    "berrynet": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Runs offline image classification and detection on Raspberry Pi and other edge devices.",
+        "zh": "在树莓派等边缘设备离线运行图像分类与检测。"
+      },
+      "reviewedSources": [
+        "audit:berrynet:overview"
+      ],
+      "entries": [
+        {
+          "values": [
+            "MQTT"
+          ],
+          "scope": "service",
+          "source": "audit:berrynet:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        }
+      ]
+    },
+    "bi-real-net": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Research implementation trains binary convolutional neural networks.",
+        "zh": "研究实现用于训练二值卷积神经网络。"
+      },
+      "reviewedSources": [
+        "audit:bi-real-net:overview"
+      ],
+      "entries": []
+    },
+    "bmxnet": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "MXNet fork implements quantized and binary neural networks.",
+        "zh": "MXNet 分支实现量化与二值神经网络。"
+      },
+      "reviewedSources": [
+        "audit:bmxnet:overview"
+      ],
+      "entries": []
+    },
+    "branchynet": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Neural networks use early-exit branches for inference.",
+        "zh": "神经网络通过提前退出分支进行推理。"
+      },
+      "reviewedSources": [
+        "audit:branchynet:overview"
+      ],
+      "entries": []
+    },
+    "caffe2": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Historical deep-learning framework for distributed training and mobile deployment.",
+        "zh": "用于分布式训练及移动部署的历史深度学习框架。"
+      },
+      "reviewedSources": [
+        "audit:caffe2-guide:overview"
+      ],
+      "entries": []
+    },
+    "cmsis-nn": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Neural-network kernel library for Arm Cortex-M inference.",
+        "zh": "用于 Arm Cortex-M 推理的神经网络算子库。"
+      },
+      "reviewedSources": [
+        "audit:cmsis-nn:overview"
+      ],
+      "entries": []
+    },
+    "communication-aware-dnn-pruning-cap": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Communication-aware pruning prepares DNNs for distributed inference.",
+        "zh": "通信感知剪枝为分布式推理准备 DNN。"
+      },
+      "reviewedSources": [
+        "audit:communication-aware-dnn-pruning-cap:overview"
+      ],
+      "entries": []
+    },
+    "compute-library": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Low-level machine-learning kernels for Arm processors and GPUs.",
+        "zh": "面向 Arm 处理器及 GPU 的底层机器学习算子。"
+      },
+      "reviewedSources": [
+        "audit:compute-library:overview"
+      ],
+      "entries": []
+    },
+    "condensa": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Python system for programmable neural-network compression.",
+        "zh": "用于可编程神经网络压缩的 Python 系统。"
+      },
+      "reviewedSources": [
+        "audit:condensa:overview"
+      ],
+      "entries": []
+    },
+    "core-ml": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Core ML executes predictions and supported model fine-tuning on Apple devices.",
+        "zh": "Core ML 在 Apple 设备执行预测及支持的模型微调。"
+      },
+      "reviewedSources": [
+        "audit:core-ml:overview"
+      ],
+      "entries": []
+    },
+    "dabnn": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Executes binary neural-network inference on Arm devices.",
+        "zh": "在 Arm 设备执行二值神经网络推理。"
+      },
+      "reviewedSources": [
+        "audit:dabnn:overview"
+      ],
+      "entries": []
+    },
+    "ddnn": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Research code for distributing neural-network sections across cloud, edge, and end devices.",
+        "zh": "研究代码将神经网络分段分布到云、边缘及终端。"
+      },
+      "reviewedSources": [
+        "audit:ddnn:overview"
+      ],
+      "entries": []
+    },
+    "deepiot": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "TensorFlow implementation of a compressor-critic method for sensing-system DNN compression.",
+        "zh": "用于感知系统 DNN 压缩的 compressor-critic 方法 TensorFlow 实现。"
+      },
+      "reviewedSources": [
+        "audit:deepiot:overview"
+      ],
+      "entries": []
+    },
+    "deepstack": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Serves local or private-cloud AI models through APIs.",
+        "zh": "通过 API 提供本地或私有云 AI 模型服务。"
+      },
+      "reviewedSources": [
+        "audit:deepstack-guide:overview",
+        "network:deepstack-api"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "network:deepstack-api",
+          "note": {
+            "en": "The documented local server accepts HTTP requests for inference; choose the matching container and model endpoint.",
+            "zh": "文档中的本地服务接收 HTTP 推理请求，需选择对应容器与模型端点。"
+          }
+        }
+      ]
+    },
+    "deepthings": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Runs distributed CNN inference on an IoT edge cluster.",
+        "zh": "在物联网边缘集群运行分布式 CNN 推理。"
+      },
+      "reviewedSources": [
+        "audit:deepthings:overview",
+        "network:deepthings-code-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "TCP",
+            "UDP",
+            "IPv4",
+            "IPv6"
+          ],
+          "scope": "service",
+          "source": "network:deepthings-code-0",
+          "note": {
+            "en": "network_util.c selects AF_INET/AF_INET6 and SOCK_STREAM/SOCK_DGRAM. The local threaded demonstration instead uses queues and does not exercise an external network.",
+            "zh": "network_util.c 选择 AF_INET/AF_INET6 及 SOCK_STREAM/SOCK_DGRAM；本地线程演示使用队列，不经过外部网络。"
+          }
+        }
+      ]
+    },
+    "distiller": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Python/PyTorch environment for neural-network compression research.",
+        "zh": "用于神经网络压缩研究的 Python、PyTorch 环境。"
+      },
+      "reviewedSources": [
+        "audit:distiller-guide:overview"
+      ],
+      "entries": []
+    },
+    "fate": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Federated machine-learning framework with single-node testing and multinode deployment.",
+        "zh": "联邦机器学习框架，支持单节点测试及多节点部署。"
+      },
+      "reviewedSources": [
+        "audit:fate:overview",
+        "network:fate-code-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "gRPC",
+            "TLS",
+            "HTTP",
+            "HTTPS"
+          ],
+          "scope": "service",
+          "source": "network:fate-code-0",
+          "note": {
+            "en": "OSX documents gRPC and optional TLS. HTTP/HTTPS listeners must be enabled, serve queue mode and do not support the FATE 1.x interface.",
+            "zh": "OSX 文档记录 gRPC 及可选 TLS；HTTP/HTTPS 监听需启用，用于队列模式且不支持 FATE 1.x 接口。"
+          }
+        }
+      ]
+    },
+    "fedprox": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "The research code evaluates a federated optimization method with simulated clients. Federated learning does not by itself identify a transport protocol.",
+        "zh": "研究代码通过模拟客户端评估联邦优化方法；联邦学习本身不指明传输协议。"
+      },
+      "reviewedSources": [
+        "audit:fedprox:overview"
+      ],
+      "entries": []
+    },
+    "genesis-2": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "The reviewed README describes an inference architecture. Its author profile and links to other networking projects do not establish this repository's protocol support.",
+        "zh": "所阅 README 描述推理架构；作者简介及其他网络项目链接不证明本仓库支持这些协议。"
+      },
+      "reviewedSources": [
+        "audit:genesis-2:overview"
+      ],
+      "entries": []
+    },
+    "gnn-rl-pipleline": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Combines graph neural networks and reinforcement learning for graph-structured optimization.",
+        "zh": "结合图神经网络和强化学习进行图结构优化。"
+      },
+      "reviewedSources": [
+        "audit:gnn-rl-pipleline:overview"
+      ],
+      "entries": []
+    },
+    "ianvs": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Single-node benchmarking environment for distributed edge-cloud AI paradigms.",
+        "zh": "在单节点上对分布式云边 AI 范式进行基准评估。"
+      },
+      "reviewedSources": [
+        "audit:ianvs:overview"
+      ],
+      "entries": []
+    },
+    "kitnet": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "This repository contains the anomaly detector only. Network capture and protocol parsing belong to the separately linked Kitsune system.",
+        "zh": "该仓库仅包含异常检测器；网络抓包与协议解析属于另行链接的 Kitsune 系统。"
+      },
+      "reviewedSources": [
+        "audit:kitnet:overview"
+      ],
+      "entries": []
+    },
+    "mace": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Runs neural-network inference on mobile and other heterogeneous devices.",
+        "zh": "在移动及其他异构设备执行神经网络推理。"
+      },
+      "reviewedSources": [
+        "audit:mace:overview"
+      ],
+      "entries": []
+    },
+    "megengine": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Unified deep-learning framework for training and inference.",
+        "zh": "统一的深度学习训练与推理框架。"
+      },
+      "reviewedSources": [
+        "audit:megengine:overview"
+      ],
+      "entries": []
+    },
+    "mindspore-lite": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Device-side inference and supported on-device training through MindSpore Lite.",
+        "zh": "通过 MindSpore Lite 进行设备端推理及支持的设备端训练。"
+      },
+      "reviewedSources": [
+        "audit:mindspore-guide:overview"
+      ],
+      "entries": []
+    },
+    "ml-kit": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "On-device machine-learning APIs integrate into Android and iOS applications.",
+        "zh": "设备端机器学习 API 集成到 Android、iOS 应用。"
+      },
+      "reviewedSources": [
+        "audit:ml-kit:overview"
+      ],
+      "entries": []
+    },
+    "mlc-llm": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Compiles and executes large-language-model inference with MLCEngine.",
+        "zh": "使用 MLCEngine 编译并执行大语言模型推理。"
+      },
+      "reviewedSources": [
+        "audit:mlc-llm:overview",
+        "network:mlc-llm-code-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "network:mlc-llm-code-0",
+          "note": {
+            "en": "The serving entry point launches the FastAPI/Uvicorn HTTP API; this concerns server mode, not the local inference library.",
+            "zh": "Serving 入口启动 FastAPI/Uvicorn HTTP API；该能力属于服务模式，不属于本地推理库接口。"
+          }
+        }
+      ]
+    },
+    "mnn": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Runs on-device training and inference, including language and diffusion models.",
+        "zh": "运行设备端训练与推理，包括语言及扩散模型。"
+      },
+      "reviewedSources": [
+        "audit:mnn:overview"
+      ],
+      "entries": []
+    },
+    "model-compression-toolkit-mct": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Compresses pretrained PyTorch or Keras floating-point models.",
+        "zh": "压缩预训练 PyTorch 或 Keras 浮点模型。"
+      },
+      "reviewedSources": [
+        "audit:model-compression-toolkit-mct:overview"
+      ],
+      "entries": []
+    },
+    "mqbench": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "PyTorch FX toolkit for deployable model quantization.",
+        "zh": "用于可部署模型量化的 PyTorch FX 工具包。"
+      },
+      "reviewedSources": [
+        "audit:mqbench:overview"
+      ],
+      "entries": []
+    },
+    "ncnn": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Executes neural-network inference on phones, embedded systems, PCs, and browsers.",
+        "zh": "在手机、嵌入式设备、计算机及浏览器执行神经网络推理。"
+      },
+      "reviewedSources": [
+        "audit:ncnn:overview"
+      ],
+      "entries": []
+    },
+    "neurosurgeon": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Single-image offloading testbench using TensorFlow; this repository is an adaptation of Neurosurgeon.",
+        "zh": "使用 TensorFlow 的单图像卸载测试台；此仓库是 Neurosurgeon 的改编实现。"
+      },
+      "reviewedSources": [
+        "audit:neurosurgeon:overview",
+        "network:neurosurgeon-more-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "UDP"
+          ],
+          "scope": "service",
+          "source": "network:neurosurgeon-more-0",
+          "note": {
+            "en": "udpFastServer.py implements Twisted DatagramProtocol. This code provides stronger evidence than the README checklist that still describes UDP as a TODO.",
+            "zh": "udpFastServer.py 实现 Twisted DatagramProtocol；此代码比仍将 UDP 写为待办项的 README 清单更直接。"
+          }
+        }
+      ]
+    },
+    "nn-meter": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Predicts DNN inference latency without deploying each queried model to a device.",
+        "zh": "预测 DNN 推理时延，无需将每个待查询模型部署到设备。"
+      },
+      "reviewedSources": [
+        "audit:nn-meter:overview"
+      ],
+      "entries": []
+    },
+    "nndeploy": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Runs AI workflows through multiple inference backends.",
+        "zh": "通过多种推理后端运行 AI 工作流。"
+      },
+      "reviewedSources": [
+        "audit:nndeploy:overview"
+      ],
+      "entries": []
+    },
+    "ns3-ai": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Connects ns-3 simulation with external Python AI frameworks through shared memory.",
+        "zh": "通过共享内存连接 ns-3 仿真与外部 Python AI 框架。"
+      },
+      "reviewedSources": [
+        "audit:ns3-ai:overview",
+        "network:ns3-ai-code-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "WiFi"
+          ],
+          "scope": "service",
+          "source": "audit:ns3-ai:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "TCP"
+          ],
+          "scope": "service",
+          "source": "audit:ns3-ai:overview",
+          "note": {
+            "en": "The linked project source describes this protocol in the operating context summarized above.",
+            "zh": "所引项目资料在上述运行场景中描述此协议。"
+          }
+        },
+        {
+          "values": [
+            "4G",
+            "LTE"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-ai-code-0",
+          "note": {
+            "en": "The LTE-CQI example was adapted to ns-3 mainline LTE. Its authors state that published NR experiment results were not reproduced on LTE; NR is not inferred from that comparison.",
+            "zh": "LTE-CQI 示例适配 ns-3 主线 LTE；作者说明论文 NR 实验结果没有在 LTE 上复现，不由该比较推断当前示例支持 NR。"
+          }
+        }
+      ]
+    },
+    "ns3-gym": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Integrates ns-3 network simulation with an external Gym reinforcement-learning agent.",
+        "zh": "将 ns-3 网络仿真与外部 Gym 强化学习智能体集成。"
+      },
+      "reviewedSources": [
+        "audit:ns3-gym:overview",
+        "network:ns3-gym-code-1",
+        "network:ns3-gym-code-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "TCP",
+            "IPv4",
+            "Point-to-point"
+          ],
+          "scope": "packet",
+          "source": "network:ns3-gym-code-1",
+          "note": {
+            "en": "The RL-TCP scenario explicitly installs TCP traffic, IPv4 routing and point-to-point links.",
+            "zh": "RL-TCP 场景明确安装 TCP 流量、IPv4 路由及点到点链路。"
+          }
+        },
+        {
+          "values": [
+            "Spectrum channel model"
+          ],
+          "scope": "abstract",
+          "source": "network:ns3-gym-code-0",
+          "note": {
+            "en": "The cognitive-radio example uses waveform generators and spectrum analysis; the motivating Wi-Fi scenario does not establish an IEEE 802.11 MAC implementation in this example.",
+            "zh": "认知无线电示例使用波形发生器与频谱分析；以 Wi-Fi 为背景不意味着该示例实现 IEEE 802.11 MAC。"
+          }
+        }
+      ]
+    },
+    "nvidia-tensorrt": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Compiles optimized inference engines and runs neural models on NVIDIA platforms.",
+        "zh": "编译优化推理引擎并在 NVIDIA 平台运行神经模型。"
+      },
+      "reviewedSources": [
+        "audit:nvidia-tensorrt:overview"
+      ],
+      "entries": []
+    },
+    "once-for-all": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Trains a shared network and extracts subnetworks for specialized deployment.",
+        "zh": "训练共享网络，并提取子网络以进行专门部署。"
+      },
+      "reviewedSources": [
+        "audit:once-for-all:overview"
+      ],
+      "entries": []
+    },
+    "onnx-runtime": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Cross-platform runtime executes machine-learning inference and supports selected training workflows.",
+        "zh": "跨平台运行时执行机器学习推理，并支持特定训练流程。"
+      },
+      "reviewedSources": [
+        "audit:onnx-runtime:overview"
+      ],
+      "entries": []
+    },
+    "openvino": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Optimizes models and executes inference from edge to cloud.",
+        "zh": "优化模型并执行从边缘到云的推理。"
+      },
+      "reviewedSources": [
+        "audit:openvino:overview"
+      ],
+      "entries": []
+    },
+    "paddle-lite": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Executes inference on mobile, embedded, and edge hardware.",
+        "zh": "在移动、嵌入式及边缘硬件执行推理。"
+      },
+      "reviewedSources": [
+        "audit:paddle-lite:overview"
+      ],
+      "entries": []
+    },
+    "pocket": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Research artifact runs machine-learning applications with Pocket frontend/backend components.",
+        "zh": "研究制品通过 Pocket 前后端组件运行机器学习应用。"
+      },
+      "reviewedSources": [
+        "audit:pocket:overview"
+      ],
+      "entries": []
+    },
+    "pytorch-mobile": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Historical PyTorch mobile interpreter for Android and iOS.",
+        "zh": "用于 Android、iOS 的历史 PyTorch 移动解释器。"
+      },
+      "reviewedSources": [
+        "audit:pytorch-mobile-guide:overview"
+      ],
+      "entries": []
+    },
+    "sparseml": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Historical library applies neural-network sparsification recipes.",
+        "zh": "历史软件库用于应用神经网络稀疏化配方。"
+      },
+      "reviewedSources": [
+        "audit:sparseml:overview"
+      ],
+      "entries": []
+    },
+    "shimmy": {
+      "date": "2026-09-09",
+      "disposition": "documented",
+      "summary": {
+        "en": "Local inference server executes supported GGUF models through the Airframe engine.",
+        "zh": "本地推理服务器通过 Airframe 引擎执行支持的 GGUF 模型。"
+      },
+      "reviewedSources": [
+        "audit:shimmy:overview",
+        "network:shimmy-code-0"
+      ],
+      "entries": [
+        {
+          "values": [
+            "HTTP"
+          ],
+          "scope": "service",
+          "source": "network:shimmy-code-0",
+          "note": {
+            "en": "The documented API exposes OpenAI-compatible HTTP endpoints and streamed responses.",
+            "zh": "文档 API 提供兼容 OpenAI 的 HTTP 端点及流式响应。"
+          }
+        }
+      ]
+    },
+    "sparsezoo": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Historical model repository distributes sparse and sparse-quantized neural networks.",
+        "zh": "历史模型库分发稀疏及稀疏量化神经网络。"
+      },
+      "reviewedSources": [
+        "audit:sparsezoo:overview"
+      ],
+      "entries": []
+    },
+    "snpe": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Qualcomm Neural Processing Engine SDK; current public installation workflow verified.",
+        "zh": "Qualcomm 神经处理引擎 SDK；已核对当前公开安装流程。"
+      },
+      "reviewedSources": [
+        "audit:snpe:overview"
+      ],
+      "entries": []
+    },
+    "tengine": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Runs neural-network inference on embedded devices.",
+        "zh": "在嵌入式设备执行神经网络推理。"
+      },
+      "reviewedSources": [
+        "audit:tengine:overview"
+      ],
+      "entries": []
+    },
+    "tensorflow-lite": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "LiteRT continues TensorFlow Lite for on-device ML inference; the following current features refer to LiteRT v2.",
+        "zh": "LiteRT 延续 TensorFlow Lite 的设备端机器学习推理；以下当前功能指 LiteRT v2。"
+      },
+      "reviewedSources": [
+        "audit:tensorflow-lite:overview"
+      ],
+      "entries": []
+    },
+    "tnn": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Cross-platform inference framework for mobile, desktop, and cloud applications.",
+        "zh": "面向移动、桌面及云应用的跨平台推理框架。"
+      },
+      "reviewedSources": [
+        "audit:tnn:overview"
+      ],
+      "entries": []
+    },
+    "torch-pruning-tp": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Structural pruning toolkit for trained neural networks.",
+        "zh": "用于已训练神经网络的结构化剪枝工具包。"
+      },
+      "reviewedSources": [
+        "audit:torch-pruning-tp:overview"
+      ],
+      "entries": []
+    },
+    "utensor": {
+      "date": "2026-09-09",
+      "disposition": "scope-only",
+      "summary": {
+        "en": "Executes generated neural-network inference on Arm-oriented embedded targets.",
+        "zh": "在面向 Arm 的嵌入式目标执行生成的神经网络推理。"
+      },
+      "reviewedSources": [
+        "audit:utensor:overview"
+      ],
+      "entries": []
+    },
+    "cloud-computing-and-distributed-systems-clouds-laboratory": {
+      "date": "2026-09-09",
+      "disposition": "reference",
+      "summary": {
+        "en": "The original page provides a redirect to the CLOUDS laboratory; it is an institutional reference, not a comparable tool.",
+        "zh": "原页面提供 CLOUDS 实验室跳转；这是机构参考入口，不是可比较的工具。"
+      },
+      "reviewedSources": [],
+      "entries": []
+    },
+    "ai-at-the-edge": {
+      "date": "2026-09-09",
+      "disposition": "reference",
+      "summary": {
+        "en": "Archived collection of edge AI hardware and software links",
+        "zh": "已归档的边缘 AI 硬件和软件链接清单"
+      },
+      "reviewedSources": [
+        "audit:ai-at-the-edge:overview"
+      ],
+      "entries": []
+    },
+    "edge-computing-internet-of-things": {
+      "date": "2026-09-09",
+      "disposition": "reference",
+      "summary": {
+        "en": "Edge-to-cloud, messaging and IoT project links",
+        "zh": "边缘到云、消息传递与物联网项目链接清单"
+      },
+      "reviewedSources": [
+        "audit:edge-computing-internet-of-things:overview"
+      ],
+      "entries": []
+    },
+    "explore-edge-computing": {
+      "date": "2026-09-09",
+      "disposition": "reference",
+      "summary": {
+        "en": "The original directory URL failed TLS hostname validation during this review. Its resource listings could not be read through that endpoint.",
+        "zh": "此次访问原目录网址时 TLS 主机名验证失败，无法从该入口读取其资源列表。"
+      },
+      "reviewedSources": [],
+      "entries": []
+    },
+    "mec-ecosystem": {
+      "date": "2026-09-09",
+      "disposition": "reference",
+      "summary": {
+        "en": "ETSI directory of third-party MEC applications and solutions.",
+        "zh": "ETSI 的第三方 MEC 应用和解决方案目录。"
+      },
+      "reviewedSources": [
+        "audit:mec-ecosystem:overview"
+      ],
+      "entries": []
+    }
+  }
+}

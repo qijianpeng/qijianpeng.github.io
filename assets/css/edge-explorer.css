@@ -156,3 +156,12 @@
   .ee-icon-tile { width: 27px; height: 27px; flex-basis: 27px; }
   .ee-icon-tile .ee-icon { width: 19px; height: 19px; }
 }
+
+.edge-explorer .ee-network-details { margin: 1rem 0; border-top: 1px solid var(--global-divider-color); padding-top: .8rem; }
+.edge-explorer .ee-network-details > summary { cursor: pointer; font-weight: 600; display: flex; align-items: center; gap: .5rem; }
+.edge-explorer .ee-network-details > summary::before { content: "+"; color: var(--global-theme-color); }
+.edge-explorer .ee-network-details[open] > summary::before { content: "−"; }
+.edge-explorer .ee-network-details > summary .ee-option-count { margin-left: auto; }
+.edge-explorer .ee-network-record { border-left: 3px solid var(--global-theme-color); padding: .4rem .75rem; margin: 1rem 0; overflow-wrap: anywhere; }
+.edge-explorer .ee-network-scope { display: block; margin-bottom: .4rem; color: var(--global-theme-color); font-size: .8rem; }
+.edge-explorer .ee-network-record .ee-note { margin: .5rem 0; }
