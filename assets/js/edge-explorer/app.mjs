@@ -1,6 +1,6 @@
 // Keep the module graph on the same published version as the entry point.
 const release = new URL(import.meta.url).search;
-const [{ emptyState, readState, writeState, selectTools, toggleCompare, relaxations, featureKeys }, { ui, groups, features, terms, dimensions }, { icon }] = await Promise.all([
+const [{ emptyState, readState, writeState, selectTools, toggleCompare, relaxations, featureKeys }, { ui, groups, features, terms, dimensions, networkScopes }, { icon }] = await Promise.all([
   import(new URL(`./core.mjs${release}`, import.meta.url).href),
   import(new URL(`./labels.mjs${release}`, import.meta.url).href),
   import(new URL(`./icons.mjs${release}`, import.meta.url).href),
@@ -96,8 +96,22 @@ function reviewedDimensions(tool) {
   const records = dimensions.flatMap((dimension, index) => tool.verification?.dimensions[index] ? [h('div', { class: 'ee-dimension' }, h('h5', { class: 'ee-dimension-title' }, icon(['paradigm', 'resource', 'metric', 'scheduling', 'book'][index]), dimension[state.lang === 'zh' ? 1 : 0]), ...dimensionEvidence(tool, index))] : []);
   return records.length ? h('section', { class: 'ee-dimension-evidence', 'aria-label': t('reviewedDimensions') }, h('h4', {}, t('reviewedDimensions')), ...records) : null;
 }
+function networkEvidence(tool) {
+  if (!tool.network) return [];
+  return [h('p', { class: 'ee-note' }, localized(tool.network.summary)),
+    ...tool.network.entries.map(record => h('div', { class: 'ee-network-record', 'data-network-scope': record.scope },
+      h('strong', { class: 'ee-network-scope' }, networkScopes[record.scope][state.lang === 'zh' ? 1 : 0]),
+      h('div', { class: 'ee-tags' }, record.values.map(value => h('span', { class: 'ee-tag' }, label(value)))),
+      h('p', { class: 'ee-note' }, localized(record.note)), sourceLink(tool, record.source))),
+    !tool.network.entries.length ? tool.network.reviewedSources.map(source => sourceLink(tool, source)) : null];
+}
+function networkDetails(tool) {
+  return h('details', { class: 'ee-network-details', 'data-tool-network': tool.id },
+    h('summary', {}, icon('protocol'), groupLabel('protocol'), h('span', { class: 'ee-option-count' }, (tool.facets.protocol || []).length)),
+    ...networkEvidence(tool));
+}
 function toolDetails(tool) {
-  const claims = tool.claims.map(claim => h('p', {}, h('strong', {}, `${groupLabel(claim.facet)}: `), label(claim.value), sourceLink(tool, claim.source), claim.note ? h('span', { class: 'ee-note' }, ` · ${localized(claim.note)}`) : null));
+  const claims = tool.claims.filter(claim => claim.facet !== 'protocol').map(claim => h('p', {}, h('strong', {}, `${groupLabel(claim.facet)}: `), label(claim.value), sourceLink(tool, claim.source), claim.note ? h('span', { class: 'ee-note' }, ` · ${localized(claim.note)}`) : null));
   return h('details', { class: 'ee-details', 'data-tool-details': tool.id }, h('summary', {}, t('details')), h('p', {}, localized(tool.summary)), ...tool.notes.map(note => h('p', { class: 'ee-note' }, localized(note))), tool.verification?.accessNote ? h('p', { class: 'ee-note ee-tentative' }, localized(tool.verification.accessNote)) : null, reviewedDimensions(tool), h('h4', {}, t('documented')), ...documentedFeatures(tool), h('h4', {}, t('provenance')), ...(claims.length ? claims : [h('p', {}, t('noFacets'))]), h('details', { class: 'ee-details' }, h('summary', {}, t('fullSummary')), h('p', {}, tool.description), sourceLink(tool, 'readme')), h('div', { class: 'ee-detail-links' }, tool.url ? link(t('official'), tool.url) : null, link(t('sourceRecord'), tool.source.url)));
 }
 function resultCard(result) {
@@ -105,10 +119,11 @@ function resultCard(result) {
   const selected = state.compare.includes(tool.id);
   const tagValues = ['type', 'language', 'purpose'].flatMap(k => tool.facets[k] || []);
   const matching = Object.entries(state.facets).flatMap(([k, values]) => values.filter(v => tool.facets[k]?.includes(v)).map(label)).concat(state.required.map(featureLabel));
-  return h('article', { class: 'ee-card', 'data-selected': String(selected), 'data-tool': tool.id }, h('div', { class: 'ee-card-heading' }, h('h3', {}, tool.name), tool.comparable ? h('button', { class: 'ee-add', type: 'button', id: `ee-add-${tool.id}`, 'data-compare-toggle': tool.id, 'aria-pressed': String(selected), 'aria-label': `${selected ? t('remove') : t('add')} ${tool.name}`, disabled: !selected && state.compare.length === 4 }, selected ? `✓ ${t('remove')}` : t('add')) : null), h('span', { class: 'ee-card-category' }, tool.facets.category.map(label).join(' / '), !tool.comparable ? ` · ${t('reference')}` : ''), h('p', { class: 'ee-card-summary' }, localized(tool.summary)), ...['paradigm', 'engine'].filter(key => tool.facets[key]?.length).map(key => h('div', { class: 'ee-card-facet', 'data-card-facet': key }, h('span', { class: 'ee-card-facet-label' }, icon(key), groupLabel(key)), h('div', { class: 'ee-tags' }, tool.facets[key].map(value => h('span', { class: 'ee-tag ee-facet-tag' }, key === 'paradigm' ? icon(value) : null, label(value)))))), h('div', { class: 'ee-tags ee-secondary-tags' }, tagValues.map(value => h('span', { class: 'ee-tag' }, label(value)))), h('p', { class: 'ee-evidence' }, tool.officialChecked ? t('evidenceRecord') : t('repositoryRecord'), sourceLink(tool, tool.officialChecked || 'readme')), matching.length ? h('p', { class: 'ee-match' }, `${t('matching')}: ${matching.join(' · ')}`) : null, toolDetails(tool));
+  return h('article', { class: 'ee-card', 'data-selected': String(selected), 'data-tool': tool.id }, h('div', { class: 'ee-card-heading' }, h('h3', {}, tool.name), tool.comparable ? h('button', { class: 'ee-add', type: 'button', id: `ee-add-${tool.id}`, 'data-compare-toggle': tool.id, 'aria-pressed': String(selected), 'aria-label': `${selected ? t('remove') : t('add')} ${tool.name}`, disabled: !selected && state.compare.length === 4 }, selected ? `✓ ${t('remove')}` : t('add')) : null), h('span', { class: 'ee-card-category' }, tool.facets.category.map(label).join(' / '), !tool.comparable ? ` · ${t('reference')}` : ''), h('p', { class: 'ee-card-summary' }, localized(tool.summary)), ...['paradigm', 'engine'].filter(key => tool.facets[key]?.length).map(key => h('div', { class: 'ee-card-facet', 'data-card-facet': key }, h('span', { class: 'ee-card-facet-label' }, icon(key), groupLabel(key)), h('div', { class: 'ee-tags' }, tool.facets[key].map(value => h('span', { class: 'ee-tag ee-facet-tag' }, key === 'paradigm' ? icon(value) : null, label(value)))))), h('div', { class: 'ee-tags ee-secondary-tags' }, tagValues.map(value => h('span', { class: 'ee-tag' }, label(value)))), networkDetails(tool), h('p', { class: 'ee-evidence' }, tool.officialChecked ? t('evidenceRecord') : t('repositoryRecord'), sourceLink(tool, tool.officialChecked || 'readme')), matching.length ? h('p', { class: 'ee-match' }, `${t('matching')}: ${matching.join(' · ')}`) : null, toolDetails(tool));
 }
 function renderResults() {
   const previousOpen = [...root.querySelectorAll('[data-tool-details][open]')].map(el => el.dataset.toolDetails);
+  const previousNetworks = [...root.querySelectorAll('[data-tool-network][open]')].map(el => el.dataset.toolNetwork);
   const results = selectTools(data, state);
   $('#ee-count').textContent = `${results.length} ${t('results')}`;
   const chips = [];
@@ -121,6 +136,7 @@ function renderResults() {
     if (results.length > visibleLimit) cards.push(h('button', { type: 'button', class: 'ee-secondary', id: 'ee-more' }, `${t('more')} (${results.length - visibleLimit})`));
     $('#ee-results').replaceChildren(...cards);
     for (const id of previousOpen) { const details = root.querySelector(`[data-tool-details="${CSS.escape(id)}"]`); if (details) details.open = true; }
+    for (const id of previousNetworks) { const details = root.querySelector(`[data-tool-network="${CSS.escape(id)}"]`); if (details) details.open = true; }
   } else {
     $('#ee-results').replaceChildren(h('div', { class: 'ee-empty' }, h('h3', {}, t('empty')), h('p', {}, t('emptyHelp')), relaxations(data, state).map(o => h('button', { class: 'ee-secondary', type: 'button', 'data-remove-filter': o.kind, 'data-key': o.key || '', 'data-value': o.value || '' }, `${t('removeCondition')} ${o.kind === 'q' ? state.q : o.kind === 'required' ? featureLabel(o.value) : label(o.value)} → ${o.count}`)), h('button', { class: 'ee-primary', type: 'button', 'data-reset': true }, t('reset'))));
   }
@@ -141,7 +157,7 @@ function renderComparison() {
   $('#ee-comparison').hidden = !comparisonOpen || !selected.length;
   if (!comparisonOpen || !selected.length) return;
   const row = (name, cell) => h('tr', {}, h('th', { scope: 'row' }, name), selected.map(tool => h('td', {}, cell(tool))));
-  const rows = [row(t('overview'), tool => localized(tool.summary)), ...['paradigm', 'engine'].map(key => row(`${groupLabel(key)}${state.lang === 'zh' ? '标签' : ' tags'}`, tool => comparisonFacet(tool, key))), ...dimensions.map((dimension, index) => row(dimension[state.lang === 'zh' ? 1 : 0], tool => dimensionEvidence(tool, index))), row(t('documented'), tool => documentedFeatures(tool)), row(t('condition'), tool => [t('scopeNote'), tool.verification?.accessNote ? h('p', { class: 'ee-note' }, localized(tool.verification.accessNote)) : null, ...tool.notes.map(note => h('p', { class: 'ee-note' }, localized(note)))]), row(t('source'), tool => [tool.url ? link(t('official'), tool.url) : null, h('br'), link(t('sourceRecord'), tool.source.url)])];
+  const rows = [row(t('overview'), tool => localized(tool.summary)), ...['paradigm', 'engine'].map(key => row(`${groupLabel(key)}${state.lang === 'zh' ? '标签' : ' tags'}`, tool => comparisonFacet(tool, key))), row(groupLabel('protocol'), tool => networkEvidence(tool)), ...dimensions.map((dimension, index) => row(dimension[state.lang === 'zh' ? 1 : 0], tool => dimensionEvidence(tool, index))), row(t('documented'), tool => documentedFeatures(tool)), row(t('condition'), tool => [t('scopeNote'), tool.verification?.accessNote ? h('p', { class: 'ee-note' }, localized(tool.verification.accessNote)) : null, ...tool.notes.map(note => h('p', { class: 'ee-note' }, localized(note)))]), row(t('source'), tool => [tool.url ? link(t('official'), tool.url) : null, h('br'), link(t('sourceRecord'), tool.source.url)])];
   $('#ee-comparison-table').replaceChildren(h('table', {}, h('caption', { class: 'ee-sr-only' }, t('comparison')), h('thead', {}, h('tr', {}, h('th', { scope: 'col' }, t('dimensions')), selected.map(tool => h('th', { scope: 'col' }, tool.name)))), h('tbody', {}, rows)));
 }
 function renderMethod() {
