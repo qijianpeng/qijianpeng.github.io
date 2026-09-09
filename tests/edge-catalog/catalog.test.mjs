@@ -258,7 +258,7 @@ test('EasiEI appears in each documented paradigm and ns-3 combination, with comp
 test('Engine filters include base engines and explicit dependencies without importing baselines or model formats', async () => {
   const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
   const entries = Object.fromEntries(data.tools.map(t => [t.id, t]));
-  for (const [id, engine] of [['ns-3', 'ns-3'], ['cloudsim', 'CloudSim'], ['edgecloudsim', 'EdgeCloudSim'], ['ifogsim', 'iFogSim'], ['ifogsim', 'CloudSim'], ['pfogsim', 'EdgeCloudSim'], ['yafs-yet-another-fog-simulator', 'SimPy'], ['edgesimpy', 'Mesa'], ['nndeploy', 'ONNX Runtime']]) {
+  for (const [id, engine] of [['ns-3', 'ns-3'], ['cfn', 'ns-3'], ['nfaas', 'ns-3'], ['rice', 'ns-3'], ['cloudsim', 'CloudSim'], ['edgecloudsim', 'EdgeCloudSim'], ['ifogsim', 'iFogSim'], ['ifogsim', 'CloudSim'], ['pfogsim', 'EdgeCloudSim'], ['yafs-yet-another-fog-simulator', 'SimPy'], ['edgesimpy', 'Mesa'], ['nndeploy', 'ONNX Runtime']]) {
     assert.ok(selectTools(data, { ...emptyState(), facets: { engine: [engine] } }).some(r => r.tool.id === id), `${id}: ${engine}`);
   }
   assert.ok(!entries.pureedgesim.facets.engine.includes('CloudSim Plus'));

@@ -2624,6 +2624,13 @@
       "url": "https://github.com/mlcommons/inference/blob/3fbc329939999c13d0a7b5e67fb2092287e06047/README.md",
       "title": "mlperf-inference-benchmark-suite / Project README",
       "version": "3fbc329939999c13d0a7b5e67fb2092287e06047"
+    },
+    "tags:cfn:ndnsim-readme": {
+      "kind": "official",
+      "date": "2026-09-09",
+      "url": "https://github.com/spirosmastorakis/CFN/blob/9f7bdd82382c525e31aa722ef121dea629c5ad3b/README.md",
+      "title": "CFN / ndnSIM branch README",
+      "version": "9f7bdd82382c525e31aa722ef121dea629c5ad3b"
     }
   },
   "tools": {
@@ -16179,7 +16186,7 @@
       }
     },
     "rice": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -16275,10 +16282,19 @@
           "facet": "protocol",
           "value": "NDN",
           "source": "audit:rice:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "ns-3",
+          "source": "audit:rice:overview",
+          "note": {
+            "en": "The project builds and runs its bundled ns-3/ndnSIM simulation stack. Use the project-specific branch and dependency versions; this does not imply compatibility with the newest ns-3 release.",
+            "zh": "项目构建并运行所附 ns-3／ndnSIM 仿真栈，需使用项目指定分支和依赖版本；不表示兼容最新版 ns-3。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -23302,7 +23318,7 @@
       }
     },
     "cfn": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -23364,7 +23380,8 @@
         }
       ],
       "sources": [
-        "audit:cfn:overview"
+        "audit:cfn:overview",
+        "tags:cfn:ndnsim-readme"
       ],
       "features": {
         "logging": {
@@ -23411,10 +23428,19 @@
             "en": "Catalog classification based on the project’s stated simulation or execution model.",
             "zh": "按项目说明的仿真或执行模型进行目录分类。"
           }
+        },
+        {
+          "facet": "engine",
+          "value": "ns-3",
+          "source": "tags:cfn:ndnsim-readme",
+          "note": {
+            "en": "The project builds and runs its bundled ns-3/ndnSIM simulation stack. Use the project-specific branch and dependency versions; this does not imply compatibility with the newest ns-3 release.",
+            "zh": "项目构建并运行所附 ns-3／ndnSIM 仿真栈，需使用项目指定分支和依赖版本；不表示兼容最新版 ns-3。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"
@@ -24570,7 +24596,7 @@
       }
     },
     "nfaas": {
-      "date": "2026-09-08",
+      "date": "2026-09-09",
       "dimensions": [
         {
           "text": {
@@ -24687,10 +24713,19 @@
           "facet": "resource",
           "value": "Storage",
           "source": "audit:nfaas:overview"
+        },
+        {
+          "facet": "engine",
+          "value": "ns-3",
+          "source": "review:nfaas:README.md",
+          "note": {
+            "en": "The project builds and runs its bundled ns-3/ndnSIM simulation stack. Use the project-specific branch and dependency versions; this does not imply compatibility with the newest ns-3 release.",
+            "zh": "项目构建并运行所附 ns-3／ndnSIM 仿真栈，需使用项目指定分支和依赖版本；不表示兼容最新版 ns-3。"
+          }
         }
       ],
       "notes": [],
-      "facetReviewedAt": "2026-09-08",
+      "facetReviewedAt": "2026-09-09",
       "facetReviewNote": {
         "en": "All filter groups reviewed against the linked project descriptions. Tags describe documented uses, models, or deployment targets; blank groups do not mean lack of support.",
         "zh": "已按所链接的项目说明检查全部筛选组。标签描述明确记载的用途、模型或部署目标；空组不表示不支持。"

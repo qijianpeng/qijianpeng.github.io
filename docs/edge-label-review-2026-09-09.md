@@ -1,6 +1,6 @@
 # Label and icon review: September 9, 2026
 
-Reviewed the existing 218-resource catalog for omitted filter values. This pass adds 119 distinct resource/filter assignments across 71 resources. Existing pinned project evidence was reused; EasiEI Wiki pages and selected dependency files were retrieved for this pass. No survey marks or automated keyword matches create tags.
+Reviewed the existing 218-resource catalog for omitted filter values. This pass adds 122 distinct resource/filter assignments across 74 resources. Existing pinned project evidence was reused; EasiEI Wiki pages and selected dependency files were retrieved for this pass. No survey marks or automated keyword matches create tags.
 
 ## Scope and decisions
 
@@ -19,6 +19,7 @@ Reviewed the existing 218-resource catalog for omitted filter values. This pass 
 | CloudSim Express | scheduling: VM placement | [Cloudslab/cloudsim-express / docs/examples/writing-custom-vm-allocation-policy-example/writing-custom-vm-allocation-policy.md](https://github.com/Cloudslab/cloudsim-express/blob/04010594ffb2dcd33daa4ab43cd21b48ba2c27d4/docs/examples/writing-custom-vm-allocation-policy-example/writing-custom-vm-allocation-policy.md) |
 | CloudSim Plus | scheduling: VM placement; engine: CloudSim Plus | [cloudsimplus/cloudsimplus / README.md](https://github.com/cloudsimplus/cloudsimplus/blob/32c1af3f9831926112d021052c5efa89a50ce23d/README.md) |
 | CloudSim+ - Py4j gateway | scheduling: VM placement; platform: Docker | [pkoperek/cloudsimplus-gateway / src/main/java/pl/edu/agh/csg/CloudSimProxy.java](https://github.com/pkoperek/cloudsimplus-gateway/blob/9ed8f5eced109f201f96f09f1919f8534e8827d4/src/main/java/pl/edu/agh/csg/CloudSimProxy.java); [pkoperek/cloudsimplus-gateway / README.md](https://github.com/pkoperek/cloudsimplus-gateway/blob/9ed8f5eced109f201f96f09f1919f8534e8827d4/README.md) |
+| CFN | engine: ns-3 | [CFN / ndnSIM branch README](https://github.com/spirosmastorakis/CFN/blob/9f7bdd82382c525e31aa722ef121dea629c5ad3b/README.md) |
 | Cooja | paradigm: IoT | [contiki-ng/cooja / README.md](https://github.com/contiki-ng/cooja/blob/2adeaed7991cd789957e4e23c32680837bb2b2b9/README.md) |
 | EasiEI | paradigm: Cloud; paradigm: Fog; paradigm: IoT; scenario: IoT; engine: ns-3; platform: Linux; scheduling: FIFO; scheduling: Priority; scheduling: User-defined; protocol: UDP; protocol: IPv4; protocol: IPv6 | [EasiEI / Functional components](https://gitlab.com/Mirrola/ns-3-dev/-/wikis/Functional-components); [EasiEI / Quick Start](https://gitlab.com/Mirrola/ns-3-dev/-/wikis/Quick-Start); [EasiEI / Computing resource unit](https://gitlab.com/Mirrola/ns-3-dev/-/wikis/Computing-resource-unit); [EasiEI / SensorBase interface](https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/contrib/devices/model/sensorbase.h); [EasiEI / Server application](https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/contrib/myapplication/model/server.cc); [EasiEI / Development environment](https://gitlab.com/Mirrola/ns-3-dev/-/wikis/Guide/EasiEI开发环境配置) |
 | ECHOES | scheduling: Task offloading | [TadavomnisT/ECHOES / README.md](https://github.com/TadavomnisT/ECHOES/blob/855e891555c6d80f56cdf63bbd09d62337ccf2f7/README.md) |
@@ -36,6 +37,7 @@ Reviewed the existing 218-resource catalog for omitted filter values. This pass 
 | Mininet-WiFi | platform: Docker; engine: Mininet-WiFi | [intrig-unicamp/mininet-wifi / README.md](https://github.com/intrig-unicamp/mininet-wifi/blob/99ba09b269f8e5e08cd9698c24b8b7e2949016a9/README.md) |
 | MobEmu | language: Java | [raduciobanu/mobemu / README.md](https://github.com/raduciobanu/mobemu/blob/e10d0378ae2c229e30fa81ac7d09ffbc81e651b5/README.md) |
 | ndnSIM | engine: ndnSIM | [named-data-ndnSIM/ndnSIM / README.md](https://github.com/named-data-ndnSIM/ndnSIM/blob/90d50396654dabad54b6979f2dc8fa929ade544c/README.md) |
+| NFaaS | engine: ns-3 | [README.md](https://gitlab.com/mharnen/NFaaS/-/blob/a720c3154fe93db5d775112e59e2debe0074c523/README.md) |
 | NS-3 | engine: ns-3; protocol: WiFi | [ns3-stats / Official guide](https://www.nsnam.org/docs/manual/html/statistics.html); [nsnam/ns-3-dev-git / README.md](https://github.com/nsnam/ns-3-dev-git/blob/29f6a374c394efcabb19c528bf13502578840a56/README.md) |
 | OMNeT++ | engine: OMNeT++ | [omnetpp/omnetpp / doc/src/manual/ch-sim-lib.tex](https://github.com/omnetpp/omnetpp/blob/820d04e7bb0ef53acaf6a41858ee7ea29f2754ca/doc/src/manual/ch-sim-lib.tex) |
 | pFogSim | paradigm: IoT; engine: CloudSim; engine: EdgeCloudSim | [pfogsim / src/edu/boun/edgecloudsim/core/SimManager.java](https://raw.githubusercontent.com/jihall77/pFogSim/3d3591ef44ef74a08cab4e3e6f53a2b84e3d30dd/src/edu/boun/edgecloudsim/core/SimManager.java); [pfogsim / Project README](https://github.com/jihall77/pFogSim/blob/3d3591ef44ef74a08cab4e3e6f53a2b84e3d30dd/README.md) |
@@ -58,6 +60,7 @@ Reviewed the existing 218-resource catalog for omitted filter values. This pass 
 | Komondor | engine: COST | [wn-upf/Komondor / README.md](https://github.com/wn-upf/Komondor/blob/a40896d881bfb377c07a9ccef249cdab52849445/README.md) |
 | Node-RED | platform: Docker | [node-red / Official documentation](https://nodered.org/) |
 | Open vSwitch | engine: Open vSwitch | [open-vswitch / Official documentation](https://www.openvswitch.org/) |
+| RICE | engine: ns-3 | [harnen/timers / README.md](https://github.com/harnen/timers/blob/20084ee486f7a75ec0a59545169760629e9d89c3/README.md) |
 | CloudSuite | engine: Docker | [parsa-epfl/cloudsuite / README.md](https://github.com/parsa-epfl/cloudsuite/blob/c9d7584b9f4f0dec56e6683ebd61dad66ac1d06a/README.md) |
 | MLPerf Inference Benchmark Suite | engine: PyTorch; engine: TensorFlow; engine: TVM; engine: ncnn | [mlperf-inference-benchmark-suite / Project README](https://github.com/mlcommons/inference/blob/3fbc329939999c13d0a7b5e67fb2092287e06047/README.md) |
 | networkX | engine: NetworkX | [networkx/networkx / README.rst](https://github.com/networkx/networkx/blob/caa3b60b526afe51f0120d22b91df10f10972352/README.rst) |
