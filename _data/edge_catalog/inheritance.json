@@ -1,0 +1,733 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-10",
+  "sources": {
+    "inherit:easiei:doc/models/source/index.rst": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/doc/models/source/index.rst",
+      "title": "EasiEI / Inherited ns-3 doc/models/source/index.rst",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:easiei:src/internet/doc/internet-stack.rst": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/src/internet/doc/internet-stack.rst",
+      "title": "EasiEI / Inherited ns-3 src/internet/doc/internet-stack.rst",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:easiei:src/internet/doc/routing-overview.rst": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/src/internet/doc/routing-overview.rst",
+      "title": "EasiEI / Inherited ns-3 src/internet/doc/routing-overview.rst",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:easiei:src/wifi/doc/source/wifi-design.rst": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/src/wifi/doc/source/wifi-design.rst",
+      "title": "EasiEI / Inherited ns-3 src/wifi/doc/source/wifi-design.rst",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:easiei:src/lte/doc/source/lte-design.rst": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/src/lte/doc/source/lte-design.rst",
+      "title": "EasiEI / Inherited ns-3 src/lte/doc/source/lte-design.rst",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:easiei:src/sixlowpan/doc/sixlowpan.rst": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/src/sixlowpan/doc/sixlowpan.rst",
+      "title": "EasiEI / Inherited ns-3 src/sixlowpan/doc/sixlowpan.rst",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:easiei:src/lr-wpan/doc/lr-wpan.rst": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/src/lr-wpan/doc/lr-wpan.rst",
+      "title": "EasiEI / Inherited ns-3 src/lr-wpan/doc/lr-wpan.rst",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:easiei:src/csma/doc/csma.rst": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/src/csma/doc/csma.rst",
+      "title": "EasiEI / Inherited ns-3 src/csma/doc/csma.rst",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:easiei:src/wave/doc/wave.rst": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/src/wave/doc/wave.rst",
+      "title": "EasiEI / Inherited ns-3 src/wave/doc/wave.rst",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:easiei:src/wimax/doc/wimax.rst": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/src/wimax/doc/wimax.rst",
+      "title": "EasiEI / Inherited ns-3 src/wimax/doc/wimax.rst",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:easiei:src/internet/doc/tcp.rst": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/src/internet/doc/tcp.rst",
+      "title": "EasiEI / Inherited ns-3 src/internet/doc/tcp.rst",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:easiei:VERSION": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://gitlab.com/Mirrola/ns-3-dev/-/blob/e96572819b3de4e5831dc870affaab5f168c1a51/VERSION",
+      "title": "EasiEI / Inherited ns-3 VERSION",
+      "version": "EasiEI 3-dev fork at e96572819b3de4e5831dc870affaab5f168c1a51"
+    },
+    "inherit:ns3-ai-release": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://apps.nsnam.org/app/ns3-ai/",
+      "title": "ns3-ai / Compatible base release",
+      "version": "ns3-ai v1.2.0 with ns-3.38"
+    },
+    "inherit:ns3-3.31:index": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.31/doc/models/source/index.rst",
+      "title": "ns-3.31 / index",
+      "version": "ns-3.31"
+    },
+    "inherit:ns3-3.31:internet": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.31/src/internet/doc/internet-stack.rst",
+      "title": "ns-3.31 / internet",
+      "version": "ns-3.31"
+    },
+    "inherit:ns3-3.31:routing": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.31/src/internet/doc/routing-overview.rst",
+      "title": "ns-3.31 / routing",
+      "version": "ns-3.31"
+    },
+    "inherit:ns3-3.31:wifi": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.31/src/wifi/doc/source/wifi-design.rst",
+      "title": "ns-3.31 / wifi",
+      "version": "ns-3.31"
+    },
+    "inherit:ns3-3.38:index": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.38/doc/models/source/index.rst",
+      "title": "ns-3.38 / index",
+      "version": "ns-3.38"
+    },
+    "inherit:ns3-3.38:internet": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.38/src/internet/doc/internet-stack.rst",
+      "title": "ns-3.38 / internet",
+      "version": "ns-3.38"
+    },
+    "inherit:ns3-3.38:routing": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.38/src/internet/doc/routing-overview.rst",
+      "title": "ns-3.38 / routing",
+      "version": "ns-3.38"
+    },
+    "inherit:ns3-3.38:wifi": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.38/src/wifi/doc/source/wifi-design.rst",
+      "title": "ns-3.38 / wifi",
+      "version": "ns-3.38"
+    },
+    "inherit:ns3-3.40:index": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.40/doc/models/source/index.rst",
+      "title": "ns-3.40 / index",
+      "version": "ns-3.40"
+    },
+    "inherit:ns3-3.40:internet": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.40/src/internet/doc/internet-stack.rst",
+      "title": "ns-3.40 / internet",
+      "version": "ns-3.40"
+    },
+    "inherit:ns3-3.40:routing": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.40/src/internet/doc/routing-overview.rst",
+      "title": "ns-3.40 / routing",
+      "version": "ns-3.40"
+    },
+    "inherit:ns3-3.40:wifi": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://github.com/nsnam/ns-3-dev-git/blob/ns-3.40/src/wifi/doc/source/wifi-design.rst",
+      "title": "ns-3.40 / wifi",
+      "version": "ns-3.40"
+    },
+    "inherit:ndnsim-links": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://ndnsim.net/current/intro.html",
+      "title": "ndnSIM / Available ns-3 link-layer models",
+      "version": "ndnSIM 2.x documentation; use its compatible ns-3 branch"
+    },
+    "inherit:ndnsim-branch": {
+      "kind": "official",
+      "date": "2026-09-10",
+      "url": "https://ndnsim.net/current/getting-started.html",
+      "title": "ndnSIM / Custom ns-3 branch and build",
+      "version": "ndnSIM 2.x; custom ns-3 branch required"
+    }
+  },
+  "profiles": {
+    "easiei-ns3-fork": {
+      "parent": "ns-3",
+      "version": "3-dev fork @ e96572819b3de4e5831dc870affaab5f168c1a51",
+      "entries": [
+        {
+          "id": "internet",
+          "values": [
+            "IPv4",
+            "IPv6",
+            "ARP",
+            "TCP",
+            "UDP",
+            "ICMP",
+            "ICMPv6"
+          ],
+          "scope": "packet",
+          "source": "inherit:easiei:src/internet/doc/internet-stack.rst",
+          "note": {
+            "en": "The fork retains the ns-3 Internet-stack models. Install and configure these stack components in the EasiEI scenario.",
+            "zh": "该分支保留 ns-3 Internet 协议栈模型，可在 EasiEI 场景中安装并配置相应组件。"
+          }
+        },
+        {
+          "id": "routing",
+          "values": [
+            "AODV",
+            "OLSR",
+            "DSDV",
+            "DSR",
+            "RIP",
+            "RIPng",
+            "Static routing",
+            "Global routing"
+          ],
+          "scope": "packet",
+          "source": "inherit:easiei:src/internet/doc/routing-overview.rst",
+          "note": {
+            "en": "Inherited routing implementations can be selected in the scenario. Global routing computes routes without OSPF packet exchange.",
+            "zh": "可在场景中选用继承的路由实现；全局路由计算不产生 OSPF 协议报文。"
+          }
+        },
+        {
+          "id": "wifi",
+          "values": [
+            "WiFi",
+            "IEEE 802.11a",
+            "IEEE 802.11b",
+            "IEEE 802.11g",
+            "IEEE 802.11n",
+            "IEEE 802.11ac",
+            "IEEE 802.11ax",
+            "IEEE 802.11e",
+            "IEEE 802.11s"
+          ],
+          "scope": "packet",
+          "source": "inherit:easiei:src/wifi/doc/source/wifi-design.rst",
+          "note": {
+            "en": "The fork documents a/b/g/n/ac/ax PHY models, EDCA and mesh. Select the desired WifiNetDevice and PHY/MAC configuration; this fork does not document the newer 802.11be model.",
+            "zh": "该分支记载 a/b/g/n/ac/ax PHY、EDCA 与 Mesh，可选择 WifiNetDevice 及 PHY/MAC 配置；该分支文档未包含较新的 802.11be 模型。"
+          }
+        },
+        {
+          "id": "lte",
+          "values": [
+            "4G",
+            "LTE",
+            "EPC"
+          ],
+          "scope": "packet",
+          "source": "inherit:easiei:src/lte/doc/source/lte-design.rst",
+          "note": {
+            "en": "The inherited LTE/EPC module is available for configured cellular scenarios. EasiEI tasks must be connected to the selected network model explicitly.",
+            "zh": "继承的 LTE/EPC 模块可用于配置蜂窝场景，EasiEI 任务需显式连接到选定网络模型。"
+          }
+        },
+        {
+          "id": "lowpan",
+          "values": [
+            "6LoWPAN"
+          ],
+          "scope": "packet",
+          "source": "inherit:easiei:src/sixlowpan/doc/sixlowpan.rst",
+          "note": {
+            "en": "Inherited IPv6 adaptation model with the compression and fragmentation scope described by this fork.",
+            "zh": "继承 IPv6 适配层模型，压缩和分片范围以该分支文档为准。"
+          }
+        },
+        {
+          "id": "lrwpan",
+          "values": [
+            "IEEE 802.15.4"
+          ],
+          "scope": "packet",
+          "source": "inherit:easiei:src/lr-wpan/doc/lr-wpan.rst",
+          "note": {
+            "en": "The inherited LR-WPAN PHY/MAC model provides the documented IEEE 802.15.4 subset.",
+            "zh": "继承 LR-WPAN PHY/MAC 模型，提供文档界定的 IEEE 802.15.4 子集。"
+          }
+        },
+        {
+          "id": "csma",
+          "values": [
+            "Ethernet",
+            "CSMA"
+          ],
+          "scope": "packet",
+          "source": "inherit:easiei:src/csma/doc/csma.rst",
+          "note": {
+            "en": "The inherited CSMA NetDevice uses Ethernet-style framing and a simplified channel model.",
+            "zh": "继承的 CSMA 网络设备采用以太网式帧格式和简化信道模型。"
+          }
+        },
+        {
+          "id": "wave",
+          "values": [
+            "IEEE 802.11p",
+            "WAVE"
+          ],
+          "scope": "packet",
+          "source": "inherit:easiei:src/wave/doc/wave.rst",
+          "note": {
+            "en": "The fork includes Wifi80211pHelper and WAVE devices. Enable and configure the vehicular models; they are inherited modules rather than a predefined EasiEI task scenario.",
+            "zh": "该分支含 Wifi80211pHelper 和 WAVE 设备，可启用并配置车联网模型；这是继承模块，不表示已有预设 EasiEI 任务场景。"
+          }
+        },
+        {
+          "id": "wimax",
+          "values": [
+            "WiMAX"
+          ],
+          "scope": "packet",
+          "source": "inherit:easiei:src/wimax/doc/wimax.rst",
+          "note": {
+            "en": "The inherited WiMAX module models the documented IEEE 802.16 point-to-multipoint PHY/MAC subset.",
+            "zh": "继承 WiMAX 模块，建模文档界定的 IEEE 802.16 点到多点 PHY/MAC 子集。"
+          }
+        },
+        {
+          "id": "tcp",
+          "values": [
+            "TCP NewReno",
+            "TCP CUBIC",
+            "TCP BBR",
+            "DCTCP"
+          ],
+          "scope": "packet",
+          "source": "inherit:easiei:src/internet/doc/tcp.rst",
+          "note": {
+            "en": "These congestion-control implementations are documented in the fork; select the TCP SocketType for the scenario.",
+            "zh": "该分支文档列出这些拥塞控制实现，需为场景选择对应 TCP SocketType。"
+          }
+        },
+        {
+          "id": "links",
+          "values": [
+            "Point-to-point",
+            "Nix-vector routing",
+            "Underwater acoustic model"
+          ],
+          "scope": "packet",
+          "source": "inherit:easiei:doc/models/source/index.rst",
+          "note": {
+            "en": "The retained model library includes point-to-point, Nix-vector and UAN modules; each requires its own scenario configuration.",
+            "zh": "保留的模型库包含点到点、Nix-vector 与 UAN 模块，需分别配置相应场景。"
+          }
+        }
+      ]
+    },
+    "ns3-3.31": {
+      "parent": "ns-3",
+      "version": "ns-3.31",
+      "entries": [
+        {
+          "id": "internet",
+          "values": [
+            "IPv4",
+            "IPv6",
+            "ARP",
+            "TCP",
+            "UDP",
+            "ICMP",
+            "ICMPv6"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.31:internet",
+          "note": {
+            "en": "Base Internet-stack models are available when configured in the selected ns-3 scenario.",
+            "zh": "在选定的 ns-3 场景中配置后，可使用基础 Internet 协议栈模型。"
+          }
+        },
+        {
+          "id": "routing",
+          "values": [
+            "AODV",
+            "OLSR",
+            "DSDV",
+            "DSR",
+            "RIP",
+            "RIPng",
+            "Static routing",
+            "Global routing"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.31:routing",
+          "note": {
+            "en": "Configure the routing protocol in the base ns-3 scenario; this is inherited platform capability.",
+            "zh": "在基础 ns-3 场景中配置路由协议；此处记录继承的平台能力。"
+          }
+        },
+        {
+          "id": "wifi",
+          "values": [
+            "WiFi",
+            "IEEE 802.11a",
+            "IEEE 802.11b",
+            "IEEE 802.11g",
+            "IEEE 802.11n",
+            "IEEE 802.11ac",
+            "IEEE 802.11ax",
+            "IEEE 802.11e",
+            "IEEE 802.11s"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.31:wifi",
+          "note": {
+            "en": "Use the PHY/MAC subset and configuration documented for this ns-3 version.",
+            "zh": "采用该 ns-3 版本文档界定的 PHY/MAC 子集和配置。"
+          }
+        },
+        {
+          "id": "modules",
+          "values": [
+            "LTE",
+            "4G",
+            "EPC",
+            "IEEE 802.15.4",
+            "6LoWPAN",
+            "CSMA",
+            "Point-to-point",
+            "IEEE 802.11p",
+            "WAVE",
+            "WiMAX"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.31:index",
+          "note": {
+            "en": "These base modules are in the versioned model library. Building a derived application does not select all models; configure the ones required by the experiment.",
+            "zh": "这些基础模块包含在对应版本的模型库中。构建派生应用不会自动选用全部模型，需为实验配置所需组件。"
+          }
+        }
+      ]
+    },
+    "ns3-3.38": {
+      "parent": "ns-3",
+      "version": "ns-3.38",
+      "entries": [
+        {
+          "id": "internet",
+          "values": [
+            "IPv4",
+            "IPv6",
+            "ARP",
+            "TCP",
+            "UDP",
+            "ICMP",
+            "ICMPv6"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.38:internet",
+          "note": {
+            "en": "Base Internet-stack models are available when configured in the selected ns-3 scenario.",
+            "zh": "在选定的 ns-3 场景中配置后，可使用基础 Internet 协议栈模型。"
+          }
+        },
+        {
+          "id": "routing",
+          "values": [
+            "AODV",
+            "OLSR",
+            "DSDV",
+            "DSR",
+            "RIP",
+            "RIPng",
+            "Static routing",
+            "Global routing"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.38:routing",
+          "note": {
+            "en": "Configure the routing protocol in the base ns-3 scenario; this is inherited platform capability.",
+            "zh": "在基础 ns-3 场景中配置路由协议；此处记录继承的平台能力。"
+          }
+        },
+        {
+          "id": "wifi",
+          "values": [
+            "WiFi",
+            "IEEE 802.11a",
+            "IEEE 802.11b",
+            "IEEE 802.11g",
+            "IEEE 802.11n",
+            "IEEE 802.11ac",
+            "IEEE 802.11ax",
+            "IEEE 802.11e",
+            "IEEE 802.11s",
+            "IEEE 802.11be"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.38:wifi",
+          "note": {
+            "en": "Use the PHY/MAC subset and configuration documented for this ns-3 version.",
+            "zh": "采用该 ns-3 版本文档界定的 PHY/MAC 子集和配置。"
+          }
+        },
+        {
+          "id": "modules",
+          "values": [
+            "LTE",
+            "4G",
+            "EPC",
+            "IEEE 802.15.4",
+            "6LoWPAN",
+            "CSMA",
+            "Point-to-point",
+            "IEEE 802.11p",
+            "WAVE",
+            "WiMAX"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.38:index",
+          "note": {
+            "en": "These base modules are in the versioned model library. Building a derived application does not select all models; configure the ones required by the experiment.",
+            "zh": "这些基础模块包含在对应版本的模型库中。构建派生应用不会自动选用全部模型，需为实验配置所需组件。"
+          }
+        }
+      ]
+    },
+    "ns3-3.40": {
+      "parent": "ns-3",
+      "version": "ns-3.40",
+      "entries": [
+        {
+          "id": "internet",
+          "values": [
+            "IPv4",
+            "IPv6",
+            "ARP",
+            "TCP",
+            "UDP",
+            "ICMP",
+            "ICMPv6"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.40:internet",
+          "note": {
+            "en": "Base Internet-stack models are available when configured in the selected ns-3 scenario.",
+            "zh": "在选定的 ns-3 场景中配置后，可使用基础 Internet 协议栈模型。"
+          }
+        },
+        {
+          "id": "routing",
+          "values": [
+            "AODV",
+            "OLSR",
+            "DSDV",
+            "DSR",
+            "RIP",
+            "RIPng",
+            "Static routing",
+            "Global routing"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.40:routing",
+          "note": {
+            "en": "Configure the routing protocol in the base ns-3 scenario; this is inherited platform capability.",
+            "zh": "在基础 ns-3 场景中配置路由协议；此处记录继承的平台能力。"
+          }
+        },
+        {
+          "id": "wifi",
+          "values": [
+            "WiFi",
+            "IEEE 802.11a",
+            "IEEE 802.11b",
+            "IEEE 802.11g",
+            "IEEE 802.11n",
+            "IEEE 802.11ac",
+            "IEEE 802.11ax",
+            "IEEE 802.11e",
+            "IEEE 802.11s",
+            "IEEE 802.11be"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.40:wifi",
+          "note": {
+            "en": "Use the PHY/MAC subset and configuration documented for this ns-3 version.",
+            "zh": "采用该 ns-3 版本文档界定的 PHY/MAC 子集和配置。"
+          }
+        },
+        {
+          "id": "modules",
+          "values": [
+            "LTE",
+            "4G",
+            "EPC",
+            "IEEE 802.15.4",
+            "6LoWPAN",
+            "CSMA",
+            "Point-to-point",
+            "WiMAX"
+          ],
+          "scope": "packet",
+          "source": "inherit:ns3-3.40:index",
+          "note": {
+            "en": "These base modules are in the versioned model library. Building a derived application does not select all models; configure the ones required by the experiment.",
+            "zh": "这些基础模块包含在对应版本的模型库中。构建派生应用不会自动选用全部模型，需为实验配置所需组件。"
+          }
+        }
+      ]
+    },
+    "ndnsim-ns3-links": {
+      "parent": "ns-3",
+      "version": "ndnSIM 2.x compatible ns-3 branch",
+      "entries": [
+        {
+          "id": "links",
+          "values": [
+            "Point-to-point",
+            "CSMA",
+            "Ethernet",
+            "WiFi"
+          ],
+          "scope": "packet",
+          "source": "inherit:ndnsim-links",
+          "note": {
+            "en": "ndnSIM explicitly supports running its NDN network layer over the available point-to-point, CSMA and wireless link models.",
+            "zh": "ndnSIM 明确支持在可用的点到点、CSMA 和无线链路模型之上运行 NDN 网络层。"
+          }
+        }
+      ]
+    },
+    "ndnsim-link-interface": {
+      "parent": "ndnsim",
+      "version": "ndnSIM 2.x link-layer interface; use the project-required base revision",
+      "entries": [
+        {
+          "id": "links",
+          "values": [
+            "Point-to-point",
+            "CSMA",
+            "Ethernet",
+            "WiFi"
+          ],
+          "scope": "packet",
+          "source": "inherit:ndnsim-links",
+          "note": {
+            "en": "The ndnSIM base exposes these link-layer choices. A derived scenario must create the corresponding devices and attach the NDN stack.",
+            "zh": "ndnSIM 基础平台提供这些链路层选项，派生场景需创建相应设备并安装 NDN 协议栈。"
+          }
+        }
+      ]
+    }
+  },
+  "relationships": [
+    {
+      "tool": "easiei",
+      "profile": "easiei-ns3-fork",
+      "source": "inherit:easiei:VERSION",
+      "note": {
+        "en": "Available through the ns-3 source modules retained in this EasiEI checkout. Configure the base model for the experiment; additional upstream extensions are separate installations.",
+        "zh": "通过该 EasiEI 提交中保留的 ns-3 源码模块获得；实验需配置相应基础模型，上游额外扩展需独立安装。"
+      }
+    },
+    {
+      "tool": "mec-simulator",
+      "profile": "ns3-3.31",
+      "source": "audit:mec-simulator:overview",
+      "note": {
+        "en": "The default ClientApp task path uses an abstract radio-delay model. The surrounding ns-3.31 environment also provides these inherited modules; using them requires connecting the task model to the configured network.",
+        "zh": "默认 ClientApp 任务路径采用抽象无线时延模型；外围 ns-3.31 环境同时提供这些继承模块，使用时需将任务模型与配置的网络相连接。"
+      }
+    },
+    {
+      "tool": "ns3-ai",
+      "profile": "ns3-3.38",
+      "source": "inherit:ns3-ai-release",
+      "note": {
+        "en": "Uses the documented ns-3 baseline. Inherited modules are available for scenario construction; the project example may use only a subset.",
+        "zh": "采用项目文档指定的 ns-3 基础版本，继承模块可用于构建场景；项目示例可能只使用其中一部分。"
+      }
+    },
+    {
+      "tool": "ns3-gym",
+      "profile": "ns3-3.40",
+      "source": "audit:ns3-gym:overview",
+      "note": {
+        "en": "Uses the documented ns-3 baseline. Inherited modules are available for scenario construction; the project example may use only a subset.",
+        "zh": "采用项目文档指定的 ns-3 基础版本，继承模块可用于构建场景；项目示例可能只使用其中一部分。"
+      }
+    },
+    {
+      "tool": "ndnsim",
+      "profile": "ndnsim-ns3-links",
+      "source": "inherit:ndnsim-branch",
+      "note": {
+        "en": "Use the patched ns-3 branch required by ndnSIM. Select link devices in the scenario; protocol support is inherited from that branch.",
+        "zh": "采用 ndnSIM 要求的 ns-3 补丁分支，在场景中选择链路设备；协议支持继承自该基础分支。"
+      }
+    },
+    {
+      "tool": "ndn4ivc",
+      "profile": "ndnsim-link-interface",
+      "source": "audit:ndn4ivc:overview",
+      "note": {
+        "en": "Inherited ndnSIM link models are available when configuring the simulator scenario. Use the base revision required by this project.",
+        "zh": "配置仿真场景时可使用继承的 ndnSIM 链路模型，需采用该项目要求的基础版本。"
+      }
+    },
+    {
+      "tool": "rice",
+      "profile": "ndnsim-link-interface",
+      "source": "audit:rice:overview",
+      "note": {
+        "en": "Inherited ndnSIM link models are available when configuring the simulator scenario. Use the base revision required by this project.",
+        "zh": "配置仿真场景时可使用继承的 ndnSIM 链路模型，需采用该项目要求的基础版本。"
+      }
+    },
+    {
+      "tool": "cfn",
+      "profile": "ndnsim-link-interface",
+      "source": "audit:cfn:overview",
+      "note": {
+        "en": "Inherited ndnSIM link models are available when configuring the simulator scenario. Use the base revision required by this project.",
+        "zh": "配置仿真场景时可使用继承的 ndnSIM 链路模型，需采用该项目要求的基础版本。"
+      }
+    }
+  ]
+}

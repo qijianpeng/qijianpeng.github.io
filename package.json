@@ -8,6 +8,7 @@
   "scripts": {
     "catalog:build": "node bin/edge-catalog/build.mjs",
     "catalog:check": "node bin/edge-catalog/build.mjs --check",
+    "catalog:coverage": "node bin/edge-catalog/coverage.mjs",
     "catalog:sync": "node bin/edge-catalog/sync.mjs",
     "test:catalog": "node --test tests/edge-catalog/*.test.mjs"
   }

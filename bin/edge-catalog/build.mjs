@@ -1,17 +1,20 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { fingerprint, safeUrl } from './catalog.mjs';
-import { featureKeys, facetKeys } from '../../assets/js/edge-explorer/core.mjs';
+import { featureKeys, facetKeys, implementationRoutes, evidenceKinds, protocolAliases } from '../../assets/js/edge-explorer/core.mjs';
+import { resolveInheritance } from './inheritance.mjs';
 
 const root = new URL('../../_data/edge_catalog/', import.meta.url);
 const json = async file => JSON.parse(await readFile(new URL(file, root), 'utf8'));
-const [inventory, meta, curated, official, verification, network] = await Promise.all(['inventory.json', 'source.json', 'curated.json', 'official.json', 'verification.json', 'network.json'].map(json));
+const [inventory, meta, curated, official, verification, networkRecords, inheritance] = await Promise.all(['inventory.json', 'source.json', 'curated.json', 'official.json', 'verification.json', 'network.json', 'inheritance.json'].map(json));
+const network = resolveInheritance(networkRecords, inheritance, inventory.entries.map(entry => ({ ...entry, name: curated[entry.id]?.name || entry.name, url: curated[entry.id]?.url || entry.url })));
 const summaries = Object.fromEntries((await readFile(new URL('summaries.tsv', root), 'utf8')).trim().split('\n').map(line => { const [id, ...rest] = line.split('\t'); return [id, rest.join('\t')]; }));
 const categories = ['simulators', 'engines', 'networks', 'hardware', 'benchmarks', 'tools', 'applications', 'edge-ai', 'institutions', 'resources'];
 const sources = {};
 for (const [repo, doc] of Object.entries(official)) if (doc.url) sources[`official:${repo}`] = { kind: 'official', date: doc.retrievedAt, url: doc.url, version: doc.blobSha };
 Object.assign(sources, verification.sources);
 Object.assign(sources, network.sources);
+Object.assign(sources, inheritance.sources);
 for (const [id, source] of Object.entries(sources)) if (!safeUrl(source.url) || !source.date) throw new Error(`Invalid evidence source: ${id}`);
 const referenceIds = new Set(['awesome-pcaptools', 'webassembly-curated-list-of-awesome-things-regarding-webassembly-wasm-ecosystem', 'neural-network-accelerator-comparison']);
 function category(entry) {
@@ -85,9 +88,16 @@ function buildTool(entry) {
   delete tool.facets.protocol;
   tool.claims = tool.claims.filter(claim => claim.facet !== 'protocol');
   for (const record of networkReview.entries) {
-    if (!['packet', 'abstract', 'runtime', 'service', 'extension', 'data'].includes(record.scope) || !record.values?.length || !record.note?.en || !record.note?.zh || !projectSource(record.source) || !networkReview.reviewedSources.includes(record.source)) throw new Error(`Invalid network evidence: ${entry.id}`);
+    if (!['packet', 'abstract', 'runtime', 'service', 'data'].includes(record.scope) || !record.values?.length || !record.note?.en || !record.note?.zh || !projectSource(record.source) || !networkReview.reviewedSources.includes(record.source)) throw new Error(`Invalid network evidence: ${entry.id}`);
+    const impl = record.implementation;
+    if (!record.id || !impl || !implementationRoutes.includes(impl.route) || !['bundled', 'additional'].includes(impl.delivery) || !['documented', 'historical'].includes(impl.lifecycle) || !impl.version || !evidenceKinds.includes(impl.evidence?.kind) || !projectSource(impl.evidence.source) || !impl.chain?.length || impl.chain.some(node => !node.name || !safeUrl(node.url))) throw new Error(`Invalid implementation path: ${entry.id} / ${record.id}`);
+    if (impl.route !== 'builtin' && impl.chain.length < 2) throw new Error(`Missing implementation provider: ${record.id}`);
+    if (impl.evidence.kind === 'reproduced' && (!impl.evidence.run?.environment || !safeUrl(impl.evidence.run?.artifact))) throw new Error(`Missing reproduction artifact: ${record.id}`);
+    for (const source of record.additionalSources || []) if (!projectSource(source) || !networkReview.reviewedSources.includes(source)) throw new Error(`Invalid additional path source: ${record.id}`);
     for (const value of record.values) add('protocol', value, record.source, record.note);
   }
+  if (new Set(networkReview.entries.map(record => record.id)).size !== networkReview.entries.length) throw new Error(`Duplicate implementation ID: ${entry.id}`);
+  if (!networkReview.pathReviewedAt || !networkReview.coverage?.length || networkReview.coverage.some(record => !['project', 'extensions', 'base'].includes(record.area) || record.sources.some(source => !networkReview.reviewedSources.includes(source)))) throw new Error(`Invalid coverage log: ${entry.id}`);
   tool.network = networkReview;
   for (const claim of [...tool.claims, ...Object.values(tool.features)]) if (claim.source && claim.source !== 'readme' && !sources[claim.source]) throw new Error(`Missing source ${claim.source}`);
   if (tool.url && !safeUrl(tool.url)) throw new Error(`Unsafe URL: ${tool.id}`);
@@ -98,6 +108,10 @@ if (Object.keys(network.tools).some(id => !tools.some(tool => tool.id === id))) 
 const publicData = { schemaVersion: 1, meta: { ...meta, evidenceUpdatedAt: verification.date, count: tools.length, inventoryHash: fingerprint(inventory.entries), evidencePolicy: 'project-documentation', reviewedCount: tools.filter(t => t.verification).length, dimensionEvidenceCount: tools.reduce((sum, tool) => sum + (tool.verification?.dimensions.filter(Boolean).length || 0), 0), accessIssueCount: tools.filter(t => t.verification?.accessNote).length }, categories, sources: Object.fromEntries(Object.entries(sources).filter(([, source]) => source.kind === 'official')), tools };
 publicData.meta.networkReviewedAt = network.date;
 publicData.meta.networkReviewedCount = tools.filter(tool => tool.network).length;
+publicData.meta.evidenceUpdatedAt = [verification.date, network.date, inheritance.date].sort().at(-1);
+publicData.meta.implementationCount = tools.reduce((sum, tool) => sum + tool.network.entries.length, 0);
+publicData.meta.inheritanceCount = inheritance.relationships.length;
+publicData.protocolAliases = protocolAliases;
 const output = JSON.stringify(publicData, null, 2) + '\n';
 const destination = new URL('../../assets/data/edge-tools.json', import.meta.url);
 if (process.argv.includes('--check')) {

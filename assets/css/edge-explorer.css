@@ -165,3 +165,20 @@
 .edge-explorer .ee-network-record { border-left: 3px solid var(--global-theme-color); padding: .4rem .75rem; margin: 1rem 0; overflow-wrap: anywhere; }
 .edge-explorer .ee-network-scope { display: block; margin-bottom: .4rem; color: var(--global-theme-color); font-size: .8rem; }
 .edge-explorer .ee-network-record .ee-note { margin: .5rem 0; }
+.edge-explorer .ee-network-options { border: 1px solid var(--ee-line); border-radius: 6px; padding: 10px; margin: 10px 0; }
+.edge-explorer .ee-network-options legend { float: none; width: auto; font-size: 11px; font-weight: 650; padding: 0 4px; }
+.edge-explorer .ee-network-options label { display: flex; align-items: flex-start; gap: 7px; font-size: 11px; margin: 9px 0; }
+.edge-explorer .ee-network-options input { margin-top: 2px; accent-color: var(--ee-accent); }
+.edge-explorer .ee-path-badges { display: flex; flex-wrap: wrap; gap: 5px; font-size: 10px; }
+.edge-explorer .ee-path-badges > * { background: var(--ee-soft); padding: 3px 6px; border-radius: 4px; }
+.edge-explorer .ee-path-route { color: var(--ee-accent); }
+.edge-explorer .ee-historical { border: 1px dashed currentColor; }
+.edge-explorer .ee-path-chain { margin: 8px 0; line-height: 1.7; font-size: 12px; overflow-wrap: anywhere; }
+.edge-explorer .ee-matching-paths { border: 1px solid var(--ee-line); border-radius: 6px; padding: 10px; margin-top: 12px; font-size: 11px; }
+.edge-explorer .ee-matching-paths > strong { display: block; margin-bottom: 8px; }
+.edge-explorer .ee-matching-paths .ee-path-chain { margin: 3px 0 8px; }
+.edge-explorer .ee-coverage { border-top: 1px solid var(--ee-line); padding-top: 10px; margin-top: 12px; font-size: 11px; }
+.edge-explorer .ee-coverage summary { cursor: pointer; color: var(--ee-accent); }
+.edge-explorer .ee-coverage .ee-source { display: block; margin: 5px 0; }
+.edge-explorer .ee-card:has([data-tool-network][open]) { grid-column: 1 / -1; }
+.edge-explorer .ee-empty > a { display: inline-block; margin: 10px; }

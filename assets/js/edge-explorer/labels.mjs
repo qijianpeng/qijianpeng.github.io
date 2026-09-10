@@ -27,6 +27,31 @@ export const groups = {
 export const features = {
   visualization: ['Visualization', '可视化'], 'custom-metrics': ['Custom metric interface', '自定义指标接口'], 'scenario-scripts': ['Scenario / experiment scripts', '场景与实验脚本'], logging: ['Logging', '日志记录'], 'custom-scheduling': ['Custom scheduling', '自定义调度'], 'real-code': ['Runs real application code', '运行真实应用代码']
 };
+Object.assign(ui.en, {
+  networkOptions: 'Network implementation options', builtinOnly: 'Only bundled implementations', historicalPaths: 'Include historical implementations',
+  networkOptionHelp: 'Bundled includes inherited base modules. Extra modules and external services are included by default. Historical records identify a specific earlier environment.',
+  includeExtensions: 'Include additional modules and integrations', implementationPath: 'Implementation path', networkRole: 'Network role', evidenceType: 'Evidence basis',
+  coverage: 'Sources examined', coverageHelp: 'This log describes the sources examined. It does not claim that every possible extension has been cataloged.',
+  contribute: 'Suggest a capability / correction ↗', matchingPaths: 'Paths matching your network filters', fullNetwork: 'All recorded network implementations',
+  paths: 'implementation records', coverageLink: 'Review coverage ↗',
+  results: 'recorded matches', empty: 'No recorded implementations match these conditions.',
+  emptyHelp: 'Include additional modules or historical implementations, remove a condition, or suggest a project source.',
+  availability: 'Results show recorded implementations, including inherited modules and extensions. Compare the provider, version and conditions; source review is not a runtime test.'
+});
+Object.assign(ui.zh, {
+  networkOptions: '网络能力的实现方式', builtinOnly: '仅包含内置实现', historicalPaths: '包含历史实现',
+  networkOptionHelp: '内置包含继承的基础模块；默认同时收录额外模块和外部服务。历史记录对应特定旧版环境。',
+  includeExtensions: '包含额外模块与集成', implementationPath: '实现路径', networkRole: '网络作用层次', evidenceType: '证据类型',
+  coverage: '已检查的来源范围', coverageHelp: '此处列出实际检查的来源，不表示已穷尽所有可能扩展。',
+  contribute: '补充能力或纠错 ↗', matchingPaths: '满足所选网络条件的路径', fullNetwork: '全部已收录的网络实现',
+  paths: '条实现记录', coverageLink: '查看检查范围 ↗',
+  results: '项已收录匹配', empty: '已收录实现中没有满足这些条件的结果。',
+  emptyHelp: '可包含额外模块或历史实现、移除条件，或补充项目来源。',
+  availability: '结果包含已收录的自身实现、继承模块与扩展；请比较提供者、版本及条件。资料检查不等于运行实测。'
+});
+export const implementationLabels = { builtin: ['Built-in', '自身实现'], module: ['Additional module', '额外模块'], integration: ['External integration', '外部集成'], inherited: ['Inherited from base', '继承基础平台'] };
+export const evidenceLabels = { documentation: ['Project documentation', '项目文档'], source: ['Source code', '源码'], example: ['Project example', '项目示例'], reproduced: ['Reproduced run', '已复现运行'] };
+export const coverageLabels = { project: ['Project sources', '项目资料'], extensions: ['Modules and integrations', '模块与集成'], base: ['Inherited base modules', '继承的基础模块'] };
 export const terms = {
   'WiFi': ['Wi-Fi', 'Wi-Fi'], '4G': ['4G', '4G'], '5G': ['5G', '5G'], 'Linux network stack': ['Linux network stack', 'Linux 网络栈'], 'Link impairment': ['Link impairment', '链路损伤模型'], 'Traffic shaping': ['Traffic shaping', '流量整形'], 'Graph topology': ['Graph topology', '图拓扑'], 'Network trace': ['Network trace', '网络轨迹'], 'Flow sharing': ['Flow sharing', '流带宽共享'], 'WLAN/WAN queue model': ['WLAN / WAN queue model', 'WLAN / WAN 队列模型'], 'Path-loss model': ['Path-loss model', '路径损耗模型'], 'Cellular RAN model': ['Cellular RAN model', '蜂窝接入网模型'], 'Contact model': ['Contact model', '接触机会模型'], 'On-chip network': ['On-chip network', '片上网络'], 'Spectrum channel model': ['Spectrum channel model', '频谱信道模型'], 'Underwater acoustic model': ['Underwater acoustic model', '水声网络模型'], 'Point-to-point': ['Point-to-point link', '点到点链路'], 'Static routing': ['Static routing', '静态路由'], 'Global routing': ['Global routing', '全局路由'],
 

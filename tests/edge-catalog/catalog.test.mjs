@@ -47,6 +47,7 @@ test('Applying a pinned sync updates inventory while preserving curated evidence
     await writeFile(join(catalog, 'curated.json'), annotations);
     await writeFile(join(catalog, 'verification.json'), annotations);
     await writeFile(join(catalog, 'network.json'), annotations);
+    await writeFile(join(catalog, 'inheritance.json'), annotations);
     await writeFile(join(catalog, 'summaries.tsv'), translation);
     const incoming = join(directory, 'incoming.md');
     await writeFile(incoming, '# Tools\n- [Renamed](https://example.com/tool): Revised description.');
@@ -57,6 +58,7 @@ test('Applying a pinned sync updates inventory while preserving curated evidence
     assert.equal(await readFile(join(catalog, 'curated.json'), 'utf8'), annotations);
     assert.equal(await readFile(join(catalog, 'verification.json'), 'utf8'), annotations);
     assert.equal(await readFile(join(catalog, 'network.json'), 'utf8'), annotations);
+    assert.equal(await readFile(join(catalog, 'inheritance.json'), 'utf8'), annotations);
     assert.equal(await readFile(join(catalog, 'summaries.tsv'), 'utf8'), translation);
   } finally { await rm(directory, { recursive: true, force: true }); }
 });
@@ -276,11 +278,11 @@ test('Every resource has an explicit network review and all protocol filters der
   assert.deepEqual(Object.keys(manual.tools).sort(), data.tools.map(t => t.id).sort());
   assert.equal(data.meta.networkReviewedCount, data.tools.length);
   for (const t of data.tools) {
-    assert.deepEqual(t.network, manual.tools[t.id]);
+    assert.deepEqual(t.network.entries.filter(e => e.implementation.route !== 'inherited'), manual.tools[t.id].entries);
     assert.ok(t.network.summary.en && /[\u4e00-\u9fff]/.test(t.network.summary.zh), t.id);
     const values = new Set();
     for (const entry of t.network.entries) {
-      assert.ok(['packet', 'abstract', 'runtime', 'service', 'extension', 'data'].includes(entry.scope));
+      assert.ok(['packet', 'abstract', 'runtime', 'service', 'data'].includes(entry.scope));
       assert.ok(entry.note.en && entry.note.zh);
       assert.equal(data.sources[entry.source]?.kind, 'official', t.id);
       assert.ok(data.sources[entry.source].version && data.sources[entry.source].date);
@@ -303,18 +305,18 @@ test('ns-3 protocol coverage includes independent model families and qualifies e
   }
   for (const value of ['5G', '5G NR', 'LoRaWAN', 'OpenFlow']) {
     const entries = ns.network.entries.filter(e => e.values.includes(value));
-    assert.ok(entries.length && entries.every(e => e.scope === 'extension'), value);
+    assert.ok(entries.length && entries.every(e => e.implementation.delivery === 'additional'), value);
   }
-  assert.ok(!ns.facets.protocol.includes('OSPF'), 'Global routing weights do not implement OSPF');
+  assert.ok(ns.network.entries.filter(e => e.values.includes('OSPF')).every(e => e.implementation.chain.some(node => node.name === 'DCE')), 'OSPF requires the explicit DCE path');
 });
-test('Network scope separates abstract models, services and optional integrations without engine inheritance', async () => {
+test('Network role distinguishes abstract application paths from explicitly inherited base models', async () => {
   const data = JSON.parse(await readFile(new URL('../../assets/data/edge-tools.json', import.meta.url), 'utf8'));
   const get = id => data.tools.find(t => t.id === id);
   assert.ok(get('pureedgesim').network.entries.filter(e => e.values.includes('5G')).every(e => e.scope === 'abstract'));
   assert.ok(get('iotsim-edge').network.entries.filter(e => e.values.includes('CoAP')).every(e => e.scope === 'abstract'));
-  assert.ok(get('omnetpp').network.entries.every(e => e.scope === 'extension'));
-  assert.ok(get('mec-simulator').network.entries.every(e => e.scope === 'abstract'));
-  assert.ok(!get('mec-simulator').facets.protocol.includes('LTE'));
+  assert.ok(get('omnetpp').network.entries.every(e => e.implementation.delivery === 'additional'));
+  assert.ok(get('mec-simulator').network.entries.filter(e => e.implementation.route !== 'inherited').every(e => e.scope === 'abstract'));
+  assert.ok(get('mec-simulator').network.entries.filter(e => e.values.includes('LTE')).every(e => e.implementation.route === 'inherited'));
   assert.deepEqual(get('mec-simulator').facets.type, ['application']);
   assert.ok(!get('easiei').facets.protocol.includes('LoRaWAN'));
   assert.ok(!get('simgrid').facets.protocol.includes('Zigbee'));

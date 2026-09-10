@@ -1,0 +1,38 @@
+name: Edge Explorer capability evidence
+description: Add or correct a tool capability, inheritance relationship, or implementation path.
+title: "[Edge Explorer] "
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project and catalog ID
+      placeholder: EasiEI (easiei)
+    validations:
+      required: true
+  - type: textarea
+    id: capability
+    attributes:
+      label: Capability and implementation path
+      description: Name the capability, provider, and any base platform or additional module.
+      placeholder: "Example: ns-3 → DCE → Quagga → BGP"
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Project evidence
+      description: Link the project documentation, fixed source revision, API, or example that establishes the capability and relationship.
+    validations:
+      required: true
+  - type: textarea
+    id: conditions
+    attributes:
+      label: Version and conditions
+      description: Include base and module versions, build options, dependencies, and any limitations.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction evidence, if available
+      description: Add commands, environment details, and a result or log URL. Leave blank for documentation or source review only.

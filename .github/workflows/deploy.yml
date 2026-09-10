@@ -90,6 +90,7 @@ jobs:
           npm ci
           npm run test:catalog
           npm run catalog:check
+          npm run catalog:coverage -- --check
       - name: Update _config.yml ⚙️
         uses: fjogeleit/yaml-update-action@main
         with:

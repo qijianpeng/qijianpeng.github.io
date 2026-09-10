@@ -10,6 +10,8 @@ The public tool lives at `/repositories/edge-computing/` and is linked from the 
 - `_data/edge_catalog/paper.json`: Historical survey archive. The builder does not read it, and the public page does not display or use its rows. Legacy `paperNames` / `paperClaims` fields in curated annotations are archival only.
 - `_data/edge_catalog/official.json`: URLs, retrieval dates, and Git blob SHAs for checked official READMEs. `official:<owner>/<repo>` refers to these records.
 - `_data/edge_catalog/verification.json`: Manual evidence audit keyed by stable ID. Each resource has five bilingual dimension slots, dated/ versioned sources, supported feature claims, and optional access notes. Sync never writes this file. Resources with unavailable technical sources retain null dimension slots and a concrete access note. Access failures are not capability evidence.
+- `_data/edge_catalog/network.json`: Project network implementations, provider chains, configuration conditions, evidence methods, and inspected-source records.
+- `_data/edge_catalog/inheritance.json`: Explicit relationships and versioned base-module profiles. The builder expands these into inherited network implementations without changing the manually reviewed project records.
 - `assets/data/edge-tools.json`: Generated, public data. Regenerate it after changing reviewed annotations. Do not edit the generated file directly.
 
 All filter claims have a source. The upstream inventory (`readme`) supplies identity, categories and use cases. Active capabilities and dimension evidence must cite a project source with `kind: official`: Project websites, manuals, API references, fixed-commit source files, or project technical deliverables. Research sources (`primary`) may remain in manual archival records but are excluded from published dimensions, filters and capability states. A filename ending in PDF is not itself a research paper; classify it by its actual content and authorship.
@@ -46,8 +48,10 @@ After applying, review changed descriptions and outdated claims, translate added
 
 ```sh
 npm run catalog:build
+npm run catalog:coverage
 npm run test:catalog
 npm run catalog:check
+npm run catalog:coverage -- --check
 ```
 
 The build fails if a new resource lacks a reviewed Chinese summary or if an annotation references an absent source. Inspect unusual links and the current inventory before publishing. Updated source information is not automatically a current capability verification.
@@ -66,14 +70,16 @@ A resource may have evidence across all five dimensions without a documented cla
 
 - Facet choices within a group use OR; groups use AND. All selected required capabilities must be satisfied.
 - Required capability filters always use direct positive project evidence. The broad candidate checkbox was removed. Legacy URLs with `includeUnknown: true` retain their language, search, facets, requirements, and shortlist but normalize that retired flag to false.
-- Search covers names, aliases, English and Chinese summaries, facet values, and both languages of the five reviewed dimensions. Text search does not create positive capability claims. Results are alphabetical. Category bars show matching counts with the category constraint removed; sidebar counts show total catalog coverage.
-- Up to four comparable resources can be shortlisted. References are excluded. Filtering and language changes preserve the shortlist. `lang=en|zh` and a JSON-encoded `state` query parameter capture search, facets, required capabilities, comparison IDs, and a retired compatibility flag. Invalid/obsolete values are sanitized.
+- Search covers names, aliases, English and Chinese summaries, facet values, both languages of the five reviewed dimensions, network implementation notes, and provider names. Protocol aliases such as BGP-4, BGP, and bgpd resolve to the same filter. Text search does not create positive capability claims. Results are alphabetical. Category bars show matching counts with the category constraint removed; sidebar counts show catalog coverage, with protocol counts respecting the implementation controls.
+- Network filters include additional and historical implementations by default. `Only bundled implementations` retains built-in capabilities and reviewed base modules available through inheritance; it excludes paths requiring additional components. Turning off historical implementations removes records identified with historical versions or maintenance notices. A documented record does not imply active maintenance or a reproduced run.
+- Up to four comparable resources can be shortlisted. References are excluded. Filtering and language changes preserve the shortlist. `lang=en|zh` and a JSON-encoded `state` query parameter capture search, facets, required capabilities, `networkMode`, `includeHistorical`, comparison IDs, and a retired compatibility flag. Invalid/obsolete values are sanitized. Earlier links default to including additional and historical implementations.
+- A network match must come from one eligible implementation record. A different built-in protocol on the same tool cannot make an optional BGP path pass the bundled-only filter. Result cards show eligible paths; comparison retains every recorded path for the selected tools.
 - The first 24 matching resources render initially; `Show more resources` reveals another 24. Comparison always uses the selected IDs, independent of the current result page.
 - A dataset load error provides retry and the source repository link. JavaScript-disabled visitors can follow the complete original list.
 
 ## Build and publish
 
-The production workflow uses Ruby 3.2.2, Bundler 2.5.7, Node.js 22, Jekyll, and the locked PurgeCSS dependency. It runs catalog validation before building. PurgeCSS scans `.mjs` files and preserves the explorer's dynamic CSS classes.
+The production workflow uses Ruby 3.2.2, Bundler 2.5.7, Node.js 22, Jekyll, and the locked PurgeCSS dependency. It runs catalog validation and checks that the source-coverage report matches the generated dataset before building. PurgeCSS scans `.mjs` files and preserves the explorer's dynamic CSS classes.
 
 Each build adds the same release timestamp to the catalog URL and the JavaScript entry point. The entry point forwards that version to its module imports, so a refreshed page does not combine cached labels, filter logic, or data from an earlier release.
 
@@ -101,7 +107,7 @@ The [filter audit](edge-filter-audit.md) records the review of all 218 entries, 
 }
 ```
 
-The source must describe each assigned value. The build publishes these tags alongside the text, with the same source reference. It does not infer tags from keywords, project names, or parent-engine capabilities. Use a separate sourced `claims` entry when a new document supports additional tags, and retain version/configuration conditions. Update `facetReviewedAt` and `facetReviewNote` after review. General-purpose and reference resources may have no paradigm; this does not mean that a possible application is unsupported.
+The source must describe each assigned value. The build publishes these tags alongside the text, with the same source reference. It does not infer tags from keywords or project names. Inherited network capabilities are generated from the explicitly reviewed base-module profiles described below; other dimensions use their own sourced claims. Use a separate sourced `claims` entry when a new document supports additional tags, and retain version/configuration conditions. Update `facetReviewedAt` and `facetReviewNote` after review. General-purpose and reference resources may have no paradigm; this does not mean that a possible application is unsupported.
 
 The regression suite checks that every dimension tag reaches the public filters and exercises real catalog combinations. Run `npm run catalog:build`, `npm run test:catalog`, and `npm run catalog:check` after editing. Keep the American-English labels and corresponding Chinese labels in `labels.mjs` synchronized for new terms.
 
@@ -116,10 +122,26 @@ The Core engine filter includes base-engine entries as well as projects that exp
 
 ## Network model and protocol maintenance
 
-`_data/edge_catalog/network.json` is the authoritative network facet. Keep one record per stable inventory ID, including resources with only a scope description or an actual access outcome. `entries` contain `values`, `scope`, `source`, and bilingual `note`; the builder rejects missing reviews and non-project evidence. The README sync command leaves this manual file unchanged. Newly synchronized IDs require a reviewed record before generation succeeds.
+`network.json` and `inheritance.json` together define the network facet. Keep one project review per stable inventory ID, including resources with only a scope description or an actual access outcome. The README sync command leaves both manual files unchanged. Newly synchronized IDs require a reviewed record before generation succeeds.
 
-The six scopes distinguish protocol simulation, analytical abstraction, real networking, application interfaces, optional integrations, and data/trace resources. Record the installed module, compatible version, firmware, backend, and limitations in the note. Do not copy all protocols from a dependency. Keep original evidence in `verification.json`; the network file overrides older protocol tags while preserving the other five-dimension annotations.
+Each implementation entry contains a stable `id`, `values`, `scope`, `source`, bilingual `note`, and an `implementation` object:
 
-After editing, run `npm run catalog:build`, `npm run test:catalog`, and `npm run catalog:check`. Inspect both the expandable network section on a result card and the network row in the comparison table in English and Chinese. When a README conflicts with code, link the exact implementation and describe which version it establishes.
+- `scope`: One of `packet`, `abstract`, `runtime`, `service`, or `data`. This describes what the model or interface does.
+- `route`: One of `builtin`, `module`, `integration`, or `inherited`. This describes how the capability is supplied.
+- `delivery`: `bundled` or `additional`. A separately installed daemon remains additional even if another implementation on that project is bundled.
+- `chain`: Named providers with official links, such as ns-3 → DCE → Quagga.
+- `version`: The inspected release, fixed commit, or explicitly limited compatibility scope.
+- `evidence`: A `source` ID and `kind` of `documentation`, `source`, `example`, or `reproduced`. A reproduced record also requires its environment and result artifact; finding example code alone is not a reproduced run.
+- `lifecycle`: `documented` or `historical`. Describe dated compatibility or maintenance conditions in the note. Do not interpret `documented` as a maintenance guarantee.
 
-The complete September 9 network audit is in [the review register](edge-network-review-2026-09-09.md).
+Keep sources and limitations attached to each path. For example, ns-3's DCE/Quagga BGP path is an additional, historical runtime integration; its presence does not make BGP part of ns-3's bundled packet models. A protocol can have multiple implementation records with different providers or conditions. Original evidence in `verification.json` is retained, while these records determine the network filter.
+
+Inheritance is an available capability when the derived project exposes the relevant base modules. Add the project relationship and its evidence to `inheritance.json`, then specify a profile for the actual bundled or required base version. Profiles can be reused by projects with the same inspected base interface. The builder checks endpoints and cycles, expands these records, and keeps the project-specific conditions and base sources. Review a new base version before extending its profile. Do not silently substitute the newest upstream module list for an older fork or include an optional external module as bundled inheritance.
+
+EasiEI, for example, retains the reviewed ns-3 fork's IP stack, routing protocols, Wi-Fi, LTE/EPC, 6LoWPAN, and other documented modules. Its source reports `3-dev` at the pinned commit; do not invent a release number. These inherited capabilities participate in filters. For MEC-simulator, inherited ns-3.31 modules are distinct from its default task-delay abstraction, which still needs scenario code to connect task traffic to a configured packet network. The derived tool's overall simulator category does not change just because its base exposes packet models.
+
+Every project review also records `coverage` for inspected project, extension, or base sources, plus `pathReviewedAt`. This is a record of the checked source scope, not a completeness score. Add new official paths as they are found. Update the generated [implementation and source-coverage register](edge-implementation-coverage.md) with `npm run catalog:coverage` after rebuilding. The register maps every protocol to tools and paths, followed by all resource source checks. The September 9 [network review register](edge-network-review-2026-09-09.md) remains a dated audit snapshot.
+
+Visitors can open `Suggest a capability or correction` to draft an issue using `.github/ISSUE_TEMPLATE/edge-capability.yml`. Tool-specific links prefill the tool name and stable ID. Opening this form does not submit an issue. Review the official source, version, and conditions before adding submitted evidence to the catalog.
+
+After editing, rebuild the catalog and coverage register, run the catalog tests, then run both `catalog:check` and `catalog:coverage -- --check`. Inspect the expandable network section and comparison row in both languages. Include BGP with additional/historical controls, EasiEI's inherited protocols, zero-result recovery, and browser Back in release checks. When a README conflicts with code, link the exact implementation and describe which version it establishes.

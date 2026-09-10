@@ -1,6 +1,6 @@
 // Keep the module graph on the same published version as the entry point.
 const release = new URL(import.meta.url).search;
-const [{ emptyState, readState, writeState, selectTools, toggleCompare, relaxations, featureKeys }, { ui, groups, features, terms, dimensions, networkScopes }, { icon }] = await Promise.all([
+const [{ emptyState, readState, writeState, selectTools, toggleCompare, relaxations, featureKeys, networkEntries, networkValues, contributionUrl }, { ui, groups, features, terms, dimensions, networkScopes, implementationLabels, evidenceLabels, coverageLabels }, { icon }] = await Promise.all([
   import(new URL(`./core.mjs${release}`, import.meta.url).href),
   import(new URL(`./labels.mjs${release}`, import.meta.url).href),
   import(new URL(`./icons.mjs${release}`, import.meta.url).href),
@@ -15,7 +15,7 @@ const h = (tag, attrs = {}, ...children) => {
   return element;
 };
 let data, state = readState(location.search), visibleLimit = 24, comparisonOpen = state.compare.length > 0;
-const openGroups = new Set(['paradigm', 'engine']);
+const openGroups = new Set(['paradigm', 'engine', ...(state.facets.protocol?.length || state.networkMode !== 'all' || !state.includeHistorical ? ['protocol'] : [])]);
 const t = key => ui[state.lang][key] || key;
 const localized = value => typeof value === 'object' && value !== null ? value[state.lang] || value.en || '' : value || '';
 const label = value => terms[value]?.[state.lang === 'zh' ? 1 : 0] || value;
@@ -45,6 +45,8 @@ function update(next, options = {}) {
   render(options);
 }
 function removeFilter(kind, key, value) {
+  if (kind === 'networkMode') return update({ ...state, networkMode: 'all' });
+  if (kind === 'includeHistorical') return update({ ...state, includeHistorical: true });
   if (kind === 'q') return update({ ...state, q: '' });
   if (kind === 'required') return update({ ...state, required: state.required.filter(v => v !== value) });
   const facets = { ...state.facets, [key]: state.facets[key].filter(v => v !== value) };
@@ -68,10 +70,14 @@ function renderFilters() {
     const values = [...new Set(data.tools.flatMap(tool => tool.facets[key] || []))].sort((a, b) => label(a).localeCompare(label(b), state.lang));
     if (!values.length) continue;
     const options = values.map((value, index) => {
-      const count = data.tools.filter(tool => tool.facets[key]?.includes(value)).length;
+      const count = data.tools.filter(tool => (key === 'protocol' ? networkValues(tool, state) : tool.facets[key] || []).includes(value)).length;
       return h('label', { class: 'ee-option' }, h('input', { type: 'checkbox', id: `ee-filter-${key}-${index}`, 'data-facet': key, value, checked: state.facets[key]?.includes(value) }), h('span', { class: 'ee-option-label' }, key === 'paradigm' ? icon(value) : null, label(value)), h('span', { class: 'ee-option-count', 'aria-hidden': true }, count));
     });
-    nodes.push(h('details', { class: 'ee-filter-group', 'data-group': key, open: openGroups.has(key) }, h('summary', {}, h('span', { class: 'ee-group-title' }, icon(key), groupLabel(key))), h('p', { class: 'ee-group-help' }, groups[key][state.lang === 'zh' ? 3 : 2]), h('div', { class: 'ee-filter-options' }, options)));
+    const modeOptions = key === 'protocol' ? h('fieldset', { class: 'ee-network-options' }, h('legend', {}, t('networkOptions')),
+      h('label', {}, h('input', { id: 'ee-network-builtin', type: 'checkbox', 'data-network-mode': true, checked: state.networkMode === 'builtin' }), t('builtinOnly')),
+      h('label', {}, h('input', { id: 'ee-network-history', type: 'checkbox', 'data-network-history': true, checked: state.includeHistorical }), t('historicalPaths')),
+      h('p', { class: 'ee-group-help' }, t('networkOptionHelp'))) : null;
+    nodes.push(h('details', { class: 'ee-filter-group', 'data-group': key, open: openGroups.has(key) }, h('summary', {}, h('span', { class: 'ee-group-title' }, icon(key), groupLabel(key))), h('p', { class: 'ee-group-help' }, groups[key][state.lang === 'zh' ? 3 : 2]), modeOptions, h('div', { class: 'ee-filter-options' }, options)));
   }
   const required = h('details', { class: 'ee-filter-group', 'data-group': 'required', open: openGroups.has('required') }, h('summary', {}, h('span', { class: 'ee-group-title' }, icon('required'), t('required'))), h('p', { class: 'ee-group-help' }, t('requiredHelp')), h('div', { class: 'ee-filter-options' }, featureKeys.map(key => h('label', { class: 'ee-option' }, h('input', { type: 'checkbox', id: `ee-feature-${key}`, 'data-feature': key, checked: state.required.includes(key) }), featureLabel(key)))));
   nodes.splice(2, 0, required);
@@ -96,19 +102,43 @@ function reviewedDimensions(tool) {
   const records = dimensions.flatMap((dimension, index) => tool.verification?.dimensions[index] ? [h('div', { class: 'ee-dimension' }, h('h5', { class: 'ee-dimension-title' }, icon(['paradigm', 'resource', 'metric', 'scheduling', 'book'][index]), dimension[state.lang === 'zh' ? 1 : 0]), ...dimensionEvidence(tool, index))] : []);
   return records.length ? h('section', { class: 'ee-dimension-evidence', 'aria-label': t('reviewedDimensions') }, h('h4', {}, t('reviewedDimensions')), ...records) : null;
 }
-function networkEvidence(tool) {
+function pathChain(record) {
+  return h('p', { class: 'ee-path-chain' }, ...record.implementation.chain.flatMap((node, i) => [i ? h('span', { 'aria-hidden': true }, ' → ') : null, link(node.name, node.url)]));
+}
+function coverageLog(tool) {
+  return h('details', { class: 'ee-coverage' }, h('summary', {}, t('coverage'), ` · ${tool.network.pathReviewedAt}`),
+    h('p', { class: 'ee-note' }, t('coverageHelp')),
+    ...tool.network.coverage.map(record => h('div', {}, h('strong', {}, coverageLabels[record.area][state.lang === 'zh' ? 1 : 0]), ...record.sources.map(source => sourceLink(tool, source)))),
+    link(t('contribute'), contributionUrl(tool)));
+}
+function networkEvidence(tool, complete = true) {
   if (!tool.network) return [];
+  const entries = complete ? tool.network.entries : networkEntries(tool, state);
+  const selected = state.facets.protocol || [];
+  const ordered = [...entries].sort((a, b) => Number(b.values.some(v => selected.includes(v))) - Number(a.values.some(v => selected.includes(v))));
   return [h('p', { class: 'ee-note' }, localized(tool.network.summary)),
-    ...tool.network.entries.map(record => h('div', { class: 'ee-network-record', 'data-network-scope': record.scope },
-      h('strong', { class: 'ee-network-scope' }, networkScopes[record.scope][state.lang === 'zh' ? 1 : 0]),
+    ...ordered.map(record => h('div', { class: 'ee-network-record', 'data-network-scope': record.scope, 'data-implementation': record.id },
+      h('div', { class: 'ee-path-badges' }, h('strong', { class: 'ee-path-route' }, implementationLabels[record.implementation.route][state.lang === 'zh' ? 1 : 0]),
+        h('span', {}, networkScopes[record.scope][state.lang === 'zh' ? 1 : 0]),
+        h('span', {}, evidenceLabels[record.implementation.evidence.kind][state.lang === 'zh' ? 1 : 0]),
+        record.implementation.lifecycle === 'historical' ? h('strong', { class: 'ee-historical' }, t('legacy')) : null),
+      pathChain(record),
       h('div', { class: 'ee-tags' }, record.values.map(value => h('span', { class: 'ee-tag' }, label(value)))),
-      h('p', { class: 'ee-note' }, localized(record.note)), sourceLink(tool, record.source))),
-    !tool.network.entries.length ? tool.network.reviewedSources.map(source => sourceLink(tool, source)) : null];
+      h('p', { class: 'ee-note ee-version' }, `${t('version')}: ${record.implementation.version}`),
+      record.inheritanceNote ? h('p', { class: 'ee-note' }, localized(record.inheritanceNote)) : null,
+      h('p', { class: 'ee-note' }, localized(record.note)), sourceLink(tool, record.source),
+      ...(record.additionalSources || []).map(source => sourceLink(tool, source)))),
+    !tool.network.entries.length ? tool.network.reviewedSources.map(source => sourceLink(tool, source)) : null, coverageLog(tool)];
 }
 function networkDetails(tool) {
   return h('details', { class: 'ee-network-details', 'data-tool-network': tool.id },
-    h('summary', {}, icon('protocol'), groupLabel('protocol'), h('span', { class: 'ee-option-count' }, (tool.facets.protocol || []).length)),
-    ...networkEvidence(tool));
+    h('summary', {}, icon('protocol'), groupLabel('protocol'), h('span', { class: 'ee-option-count' }, networkValues(tool, state).length)),
+    ...networkEvidence(tool, false));
+}
+function matchingPaths(tool) {
+  if (!state.facets.protocol?.length) return null;
+  const entries = networkEntries(tool, state).filter(record => record.values.some(value => state.facets.protocol.includes(value)));
+  return h('div', { class: 'ee-matching-paths' }, h('strong', {}, t('matchingPaths')), ...entries.map(record => h('div', {}, h('span', { class: 'ee-note' }, record.values.filter(value => state.facets.protocol.includes(value)).map(label).join(' · '), ' · ', implementationLabels[record.implementation.route][state.lang === 'zh' ? 1 : 0], record.implementation.lifecycle === 'historical' ? ` · ${t('legacy')}` : ''), pathChain(record))));
 }
 function toolDetails(tool) {
   const claims = tool.claims.filter(claim => claim.facet !== 'protocol').map(claim => h('p', {}, h('strong', {}, `${groupLabel(claim.facet)}: `), label(claim.value), sourceLink(tool, claim.source), claim.note ? h('span', { class: 'ee-note' }, ` · ${localized(claim.note)}`) : null));
@@ -119,7 +149,7 @@ function resultCard(result) {
   const selected = state.compare.includes(tool.id);
   const tagValues = ['type', 'language', 'purpose'].flatMap(k => tool.facets[k] || []);
   const matching = Object.entries(state.facets).flatMap(([k, values]) => values.filter(v => tool.facets[k]?.includes(v)).map(label)).concat(state.required.map(featureLabel));
-  return h('article', { class: 'ee-card', 'data-selected': String(selected), 'data-tool': tool.id }, h('div', { class: 'ee-card-heading' }, h('h3', {}, tool.name), tool.comparable ? h('button', { class: 'ee-add', type: 'button', id: `ee-add-${tool.id}`, 'data-compare-toggle': tool.id, 'aria-pressed': String(selected), 'aria-label': `${selected ? t('remove') : t('add')} ${tool.name}`, disabled: !selected && state.compare.length === 4 }, selected ? `✓ ${t('remove')}` : t('add')) : null), h('span', { class: 'ee-card-category' }, tool.facets.category.map(label).join(' / '), !tool.comparable ? ` · ${t('reference')}` : ''), h('p', { class: 'ee-card-summary' }, localized(tool.summary)), ...['paradigm', 'engine'].filter(key => tool.facets[key]?.length).map(key => h('div', { class: 'ee-card-facet', 'data-card-facet': key }, h('span', { class: 'ee-card-facet-label' }, icon(key), groupLabel(key)), h('div', { class: 'ee-tags' }, tool.facets[key].map(value => h('span', { class: 'ee-tag ee-facet-tag' }, key === 'paradigm' ? icon(value) : null, label(value)))))), h('div', { class: 'ee-tags ee-secondary-tags' }, tagValues.map(value => h('span', { class: 'ee-tag' }, label(value)))), networkDetails(tool), h('p', { class: 'ee-evidence' }, tool.officialChecked ? t('evidenceRecord') : t('repositoryRecord'), sourceLink(tool, tool.officialChecked || 'readme')), matching.length ? h('p', { class: 'ee-match' }, `${t('matching')}: ${matching.join(' · ')}`) : null, toolDetails(tool));
+  return h('article', { class: 'ee-card', 'data-selected': String(selected), 'data-tool': tool.id }, h('div', { class: 'ee-card-heading' }, h('h3', {}, tool.name), tool.comparable ? h('button', { class: 'ee-add', type: 'button', id: `ee-add-${tool.id}`, 'data-compare-toggle': tool.id, 'aria-pressed': String(selected), 'aria-label': `${selected ? t('remove') : t('add')} ${tool.name}`, disabled: !selected && state.compare.length === 4 }, selected ? `✓ ${t('remove')}` : t('add')) : null), h('span', { class: 'ee-card-category' }, tool.facets.category.map(label).join(' / '), !tool.comparable ? ` · ${t('reference')}` : ''), h('p', { class: 'ee-card-summary' }, localized(tool.summary)), ...['paradigm', 'engine'].filter(key => tool.facets[key]?.length).map(key => h('div', { class: 'ee-card-facet', 'data-card-facet': key }, h('span', { class: 'ee-card-facet-label' }, icon(key), groupLabel(key)), h('div', { class: 'ee-tags' }, tool.facets[key].map(value => h('span', { class: 'ee-tag ee-facet-tag' }, key === 'paradigm' ? icon(value) : null, label(value)))))), h('div', { class: 'ee-tags ee-secondary-tags' }, tagValues.map(value => h('span', { class: 'ee-tag' }, label(value)))), matchingPaths(tool), networkDetails(tool), h('p', { class: 'ee-evidence' }, tool.officialChecked ? t('evidenceRecord') : t('repositoryRecord'), sourceLink(tool, tool.officialChecked || 'readme')), matching.length ? h('p', { class: 'ee-match' }, `${t('matching')}: ${matching.join(' · ')}`) : null, toolDetails(tool));
 }
 function renderResults() {
   const previousOpen = [...root.querySelectorAll('[data-tool-details][open]')].map(el => el.dataset.toolDetails);
@@ -127,6 +157,8 @@ function renderResults() {
   const results = selectTools(data, state);
   $('#ee-count').textContent = `${results.length} ${t('results')}`;
   const chips = [];
+  if (state.networkMode === 'builtin') chips.push(chip(t('builtinOnly'), 'networkMode'));
+  if (!state.includeHistorical) chips.push(chip(`${t('historicalPaths')}: ${state.lang === 'zh' ? '不包含' : 'Excluded'}`, 'includeHistorical'));
   if (state.q) chips.push(chip(state.q, 'q'));
   for (const [key, values] of Object.entries(state.facets)) for (const value of values) chips.push(chip(`${groupLabel(key)}: ${label(value)}`, 'facet', key, value));
   for (const key of state.required) chips.push(chip(featureLabel(key), 'required', '', key));
@@ -138,7 +170,7 @@ function renderResults() {
     for (const id of previousOpen) { const details = root.querySelector(`[data-tool-details="${CSS.escape(id)}"]`); if (details) details.open = true; }
     for (const id of previousNetworks) { const details = root.querySelector(`[data-tool-network="${CSS.escape(id)}"]`); if (details) details.open = true; }
   } else {
-    $('#ee-results').replaceChildren(h('div', { class: 'ee-empty' }, h('h3', {}, t('empty')), h('p', {}, t('emptyHelp')), relaxations(data, state).map(o => h('button', { class: 'ee-secondary', type: 'button', 'data-remove-filter': o.kind, 'data-key': o.key || '', 'data-value': o.value || '' }, `${t('removeCondition')} ${o.kind === 'q' ? state.q : o.kind === 'required' ? featureLabel(o.value) : label(o.value)} → ${o.count}`)), h('button', { class: 'ee-primary', type: 'button', 'data-reset': true }, t('reset'))));
+    $('#ee-results').replaceChildren(h('div', { class: 'ee-empty' }, h('h3', {}, t('empty')), h('p', {}, t('emptyHelp')), relaxations(data, state).map(o => h('button', { class: 'ee-secondary', type: 'button', 'data-remove-filter': o.kind, 'data-key': o.key || '', 'data-value': o.value || '' }, `${o.kind === 'networkMode' ? t('includeExtensions') : o.kind === 'includeHistorical' ? t('historicalPaths') : `${t('removeCondition')} ${o.kind === 'q' ? state.q : o.kind === 'required' ? featureLabel(o.value) : label(o.value)}`} → ${o.count}`)), h('button', { class: 'ee-primary', type: 'button', 'data-reset': true }, t('reset')), link(t('contribute'), contributionUrl())));
   }
 }
 function comparisonFacet(tool, key) {
@@ -157,24 +189,24 @@ function renderComparison() {
   $('#ee-comparison').hidden = !comparisonOpen || !selected.length;
   if (!comparisonOpen || !selected.length) return;
   const row = (name, cell) => h('tr', {}, h('th', { scope: 'row' }, name), selected.map(tool => h('td', {}, cell(tool))));
-  const rows = [row(t('overview'), tool => localized(tool.summary)), ...['paradigm', 'engine'].map(key => row(`${groupLabel(key)}${state.lang === 'zh' ? '标签' : ' tags'}`, tool => comparisonFacet(tool, key))), row(groupLabel('protocol'), tool => networkEvidence(tool)), ...dimensions.map((dimension, index) => row(dimension[state.lang === 'zh' ? 1 : 0], tool => dimensionEvidence(tool, index))), row(t('documented'), tool => documentedFeatures(tool)), row(t('condition'), tool => [t('scopeNote'), tool.verification?.accessNote ? h('p', { class: 'ee-note' }, localized(tool.verification.accessNote)) : null, ...tool.notes.map(note => h('p', { class: 'ee-note' }, localized(note)))]), row(t('source'), tool => [tool.url ? link(t('official'), tool.url) : null, h('br'), link(t('sourceRecord'), tool.source.url)])];
+  const rows = [row(t('overview'), tool => localized(tool.summary)), ...['paradigm', 'engine'].map(key => row(`${groupLabel(key)}${state.lang === 'zh' ? '标签' : ' tags'}`, tool => comparisonFacet(tool, key))), row(t('fullNetwork'), tool => networkEvidence(tool)), ...dimensions.map((dimension, index) => row(dimension[state.lang === 'zh' ? 1 : 0], tool => dimensionEvidence(tool, index))), row(t('documented'), tool => documentedFeatures(tool)), row(t('condition'), tool => [t('scopeNote'), tool.verification?.accessNote ? h('p', { class: 'ee-note' }, localized(tool.verification.accessNote)) : null, ...tool.notes.map(note => h('p', { class: 'ee-note' }, localized(note)))]), row(t('source'), tool => [tool.url ? link(t('official'), tool.url) : null, h('br'), link(t('sourceRecord'), tool.source.url)])];
   $('#ee-comparison-table').replaceChildren(h('table', {}, h('caption', { class: 'ee-sr-only' }, t('comparison')), h('thead', {}, h('tr', {}, h('th', { scope: 'col' }, t('dimensions')), selected.map(tool => h('th', { scope: 'col' }, tool.name)))), h('tbody', {}, rows)));
 }
 function renderMethod() {
   const texts = state.lang === 'zh' ? [
-    '五个维度依据项目官网、使用手册、API、固定提交源码及项目技术文档整理。能力说明写明具体功能与适用条件，不根据综述表格、依赖关系或图示推断功能。',
+    '五个维度依据项目官网、使用手册、API、固定提交源码及项目技术文档整理。能力说明写明具体功能与适用条件，继承能力按有来源的基础版本与模块清单展开。',
     '收录范围是 awesome-edge-computing 的固定提交快照。原清单用于资源身份、分类与简介；必需能力判断只使用项目直接资料。',
     '功能区列出资料明确描述的能力、接口及条件。勾选必需能力后，只返回有直接依据的项目；未列出的功能不据此判为不支持。比较表以五个维度的具体内容为主，入口失效或仅剩历史介绍时展示实际资料状况。',
     '每项证据展示来源、版本或查阅日期。外部可视化工具、可选依赖和配置要求会注明；基于源码或文档的核查不代表已安装实测所有工具。',
     '编程语言包括脚本和配置语言。抽象网络模型、协议实现与应用调度需要分别核对。规模数据只对应来源所述实验条件，不用于工具排名。',
-    '资源按名称排列；每次手动核对后更新目录。机构与资源清单保留参考入口，不能加入工具比较。'
+    '资源按名称排列；每次手动核对后更新目录。已检查来源范围列出实际检查的资料，不能代表能力已穷尽。补充入口可提交来源、版本及实现路径。机构与资源清单不能加入工具比较。'
   ] : [
-    'The five dimensions use project websites, manuals, APIs, pinned source code, and project technical documents. Capability descriptions explain concrete behavior and conditions; survey marks, dependencies, and diagrams do not establish support.',
+    'The five dimensions use project websites, manuals, APIs, pinned source code, and project technical documents. Capability descriptions explain concrete behavior and conditions; inherited capabilities follow sourced relationships and versioned base-module profiles.',
     'The inventory follows a fixed commit of awesome-edge-computing. The list provides resource identity, categories, and summaries. Required capabilities use direct project evidence only.',
     'Capability lists describe documented interfaces and conditions. Required filters return only projects with direct evidence; an omitted capability does not establish lack of support. Compare the concrete five-dimension descriptions. Retired or inaccessible resources show their actual source availability.',
     'Each record includes its source, version, or access date. External visualization tools, optional dependencies, and configuration requirements are stated. Documentation and source review do not mean every tool has been installed and tested.',
     'Languages include scripting and configuration languages. Abstract network models, protocol implementations, and application scheduling are checked separately. Scale figures apply only to their documented experimental conditions and are not rankings.',
-    'Resources are alphabetical and manually reviewed. Institutions and resource lists retain reference links and cannot enter capability comparisons.'
+    'Resources are alphabetical and manually reviewed. The coverage log lists examined sources, not exhaustive capability coverage. Suggestions should include the provider, version and project evidence. Institutions and resource lists cannot enter capability comparisons.'
   ];
   $('#ee-method-content').replaceChildren(...texts.map(text => h('p', {}, text)), h('p', {}, link(`${data.meta.repository} · ${data.meta.commit.slice(0, 7)}`, `${data.meta.repository}/tree/${data.meta.commit}`)));
 }
@@ -182,7 +214,7 @@ function render(options = {}) {
   const activeId = document.activeElement?.id;
   translateShell();
   if (!data) return;
-  $('#ee-dataset-meta').textContent = `${data.tools.length} ${t('dataset')} · ${t('updated')}: ${data.meta.evidenceUpdatedAt || data.meta.retrievedAt} · ${data.meta.dimensionEvidenceCount} ${t('dimensionRecords')}`;
+  $('#ee-dataset-meta').textContent = `${data.tools.length} ${t('dataset')} · ${t('updated')}: ${data.meta.evidenceUpdatedAt || data.meta.retrievedAt} · ${data.meta.implementationCount} ${t('paths')}`;
   if ($('#ee-search').value !== state.q) $('#ee-search').value = state.q;
   renderCategories(); if (!options.searchOnly) renderFilters(); renderResults(); renderComparison(); renderMethod();
   if (activeId && activeId !== 'ee-search') document.getElementById(activeId)?.focus({ preventScroll: true });
@@ -191,7 +223,9 @@ root.addEventListener('toggle', event => { const key = event.target.dataset?.gro
 root.addEventListener('change', event => {
   if (!data) return;
   const input = event.target;
-  if (input.dataset.facet) {
+  if (input.hasAttribute('data-network-mode')) update({ ...state, networkMode: input.checked ? 'builtin' : 'all' });
+  else if (input.hasAttribute('data-network-history')) update({ ...state, includeHistorical: input.checked });
+  else if (input.dataset.facet) {
     const key = input.dataset.facet, values = state.facets[key] || [];
     const facets = { ...state.facets, [key]: input.checked ? [...values, input.value] : values.filter(v => v !== input.value) };
     if (!facets[key].length) delete facets[key]; update({ ...state, facets });
